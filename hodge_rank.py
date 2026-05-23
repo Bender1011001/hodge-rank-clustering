@@ -61,9 +61,11 @@ class TrueHodgeRankClustering:
         Number of 2-simplices (triangles) enumerated for B2.
     """
 
-    def __init__(self, k=15, min_core=2):
+    def __init__(self, k=15, min_core=2, tau=0.1):
         self.k = k
         self.min_core = min_core
+        self.tau = tau
+
 
     def fit_predict(self, X=None, D=None):
         """
@@ -193,42 +195,60 @@ class TrueHodgeRankClustering:
         self.edges = edges
         self.num_triangles = t_idx
 
-        # --- Step 5: Steepest-ascent clustering on the potential field ---
+        # --- Step 5: Persistence-based topological clustering on the potential field ---
         adj_loc = {i: [] for i in range(num_v)}
         for u_loc, v_loc in [(local_idx[u], local_idx[v]) for u, v in edges]:
             adj_loc[u_loc].append(v_loc)
             adj_loc[v_loc].append(u_loc)
 
-        flow_target = np.arange(num_v)
-        for i in range(num_v):
-            best_target, best_p = i, p_raw[i]
-            for neighbor in adj_loc[i]:
-                if p_raw[neighbor] > best_p:
-                    best_p, best_target = p_raw[neighbor], neighbor
-            flow_target[i] = best_target
+        # Normalize potential to [0, 1] to make tau scale-invariant
+        p_min, p_max = np.min(p_raw), np.max(p_raw)
+        p_norm = (p_raw - p_min) / (p_max - p_min) if p_max > p_min else p_raw
 
-        cluster_labels_local = np.full(num_v, -1)
-        current_cluster_id = 0
-        for i in range(num_v):
-            if cluster_labels_local[i] != -1:
-                continue
-            curr = i
+        # Union-Find with path compression
+        parent = np.arange(num_v)
+        sink_potential = p_norm.copy()
+
+        def find(i):
             path = []
-            visited = set()
-            while (flow_target[curr] != curr
-                   and cluster_labels_local[curr] == -1
-                   and curr not in visited):
-                path.append(curr)
-                visited.add(curr)
-                curr = flow_target[curr]
-
-            if cluster_labels_local[curr] == -1:
-                cluster_labels_local[curr] = current_cluster_id
-                current_cluster_id += 1
-
-            sink_id = cluster_labels_local[curr]
+            while parent[i] != i:
+                path.append(i)
+                i = parent[i]
             for node in path:
-                cluster_labels_local[node] = sink_id
+                parent[node] = i
+            return i
+
+        # Process nodes in descending order of potential
+        sorted_nodes = np.argsort(-p_norm)
+        visited = np.zeros(num_v, dtype=bool)
+
+        for u in sorted_nodes:
+            visited[u] = True
+            for v in adj_loc[u]:
+                if visited[v]:
+                    root_u = find(u)
+                    root_v = find(v)
+                    if root_u != root_v:
+                        p_saddle = p_norm[u]
+                        if sink_potential[root_u] < sink_potential[root_v]:
+                            low_root, high_root = root_u, root_v
+                        else:
+                            low_root, high_root = root_v, root_u
+
+                        persistence = sink_potential[low_root] - p_saddle
+                        if persistence < self.tau:
+                            parent[low_root] = high_root
+
+        # Resolve cluster labels
+        cluster_labels_local = np.full(num_v, -1)
+        unique_roots = {}
+        cluster_id = 0
+        for i in range(num_v):
+            root = find(i)
+            if root not in unique_roots:
+                unique_roots[root] = cluster_id
+                cluster_id += 1
+            cluster_labels_local[i] = unique_roots[root]
 
         # --- Step 6: Reintegrate noise (non-core) nodes ---
         labels = np.full(n, -1)

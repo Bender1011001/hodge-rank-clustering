@@ -35,7 +35,7 @@ def main():
         D[i, :] = dist * asym
         D[i, i] = np.inf
 
-    hodge = TrueHodgeRankClustering(k=30, min_core=2)
+    hodge = TrueHodgeRankClustering(k=45, min_core=2, tau=0.3)
     hodge_labels = hodge.fit_predict(D=D)
 
     D_sym = np.maximum(D, D.T)
