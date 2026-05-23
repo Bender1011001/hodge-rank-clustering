@@ -14,7 +14,7 @@ Given a directed graph (or an asymmetric distance/preference matrix), the algori
    - **Gradient flow** (F_grad): the component explainable by a global vertex potential Φ. This is the hierarchical structure — "who ranks above whom."
    - **Curl flow** (F_curl): local cyclic flow around triangles. Rock-paper-scissors patterns.
    - **Harmonic flow** (F_harm): global topological cycles not captured by gradient or curl. Genuinely ambiguous circular structure.
-4. **Clusters via steepest ascent** on the potential field Φ. Each node flows uphill to its highest-potential neighbor; all nodes that converge to the same local maximum form a cluster.
+4. **Clusters via persistence-based topological simplification** on the potential field Φ. Local maxima (sinks) are identified, and shallow basins of attraction are merged into deeper ones using a relative persistence threshold $\tau$. Nodes are assigned to the remaining persistent sinks.
 5. **Reintegrates noise nodes** (those pruned by k-core) by assigning them to the cluster of their nearest core neighbor.
 
 The decomposition is exact: F = F_grad + F_curl + F_harm, and the three components are mutually orthogonal.
@@ -80,6 +80,7 @@ labels = model.fit_predict(X=X)
 |-----------|---------|-------------|
 | `k` | 15 | Number of nearest neighbors for mutual K-NN graph construction |
 | `min_core` | 2 | Minimum degree for k-core pruning. Nodes with fewer mutual edges are iteratively removed before decomposition |
+| `tau` | 0.1 | Topological simplification (persistence) threshold relative to potential range. Merges shallow basins of attraction. |
 
 ## Attributes (after `fit_predict`)
 
