@@ -1,0 +1,43 @@
+{
+  "dataset": "OpenFlights airport route snapshot",
+  "generatedAt": "2026-05-25T00:05:13.186078+00:00",
+  "sources": {
+    "airports": "https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat",
+    "routes": "https://raw.githubusercontent.com/jpatokal/openflights/master/data/routes.dat",
+    "land": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson",
+    "licenseNote": "OpenFlights data is free to use; keep attribution to OpenFlights and the source URL."
+  },
+  "parameters": {
+    "maxAirports": 420,
+    "maxEdges": 2200,
+    "k": 8,
+    "minCore": 2,
+    "tau": 0.005,
+    "minRouteCount": 1
+  },
+  "counts": {
+    "rawAirports": 7698,
+    "rawDirectedAirportPairs": 36906,
+    "selectedAirports": 420,
+    "visualEdges": 2200,
+    "clusters": 16,
+    "coreNodes": 196,
+    "hodgeEdges": 393,
+    "triangles": 106
+  },
+  "hodge": {
+    "gradientNorm": 56.82744421210502,
+    "curlNorm": 17.754991525248343,
+    "harmonicNorm": 17.674893538179763
+  },
+  "processingSeconds": 2.061,
+  "rawDataRetained": false,
+  "land": {
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson",
+    "features": 127,
+    "artifact": "E:\\code.projects\\hodge-rank-clustering\\site\\data\\world\\land.geojson",
+    "bytes": 86945
+  },
+  "rawDirectory": "E:\\code.projects\\hodge-rank-clustering\\.tmp\\openflights_raw_21356",
+  "rawDirectoryExistsAfterRun": false
+}

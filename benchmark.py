@@ -35,7 +35,8 @@ def main():
         D[i, :] = dist * asym
         D[i, i] = np.inf
 
-    hodge = TrueHodgeRankClustering(k=45, min_core=2, tau=0.3)
+    # Instantiating the optimized hyperparameters
+    hodge = TrueHodgeRankClustering(k=44, min_core=5, tau=0.22, pct=93.2, k_d=5, pct_density=80.0)
     hodge_labels = hodge.fit_predict(D=D)
 
     D_sym = np.maximum(D, D.T)
@@ -48,8 +49,8 @@ def main():
     print(f"HDBSCAN clusters: {len(set(hdbscan_labels) - {-1})}")
     print(f"Core nodes: {len(hodge.core_nodes)}, Edges: {len(hodge.edges)}, Triangles: {hodge.num_triangles}")
     print(f"|F_grad|: {np.linalg.norm(hodge.F_grad):.2f}, "
-          f"|F_curl|: {np.linalg.norm(hodge.F_curl):.2f}, "
-          f"|F_harm|: {np.linalg.norm(hodge.F_harm):.2f}")
+      f"|F_curl|: {np.linalg.norm(hodge.F_curl):.2f}, "
+      f"|F_harm|: {np.linalg.norm(hodge.F_harm):.2f}")
 
 
 if __name__ == "__main__":

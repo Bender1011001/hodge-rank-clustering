@@ -1,0 +1,40 @@
+{
+  "artifactFiles": {
+    "documents": "documents.jsonl",
+    "manifest": "manifest.json",
+    "mentionEdges": "mention_edges.json",
+    "mentionNodes": "mention_nodes.json",
+    "sqliteCheckpoint": "epstein_processing.sqlite"
+  },
+  "caveats": [
+    "Edges mean terms were found in the same DOJ file, not that the people or places are connected by conduct.",
+    "The default graph uses exact term groups and is not a full named-entity recognizer.",
+    "Image-only, handwritten, or otherwise non-searchable PDFs are marked needs_ocr when no text is extracted.",
+    "The DOJ library warns that search may be unreliable for some document formats and that sensitive personal information may remain despite redactions.",
+    "Raw PDFs are deleted after processing unless --keep-raw is used."
+  ],
+  "counts": {
+    "distinctTermsWithMentions": 26,
+    "documentsWithMentions": 224,
+    "graphEdges": 270,
+    "graphNodes": 26,
+    "manifestDocuments": 525,
+    "processedDocuments": 525,
+    "statusCounts": {
+      "needs_ocr": 166,
+      "processed": 359
+    },
+    "totalBytesDownloaded": 734350409,
+    "totalExtractedTextChars": 8921703,
+    "totalPages": 6468
+  },
+  "dataset": "DOJ Epstein Library disclosure PDFs",
+  "generatedAt": "2026-05-23T08:09:16Z",
+  "rawDataRetained": false,
+  "rawDirectoryExistsAfterRun": false,
+  "rawWorkDirectory": ".tmp\\epstein_doj_raw_35056",
+  "source": {
+    "dojDisclosures": "https://www.justice.gov/epstein/doj-disclosures",
+    "library": "https://www.justice.gov/epstein"
+  }
+}

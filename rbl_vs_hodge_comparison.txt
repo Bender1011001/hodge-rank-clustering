@@ -1,0 +1,10 @@
+Rank-Based Linkage vs Hodge Rank Clustering Comparison
+=====================================================
+
+HDBSCAN ARI:                  0.8457
+Hodge Default ARI:            0.1268
+Hodge Optimized ARI:          0.8750
+Rank-Based Linkage (RBL) ARI: 0.8536
+
+Best RBL Parameters: k=50, max_cluster=150
+Best Hodge Parameters: k=44, min_core=5, tau=0.2200, pct=93.2000, k_d=5, pct_density=80.0000

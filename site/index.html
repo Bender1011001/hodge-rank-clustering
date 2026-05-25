@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hodge Evidence Atlas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <canvas id="mapCanvas" aria-label="Hodge atlas canvas"></canvas>
+
+      <section class="panel panel-left" aria-label="Dataset summary">
+        <div class="brand-row">
+          <div class="brand-mark" aria-hidden="true">H</div>
+          <div>
+            <h1>Hodge Evidence Atlas</h1>
+            <p id="datasetLabel">OpenFlights route topology</p>
+          </div>
+        </div>
+
+        <div class="view-switch" role="tablist" aria-label="Atlas view">
+          <button id="flightViewButton" class="active" type="button">Flight map</button>
+          <button id="corpusViewButton" type="button">DOJ graph</button>
+          <button id="benchmarkViewButton" type="button">Cities & Tourists</button>
+        </div>
+
+        <div class="metric-grid">
+          <article>
+            <span id="metricOneLabel">Airports</span>
+            <strong id="metricOneValue">...</strong>
+          </article>
+          <article>
+            <span id="metricTwoLabel">Routes</span>
+            <strong id="metricTwoValue">...</strong>
+          </article>
+          <article>
+            <span id="metricThreeLabel">Clusters</span>
+            <strong id="metricThreeValue">...</strong>
+          </article>
+          <article>
+            <span id="metricFourLabel">Triangles</span>
+            <strong id="metricFourValue">...</strong>
+          </article>
+        </div>
+
+        <div class="controls" id="mainControls">
+          <label>
+            <span id="edgeLimitLabel">Route density</span>
+            <input id="edgeLimit" type="range" min="200" max="1600" step="50" value="1000" />
+          </label>
+          <label class="toggle-row" id="interClusterControl">
+            <input id="interClusterToggle" type="checkbox" checked />
+            <span>Inter-cluster routes</span>
+          </label>
+        </div>
+
+        <div class="controls" id="benchmarkControls" style="display: none;">
+          <div class="view-switch" role="tablist" aria-label="Label mode" style="margin-bottom: 12px; gap: 4px; padding: 3px; background: rgba(20, 23, 22, 0.4); display: flex;">
+            <button id="showTrueLabelsButton" class="active" type="button" style="font-size: 0.7rem; padding: 6px 4px; flex: 1;">True Labels</button>
+            <button id="showPredLabelsButton" type="button" style="font-size: 0.7rem; padding: 6px 4px; flex: 1;">Hodge (Pred)</button>
+            <button id="showRblLabelsButton" type="button" style="font-size: 0.7rem; padding: 6px 4px; flex: 1;">RBL (Pred)</button>
+          </div>
+          <p id="benchmarkDesc" style="font-size: 0.78rem; line-height: 1.4; color: rgba(243, 239, 226, 0.65); margin: 0; font-style: italic;">
+            True labels show 60 tourists (noise). Hodge clusters these into 4 clean cities (19 noise remaining). RBL partitions them into 7 components (13 noise remaining).
+          </p>
+        </div>
+
+        <div class="cluster-list" id="clusterList"></div>
+      </section>
+
+      <section class="panel panel-right" aria-label="Selected airport details">
+        <div class="detail-header">
+          <span id="detailCode">---</span>
+          <div>
+            <h2 id="detailName">Hover an airport</h2>
+            <p id="detailLocation">Route structure and Hodge potential appear here.</p>
+          </div>
+        </div>
+        <dl class="detail-stats">
+          <div>
+            <dt id="detailTotalLabel">Total routes</dt>
+            <dd id="detailTotal">--</dd>
+          </div>
+          <div>
+            <dt id="detailInboundLabel">Inbound</dt>
+            <dd id="detailInbound">--</dd>
+          </div>
+          <div>
+            <dt id="detailOutboundLabel">Outbound</dt>
+            <dd id="detailOutbound">--</dd>
+          </div>
+          <div>
+            <dt id="detailPotentialLabel">Potential</dt>
+            <dd id="detailPotential">--</dd>
+          </div>
+        </dl>
+        <div class="component-bars">
+          <div>
+            <span id="gradientLabel">Gradient</span>
+            <meter id="gradientMeter" min="0" max="1" value="0"></meter>
+          </div>
+          <div>
+            <span id="curlLabel">Curl</span>
+            <meter id="curlMeter" min="0" max="1" value="0"></meter>
+          </div>
+          <div>
+            <span id="harmonicLabel">Harmonic</span>
+            <meter id="harmonicMeter" min="0" max="1" value="0"></meter>
+          </div>
+        </div>
+        <p class="source-line" id="sourceLine">Source attribution loads with the artifact.</p>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

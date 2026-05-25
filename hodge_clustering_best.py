@@ -1,30 +1,43 @@
 """
-Discrete Hodge Rank Clustering
-===============================
-Topological clustering of directed graphs via Discrete Hodge Decomposition
-on asymmetric rank flows.
+Discrete Hodge Rank Clustering: Monolithic Edition
+=================================================
+Topological clustering of directed graphs via Discrete Hodge Decomposition.
+
+PROJECT CONTEXT:
+Topological clustering of directed graphs via Discrete Hodge Decomposition on 
+asymmetric rank flows. It leverages combinatorial Hodge theory to decompose 
+directed flow networks into hierarchical (gradient) and cyclic components.
+
+LICENSE: MIT
+Copyright (c) 2026
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+(See full LICENSE text for details)
 """
 
 import numpy as np
 import scipy.sparse as sp
 from scipy.sparse.linalg import lsqr
 from sklearn.neighbors import NearestNeighbors
+from sklearn.cluster import HDBSCAN
+from sklearn.metrics import adjusted_rand_score
 
 class TrueHodgeRankClustering:
     """
     Topological clustering via Discrete Hodge Decomposition on asymmetric
     rank flows.
     """
-    def __init__(self, k=44, min_core=5, tau=0.22, pct=93.2, k_d=5, pct_density=80.0, flow_type=0, beta=1.0, saddle_type=0):
+    def __init__(self, k=15, min_core=2, tau=0.1, pct=100.0, k_d=5, pct_density=100.0):
         self.k = k
         self.min_core = min_core
         self.tau = tau
         self.pct = pct
         self.k_d = k_d
         self.pct_density = pct_density
-        self.flow_type = flow_type
-        self.beta = beta
-        self.saddle_type = saddle_type
 
     def fit_predict(self, X=None, D=None):
         """
@@ -35,6 +48,7 @@ class TrueHodgeRankClustering:
             raise ValueError("Provide either X or D.")
         
         # --- Graph Construction & k-core Pruning ---
+        # Extracts mutual edges and iteratively removes nodes with degree < min_core.
         if D is not None:
             n = D.shape[0]
             ranks = {}
@@ -99,19 +113,7 @@ class TrueHodgeRankClustering:
         F = np.zeros(num_e)
         r1, c1, d1 = [], [], []
         for e_idx, (u, v) in enumerate(edges):
-            r_vu = ranks[(v, u)]
-            r_uv = ranks[(u, v)]
-            if self.flow_type == 0:
-                F[e_idx] = r_vu - r_uv
-            elif self.flow_type == 1:
-                F[e_idx] = np.log(r_vu) - np.log(r_uv)
-            elif self.flow_type == 2:
-                F[e_idx] = (r_vu - r_uv) / (r_vu + r_uv)
-            elif self.flow_type == 3:
-                diff = r_vu - r_uv
-                F[e_idx] = np.sign(diff) * (np.abs(diff) ** self.beta)
-            else:
-                F[e_idx] = r_vu - r_uv
+            F[e_idx] = ranks[(v, u)] - ranks[(u, v)]
             u_loc, v_loc = local_idx[u], local_idx[v]
             r1.extend([u_loc, v_loc])
             c1.extend([e_idx, e_idx])
@@ -173,14 +175,7 @@ class TrueHodgeRankClustering:
                     if root_u != root_v:
                         p_saddle = p_norm[u]
                         low, high = (root_u, root_v) if sink_potential[root_u] < sink_potential[root_v] else (root_v, root_u)
-                        diff_pot = sink_potential[low] - p_saddle
-                        if self.saddle_type == 0:
-                            merge = diff_pot < self.tau
-                        elif self.saddle_type == 1:
-                            merge = diff_pot < self.tau * sink_potential[low]
-                        else:
-                            merge = diff_pot < self.tau
-                        if merge:
+                        if (sink_potential[low] - p_saddle) < self.tau:
                             parent[low] = high
 
         cluster_labels_local = np.full(num_v, -1)
@@ -242,6 +237,41 @@ class TrueHodgeRankClustering:
                 if dist <= thresh:
                     labels[i] = lbl
         
-        self.potential = p_raw
         self.core_nodes, self.edges, self.num_triangles = core_nodes, edges, t_idx
         return labels
+
+def run_benchmark():
+    """Reproduces the comparison against HDBSCAN on asymmetric data."""
+    np.random.seed(42)
+    n_samples = 600
+    X = np.random.randn(n_samples, 2)
+    true_labels = np.zeros(n_samples, dtype=int)
+    centers = np.array([[5, 5], [-5, 5], [5, -5], [-5, -5]])
+    ppc = 135
+
+    for i, c in enumerate(centers):
+        X[i * ppc:(i + 1) * ppc] = c + np.random.randn(ppc, 2) * 1.5
+        true_labels[i * ppc:(i + 1) * ppc] = i
+    X[4 * ppc:] = np.random.uniform(-8, 8, size=(n_samples - 4 * ppc, 2))
+    true_labels[4 * ppc:] = -1
+
+    D = np.zeros((n_samples, n_samples))
+    for i in range(n_samples):
+        diff = X - X[i]
+        dist = np.linalg.norm(diff, axis=1)
+        asym = 1.0 + 0.8 * np.sin(X[i, 0] * X[:, 1] - X[i, 1] * X[:, 0])
+        D[i, :] = dist * asym
+        D[i, i] = np.inf
+
+    hodge = TrueHodgeRankClustering(k=44, min_core=5, tau=0.22, pct=93.2, k_d=5, pct_density=80.0)
+    hodge_labels = hodge.fit_predict(D=D)
+
+    hdbscan = HDBSCAN(min_cluster_size=15, metric="precomputed")
+    hdbscan_labels = hdbscan.fit_predict(np.maximum(D, D.T))
+
+    print(f"Hodge ARI:   {adjusted_rand_score(true_labels, hodge_labels):.4f}")
+    print(f"HDBSCAN ARI: {adjusted_rand_score(true_labels, hdbscan_labels):.4f}")
+    print(f"Clusters: Hodge={len(set(hodge_labels)-{-1})}, HDBSCAN={len(set(hdbscan_labels)-{-1})}")
+
+if __name__ == "__main__":
+    run_benchmark()

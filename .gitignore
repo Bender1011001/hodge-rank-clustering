@@ -8,3 +8,6 @@ dist/
 build/
 .idea/
 .vscode/
+.tmp/
+scratch/rank-based-linkage/
+*.sqlite
