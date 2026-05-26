@@ -1,0 +1,962 @@
+[
+  {
+    "id": "Sp1",
+    "label": "Sp1",
+    "documentCount": 273,
+    "mentionCount": 273,
+    "kind": "tf",
+    "potentialNorm": 0.3889222724201725
+  },
+  {
+    "id": "Nfkb1",
+    "label": "Nfkb1",
+    "documentCount": 227,
+    "mentionCount": 227,
+    "kind": "tf",
+    "potentialNorm": 0.4275980866160363
+  },
+  {
+    "id": "Trp53",
+    "label": "Trp53",
+    "documentCount": 220,
+    "mentionCount": 220,
+    "kind": "tf",
+    "potentialNorm": 0.45670291809114577
+  },
+  {
+    "id": "Jun",
+    "label": "Jun",
+    "documentCount": 146,
+    "mentionCount": 146,
+    "kind": "tf",
+    "potentialNorm": 0.4222802802415841
+  },
+  {
+    "id": "Rela",
+    "label": "Rela",
+    "documentCount": 127,
+    "mentionCount": 127,
+    "kind": "tf",
+    "potentialNorm": 0.414426357998755
+  },
+  {
+    "id": "Runx2",
+    "label": "Runx2",
+    "documentCount": 95,
+    "mentionCount": 95,
+    "kind": "tf",
+    "potentialNorm": 0.4294426648589263
+  },
+  {
+    "id": "Egr1",
+    "label": "Egr1",
+    "documentCount": 92,
+    "mentionCount": 92,
+    "kind": "tf",
+    "potentialNorm": 0.4029591565660528
+  },
+  {
+    "id": "Fos",
+    "label": "Fos",
+    "documentCount": 87,
+    "mentionCount": 87,
+    "kind": "tf",
+    "potentialNorm": 0.4560902217781768
+  },
+  {
+    "id": "Sp3",
+    "label": "Sp3",
+    "documentCount": 84,
+    "mentionCount": 84,
+    "kind": "tf",
+    "potentialNorm": 0.4098909191130664
+  },
+  {
+    "id": "Stat3",
+    "label": "Stat3",
+    "documentCount": 84,
+    "mentionCount": 84,
+    "kind": "tf",
+    "potentialNorm": 0.390772852155278
+  },
+  {
+    "id": "Myc",
+    "label": "Myc",
+    "documentCount": 78,
+    "mentionCount": 78,
+    "kind": "tf",
+    "potentialNorm": 0.4768259487344353
+  },
+  {
+    "id": "Pparg",
+    "label": "Pparg",
+    "documentCount": 78,
+    "mentionCount": 78,
+    "kind": "tf",
+    "potentialNorm": 0.47195048495126046
+  },
+  {
+    "id": "Ctnnb1",
+    "label": "Ctnnb1",
+    "documentCount": 76,
+    "mentionCount": 76,
+    "kind": "tf",
+    "potentialNorm": 0.40234016062390393
+  },
+  {
+    "id": "Myod1",
+    "label": "Myod1",
+    "documentCount": 70,
+    "mentionCount": 70,
+    "kind": "tf",
+    "potentialNorm": 0.41649812484050025
+  },
+  {
+    "id": "Cdkn1a",
+    "label": "Cdkn1a",
+    "documentCount": 65,
+    "mentionCount": 65,
+    "kind": "gene",
+    "potentialNorm": 0.5142467903215764
+  },
+  {
+    "id": "Ets1",
+    "label": "Ets1",
+    "documentCount": 65,
+    "mentionCount": 65,
+    "kind": "tf",
+    "potentialNorm": 0.3929044816874219
+  },
+  {
+    "id": "Ep300",
+    "label": "Ep300",
+    "documentCount": 63,
+    "mentionCount": 63,
+    "kind": "tf",
+    "potentialNorm": 0.3942397060845131
+  },
+  {
+    "id": "E2f1",
+    "label": "E2f1",
+    "documentCount": 61,
+    "mentionCount": 61,
+    "kind": "tf",
+    "potentialNorm": 0.44641014670832263
+  },
+  {
+    "id": "Spi1",
+    "label": "Spi1",
+    "documentCount": 59,
+    "mentionCount": 59,
+    "kind": "tf",
+    "potentialNorm": 0.4283686250387426
+  },
+  {
+    "id": "Nfe2l2",
+    "label": "Nfe2l2",
+    "documentCount": 59,
+    "mentionCount": 59,
+    "kind": "tf",
+    "potentialNorm": 0.4328149698651894
+  },
+  {
+    "id": "Pax6",
+    "label": "Pax6",
+    "documentCount": 58,
+    "mentionCount": 58,
+    "kind": "tf",
+    "potentialNorm": 0.4009467201849633
+  },
+  {
+    "id": "Ppara",
+    "label": "Ppara",
+    "documentCount": 56,
+    "mentionCount": 56,
+    "kind": "tf",
+    "potentialNorm": 0.4431508817416577
+  },
+  {
+    "id": "Smad3",
+    "label": "Smad3",
+    "documentCount": 56,
+    "mentionCount": 56,
+    "kind": "tf",
+    "potentialNorm": 0.45334484955936716
+  },
+  {
+    "id": "Tcf3",
+    "label": "Tcf3",
+    "documentCount": 54,
+    "mentionCount": 54,
+    "kind": "tf",
+    "potentialNorm": 0.4372074958700335
+  },
+  {
+    "id": "Cebpb",
+    "label": "Cebpb",
+    "documentCount": 52,
+    "mentionCount": 52,
+    "kind": "tf",
+    "potentialNorm": 0.43284089286739275
+  },
+  {
+    "id": "Foxo1",
+    "label": "Foxo1",
+    "documentCount": 52,
+    "mentionCount": 52,
+    "kind": "tf",
+    "potentialNorm": 0.4626742078999972
+  },
+  {
+    "id": "Pou5f1",
+    "label": "Pou5f1",
+    "documentCount": 51,
+    "mentionCount": 51,
+    "kind": "tf",
+    "potentialNorm": 0.47966968453067027
+  },
+  {
+    "id": "Srebf1",
+    "label": "Srebf1",
+    "documentCount": 50,
+    "mentionCount": 50,
+    "kind": "tf",
+    "potentialNorm": 0.41122992729816044
+  },
+  {
+    "id": "Nanog",
+    "label": "Nanog",
+    "documentCount": 49,
+    "mentionCount": 49,
+    "kind": "tf",
+    "potentialNorm": 0.4529792117534878
+  },
+  {
+    "id": "Sox9",
+    "label": "Sox9",
+    "documentCount": 48,
+    "mentionCount": 48,
+    "kind": "tf",
+    "potentialNorm": 0.46992841913859407
+  },
+  {
+    "id": "Foxa2",
+    "label": "Foxa2",
+    "documentCount": 46,
+    "mentionCount": 46,
+    "kind": "tf",
+    "potentialNorm": 0.45871016889397875
+  },
+  {
+    "id": "Ccnd1",
+    "label": "Ccnd1",
+    "documentCount": 44,
+    "mentionCount": 44,
+    "kind": "tf",
+    "potentialNorm": 0.47905460370732855
+  },
+  {
+    "id": "Crebbp",
+    "label": "Crebbp",
+    "documentCount": 43,
+    "mentionCount": 43,
+    "kind": "tf",
+    "potentialNorm": 0.3768429333426211
+  },
+  {
+    "id": "Mef2c",
+    "label": "Mef2c",
+    "documentCount": 42,
+    "mentionCount": 42,
+    "kind": "tf",
+    "potentialNorm": 0.4239096029562881
+  },
+  {
+    "id": "Smad4",
+    "label": "Smad4",
+    "documentCount": 42,
+    "mentionCount": 42,
+    "kind": "tf",
+    "potentialNorm": 0.39786685539609534
+  },
+  {
+    "id": "Lef1",
+    "label": "Lef1",
+    "documentCount": 40,
+    "mentionCount": 40,
+    "kind": "tf",
+    "potentialNorm": 0.4583791520940587
+  },
+  {
+    "id": "Hnf4a",
+    "label": "Hnf4a",
+    "documentCount": 40,
+    "mentionCount": 40,
+    "kind": "tf",
+    "potentialNorm": 0.43571248009715463
+  },
+  {
+    "id": "Twist1",
+    "label": "Twist1",
+    "documentCount": 39,
+    "mentionCount": 39,
+    "kind": "tf",
+    "potentialNorm": 0.474071427762305
+  },
+  {
+    "id": "Sox2",
+    "label": "Sox2",
+    "documentCount": 39,
+    "mentionCount": 39,
+    "kind": "tf",
+    "potentialNorm": 0.40371829836738354
+  },
+  {
+    "id": "Mitf",
+    "label": "Mitf",
+    "documentCount": 38,
+    "mentionCount": 38,
+    "kind": "tf",
+    "potentialNorm": 0.44512817978330804
+  },
+  {
+    "id": "Cebpa",
+    "label": "Cebpa",
+    "documentCount": 38,
+    "mentionCount": 38,
+    "kind": "tf",
+    "potentialNorm": 0.40458066665619874
+  },
+  {
+    "id": "Stat1",
+    "label": "Stat1",
+    "documentCount": 38,
+    "mentionCount": 38,
+    "kind": "tf",
+    "potentialNorm": 0.3759676211457582
+  },
+  {
+    "id": "Snai1",
+    "label": "Snai1",
+    "documentCount": 37,
+    "mentionCount": 37,
+    "kind": "tf",
+    "potentialNorm": 0.536165369149417
+  },
+  {
+    "id": "Esr1",
+    "label": "Esr1",
+    "documentCount": 37,
+    "mentionCount": 37,
+    "kind": "tf",
+    "potentialNorm": 0.4151830168696521
+  },
+  {
+    "id": "Nkx2-5",
+    "label": "Nkx2-5",
+    "documentCount": 37,
+    "mentionCount": 37,
+    "kind": "tf",
+    "potentialNorm": 0.42562452576786264
+  },
+  {
+    "id": "Creb1",
+    "label": "Creb1",
+    "documentCount": 34,
+    "mentionCount": 34,
+    "kind": "tf",
+    "potentialNorm": 0.3781503239215801
+  },
+  {
+    "id": "Ppargc1a",
+    "label": "Ppargc1a",
+    "documentCount": 33,
+    "mentionCount": 33,
+    "kind": "tf",
+    "potentialNorm": 0.4106940008184448
+  },
+  {
+    "id": "Notch1",
+    "label": "Notch1",
+    "documentCount": 33,
+    "mentionCount": 33,
+    "kind": "tf",
+    "potentialNorm": 0.42139266084407917
+  },
+  {
+    "id": "Nrf1",
+    "label": "Nrf1",
+    "documentCount": 32,
+    "mentionCount": 32,
+    "kind": "tf",
+    "potentialNorm": 0.43172817630072335
+  },
+  {
+    "id": "Sirt1",
+    "label": "Sirt1",
+    "documentCount": 32,
+    "mentionCount": 32,
+    "kind": "tf",
+    "potentialNorm": 0.5242386722678879
+  },
+  {
+    "id": "Rel",
+    "label": "Rel",
+    "documentCount": 31,
+    "mentionCount": 31,
+    "kind": "tf",
+    "potentialNorm": 0.40958965672467146
+  },
+  {
+    "id": "Gata4",
+    "label": "Gata4",
+    "documentCount": 31,
+    "mentionCount": 31,
+    "kind": "tf",
+    "potentialNorm": 0.40004874957715636
+  },
+  {
+    "id": "Myog",
+    "label": "Myog",
+    "documentCount": 31,
+    "mentionCount": 31,
+    "kind": "tf",
+    "potentialNorm": 0.411639079462621
+  },
+  {
+    "id": "Pax3",
+    "label": "Pax3",
+    "documentCount": 31,
+    "mentionCount": 31,
+    "kind": "tf",
+    "potentialNorm": 0.4265249203805679
+  },
+  {
+    "id": "Foxp3",
+    "label": "Foxp3",
+    "documentCount": 30,
+    "mentionCount": 30,
+    "kind": "tf",
+    "potentialNorm": 0.5566316210615365
+  },
+  {
+    "id": "Stat5a",
+    "label": "Stat5a",
+    "documentCount": 30,
+    "mentionCount": 30,
+    "kind": "tf",
+    "potentialNorm": 0.4318786491140372
+  },
+  {
+    "id": "Rb1",
+    "label": "Rb1",
+    "documentCount": 30,
+    "mentionCount": 30,
+    "kind": "tf",
+    "potentialNorm": 0.3857884751389671
+  },
+  {
+    "id": "Hnf1a",
+    "label": "Hnf1a",
+    "documentCount": 30,
+    "mentionCount": 30,
+    "kind": "tf",
+    "potentialNorm": 0.4826597057537389
+  },
+  {
+    "id": "Pitx2",
+    "label": "Pitx2",
+    "documentCount": 30,
+    "mentionCount": 30,
+    "kind": "tf",
+    "potentialNorm": 0.4243268120492966
+  },
+  {
+    "id": "Ptgs2",
+    "label": "Ptgs2",
+    "documentCount": 30,
+    "mentionCount": 30,
+    "kind": "gene",
+    "potentialNorm": 0.5356505127441319
+  },
+  {
+    "id": "Yy1",
+    "label": "Yy1",
+    "documentCount": 30,
+    "mentionCount": 30,
+    "kind": "tf",
+    "potentialNorm": 0.43401928413539176
+  },
+  {
+    "id": "Trp73",
+    "label": "Trp73",
+    "documentCount": 30,
+    "mentionCount": 30,
+    "kind": "tf",
+    "potentialNorm": 0.4486472928427272
+  },
+  {
+    "id": "Nr0b2",
+    "label": "Nr0b2",
+    "documentCount": 29,
+    "mentionCount": 29,
+    "kind": "tf",
+    "potentialNorm": 0.6030534420900232
+  },
+  {
+    "id": "Nr5a1",
+    "label": "Nr5a1",
+    "documentCount": 29,
+    "mentionCount": 29,
+    "kind": "tf",
+    "potentialNorm": 0.4293479430889493
+  },
+  {
+    "id": "Msx2",
+    "label": "Msx2",
+    "documentCount": 28,
+    "mentionCount": 28,
+    "kind": "tf",
+    "potentialNorm": 0.501104731396251
+  },
+  {
+    "id": "Nr3c1",
+    "label": "Nr3c1",
+    "documentCount": 28,
+    "mentionCount": 28,
+    "kind": "tf",
+    "potentialNorm": 0.47030702653091333
+  },
+  {
+    "id": "Id2",
+    "label": "Id2",
+    "documentCount": 28,
+    "mentionCount": 28,
+    "kind": "tf",
+    "potentialNorm": 0.572312886156774
+  },
+  {
+    "id": "Hdac1",
+    "label": "Hdac1",
+    "documentCount": 28,
+    "mentionCount": 28,
+    "kind": "tf",
+    "potentialNorm": 0.46232682292014643
+  },
+  {
+    "id": "Sp7",
+    "label": "Sp7",
+    "documentCount": 27,
+    "mentionCount": 27,
+    "kind": "tf",
+    "potentialNorm": 0.47442044893482066
+  },
+  {
+    "id": "Nos2",
+    "label": "Nos2",
+    "documentCount": 27,
+    "mentionCount": 27,
+    "kind": "gene",
+    "potentialNorm": 0.525815724990599
+  },
+  {
+    "id": "Ets2",
+    "label": "Ets2",
+    "documentCount": 27,
+    "mentionCount": 27,
+    "kind": "tf",
+    "potentialNorm": 0.3561487288856062
+  },
+  {
+    "id": "Cdx2",
+    "label": "Cdx2",
+    "documentCount": 27,
+    "mentionCount": 27,
+    "kind": "tf",
+    "potentialNorm": 0.48218997016562676
+  },
+  {
+    "id": "Tcf4",
+    "label": "Tcf4",
+    "documentCount": 27,
+    "mentionCount": 27,
+    "kind": "tf",
+    "potentialNorm": 0.4530056890256132
+  },
+  {
+    "id": "Irf1",
+    "label": "Irf1",
+    "documentCount": 26,
+    "mentionCount": 26,
+    "kind": "tf",
+    "potentialNorm": 0.4289163660867938
+  },
+  {
+    "id": "Cdh1",
+    "label": "Cdh1",
+    "documentCount": 26,
+    "mentionCount": 26,
+    "kind": "gene",
+    "potentialNorm": 0.4009034779193085
+  },
+  {
+    "id": "Ar",
+    "label": "Ar",
+    "documentCount": 26,
+    "mentionCount": 26,
+    "kind": "tf",
+    "potentialNorm": 0.47231791025831726
+  },
+  {
+    "id": "Runx1",
+    "label": "Runx1",
+    "documentCount": 26,
+    "mentionCount": 26,
+    "kind": "tf",
+    "potentialNorm": 0.4643451065483266
+  },
+  {
+    "id": "Il2",
+    "label": "Il2",
+    "documentCount": 26,
+    "mentionCount": 26,
+    "kind": "gene",
+    "potentialNorm": 0.5285246288508694
+  },
+  {
+    "id": "Klf4",
+    "label": "Klf4",
+    "documentCount": 26,
+    "mentionCount": 26,
+    "kind": "tf",
+    "potentialNorm": 0.48001213337158793
+  },
+  {
+    "id": "Ahr",
+    "label": "Ahr",
+    "documentCount": 25,
+    "mentionCount": 25,
+    "kind": "tf",
+    "potentialNorm": 0.4410671429440588
+  },
+  {
+    "id": "Irf8",
+    "label": "Irf8",
+    "documentCount": 25,
+    "mentionCount": 25,
+    "kind": "tf",
+    "potentialNorm": 0.3865594479396113
+  },
+  {
+    "id": "Smad1",
+    "label": "Smad1",
+    "documentCount": 25,
+    "mentionCount": 25,
+    "kind": "tf",
+    "potentialNorm": 0.36329597738853053
+  },
+  {
+    "id": "Myf5",
+    "label": "Myf5",
+    "documentCount": 25,
+    "mentionCount": 25,
+    "kind": "tf",
+    "potentialNorm": 0.4153691407419385
+  },
+  {
+    "id": "Hif1a",
+    "label": "Hif1a",
+    "documentCount": 25,
+    "mentionCount": 25,
+    "kind": "tf",
+    "potentialNorm": 0.35552218193962465
+  },
+  {
+    "id": "Hes1",
+    "label": "Hes1",
+    "documentCount": 25,
+    "mentionCount": 25,
+    "kind": "tf",
+    "potentialNorm": 0.49497767299202144
+  },
+  {
+    "id": "Foxm1",
+    "label": "Foxm1",
+    "documentCount": 25,
+    "mentionCount": 25,
+    "kind": "tf",
+    "potentialNorm": 0.3619835709925752
+  },
+  {
+    "id": "Pdx1",
+    "label": "Pdx1",
+    "documentCount": 25,
+    "mentionCount": 25,
+    "kind": "tf",
+    "potentialNorm": 0.5033446039111946
+  },
+  {
+    "id": "Tnf",
+    "label": "Tnf",
+    "documentCount": 25,
+    "mentionCount": 25,
+    "kind": "tf",
+    "potentialNorm": 0.5015768779524561
+  },
+  {
+    "id": "Il4",
+    "label": "Il4",
+    "documentCount": 24,
+    "mentionCount": 24,
+    "kind": "tf",
+    "potentialNorm": 0.5170783871342998
+  },
+  {
+    "id": "Wt1",
+    "label": "Wt1",
+    "documentCount": 24,
+    "mentionCount": 24,
+    "kind": "tf",
+    "potentialNorm": 0.5123992347060405
+  },
+  {
+    "id": "Vegfa",
+    "label": "Vegfa",
+    "documentCount": 24,
+    "mentionCount": 24,
+    "kind": "gene",
+    "potentialNorm": 0.5012430770365118
+  },
+  {
+    "id": "Nr0b1",
+    "label": "Nr0b1",
+    "documentCount": 23,
+    "mentionCount": 23,
+    "kind": "tf",
+    "potentialNorm": 0.5684916206240408
+  },
+  {
+    "id": "Nr5a2",
+    "label": "Nr5a2",
+    "documentCount": 23,
+    "mentionCount": 23,
+    "kind": "tf",
+    "potentialNorm": 0.41062088763256904
+  },
+  {
+    "id": "Smarca4",
+    "label": "Smarca4",
+    "documentCount": 23,
+    "mentionCount": 23,
+    "kind": "tf",
+    "potentialNorm": 0.40422233537047836
+  },
+  {
+    "id": "Il10",
+    "label": "Il10",
+    "documentCount": 23,
+    "mentionCount": 23,
+    "kind": "tf",
+    "potentialNorm": 0.5313986378935985
+  },
+  {
+    "id": "Mycn",
+    "label": "Mycn",
+    "documentCount": 23,
+    "mentionCount": 23,
+    "kind": "tf",
+    "potentialNorm": 0.4731166351610264
+  },
+  {
+    "id": "Srf",
+    "label": "Srf",
+    "documentCount": 23,
+    "mentionCount": 23,
+    "kind": "tf",
+    "potentialNorm": 0.3444156040258151
+  },
+  {
+    "id": "Gata3",
+    "label": "Gata3",
+    "documentCount": 23,
+    "mentionCount": 23,
+    "kind": "tf",
+    "potentialNorm": 0.46534432159690653
+  },
+  {
+    "id": "Nfatc2",
+    "label": "Nfatc2",
+    "documentCount": 22,
+    "mentionCount": 22,
+    "kind": "tf",
+    "potentialNorm": 0.40166918125230683
+  },
+  {
+    "id": "Pax5",
+    "label": "Pax5",
+    "documentCount": 22,
+    "mentionCount": 22,
+    "kind": "tf",
+    "potentialNorm": 0.4884707283768507
+  },
+  {
+    "id": "Prdm1",
+    "label": "Prdm1",
+    "documentCount": 22,
+    "mentionCount": 22,
+    "kind": "tf",
+    "potentialNorm": 0.4906205756709771
+  },
+  {
+    "id": "Myb",
+    "label": "Myb",
+    "documentCount": 22,
+    "mentionCount": 22,
+    "kind": "tf",
+    "potentialNorm": 0.5291258480920746
+  },
+  {
+    "id": "Egr2",
+    "label": "Egr2",
+    "documentCount": 22,
+    "mentionCount": 22,
+    "kind": "tf",
+    "potentialNorm": 0.45674606863901185
+  },
+  {
+    "id": "Ifng",
+    "label": "Ifng",
+    "documentCount": 22,
+    "mentionCount": 22,
+    "kind": "gene",
+    "potentialNorm": 0.5003962096887862
+  },
+  {
+    "id": "Pou2f1",
+    "label": "Pou2f1",
+    "documentCount": 21,
+    "mentionCount": 21,
+    "kind": "tf",
+    "potentialNorm": 0.4304818182075169
+  },
+  {
+    "id": "Smad2",
+    "label": "Smad2",
+    "documentCount": 21,
+    "mentionCount": 21,
+    "kind": "tf",
+    "potentialNorm": 0.38211185938094827
+  },
+  {
+    "id": "Nr2f2",
+    "label": "Nr2f2",
+    "documentCount": 21,
+    "mentionCount": 21,
+    "kind": "tf",
+    "potentialNorm": 0.4519470318017839
+  },
+  {
+    "id": "Nfatc1",
+    "label": "Nfatc1",
+    "documentCount": 21,
+    "mentionCount": 21,
+    "kind": "tf",
+    "potentialNorm": 0.432513448537651
+  },
+  {
+    "id": "Col2a1",
+    "label": "Col2a1",
+    "documentCount": 21,
+    "mentionCount": 21,
+    "kind": "gene",
+    "potentialNorm": 0.5634865150090969
+  },
+  {
+    "id": "Pax2",
+    "label": "Pax2",
+    "documentCount": 21,
+    "mentionCount": 21,
+    "kind": "tf",
+    "potentialNorm": 0.4258393049104144
+  },
+  {
+    "id": "Bcl6",
+    "label": "Bcl6",
+    "documentCount": 21,
+    "mentionCount": 21,
+    "kind": "tf",
+    "potentialNorm": 0.5303160896255671
+  },
+  {
+    "id": "Mmp9",
+    "label": "Mmp9",
+    "documentCount": 20,
+    "mentionCount": 20,
+    "kind": "tf",
+    "potentialNorm": 0.5031928903287178
+  },
+  {
+    "id": "Ikzf1",
+    "label": "Ikzf1",
+    "documentCount": 20,
+    "mentionCount": 20,
+    "kind": "tf",
+    "potentialNorm": 0.5109251109866682
+  },
+  {
+    "id": "Cdkn2a",
+    "label": "Cdkn2a",
+    "documentCount": 20,
+    "mentionCount": 20,
+    "kind": "gene",
+    "potentialNorm": 0.5295898718313878
+  },
+  {
+    "id": "Rbpj",
+    "label": "Rbpj",
+    "documentCount": 20,
+    "mentionCount": 20,
+    "kind": "tf",
+    "potentialNorm": 0.4800091505198139
+  },
+  {
+    "id": "Usf1",
+    "label": "Usf1",
+    "documentCount": 20,
+    "mentionCount": 20,
+    "kind": "tf",
+    "potentialNorm": 0.36787802182990587
+  },
+  {
+    "id": "Snai2",
+    "label": "Snai2",
+    "documentCount": 20,
+    "mentionCount": 20,
+    "kind": "tf",
+    "potentialNorm": 0.579521742955928
+  },
+  {
+    "id": "Rest",
+    "label": "Rest",
+    "documentCount": 20,
+    "mentionCount": 20,
+    "kind": "tf",
+    "potentialNorm": 0.5439917112988762
+  },
+  {
+    "id": "Il6",
+    "label": "Il6",
+    "documentCount": 20,
+    "mentionCount": 20,
+    "kind": "gene",
+    "potentialNorm": 0.4801400381762494
+  },
+  {
+    "id": "Clock",
+    "label": "Clock",
+    "documentCount": 20,
+    "mentionCount": 20,
+    "kind": "tf",
+    "potentialNorm": 0.4099268224484276
+  }
+]

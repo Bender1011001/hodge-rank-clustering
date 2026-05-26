@@ -13,8 +13,8 @@
     "totalRoutes": 1826,
     "cluster": 0,
     "core": true,
-    "potential": 6.793218440776512,
-    "potentialNorm": 0.9379510257604452
+    "potential": 6.179750390378276,
+    "potentialNorm": 0.9336372869479171
   },
   {
     "id": "3830",
@@ -30,8 +30,8 @@
     "totalRoutes": 1108,
     "cluster": 0,
     "core": true,
-    "potential": 5.43563087843711,
-    "potentialNorm": 0.867175534252845
+    "potential": 4.808441808725788,
+    "potentialNorm": 0.8472588095002144
   },
   {
     "id": "3364",
@@ -47,8 +47,8 @@
     "totalRoutes": 1061,
     "cluster": 0,
     "core": true,
-    "potential": 2.137572076794355,
-    "potentialNorm": 0.6952369137302764
+    "potential": 1.6218403414945564,
+    "potentialNorm": 0.6465353642780195
   },
   {
     "id": "507",
@@ -64,8 +64,8 @@
     "totalRoutes": 1047,
     "cluster": 1,
     "core": true,
-    "potential": 5.633441979523261,
-    "potentialNorm": 0.8774880756265347
+    "potential": 5.027100235658192,
+    "potentialNorm": 0.8610320639319564
   },
   {
     "id": "1382",
@@ -81,8 +81,8 @@
     "totalRoutes": 1041,
     "cluster": 0,
     "core": true,
-    "potential": 3.9744193452078065,
-    "potentialNorm": 0.7909977853327915
+    "potential": 3.3570524635015295,
+    "potentialNorm": 0.7558360593609172
   },
   {
     "id": "340",
@@ -98,8 +98,8 @@
     "totalRoutes": 990,
     "cluster": 2,
     "core": true,
-    "potential": 5.620967160969198,
-    "potentialNorm": 0.8768377224271358
+    "potential": 5.003882379915557,
+    "potentialNorm": 0.8595695754333922
   },
   {
     "id": "3484",
@@ -115,8 +115,8 @@
     "totalRoutes": 986,
     "cluster": 0,
     "core": true,
-    "potential": 4.564125538498324,
-    "potentialNorm": 0.8217411029890695
+    "potential": 3.9677100393585976,
+    "potentialNorm": 0.7943012686873807
   },
   {
     "id": "3670",
@@ -132,8 +132,8 @@
     "totalRoutes": 936,
     "cluster": 0,
     "core": true,
-    "potential": 5.514643604178599,
-    "potentialNorm": 0.8712947267490347
+    "potential": 4.896906335700024,
+    "potentialNorm": 0.8528311739194303
   },
   {
     "id": "3797",
@@ -149,8 +149,8 @@
     "totalRoutes": 911,
     "cluster": 1,
     "core": true,
-    "potential": 6.404538252388009,
-    "potentialNorm": 0.9176878529562842
+    "potential": 5.7820215881526185,
+    "potentialNorm": 0.9085844222367876
   },
   {
     "id": "580",
@@ -166,8 +166,8 @@
     "totalRoutes": 903,
     "cluster": 3,
     "core": true,
-    "potential": 2.7088121742239566,
-    "potentialNorm": 0.7250175332541918
+    "potential": 2.0565369926257406,
+    "potentialNorm": 0.6739168270492065
   },
   {
     "id": "3406",
@@ -183,8 +183,8 @@
     "totalRoutes": 817,
     "cluster": 4,
     "core": true,
-    "potential": 3.7966525761246803,
-    "potentialNorm": 0.7817302207169993
+    "potential": 3.28274884429463,
+    "potentialNorm": 0.7511556879391826
   },
   {
     "id": "3316",
@@ -200,8 +200,8 @@
     "totalRoutes": 814,
     "cluster": 5,
     "core": true,
-    "potential": 6.978525931724616,
-    "potentialNorm": 0.9476117129350479
+    "potential": 6.381896783511889,
+    "potentialNorm": 0.9463704513822743
   },
   {
     "id": "1218",
@@ -217,8 +217,8 @@
     "totalRoutes": 783,
     "cluster": 1,
     "core": true,
-    "potential": 4.148904513079273,
-    "potentialNorm": 0.8000942693161959
+    "potential": 3.4936853895076325,
+    "potentialNorm": 0.7644425424497999
   },
   {
     "id": "3930",
@@ -234,8 +234,8 @@
     "totalRoutes": 736,
     "cluster": 0,
     "core": true,
-    "potential": 3.141103757418688,
-    "potentialNorm": 0.7475543110827123
+    "potential": 2.62071620210142,
+    "potentialNorm": 0.7094543725544147
   },
   {
     "id": "3576",
@@ -251,8 +251,8 @@
     "totalRoutes": 734,
     "cluster": 0,
     "core": true,
-    "potential": 4.352501139938406,
-    "potentialNorm": 0.8107084291206756
+    "potential": 3.7311081633445857,
+    "potentialNorm": 0.7793977596706627
   },
   {
     "id": "3751",
@@ -268,8 +268,8 @@
     "totalRoutes": 733,
     "cluster": 0,
     "core": true,
-    "potential": 3.6823614207267017,
-    "potentialNorm": 0.7757718479956668
+    "potential": 3.073931872182576,
+    "potentialNorm": 0.7380023449516087
   },
   {
     "id": "346",
@@ -285,8 +285,8 @@
     "totalRoutes": 728,
     "cluster": 0,
     "core": true,
-    "potential": 1.2188463476803868,
-    "potentialNorm": 0.6473407287308565
+    "potential": 0.5348201126251653,
+    "potentialNorm": 0.5780641583212659
   },
   {
     "id": "1701",
@@ -302,8 +302,8 @@
     "totalRoutes": 711,
     "cluster": 2,
     "core": true,
-    "potential": -2.544701470622387,
-    "potentialNorm": 0.4511346393102001
+    "potential": -3.195151765338381,
+    "potentialNorm": 0.34311391003142677
   },
   {
     "id": "3077",
@@ -319,8 +319,8 @@
     "totalRoutes": 708,
     "cluster": 5,
     "core": true,
-    "potential": 4.080942480822029,
-    "potentialNorm": 0.796551185709439
+    "potential": 3.5584175171404424,
+    "potentialNorm": 0.7685200073630104
   },
   {
     "id": "502",
@@ -336,8 +336,8 @@
     "totalRoutes": 708,
     "cluster": 6,
     "core": true,
-    "potential": 4.720929064762576,
-    "potentialNorm": 0.8299157850127863
+    "potential": 4.026464154759559,
+    "potentialNorm": 0.7980021797004262
   },
   {
     "id": "2188",
@@ -353,8 +353,8 @@
     "totalRoutes": 698,
     "cluster": 7,
     "core": true,
-    "potential": 5.370800772327794,
-    "potentialNorm": 0.86379572822658
+    "potential": 4.56715796197436,
+    "potentialNorm": 0.8320603840006833
   },
   {
     "id": "3370",
@@ -370,8 +370,8 @@
     "totalRoutes": 663,
     "cluster": 4,
     "core": true,
-    "potential": 2.654270407422954,
-    "potentialNorm": 0.722174092094211
+    "potential": 2.153662127966303,
+    "potentialNorm": 0.680034721609824
   },
   {
     "id": "1229",
@@ -387,8 +387,8 @@
     "totalRoutes": 661,
     "cluster": 2,
     "core": true,
-    "potential": 3.26289877208578,
-    "potentialNorm": 0.7539038845948507
+    "potential": 2.6297742507108723,
+    "potentialNorm": 0.7100249373842423
   },
   {
     "id": "1555",
@@ -404,8 +404,8 @@
     "totalRoutes": 661,
     "cluster": 0,
     "core": true,
-    "potential": 2.4728571693556587,
-    "potentialNorm": 0.7127164250925534
+    "potential": 1.825585192860553,
+    "potentialNorm": 0.6593692153048945
   },
   {
     "id": "3885",
@@ -421,8 +421,8 @@
     "totalRoutes": 654,
     "cluster": 5,
     "core": true,
-    "potential": 5.34593655191177,
-    "potentialNorm": 0.8624994748800447
+    "potential": 4.876860789456548,
+    "potentialNorm": 0.8515685086176262
   },
   {
     "id": "4029",
@@ -438,8 +438,8 @@
     "totalRoutes": 646,
     "cluster": 6,
     "core": true,
-    "potential": -1.516300415661517,
-    "potentialNorm": 0.5047485586999488
+    "potential": -2.1887120093640364,
+    "potentialNorm": 0.4065093666974538
   },
   {
     "id": "3395",
@@ -455,8 +455,8 @@
     "totalRoutes": 645,
     "cluster": 4,
     "core": true,
-    "potential": 3.829950726776418,
-    "potentialNorm": 0.7834661625037742
+    "potential": 3.3200578035098935,
+    "potentialNorm": 0.7535057724754358
   },
   {
     "id": "193",
@@ -472,8 +472,8 @@
     "totalRoutes": 636,
     "cluster": 0,
     "core": true,
-    "potential": 1.0993967906680064,
-    "potentialNorm": 0.641113431617624
+    "potential": 0.482087920190656,
+    "potentialNorm": 0.574742567137549
   },
   {
     "id": "302",
@@ -489,8 +489,8 @@
     "totalRoutes": 630,
     "cluster": 1,
     "core": true,
-    "potential": 2.1659517581213383,
-    "potentialNorm": 0.6967164395822112
+    "potential": 1.5259331576848816,
+    "potentialNorm": 0.6404941882621926
   },
   {
     "id": "478",
@@ -506,8 +506,8 @@
     "totalRoutes": 627,
     "cluster": 8,
     "core": true,
-    "potential": 3.92028079022512,
-    "potentialNorm": 0.788175364927136
+    "potential": 3.204515641849636,
+    "potentialNorm": 0.74622779278599
   },
   {
     "id": "1613",
@@ -523,8 +523,8 @@
     "totalRoutes": 616,
     "cluster": 2,
     "core": true,
-    "potential": 1.806520804140336,
-    "potentialNorm": 0.6779781252835632
+    "potential": 1.1520478464546626,
+    "potentialNorm": 0.6169432207000929
   },
   {
     "id": "3876",
@@ -557,8 +557,8 @@
     "totalRoutes": 576,
     "cluster": 0,
     "core": true,
-    "potential": 0.26549367156268283,
-    "potentialNorm": 0.5976393274333629
+    "potential": -0.34668979150987267,
+    "potentialNorm": 0.5225380102368584
   },
   {
     "id": "2279",
@@ -574,8 +574,8 @@
     "totalRoutes": 575,
     "cluster": 0,
     "core": true,
-    "potential": 3.384329530467889,
-    "potentialNorm": 0.7602344682323618
+    "potential": 2.8621919238636515,
+    "potentialNorm": 0.7246648842258806
   },
   {
     "id": "345",
@@ -591,8 +591,8 @@
     "totalRoutes": 570,
     "cluster": 0,
     "core": true,
-    "potential": 1.8728708361484347,
-    "potentialNorm": 0.681437170031164
+    "potential": 1.1780793387733333,
+    "potentialNorm": 0.6185829396534073
   },
   {
     "id": "3379",
@@ -608,8 +608,8 @@
     "totalRoutes": 561,
     "cluster": 4,
     "core": true,
-    "potential": 5.208584890855931,
-    "potentialNorm": 0.8553388823773698
+    "potential": 4.6985322436154915,
+    "potentialNorm": 0.8403356260401313
   },
   {
     "id": "3998",
@@ -625,8 +625,8 @@
     "totalRoutes": 548,
     "cluster": 1,
     "core": true,
-    "potential": 2.8830779747376973,
-    "potentialNorm": 0.7341025808978752
+    "potential": 2.1816645825874534,
+    "potentialNorm": 0.6817985911190912
   },
   {
     "id": "3382",
@@ -642,8 +642,8 @@
     "totalRoutes": 541,
     "cluster": 4,
     "core": true,
-    "potential": 3.9839749562131486,
-    "potentialNorm": 0.7914959506698348
+    "potential": 3.4752151921666266,
+    "potentialNorm": 0.7632791080880371
   },
   {
     "id": "3393",
@@ -659,8 +659,8 @@
     "totalRoutes": 536,
     "cluster": 4,
     "core": true,
-    "potential": 3.852788889914307,
-    "potentialNorm": 0.7846567908404315
+    "potential": 3.344035876120425,
+    "potentialNorm": 0.7550161468958542
   },
   {
     "id": "2276",
@@ -676,8 +676,8 @@
     "totalRoutes": 525,
     "cluster": 4,
     "core": true,
-    "potential": 3.0858687540940672,
-    "potentialNorm": 0.7446747292294523
+    "potential": 2.566418610284334,
+    "potentialNorm": 0.7060341771490998
   },
   {
     "id": "3093",
@@ -693,8 +693,8 @@
     "totalRoutes": 517,
     "cluster": 7,
     "core": true,
-    "potential": 7.830875407290178,
-    "potentialNorm": 0.9920474861719835
+    "potential": 7.075360531157432,
+    "potentialNorm": 0.9900516063668199
   },
   {
     "id": "3304",
@@ -710,8 +710,8 @@
     "totalRoutes": 510,
     "cluster": 5,
     "core": true,
-    "potential": 4.7490146043585,
-    "potentialNorm": 0.8313799762917137
+    "potential": 4.081801742449841,
+    "potentialNorm": 0.8014878842561107
   },
   {
     "id": "3462",
@@ -727,8 +727,8 @@
     "totalRoutes": 506,
     "cluster": 0,
     "core": true,
-    "potential": 1.7377774913663677,
-    "potentialNorm": 0.6743943109614473
+    "potential": 1.1268397154497956,
+    "potentialNorm": 0.6153553651257635
   },
   {
     "id": "3386",
@@ -744,8 +744,8 @@
     "totalRoutes": 506,
     "cluster": 9,
     "core": true,
-    "potential": 4.692947675623512,
-    "potentialNorm": 0.8284570234387115
+    "potential": 4.183680589443208,
+    "potentialNorm": 0.8079052142467171
   },
   {
     "id": "3494",
@@ -761,8 +761,8 @@
     "totalRoutes": 505,
     "cluster": 1,
     "core": true,
-    "potential": -0.14884749518501117,
-    "potentialNorm": 0.5760383636783126
+    "potential": -0.7699807482115982,
+    "potentialNorm": 0.49587499007751823
   },
   {
     "id": "3469",
@@ -778,8 +778,8 @@
     "totalRoutes": 499,
     "cluster": 1,
     "core": true,
-    "potential": 2.3299309910113317,
-    "potentialNorm": 0.705265214723337
+    "potential": 1.755548515456955,
+    "potentialNorm": 0.6549576177691097
   },
   {
     "id": "3877",
@@ -795,8 +795,8 @@
     "totalRoutes": 498,
     "cluster": 0,
     "core": true,
-    "potential": 1.6232494612630595,
-    "potentialNorm": 0.6684235891849521
+    "potential": 1.0208218437021008,
+    "potentialNorm": 0.6086773187207914
   },
   {
     "id": "1678",
@@ -812,8 +812,8 @@
     "totalRoutes": 494,
     "cluster": 2,
     "core": true,
-    "potential": -1.3260152411182153,
-    "potentialNorm": 0.5146687488434888
+    "potential": -1.9768764916198964,
+    "potentialNorm": 0.4198528473238454
   },
   {
     "id": "3550",
@@ -846,8 +846,8 @@
     "totalRoutes": 483,
     "cluster": 0,
     "core": true,
-    "potential": 2.9788659078264046,
-    "potentialNorm": 0.7390963199633451
+    "potential": 2.369782496413686,
+    "potentialNorm": 0.6936481042005065
   },
   {
     "id": "2179",
@@ -863,8 +863,8 @@
     "totalRoutes": 473,
     "cluster": 10,
     "core": true,
-    "potential": 2.910948177406026,
-    "potentialNorm": 0.7355555459566212
+    "potential": 2.254611903924588,
+    "potentialNorm": 0.6863935295853824
   },
   {
     "id": "3878",
@@ -897,8 +897,8 @@
     "totalRoutes": 461,
     "cluster": 4,
     "core": true,
-    "potential": -0.1249232840304779,
-    "potentialNorm": 0.5772856112595116
+    "potential": -0.6343825907921574,
+    "potentialNorm": 0.5044162932818567
   },
   {
     "id": "3383",
@@ -914,8 +914,8 @@
     "totalRoutes": 460,
     "cluster": 4,
     "core": true,
-    "potential": 0.9876215346153736,
-    "potentialNorm": 0.635286220979453
+    "potential": 0.48071415371992826,
+    "potentialNorm": 0.5746560338381168
   },
   {
     "id": "609",
@@ -931,8 +931,8 @@
     "totalRoutes": 457,
     "cluster": 3,
     "core": true,
-    "potential": 0.08705205211333666,
-    "potentialNorm": 0.5883365806549697
+    "potential": -0.5668613548443087,
+    "potentialNorm": 0.5086694436191309
   },
   {
     "id": "2997",
@@ -948,7 +948,7 @@
     "totalRoutes": 442,
     "cluster": 7,
     "core": true,
-    "potential": 7.983417390853628,
+    "potential": 7.2332970677338775,
     "potentialNorm": 1.0
   },
   {
@@ -965,8 +965,8 @@
     "totalRoutes": 438,
     "cluster": 2,
     "core": true,
-    "potential": -2.1159224761814124,
-    "potentialNorm": 0.4734882943682948
+    "potential": -2.7652327149068188,
+    "potentialNorm": 0.37019443260592283
   },
   {
     "id": "1638",
@@ -982,8 +982,8 @@
     "totalRoutes": 435,
     "cluster": 3,
     "core": true,
-    "potential": 3.688330324490774,
-    "potentialNorm": 0.7760830265224763
+    "potential": 3.0447181232824567,
+    "potentialNorm": 0.736162176236635
   },
   {
     "id": "3645",
@@ -1016,8 +1016,8 @@
     "totalRoutes": 430,
     "cluster": 0,
     "core": true,
-    "potential": 2.2100606845578974,
-    "potentialNorm": 0.6990159825619955
+    "potential": 1.600379581734176,
+    "potentialNorm": 0.6451835549349039
   },
   {
     "id": "3448",
@@ -1050,8 +1050,8 @@
     "totalRoutes": 418,
     "cluster": 2,
     "core": true,
-    "potential": -1.2541318272305821,
-    "potentialNorm": 0.5184162669338686
+    "potential": -1.9091171111888734,
+    "potentialNorm": 0.42412099833868
   },
   {
     "id": "599",
@@ -1067,8 +1067,8 @@
     "totalRoutes": 414,
     "cluster": 0,
     "core": true,
-    "potential": 0.42006919436475015,
-    "potentialNorm": 0.605697856330393
+    "potential": -0.2047610195495589,
+    "potentialNorm": 0.5314780776964966
   },
   {
     "id": "1230",
@@ -1084,8 +1084,8 @@
     "totalRoutes": 410,
     "cluster": 0,
     "core": true,
-    "potential": -0.8041802057534726,
-    "potentialNorm": 0.5418737204699099
+    "potential": -1.4957446828811558,
+    "potentialNorm": 0.4501592522035047
   },
   {
     "id": "3361",
@@ -1101,8 +1101,8 @@
     "totalRoutes": 410,
     "cluster": 5,
     "core": true,
-    "potential": 4.188706675457143,
-    "potentialNorm": 0.8021692865626007
+    "potential": 3.7385150795395874,
+    "potentialNorm": 0.7798643199708513
   },
   {
     "id": "3391",
@@ -1118,8 +1118,8 @@
     "totalRoutes": 407,
     "cluster": 0,
     "core": true,
-    "potential": 1.3920848591269068,
-    "potentialNorm": 0.6563722204267175
+    "potential": 0.8830798832154527,
+    "potentialNorm": 0.6000009777522541
   },
   {
     "id": "3941",
@@ -1135,8 +1135,8 @@
     "totalRoutes": 403,
     "cluster": 6,
     "core": true,
-    "potential": -0.16372031848679142,
-    "potentialNorm": 0.5752629946277334
+    "potential": -0.8565167865495006,
+    "potentialNorm": 0.4904241008057713
   },
   {
     "id": "1386",
@@ -1152,8 +1152,8 @@
     "totalRoutes": 402,
     "cluster": 3,
     "core": true,
-    "potential": -1.3699961452003853,
-    "potentialNorm": 0.5123758800888574
+    "potential": -2.011758313697004,
+    "potentialNorm": 0.4176556477132433
   },
   {
     "id": "3577",
@@ -1169,8 +1169,8 @@
     "totalRoutes": 402,
     "cluster": 1,
     "core": true,
-    "potential": 0.2152365126540607,
-    "potentialNorm": 0.595019256933156
+    "potential": -0.38112799421800125,
+    "potentialNorm": 0.5203687541293972
   },
   {
     "id": "2985",
@@ -1220,8 +1220,8 @@
     "totalRoutes": 387,
     "cluster": 2,
     "core": true,
-    "potential": -2.2154494369333624,
-    "potentialNorm": 0.46829962752949544
+    "potential": -2.878174319786538,
+    "potentialNorm": 0.36308026151377226
   },
   {
     "id": "1524",
@@ -1237,8 +1237,8 @@
     "totalRoutes": 386,
     "cluster": 1,
     "core": true,
-    "potential": 1.478387580050913,
-    "potentialNorm": 0.6608714642775629
+    "potential": 0.8485919353135575,
+    "potentialNorm": 0.5978285882041106
   },
   {
     "id": "2397",
@@ -1254,8 +1254,8 @@
     "totalRoutes": 386,
     "cluster": 4,
     "core": true,
-    "potential": -2.229036477454153,
-    "potentialNorm": 0.4675912905517055
+    "potential": -2.7488400461704785,
+    "potentialNorm": 0.3712270038197946
   },
   {
     "id": "3714",
@@ -1288,8 +1288,8 @@
     "totalRoutes": 377,
     "cluster": 4,
     "core": true,
-    "potential": -0.011153932868523436,
-    "potentialNorm": 0.5832167806148884
+    "potential": -0.5194976814368121,
+    "potentialNorm": 0.511652872768491
   },
   {
     "id": "3390",
@@ -1305,8 +1305,8 @@
     "totalRoutes": 376,
     "cluster": 9,
     "core": true,
-    "potential": -0.008287898536913226,
-    "potentialNorm": 0.5833661963830675
+    "potential": -0.5173456255651192,
+    "potentialNorm": 0.5117884303753393
   },
   {
     "id": "11051",
@@ -1322,8 +1322,8 @@
     "totalRoutes": 375,
     "cluster": 2,
     "core": true,
-    "potential": 2.651791536466166,
-    "potentialNorm": 0.7220448604223707
+    "potential": 1.9660487112857614,
+    "potentialNorm": 0.6682169867116016
   },
   {
     "id": "3533",
@@ -1356,8 +1356,8 @@
     "totalRoutes": 372,
     "cluster": 4,
     "core": true,
-    "potential": -1.5516919169905796,
-    "potentialNorm": 0.5029034836777235
+    "potential": -2.0603451936628137,
+    "potentialNorm": 0.4145951690058735
   },
   {
     "id": "2072",
@@ -1373,8 +1373,8 @@
     "totalRoutes": 372,
     "cluster": 2,
     "core": true,
-    "potential": 3.8689445077078966,
-    "potentialNorm": 0.7854990361744856
+    "potential": 3.3746657882155287,
+    "potentialNorm": 0.7569455194721884
   },
   {
     "id": "146",
@@ -1390,8 +1390,8 @@
     "totalRoutes": 371,
     "cluster": 0,
     "core": true,
-    "potential": 1.8493949264073692,
-    "potentialNorm": 0.680213293872746
+    "potential": 1.2320892776590826,
+    "potentialNorm": 0.6219850158530419
   },
   {
     "id": "2948",
@@ -1407,8 +1407,8 @@
     "totalRoutes": 367,
     "cluster": 6,
     "core": true,
-    "potential": -3.524274619029597,
-    "potentialNorm": 0.4000662788085037
+    "potential": -4.19051970307188,
+    "potentialNorm": 0.280415865177021
   },
   {
     "id": "3275",
@@ -1424,8 +1424,8 @@
     "totalRoutes": 367,
     "cluster": 5,
     "core": true,
-    "potential": 4.35042008567752,
-    "potentialNorm": 0.8105999369377372
+    "potential": 3.804447486696386,
+    "potentialNorm": 0.784017390272361
   },
   {
     "id": "644",
@@ -1458,8 +1458,8 @@
     "totalRoutes": 361,
     "cluster": 0,
     "core": true,
-    "potential": -2.321520124665705,
-    "potentialNorm": 0.4627698147446248
+    "potential": -2.9698183639259956,
+    "potentialNorm": 0.35730761988822574
   },
   {
     "id": "3375",
@@ -1475,8 +1475,8 @@
     "totalRoutes": 348,
     "cluster": 9,
     "core": true,
-    "potential": 2.355144729031499,
-    "potentialNorm": 0.7065796895687356
+    "potential": 1.844930907602221,
+    "potentialNorm": 0.6605877983480409
   },
   {
     "id": "548",
@@ -1509,8 +1509,8 @@
     "totalRoutes": 330,
     "cluster": 4,
     "core": true,
-    "potential": -0.1373072084214559,
-    "potentialNorm": 0.5766399966708997
+    "potential": -0.6455068018699326,
+    "potentialNorm": 0.5037155812549932
   },
   {
     "id": "1665",
@@ -1526,8 +1526,8 @@
     "totalRoutes": 329,
     "cluster": 2,
     "core": true,
-    "potential": -3.7721083422431403,
-    "potentialNorm": 0.38714589410611955
+    "potential": -4.416724619498901,
+    "potentialNorm": 0.26616725874840425
   },
   {
     "id": "342",
@@ -1543,8 +1543,8 @@
     "totalRoutes": 321,
     "cluster": 0,
     "core": true,
-    "potential": -0.35234980049939757,
-    "potentialNorm": 0.5654291211652653
+    "potential": -1.0484758180014753,
+    "potentialNorm": 0.47833263642568535
   },
   {
     "id": "421",
@@ -1594,8 +1594,8 @@
     "totalRoutes": 318,
     "cluster": 6,
     "core": true,
-    "potential": 2.526590755354131,
-    "potentialNorm": 0.7155177331370631
+    "potential": 1.814892676908411,
+    "potentialNorm": 0.6586956956752584
   },
   {
     "id": "3697",
@@ -1611,8 +1611,8 @@
     "totalRoutes": 316,
     "cluster": 0,
     "core": true,
-    "potential": -2.525637344358155,
-    "potentialNorm": 0.4521285147285849
+    "potential": -3.1428966886219767,
+    "potentialNorm": 0.3464054477830805
   },
   {
     "id": "2359",
@@ -1628,8 +1628,8 @@
     "totalRoutes": 315,
     "cluster": 0,
     "core": true,
-    "potential": -0.9320550238558063,
-    "potentialNorm": 0.535207186867435
+    "potential": -1.4466491968792627,
+    "potentialNorm": 0.4532517679123237
   },
   {
     "id": "156",
@@ -1662,8 +1662,8 @@
     "totalRoutes": 314,
     "cluster": 6,
     "core": true,
-    "potential": -0.8289914579064215,
-    "potentialNorm": 0.5405802285326253
+    "potential": -1.5271849837255478,
+    "potentialNorm": 0.44817883338765835
   },
   {
     "id": "1852",
@@ -1696,8 +1696,8 @@
     "totalRoutes": 307,
     "cluster": 0,
     "core": true,
-    "potential": -2.169225635405242,
-    "potentialNorm": 0.4707094258830285
+    "potential": -2.760918948736192,
+    "potentialNorm": 0.37046615595023036
   },
   {
     "id": "1054",
@@ -1713,8 +1713,8 @@
     "totalRoutes": 306,
     "cluster": 8,
     "core": true,
-    "potential": -0.10630309103796844,
-    "potentialNorm": 0.5782563429806687
+    "potential": -0.8833024262039441,
+    "potentialNorm": 0.48873687824932416
   },
   {
     "id": "3399",
@@ -1730,8 +1730,8 @@
     "totalRoutes": 306,
     "cluster": 4,
     "core": true,
-    "potential": 3.2818761201173023,
-    "potentialNorm": 0.7548932359793958
+    "potential": 2.7717392683447963,
+    "potentialNorm": 0.7189672879522505
   },
   {
     "id": "3992",
@@ -1747,8 +1747,8 @@
     "totalRoutes": 304,
     "cluster": 4,
     "core": true,
-    "potential": 0.34121504243293105,
-    "potentialNorm": 0.6015869308069061
+    "potential": -0.17670898068048466,
+    "potentialNorm": 0.5332450705084971
   },
   {
     "id": "1128",
@@ -1764,8 +1764,8 @@
     "totalRoutes": 301,
     "cluster": 7,
     "core": true,
-    "potential": -1.937368969572403,
-    "potentialNorm": 0.48279687419122846
+    "potential": -3.0845850055388744,
+    "potentialNorm": 0.3500784900651186
   },
   {
     "id": "3320",
@@ -1781,8 +1781,8 @@
     "totalRoutes": 294,
     "cluster": 5,
     "core": true,
-    "potential": 3.7670851695009966,
-    "potentialNorm": 0.7801887748504872
+    "potential": 3.0607306801614897,
+    "potentialNorm": 0.7371708042739429
   },
   {
     "id": "3368",
@@ -1798,8 +1798,8 @@
     "totalRoutes": 290,
     "cluster": 4,
     "core": true,
-    "potential": 0.40318255818942206,
-    "potentialNorm": 0.6048175006108995
+    "potential": -0.10631904357468705,
+    "potentialNorm": 0.5376789198084929
   },
   {
     "id": "4317",
@@ -1815,8 +1815,8 @@
     "totalRoutes": 290,
     "cluster": 2,
     "core": true,
-    "potential": -2.002481942852285,
-    "potentialNorm": 0.4794023213717671
+    "potential": -2.636288345366303,
+    "potentialNorm": 0.37831661492534063
   },
   {
     "id": "3849",
@@ -1849,8 +1849,8 @@
     "totalRoutes": 279,
     "cluster": 4,
     "core": true,
-    "potential": 0.897978133154902,
-    "potentialNorm": 0.630612816497281
+    "potential": 0.3873936869044874,
+    "potentialNorm": 0.5687777946539697
   },
   {
     "id": "3536",
@@ -1900,8 +1900,8 @@
     "totalRoutes": 274,
     "cluster": 4,
     "core": true,
-    "potential": 0.18418264042249027,
-    "potentialNorm": 0.5934003167399973
+    "potential": -0.32534354639046215,
+    "potentialNorm": 0.5238826063236255
   },
   {
     "id": "1335",
@@ -1915,10 +1915,10 @@
     "inboundRoutes": 139,
     "outboundRoutes": 134,
     "totalRoutes": 273,
-    "cluster": 0,
+    "cluster": 11,
     "core": true,
-    "potential": -1.988870484159448,
-    "potentialNorm": 0.4801119313489393
+    "potential": -2.63105093565278,
+    "potentialNorm": 0.3786465184079534
   },
   {
     "id": "350",
@@ -1951,8 +1951,8 @@
     "totalRoutes": 272,
     "cluster": 7,
     "core": true,
-    "potential": 0.6321872401181573,
-    "potentialNorm": 0.616756265645781
+    "potential": -0.7499040092503305,
+    "potentialNorm": 0.49713962020292696
   },
   {
     "id": "1590",
@@ -2002,8 +2002,8 @@
     "totalRoutes": 270,
     "cluster": 4,
     "core": true,
-    "potential": 0.2419695569094513,
-    "potentialNorm": 0.5964129381947973
+    "potential": -0.26807550196275687,
+    "potentialNorm": 0.5274899099971077
   },
   {
     "id": "3339",
@@ -2019,8 +2019,8 @@
     "totalRoutes": 269,
     "cluster": 5,
     "core": true,
-    "potential": 3.057798714507178,
-    "potentialNorm": 0.7432113460168244
+    "potential": 2.333852254358994,
+    "potentialNorm": 0.6913848648067359
   },
   {
     "id": "4144",
@@ -2036,8 +2036,8 @@
     "totalRoutes": 268,
     "cluster": 9,
     "core": true,
-    "potential": -2.5727702357660327,
-    "potentialNorm": 0.44967132253847775
+    "potential": -3.0814322012460345,
+    "potentialNorm": 0.35027708463249013
   },
   {
     "id": "1354",
@@ -2070,8 +2070,8 @@
     "totalRoutes": 266,
     "cluster": 4,
     "core": true,
-    "potential": -4.074205858501687,
-    "potentialNorm": 0.371396559927203
+    "potential": -4.582512506597525,
+    "potentialNorm": 0.25572430997782636
   },
   {
     "id": "344",
@@ -2087,8 +2087,8 @@
     "totalRoutes": 265,
     "cluster": 1,
     "core": true,
-    "potential": -0.9608422017234444,
-    "potentialNorm": 0.5337064168845487
+    "potential": -1.684601512075398,
+    "potentialNorm": 0.4382631949778281
   },
   {
     "id": "469",
@@ -2104,8 +2104,8 @@
     "totalRoutes": 264,
     "cluster": 1,
     "core": true,
-    "potential": 0.11602217847876747,
-    "potentialNorm": 0.5898468883429817
+    "potential": -0.5903216601663546,
+    "potentialNorm": 0.5071916832657795
   },
   {
     "id": "1353",
@@ -2119,10 +2119,10 @@
     "inboundRoutes": 127,
     "outboundRoutes": 134,
     "totalRoutes": 261,
-    "cluster": 11,
+    "cluster": 12,
     "core": true,
-    "potential": -1.4837433573939462,
-    "potentialNorm": 0.5064458649105025
+    "potential": -1.446262309186358,
+    "potentialNorm": 0.45327613789753596
   },
   {
     "id": "3400",
@@ -2138,8 +2138,8 @@
     "totalRoutes": 259,
     "cluster": 9,
     "core": true,
-    "potential": -1.0020049480368496,
-    "potentialNorm": 0.5315604679358755
+    "potential": -1.5116895529515206,
+    "potentialNorm": 0.4491548877459296
   },
   {
     "id": "4059",
@@ -2155,8 +2155,8 @@
     "totalRoutes": 258,
     "cluster": 7,
     "core": true,
-    "potential": -0.1297937875952459,
-    "potentialNorm": 0.5770316959370319
+    "potential": -0.8303669468518755,
+    "potentialNorm": 0.4920712744389009
   },
   {
     "id": "1688",
@@ -2172,8 +2172,8 @@
     "totalRoutes": 253,
     "cluster": 0,
     "core": true,
-    "potential": 0.8532386150386546,
-    "potentialNorm": 0.6282803987053602
+    "potential": 0.14833986169827906,
+    "potentialNorm": 0.5537198378048422
   },
   {
     "id": "1074",
@@ -2189,8 +2189,8 @@
     "totalRoutes": 249,
     "cluster": 0,
     "core": true,
-    "potential": -2.076426006830324,
-    "potentialNorm": 0.47554737483476656
+    "potential": -2.753894065211608,
+    "potentialNorm": 0.37090865208218765
   },
   {
     "id": "3861",
@@ -2206,8 +2206,8 @@
     "totalRoutes": 248,
     "cluster": 0,
     "core": true,
-    "potential": 4.754031163563076,
-    "potentialNorm": 0.8316415059736512
+    "potential": 4.137024237276238,
+    "potentialNorm": 0.8049663391332906
   },
   {
     "id": "1551",
@@ -2291,8 +2291,8 @@
     "totalRoutes": 237,
     "cluster": 2,
     "core": true,
-    "potential": 2.7686042974339733,
-    "potentialNorm": 0.7281346927110592
+    "potential": 2.143134612216981,
+    "potentialNorm": 0.6793715953128695
   },
   {
     "id": "1509",
@@ -2308,8 +2308,8 @@
     "totalRoutes": 233,
     "cluster": 0,
     "core": true,
-    "potential": 1.2776922662358445,
-    "potentialNorm": 0.6504085594362305
+    "potential": 0.6113450266247972,
+    "potentialNorm": 0.5828844486968566
   },
   {
     "id": "1055",
@@ -2325,8 +2325,8 @@
     "totalRoutes": 233,
     "cluster": 6,
     "core": true,
-    "potential": 2.342475638506185,
-    "potentialNorm": 0.7059192083344068
+    "potential": 1.6329775517071816,
+    "potentialNorm": 0.6472368951180164
   },
   {
     "id": "3728",
@@ -2342,8 +2342,8 @@
     "totalRoutes": 233,
     "cluster": 0,
     "core": true,
-    "potential": 0.03137725172556689,
-    "potentialNorm": 0.5854340707385988
+    "potential": -0.4803947634559082,
+    "potentialNorm": 0.5141159584401949
   },
   {
     "id": "3720",
@@ -2376,8 +2376,8 @@
     "totalRoutes": 228,
     "cluster": 2,
     "core": true,
-    "potential": -3.212757756428011,
-    "potentialNorm": 0.41630667440077035
+    "potential": -3.7450225257013225,
+    "potentialNorm": 0.30847765112613684
   },
   {
     "id": "3373",
@@ -2478,8 +2478,8 @@
     "totalRoutes": 219,
     "cluster": 0,
     "core": true,
-    "potential": -1.1060836271346068,
-    "potentialNorm": 0.5261345050934405
+    "potential": -1.7980245672735518,
+    "potentialNorm": 0.43111869741793024
   },
   {
     "id": "3369",
@@ -2580,8 +2580,8 @@
     "totalRoutes": 214,
     "cluster": 4,
     "core": true,
-    "potential": -0.9240978071957184,
-    "potentialNorm": 0.5356220226657092
+    "potential": -1.436141556449214,
+    "potentialNorm": 0.4539136422665422
   },
   {
     "id": "492",
@@ -2612,10 +2612,10 @@
     "inboundRoutes": 117,
     "outboundRoutes": 96,
     "totalRoutes": 213,
-    "cluster": 12,
+    "cluster": 5,
     "core": true,
-    "potential": 4.378776402189396,
-    "potentialNorm": 0.8120782447052413
+    "potential": 3.3965071743322555,
+    "potentialNorm": 0.7583213044000685
   },
   {
     "id": "1107",
@@ -2631,8 +2631,8 @@
     "totalRoutes": 212,
     "cluster": 2,
     "core": true,
-    "potential": 0.36960293738032934,
-    "potentialNorm": 0.6030668848618077
+    "potential": -0.2278427669953794,
+    "potentialNorm": 0.5300241626347242
   },
   {
     "id": "1871",
@@ -2682,8 +2682,8 @@
     "totalRoutes": 204,
     "cluster": 10,
     "core": true,
-    "potential": 1.6260682952496313,
-    "potentialNorm": 0.6685705442443622
+    "potential": 0.9617798685149571,
+    "potentialNorm": 0.6049582754723165
   },
   {
     "id": "2890",
@@ -2750,8 +2750,8 @@
     "totalRoutes": 202,
     "cluster": 2,
     "core": true,
-    "potential": 0.5716932691288149,
-    "potentialNorm": 0.6136025165626359
+    "potential": -0.06820167041550586,
+    "potentialNorm": 0.5400799261916284
   },
   {
     "id": "3953",
@@ -2784,8 +2784,8 @@
     "totalRoutes": 202,
     "cluster": 2,
     "core": true,
-    "potential": -4.534495273173417,
-    "potentialNorm": 0.3474001633316124
+    "potential": -5.192826481598281,
+    "potentialNorm": 0.21728074400663333
   },
   {
     "id": "3940",
@@ -2801,8 +2801,8 @@
     "totalRoutes": 201,
     "cluster": 5,
     "core": true,
-    "potential": 3.6232831051817542,
-    "potentialNorm": 0.7726919016731404
+    "potential": 2.9137792088114027,
+    "potentialNorm": 0.7279143578958244
   },
   {
     "id": "490",
@@ -2818,8 +2818,8 @@
     "totalRoutes": 200,
     "cluster": 6,
     "core": true,
-    "potential": -0.40822788777069485,
-    "potentialNorm": 0.5625160132370255
+    "potential": -1.1195459131601684,
+    "potentialNorm": 0.47385594409399034
   },
   {
     "id": "3144",
@@ -2835,8 +2835,8 @@
     "totalRoutes": 199,
     "cluster": 7,
     "core": true,
-    "potential": 7.387765484846084,
-    "potentialNorm": 0.9689467128422444
+    "potential": 6.6364130595283815,
+    "potentialNorm": 0.9624023851877721
   },
   {
     "id": "2975",
@@ -2852,8 +2852,8 @@
     "totalRoutes": 198,
     "cluster": 6,
     "core": true,
-    "potential": -3.519911404167462,
-    "potentialNorm": 0.4002937475073836
+    "potential": -4.189528510935476,
+    "potentialNorm": 0.28047830018891123
   },
   {
     "id": "2531",
@@ -2869,8 +2869,8 @@
     "totalRoutes": 197,
     "cluster": 2,
     "core": true,
-    "potential": -6.300478390440403,
-    "potentialNorm": 0.2553336723103522
+    "potential": -7.64228288956893,
+    "potentialNorm": 0.06298993162065698
   },
   {
     "id": "534",
@@ -2886,8 +2886,8 @@
     "totalRoutes": 196,
     "cluster": 6,
     "core": true,
-    "potential": -2.0654497073191913,
-    "potentialNorm": 0.476119605322424
+    "potential": -2.7760765418788513,
+    "potentialNorm": 0.3695113819227413
   },
   {
     "id": "1489",
@@ -2920,8 +2920,8 @@
     "totalRoutes": 194,
     "cluster": 2,
     "core": true,
-    "potential": -5.80530425831554,
-    "potentialNorm": 0.28114872362283977
+    "potential": -5.406391352924189,
+    "potentialNorm": 0.20382833171353995
   },
   {
     "id": "523",
@@ -2937,8 +2937,8 @@
     "totalRoutes": 192,
     "cluster": 1,
     "core": true,
-    "potential": -0.6366297490045418,
-    "potentialNorm": 0.5506086752217743
+    "potential": -1.356190106475724,
+    "potentialNorm": 0.4589497695181664
   },
   {
     "id": "1051",
@@ -2970,9 +2970,9 @@
     "outboundRoutes": 95,
     "totalRoutes": 191,
     "cluster": 7,
-    "core": true,
-    "potential": -1.000844768171484,
-    "potentialNorm": 0.5316209519167887
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "1197",
@@ -2988,8 +2988,8 @@
     "totalRoutes": 190,
     "cluster": 6,
     "core": true,
-    "potential": -0.22139494440464838,
-    "potentialNorm": 0.5722562272485308
+    "potential": -0.9150205409828087,
+    "potentialNorm": 0.48673895998441524
   },
   {
     "id": "1423",
@@ -3022,8 +3022,8 @@
     "totalRoutes": 188,
     "cluster": 7,
     "core": true,
-    "potential": 4.557315679648779,
-    "potentialNorm": 0.8213860827159437
+    "potential": 3.814615042796359,
+    "potentialNorm": 0.7846578427766555
   },
   {
     "id": "3131",
@@ -3039,8 +3039,8 @@
     "totalRoutes": 185,
     "cluster": 7,
     "core": true,
-    "potential": 6.126280628143467,
-    "potentialNorm": 0.9031813705252666
+    "potential": 5.376161360328931,
+    "potentialNorm": 0.8830193605103147
   },
   {
     "id": "1804",
@@ -3056,8 +3056,8 @@
     "totalRoutes": 185,
     "cluster": 13,
     "core": true,
-    "potential": 3.23164791390924,
-    "potentialNorm": 0.7522746748784126
+    "potential": 2.6470869716513734,
+    "potentialNorm": 0.7111154625186474
   },
   {
     "id": "1418",
@@ -3073,8 +3073,8 @@
     "totalRoutes": 183,
     "cluster": 8,
     "core": true,
-    "potential": -4.348129203605754,
-    "potentialNorm": 0.35711603768100736
+    "potential": -5.633243609934325,
+    "potentialNorm": 0.18953894941966015
   },
   {
     "id": "3351",
@@ -3090,8 +3090,8 @@
     "totalRoutes": 182,
     "cluster": 5,
     "core": true,
-    "potential": 1.722811072473671,
-    "potentialNorm": 0.6736140624657895
+    "potential": 1.0206106365686,
+    "potentialNorm": 0.608664014821974
   },
   {
     "id": "2851",
@@ -3124,8 +3124,8 @@
     "totalRoutes": 176,
     "cluster": 0,
     "core": true,
-    "potential": -4.522092702171494,
-    "potentialNorm": 0.3480467500292
+    "potential": -5.178016702981179,
+    "potentialNorm": 0.21821360926059483
   },
   {
     "id": "4078",
@@ -3141,8 +3141,8 @@
     "totalRoutes": 175,
     "cluster": 6,
     "core": true,
-    "potential": -3.5192042329741624,
-    "potentialNorm": 0.40033061466068864
+    "potential": -4.189371120513699,
+    "potentialNorm": 0.28048821418287284
   },
   {
     "id": "1486",
@@ -3226,8 +3226,8 @@
     "totalRoutes": 170,
     "cluster": 10,
     "core": true,
-    "potential": 1.9893504487556413,
-    "potentialNorm": 0.6875096342033341
+    "potential": 1.3313843251113289,
+    "potentialNorm": 0.6282395927818077
   },
   {
     "id": "210",
@@ -3362,8 +3362,8 @@
     "totalRoutes": 168,
     "cluster": 0,
     "core": true,
-    "potential": -3.8954751613654075,
-    "potentialNorm": 0.38071437727337704
+    "potential": -4.412963070812124,
+    "potentialNorm": 0.2664041980141221
   },
   {
     "id": "3378",
@@ -3464,8 +3464,8 @@
     "totalRoutes": 165,
     "cluster": 6,
     "core": true,
-    "potential": -3.00027950232852,
-    "potentialNorm": 0.42738386255845673
+    "potential": -3.7105061482914476,
+    "potentialNorm": 0.3106518314438029
   },
   {
     "id": "3690",
@@ -3532,8 +3532,8 @@
     "totalRoutes": 162,
     "cluster": 2,
     "core": true,
-    "potential": 1.033769980782402,
-    "potentialNorm": 0.6376920908109025
+    "potential": 0.39581266158475753,
+    "potentialNorm": 0.5693081043335579
   },
   {
     "id": "6347",
@@ -3547,7 +3547,7 @@
     "inboundRoutes": 81,
     "outboundRoutes": 81,
     "totalRoutes": 162,
-    "cluster": 9,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -3583,8 +3583,8 @@
     "totalRoutes": 161,
     "cluster": 0,
     "core": true,
-    "potential": -2.7843304643302464,
-    "potentialNorm": 0.43864199406239
+    "potential": -3.322348242269915,
+    "potentialNorm": 0.3351018271486537
   },
   {
     "id": "3486",
@@ -3649,7 +3649,7 @@
     "inboundRoutes": 80,
     "outboundRoutes": 80,
     "totalRoutes": 160,
-    "cluster": 4,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -3736,8 +3736,8 @@
     "totalRoutes": 158,
     "cluster": 2,
     "core": true,
-    "potential": -3.731835535383791,
-    "potentialNorm": 0.3892454475927097
+    "potential": -4.1039155454204765,
+    "potentialNorm": 0.28587104527190116
   },
   {
     "id": "3121",
@@ -3838,8 +3838,8 @@
     "totalRoutes": 149,
     "cluster": 2,
     "core": true,
-    "potential": -3.2508677960706382,
-    "potentialNorm": 0.4143198730614644
+    "potential": -3.4628241021429216,
+    "potentialNorm": 0.32625327835640083
   },
   {
     "id": "1885",
@@ -3872,8 +3872,8 @@
     "totalRoutes": 148,
     "cluster": 5,
     "core": true,
-    "potential": 3.288687923088491,
-    "potentialNorm": 0.7552483576059582
+    "potential": 2.5736314876721895,
+    "potentialNorm": 0.7064885149802166
   },
   {
     "id": "3570",
@@ -3923,8 +3923,8 @@
     "totalRoutes": 145,
     "cluster": 0,
     "core": true,
-    "potential": 1.6052548387259766,
-    "potentialNorm": 0.6674854705030447
+    "potential": 1.0084381045689705,
+    "potentialNorm": 0.6078972692514442
   },
   {
     "id": "1075",
@@ -3938,10 +3938,10 @@
     "inboundRoutes": 72,
     "outboundRoutes": 73,
     "totalRoutes": 145,
-    "cluster": 11,
+    "cluster": 12,
     "core": true,
-    "potential": -1.1340342551750142,
-    "potentialNorm": 0.5246773471963122
+    "potential": -1.3843124389688208,
+    "potentialNorm": 0.45717834892360953
   },
   {
     "id": "1760",
@@ -4025,8 +4025,8 @@
     "totalRoutes": 138,
     "cluster": 5,
     "core": true,
-    "potential": 3.661523668694556,
-    "potentialNorm": 0.7746855076498204
+    "potential": 2.4793379842954515,
+    "potentialNorm": 0.700548984400544
   },
   {
     "id": "585",
@@ -4092,9 +4092,9 @@
     "outboundRoutes": 67,
     "totalRoutes": 134,
     "cluster": 1,
-    "core": true,
-    "potential": -4.834146123784877,
-    "potentialNorm": 0.33177838185613173
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "1264",
@@ -4125,7 +4125,7 @@
     "inboundRoutes": 67,
     "outboundRoutes": 67,
     "totalRoutes": 134,
-    "cluster": 6,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -4142,10 +4142,10 @@
     "inboundRoutes": 67,
     "outboundRoutes": 67,
     "totalRoutes": 134,
-    "cluster": 5,
-    "core": true,
-    "potential": -1.1103774862061573,
-    "potentialNorm": 0.5259106521393594
+    "cluster": -1,
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "1706",
@@ -4161,8 +4161,8 @@
     "totalRoutes": 133,
     "cluster": 2,
     "core": true,
-    "potential": -6.773598469779145,
-    "potentialNorm": 0.23066837109058244
+    "potential": -7.415721299997141,
+    "potentialNorm": 0.07726100482560963
   },
   {
     "id": "2177",
@@ -4229,8 +4229,8 @@
     "totalRoutes": 131,
     "cluster": 5,
     "core": true,
-    "potential": 1.4413744532416217,
-    "potentialNorm": 0.6589418486013213
+    "potential": 0.44817586126212733,
+    "potentialNorm": 0.5726064527308025
   },
   {
     "id": "4085",
@@ -4416,8 +4416,8 @@
     "totalRoutes": 127,
     "cluster": 8,
     "core": true,
-    "potential": -3.727222676657471,
-    "potentialNorm": 0.3894859310448767
+    "potential": -4.758266362764509,
+    "potentialNorm": 0.24465360663330826
   },
   {
     "id": "1512",
@@ -4433,8 +4433,8 @@
     "totalRoutes": 126,
     "cluster": 14,
     "core": true,
-    "potential": -2.5221234970602504,
-    "potentialNorm": 0.4523117031110441
+    "potential": -3.1779731115858842,
+    "potentialNorm": 0.34419599029811176
   },
   {
     "id": "2206",
@@ -4450,8 +4450,8 @@
     "totalRoutes": 125,
     "cluster": 10,
     "core": true,
-    "potential": -1.0478038334489292,
-    "potentialNorm": 0.5291728218528822
+    "potential": -1.7049599426185478,
+    "potentialNorm": 0.4369808211510539
   },
   {
     "id": "3717",
@@ -4482,10 +4482,10 @@
     "inboundRoutes": 61,
     "outboundRoutes": 63,
     "totalRoutes": 124,
-    "cluster": 15,
-    "core": true,
-    "potential": 0.6666674883499458,
-    "potentialNorm": 0.6185538340558095
+    "cluster": 2,
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "4330",
@@ -4586,8 +4586,8 @@
     "totalRoutes": 120,
     "cluster": 13,
     "core": true,
-    "potential": 0.8580779606592428,
-    "potentialNorm": 0.6285326896620349
+    "potential": 0.2857270145566509,
+    "potentialNorm": 0.5623738295055871
   },
   {
     "id": "6355",
@@ -4652,10 +4652,10 @@
     "inboundRoutes": 59,
     "outboundRoutes": 58,
     "totalRoutes": 117,
-    "cluster": 15,
-    "core": true,
-    "potential": 0.0,
-    "potentialNorm": 0.5837982717119725
+    "cluster": -1,
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "2223",
@@ -4671,8 +4671,8 @@
     "totalRoutes": 117,
     "cluster": 10,
     "core": true,
-    "potential": -0.7010413313761495,
-    "potentialNorm": 0.5472506882104045
+    "potential": -1.351506822020966,
+    "potentialNorm": 0.45924476875179554
   },
   {
     "id": "273",
@@ -4687,9 +4687,9 @@
     "outboundRoutes": 59,
     "totalRoutes": 117,
     "cluster": 1,
-    "core": true,
-    "potential": -7.616028096457167,
-    "potentialNorm": 0.18674975210591974
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "1715",
@@ -4705,8 +4705,8 @@
     "totalRoutes": 116,
     "cluster": 8,
     "core": true,
-    "potential": -2.3430522993855214,
-    "potentialNorm": 0.4616472718668775
+    "potential": -3.0539676638256226,
+    "potentialNorm": 0.3520070708353927
   },
   {
     "id": "491",
@@ -4739,8 +4739,8 @@
     "totalRoutes": 116,
     "cluster": 2,
     "core": true,
-    "potential": -7.46578010189893,
-    "potentialNorm": 0.19458267276450777
+    "potential": -8.642284699526831,
+    "potentialNorm": 0.0
   },
   {
     "id": "3959",
@@ -4789,9 +4789,9 @@
     "outboundRoutes": 57,
     "totalRoutes": 114,
     "cluster": 2,
-    "core": true,
-    "potential": -10.929774951322969,
-    "potentialNorm": 0.013993261923625428
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "3136",
@@ -4807,8 +4807,8 @@
     "totalRoutes": 114,
     "cluster": 7,
     "core": true,
-    "potential": 4.874144522153875,
-    "potentialNorm": 0.8379034092399446
+    "potential": 4.41529633409266,
+    "potentialNorm": 0.8224946477581933
   },
   {
     "id": "2899",
@@ -4892,8 +4892,8 @@
     "totalRoutes": 111,
     "cluster": 10,
     "core": true,
-    "potential": -0.06842607628054566,
-    "potentialNorm": 0.5802309959685599
+    "potential": -0.7251557440491687,
+    "potentialNorm": 0.49869850891415507
   },
   {
     "id": "2537",
@@ -4908,9 +4908,9 @@
     "outboundRoutes": 55,
     "totalRoutes": 110,
     "cluster": 2,
-    "core": true,
-    "potential": -7.694917493818306,
-    "potentialNorm": 0.1826369891226234
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "3322",
@@ -4976,9 +4976,9 @@
     "outboundRoutes": 54,
     "totalRoutes": 107,
     "cluster": 1,
-    "core": true,
-    "potential": -6.77964907546203,
-    "potentialNorm": 0.23035293317482328
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "687",
@@ -5011,8 +5011,8 @@
     "totalRoutes": 106,
     "cluster": 6,
     "core": true,
-    "potential": -4.522078628353458,
-    "potentialNorm": 0.34804748374348593
+    "potential": -5.19000961836628,
+    "potentialNorm": 0.21745817770785433
   },
   {
     "id": "1563",
@@ -5045,8 +5045,8 @@
     "totalRoutes": 106,
     "cluster": 5,
     "core": true,
-    "potential": -1.354098672460465,
-    "potentialNorm": 0.5132046674747389
+    "potential": -2.3736853325275327,
+    "potentialNorm": 0.3948579308083479
   },
   {
     "id": "666",
@@ -5215,8 +5215,8 @@
     "totalRoutes": 102,
     "cluster": 5,
     "core": true,
-    "potential": 0.23162382593225217,
-    "potentialNorm": 0.5958735813126121
+    "potential": -0.5470830124740241,
+    "potentialNorm": 0.5099152777976976
   },
   {
     "id": "253",
@@ -5231,9 +5231,9 @@
     "outboundRoutes": 49,
     "totalRoutes": 101,
     "cluster": 1,
-    "core": true,
-    "potential": -6.888730050655034,
-    "potentialNorm": 0.22466618423311263
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "668",
@@ -5315,7 +5315,7 @@
     "inboundRoutes": 50,
     "outboundRoutes": 50,
     "totalRoutes": 100,
-    "cluster": 1,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -5351,8 +5351,8 @@
     "totalRoutes": 99,
     "cluster": 4,
     "core": true,
-    "potential": 0.5306905162029676,
-    "potentialNorm": 0.6114649085939161
+    "potential": 0.021297455816528296,
+    "potentialNorm": 0.5457174598293942
   },
   {
     "id": "2074",
@@ -5383,7 +5383,7 @@
     "inboundRoutes": 49,
     "outboundRoutes": 49,
     "totalRoutes": 98,
-    "cluster": 3,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -5401,9 +5401,9 @@
     "outboundRoutes": 51,
     "totalRoutes": 98,
     "cluster": 1,
-    "core": true,
-    "potential": -9.470563963091974,
-    "potentialNorm": 0.09006671587260931
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "1206",
@@ -5434,7 +5434,7 @@
     "inboundRoutes": 48,
     "outboundRoutes": 49,
     "totalRoutes": 97,
-    "cluster": 0,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -5453,8 +5453,8 @@
     "totalRoutes": 97,
     "cluster": 0,
     "core": true,
-    "potential": -4.54395071803948,
-    "potentialNorm": 0.34690721998388063
+    "potential": -5.0640619663757445,
+    "potentialNorm": 0.22539159733536493
   },
   {
     "id": "73",
@@ -5520,9 +5520,9 @@
     "outboundRoutes": 48,
     "totalRoutes": 95,
     "cluster": 5,
-    "core": true,
-    "potential": 0.11777494663840263,
-    "potentialNorm": 0.5899382658949263
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "355",
@@ -5536,7 +5536,7 @@
     "inboundRoutes": 47,
     "outboundRoutes": 47,
     "totalRoutes": 94,
-    "cluster": 1,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -5553,7 +5553,7 @@
     "inboundRoutes": 47,
     "outboundRoutes": 47,
     "totalRoutes": 94,
-    "cluster": 0,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -5571,9 +5571,9 @@
     "outboundRoutes": 47,
     "totalRoutes": 94,
     "cluster": 2,
-    "core": true,
-    "potential": -11.1981881822227,
-    "potentialNorm": 0.0
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "6390",
@@ -5623,8 +5623,8 @@
     "totalRoutes": 93,
     "cluster": 7,
     "core": true,
-    "potential": -6.506905086780608,
-    "potentialNorm": 0.2445719717032899
+    "potential": -7.419230351574997,
+    "potentialNorm": 0.0770399703067303
   },
   {
     "id": "951",
@@ -5793,8 +5793,8 @@
     "totalRoutes": 90,
     "cluster": 6,
     "core": true,
-    "potential": -2.5184749304345337,
-    "potentialNorm": 0.452501914853842
+    "potential": -3.189199344075275,
+    "potentialNorm": 0.34348885196113804
   },
   {
     "id": "3964",
@@ -5979,9 +5979,9 @@
     "outboundRoutes": 43,
     "totalRoutes": 86,
     "cluster": 2,
-    "core": true,
-    "potential": -9.793914682633371,
-    "potentialNorm": 0.07320938251177439
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "3125",
@@ -5997,8 +5997,8 @@
     "totalRoutes": 86,
     "cluster": 7,
     "core": true,
-    "potential": 0.5597994814189795,
-    "potentialNorm": 0.6129824544064976
+    "potential": -0.17549661992425478,
+    "potentialNorm": 0.5333214368914115
   },
   {
     "id": "665",
@@ -6031,8 +6031,8 @@
     "totalRoutes": 86,
     "cluster": 0,
     "core": true,
-    "potential": -5.122205767448854,
-    "potentialNorm": 0.3167608880094069
+    "potential": -5.783287393816879,
+    "potentialNorm": 0.1800877188391229
   },
   {
     "id": "1909",
@@ -6098,9 +6098,9 @@
     "outboundRoutes": 42,
     "totalRoutes": 85,
     "cluster": 2,
-    "core": true,
-    "potential": -8.735848830516185,
-    "potentialNorm": 0.1283698250558703
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "2334",
@@ -6133,8 +6133,8 @@
     "totalRoutes": 84,
     "cluster": 7,
     "core": true,
-    "potential": 3.1241488720953594,
-    "potentialNorm": 0.7466703973113267
+    "potential": 2.081957685323571,
+    "potentialNorm": 0.6755180718458069
   },
   {
     "id": "3308",
@@ -6167,8 +6167,8 @@
     "totalRoutes": 84,
     "cluster": 0,
     "core": true,
-    "potential": -2.5154650678929187,
-    "potentialNorm": 0.45265882885825887
+    "potential": -3.0756537154915677,
+    "potentialNorm": 0.35064107039623604
   },
   {
     "id": "797",
@@ -6250,10 +6250,10 @@
     "inboundRoutes": 40,
     "outboundRoutes": 43,
     "totalRoutes": 83,
-    "cluster": 12,
-    "core": true,
-    "potential": 0.6486941051610928,
-    "potentialNorm": 0.6176168226507747
+    "cluster": 0,
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "3156",
@@ -6267,7 +6267,7 @@
     "inboundRoutes": 40,
     "outboundRoutes": 43,
     "totalRoutes": 83,
-    "cluster": 0,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -6301,7 +6301,7 @@
     "inboundRoutes": 41,
     "outboundRoutes": 41,
     "totalRoutes": 82,
-    "cluster": 0,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -6335,7 +6335,7 @@
     "inboundRoutes": 40,
     "outboundRoutes": 41,
     "totalRoutes": 81,
-    "cluster": 0,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -6420,10 +6420,10 @@
     "inboundRoutes": 39,
     "outboundRoutes": 41,
     "totalRoutes": 80,
-    "cluster": 1,
-    "core": true,
-    "potential": -10.325113769439293,
-    "potentialNorm": 0.045516232176563504
+    "cluster": -1,
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "348",
@@ -6472,9 +6472,9 @@
     "outboundRoutes": 41,
     "totalRoutes": 79,
     "cluster": 2,
-    "core": true,
-    "potential": 2.08992650946135,
-    "potentialNorm": 0.6927529940629946
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "1324",
@@ -6488,10 +6488,10 @@
     "inboundRoutes": 39,
     "outboundRoutes": 39,
     "totalRoutes": 78,
-    "cluster": 0,
+    "cluster": 11,
     "core": true,
-    "potential": -4.901251170106841,
-    "potentialNorm": 0.32827997573646084
+    "potential": -5.5082213739231936,
+    "potentialNorm": 0.1974140772634131
   },
   {
     "id": "2378",
@@ -6592,8 +6592,8 @@
     "totalRoutes": 77,
     "cluster": 14,
     "core": true,
-    "potential": -4.922003141556401,
-    "potentialNorm": 0.32719810741368144
+    "potential": -5.572668876631252,
+    "potentialNorm": 0.1933545408223004
   },
   {
     "id": "415",
@@ -6624,7 +6624,7 @@
     "inboundRoutes": 38,
     "outboundRoutes": 38,
     "totalRoutes": 76,
-    "cluster": 6,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -6641,7 +6641,7 @@
     "inboundRoutes": 38,
     "outboundRoutes": 38,
     "totalRoutes": 76,
-    "cluster": 1,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -6660,8 +6660,8 @@
     "totalRoutes": 76,
     "cluster": 0,
     "core": true,
-    "potential": -5.690987438630102,
-    "potentialNorm": 0.2871084343076375
+    "potential": -6.252968274275634,
+    "potentialNorm": 0.15050260584330494
   },
   {
     "id": "3608",
@@ -6692,7 +6692,7 @@
     "inboundRoutes": 38,
     "outboundRoutes": 38,
     "totalRoutes": 76,
-    "cluster": 1,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -6709,7 +6709,7 @@
     "inboundRoutes": 38,
     "outboundRoutes": 37,
     "totalRoutes": 75,
-    "cluster": 7,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -6760,7 +6760,7 @@
     "inboundRoutes": 37,
     "outboundRoutes": 37,
     "totalRoutes": 74,
-    "cluster": 0,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -6794,7 +6794,7 @@
     "inboundRoutes": 37,
     "outboundRoutes": 37,
     "totalRoutes": 74,
-    "cluster": 4,
+    "cluster": -1,
     "core": false,
     "potential": null,
     "potentialNorm": null
@@ -6829,9 +6829,9 @@
     "outboundRoutes": 34,
     "totalRoutes": 72,
     "cluster": 5,
-    "core": true,
-    "potential": -0.08130877452458568,
-    "potentialNorm": 0.5795593786633786
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "293",
@@ -6864,8 +6864,8 @@
     "totalRoutes": 72,
     "cluster": 1,
     "core": true,
-    "potential": -3.321890119129713,
-    "potentialNorm": 0.41061724645971825
+    "potential": -3.967356892535737,
+    "potentialNorm": 0.2944728499104157
   },
   {
     "id": "1321",
@@ -6880,9 +6880,9 @@
     "outboundRoutes": 36,
     "totalRoutes": 72,
     "cluster": 11,
-    "core": true,
-    "potential": -7.415918279858228,
-    "potentialNorm": 0.19718213305737758
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "2610",
@@ -6897,9 +6897,9 @@
     "outboundRoutes": 36,
     "totalRoutes": 72,
     "cluster": 2,
-    "core": true,
-    "potential": -8.580355111823419,
-    "potentialNorm": 0.13647622251568564
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "3919",
@@ -6914,9 +6914,9 @@
     "outboundRoutes": 36,
     "totalRoutes": 72,
     "cluster": 5,
-    "core": true,
-    "potential": -0.8540999153008901,
-    "potentialNorm": 0.5392712423114868
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "2673",
@@ -7015,10 +7015,10 @@
     "inboundRoutes": 35,
     "outboundRoutes": 35,
     "totalRoutes": 70,
-    "cluster": 15,
-    "core": true,
-    "potential": -0.6666674883499458,
-    "potentialNorm": 0.5490427093681355
+    "cluster": -1,
+    "core": false,
+    "potential": null,
+    "potentialNorm": null
   },
   {
     "id": "2246",

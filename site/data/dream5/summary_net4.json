@@ -1,0 +1,24 @@
+{
+  "dataset": "DREAM5 Gene Regulatory Network",
+  "counts": {
+    "genes": 5950,
+    "active_edges": 193
+  },
+  "hodge": {
+    "gradient_norm": 8.650851444694993,
+    "residual_norm": 0.3889749869509627,
+    "total_norm": 8.659591725781864
+  },
+  "top_regulators": [
+    "G2461",
+    "G255",
+    "G2696",
+    "G280",
+    "G1987",
+    "G1070",
+    "G1928",
+    "G5050",
+    "G2688",
+    "G1000"
+  ]
+}

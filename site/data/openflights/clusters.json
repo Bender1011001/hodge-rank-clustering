@@ -1,9 +1,81 @@
 [
   {
+    "id": -1,
+    "label": "Unassigned",
+    "nodeCount": 21,
+    "routeTotal": 2037,
+    "topAirports": [
+      {
+        "id": "6347",
+        "code": "SJW",
+        "city": "Shijiazhuang",
+        "country": "China",
+        "totalRoutes": 162,
+        "potentialNorm": null
+      },
+      {
+        "id": "6341",
+        "code": "NAY",
+        "city": "Beijing",
+        "country": "China",
+        "totalRoutes": 160,
+        "potentialNorm": null
+      },
+      {
+        "id": "2908",
+        "code": "ALA",
+        "city": "Alma-ata",
+        "country": "Kazakhstan",
+        "totalRoutes": 134,
+        "potentialNorm": null
+      },
+      {
+        "id": "3157",
+        "code": "DMK",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "totalRoutes": 134,
+        "potentialNorm": null
+      },
+      {
+        "id": "2131",
+        "code": "THR",
+        "city": "Teheran",
+        "country": "Iran",
+        "totalRoutes": 117,
+        "potentialNorm": null
+      },
+      {
+        "id": "1553",
+        "code": "CIA",
+        "city": "Rome",
+        "country": "Italy",
+        "totalRoutes": 100,
+        "potentialNorm": null
+      },
+      {
+        "id": "1222",
+        "code": "GRO",
+        "city": "Gerona",
+        "country": "Spain",
+        "totalRoutes": 98,
+        "potentialNorm": null
+      },
+      {
+        "id": "4167",
+        "code": "SFB",
+        "city": "Sanford",
+        "country": "United States",
+        "totalRoutes": 97,
+        "potentialNorm": null
+      }
+    ]
+  },
+  {
     "id": 0,
     "label": "Cluster 1",
-    "nodeCount": 138,
-    "routeTotal": 35359,
+    "nodeCount": 131,
+    "routeTotal": 34580,
     "topAirports": [
       {
         "id": "3682",
@@ -11,7 +83,7 @@
         "city": "Atlanta",
         "country": "United States",
         "totalRoutes": 1826,
-        "potentialNorm": 0.9379510257604452
+        "potentialNorm": 0.9336372869479171
       },
       {
         "id": "3830",
@@ -19,7 +91,7 @@
         "city": "Chicago",
         "country": "United States",
         "totalRoutes": 1108,
-        "potentialNorm": 0.867175534252845
+        "potentialNorm": 0.8472588095002144
       },
       {
         "id": "3364",
@@ -27,7 +99,7 @@
         "city": "Beijing",
         "country": "China",
         "totalRoutes": 1061,
-        "potentialNorm": 0.6952369137302764
+        "potentialNorm": 0.6465353642780195
       },
       {
         "id": "1382",
@@ -35,7 +107,7 @@
         "city": "Paris",
         "country": "France",
         "totalRoutes": 1041,
-        "potentialNorm": 0.7909977853327915
+        "potentialNorm": 0.7558360593609172
       },
       {
         "id": "3484",
@@ -43,7 +115,7 @@
         "city": "Los Angeles",
         "country": "United States",
         "totalRoutes": 986,
-        "potentialNorm": 0.8217411029890695
+        "potentialNorm": 0.7943012686873807
       },
       {
         "id": "3670",
@@ -51,7 +123,7 @@
         "city": "Dallas-Fort Worth",
         "country": "United States",
         "totalRoutes": 936,
-        "potentialNorm": 0.8712947267490347
+        "potentialNorm": 0.8528311739194303
       },
       {
         "id": "3930",
@@ -59,7 +131,7 @@
         "city": "Seoul",
         "country": "South Korea",
         "totalRoutes": 736,
-        "potentialNorm": 0.7475543110827123
+        "potentialNorm": 0.7094543725544147
       },
       {
         "id": "3576",
@@ -67,15 +139,15 @@
         "city": "Miami",
         "country": "United States",
         "totalRoutes": 734,
-        "potentialNorm": 0.8107084291206756
+        "potentialNorm": 0.7793977596706627
       }
     ]
   },
   {
     "id": 1,
     "label": "Cluster 2",
-    "nodeCount": 66,
-    "routeTotal": 14429,
+    "nodeCount": 61,
+    "routeTotal": 14003,
     "topAirports": [
       {
         "id": "507",
@@ -83,7 +155,7 @@
         "city": "London",
         "country": "United Kingdom",
         "totalRoutes": 1047,
-        "potentialNorm": 0.8774880756265347
+        "potentialNorm": 0.8610320639319564
       },
       {
         "id": "3797",
@@ -91,7 +163,7 @@
         "city": "New York",
         "country": "United States",
         "totalRoutes": 911,
-        "potentialNorm": 0.9176878529562842
+        "potentialNorm": 0.9085844222367876
       },
       {
         "id": "1218",
@@ -99,7 +171,7 @@
         "city": "Barcelona",
         "country": "Spain",
         "totalRoutes": 783,
-        "potentialNorm": 0.8000942693161959
+        "potentialNorm": 0.7644425424497999
       },
       {
         "id": "302",
@@ -107,7 +179,7 @@
         "city": "Brussels",
         "country": "Belgium",
         "totalRoutes": 630,
-        "potentialNorm": 0.6967164395822112
+        "potentialNorm": 0.6404941882621926
       },
       {
         "id": "3998",
@@ -115,7 +187,7 @@
         "city": "Palma de Mallorca",
         "country": "Spain",
         "totalRoutes": 548,
-        "potentialNorm": 0.7341025808978752
+        "potentialNorm": 0.6817985911190912
       },
       {
         "id": "3494",
@@ -123,7 +195,7 @@
         "city": "Newark",
         "country": "United States",
         "totalRoutes": 505,
-        "potentialNorm": 0.5760383636783126
+        "potentialNorm": 0.49587499007751823
       },
       {
         "id": "3469",
@@ -131,7 +203,7 @@
         "city": "San Francisco",
         "country": "United States",
         "totalRoutes": 499,
-        "potentialNorm": 0.705265214723337
+        "potentialNorm": 0.6549576177691097
       },
       {
         "id": "3448",
@@ -146,8 +218,8 @@
   {
     "id": 2,
     "label": "Cluster 3",
-    "nodeCount": 50,
-    "routeTotal": 11401,
+    "nodeCount": 51,
+    "routeTotal": 11525,
     "topAirports": [
       {
         "id": "340",
@@ -155,7 +227,7 @@
         "city": "Frankfurt",
         "country": "Germany",
         "totalRoutes": 990,
-        "potentialNorm": 0.8768377224271358
+        "potentialNorm": 0.8595695754333922
       },
       {
         "id": "1701",
@@ -163,7 +235,7 @@
         "city": "Istanbul",
         "country": "Turkey",
         "totalRoutes": 711,
-        "potentialNorm": 0.4511346393102001
+        "potentialNorm": 0.34311391003142677
       },
       {
         "id": "1229",
@@ -171,7 +243,7 @@
         "city": "Madrid",
         "country": "Spain",
         "totalRoutes": 661,
-        "potentialNorm": 0.7539038845948507
+        "potentialNorm": 0.7100249373842423
       },
       {
         "id": "1613",
@@ -179,7 +251,7 @@
         "city": "Vienna",
         "country": "Austria",
         "totalRoutes": 616,
-        "potentialNorm": 0.6779781252835632
+        "potentialNorm": 0.6169432207000929
       },
       {
         "id": "1678",
@@ -187,7 +259,7 @@
         "city": "Zurich",
         "country": "Switzerland",
         "totalRoutes": 494,
-        "potentialNorm": 0.5146687488434888
+        "potentialNorm": 0.4198528473238454
       },
       {
         "id": "737",
@@ -195,7 +267,7 @@
         "city": "Stockholm",
         "country": "Sweden",
         "totalRoutes": 438,
-        "potentialNorm": 0.4734882943682948
+        "potentialNorm": 0.37019443260592283
       },
       {
         "id": "351",
@@ -203,7 +275,7 @@
         "city": "Berlin",
         "country": "Germany",
         "totalRoutes": 418,
-        "potentialNorm": 0.5184162669338686
+        "potentialNorm": 0.42412099833868
       },
       {
         "id": "2564",
@@ -211,15 +283,15 @@
         "city": "Sao Paulo",
         "country": "Brazil",
         "totalRoutes": 387,
-        "potentialNorm": 0.46829962752949544
+        "potentialNorm": 0.36308026151377226
       }
     ]
   },
   {
     "id": 3,
     "label": "Cluster 4",
-    "nodeCount": 12,
-    "routeTotal": 3133,
+    "nodeCount": 11,
+    "routeTotal": 3035,
     "topAirports": [
       {
         "id": "580",
@@ -227,7 +299,7 @@
         "city": "Amsterdam",
         "country": "Netherlands",
         "totalRoutes": 903,
-        "potentialNorm": 0.7250175332541918
+        "potentialNorm": 0.6739168270492065
       },
       {
         "id": "609",
@@ -235,7 +307,7 @@
         "city": "Copenhagen",
         "country": "Denmark",
         "totalRoutes": 457,
-        "potentialNorm": 0.5883365806549697
+        "potentialNorm": 0.5086694436191309
       },
       {
         "id": "1638",
@@ -243,7 +315,7 @@
         "city": "Lisbon",
         "country": "Portugal",
         "totalRoutes": 435,
-        "potentialNorm": 0.7760830265224763
+        "potentialNorm": 0.736162176236635
       },
       {
         "id": "1386",
@@ -251,7 +323,7 @@
         "city": "Paris",
         "country": "France",
         "totalRoutes": 402,
-        "potentialNorm": 0.5123758800888574
+        "potentialNorm": 0.4176556477132433
       },
       {
         "id": "1590",
@@ -278,11 +350,11 @@
         "potentialNorm": null
       },
       {
-        "id": "1222",
-        "code": "GRO",
-        "city": "Gerona",
-        "country": "Spain",
-        "totalRoutes": 98,
+        "id": "665",
+        "code": "TRD",
+        "city": "Trondheim",
+        "country": "Norway",
+        "totalRoutes": 86,
         "potentialNorm": null
       }
     ]
@@ -290,8 +362,8 @@
   {
     "id": 4,
     "label": "Cluster 5",
-    "nodeCount": 38,
-    "routeTotal": 11270,
+    "nodeCount": 36,
+    "routeTotal": 11036,
     "topAirports": [
       {
         "id": "3406",
@@ -299,7 +371,7 @@
         "city": "Shanghai",
         "country": "China",
         "totalRoutes": 817,
-        "potentialNorm": 0.7817302207169993
+        "potentialNorm": 0.7511556879391826
       },
       {
         "id": "3370",
@@ -307,7 +379,7 @@
         "city": "Guangzhou",
         "country": "China",
         "totalRoutes": 663,
-        "potentialNorm": 0.722174092094211
+        "potentialNorm": 0.680034721609824
       },
       {
         "id": "3395",
@@ -315,7 +387,7 @@
         "city": "Chengdu",
         "country": "China",
         "totalRoutes": 645,
-        "potentialNorm": 0.7834661625037742
+        "potentialNorm": 0.7535057724754358
       },
       {
         "id": "3379",
@@ -323,7 +395,7 @@
         "city": "Xi'an",
         "country": "China",
         "totalRoutes": 561,
-        "potentialNorm": 0.8553388823773698
+        "potentialNorm": 0.8403356260401313
       },
       {
         "id": "3382",
@@ -331,7 +403,7 @@
         "city": "Kunming",
         "country": "China",
         "totalRoutes": 541,
-        "potentialNorm": 0.7914959506698348
+        "potentialNorm": 0.7632791080880371
       },
       {
         "id": "3393",
@@ -339,7 +411,7 @@
         "city": "Chongqing",
         "country": "China",
         "totalRoutes": 536,
-        "potentialNorm": 0.7846567908404315
+        "potentialNorm": 0.7550161468958542
       },
       {
         "id": "2276",
@@ -347,7 +419,7 @@
         "city": "Taipei",
         "country": "Taiwan",
         "totalRoutes": 525,
-        "potentialNorm": 0.7446747292294523
+        "potentialNorm": 0.7060341771490998
       },
       {
         "id": "3374",
@@ -355,7 +427,7 @@
         "city": "Shenzhen",
         "country": "China",
         "totalRoutes": 461,
-        "potentialNorm": 0.5772856112595116
+        "potentialNorm": 0.5044162932818567
       }
     ]
   },
@@ -363,7 +435,7 @@
     "id": 5,
     "label": "Cluster 6",
     "nodeCount": 29,
-    "routeTotal": 6663,
+    "routeTotal": 6742,
     "topAirports": [
       {
         "id": "3316",
@@ -371,7 +443,7 @@
         "city": "Singapore",
         "country": "Singapore",
         "totalRoutes": 814,
-        "potentialNorm": 0.9476117129350479
+        "potentialNorm": 0.9463704513822743
       },
       {
         "id": "3077",
@@ -379,7 +451,7 @@
         "city": "Hong Kong",
         "country": "Hong Kong",
         "totalRoutes": 708,
-        "potentialNorm": 0.796551185709439
+        "potentialNorm": 0.7685200073630104
       },
       {
         "id": "3885",
@@ -387,7 +459,7 @@
         "city": "Bangkok",
         "country": "Thailand",
         "totalRoutes": 654,
-        "potentialNorm": 0.8624994748800447
+        "potentialNorm": 0.8515685086176262
       },
       {
         "id": "3304",
@@ -395,7 +467,7 @@
         "city": "Kuala Lumpur",
         "country": "Malaysia",
         "totalRoutes": 510,
-        "potentialNorm": 0.8313799762917137
+        "potentialNorm": 0.8014878842561107
       },
       {
         "id": "3361",
@@ -403,7 +475,7 @@
         "city": "Sydney",
         "country": "Australia",
         "totalRoutes": 410,
-        "potentialNorm": 0.8021692865626007
+        "potentialNorm": 0.7798643199708513
       },
       {
         "id": "3275",
@@ -411,7 +483,7 @@
         "city": "Jakarta",
         "country": "Indonesia",
         "totalRoutes": 367,
-        "potentialNorm": 0.8105999369377372
+        "potentialNorm": 0.784017390272361
       },
       {
         "id": "3320",
@@ -419,7 +491,7 @@
         "city": "Brisbane",
         "country": "Australia",
         "totalRoutes": 294,
-        "potentialNorm": 0.7801887748504872
+        "potentialNorm": 0.7371708042739429
       },
       {
         "id": "3339",
@@ -427,15 +499,15 @@
         "city": "Melbourne",
         "country": "Australia",
         "totalRoutes": 269,
-        "potentialNorm": 0.7432113460168244
+        "potentialNorm": 0.6913848648067359
       }
     ]
   },
   {
     "id": 6,
     "label": "Cluster 7",
-    "nodeCount": 35,
-    "routeTotal": 7129,
+    "nodeCount": 33,
+    "routeTotal": 6919,
     "topAirports": [
       {
         "id": "502",
@@ -443,7 +515,7 @@
         "city": "London",
         "country": "United Kingdom",
         "totalRoutes": 708,
-        "potentialNorm": 0.8299157850127863
+        "potentialNorm": 0.7980021797004262
       },
       {
         "id": "4029",
@@ -451,7 +523,7 @@
         "city": "Moscow",
         "country": "Russia",
         "totalRoutes": 646,
-        "potentialNorm": 0.5047485586999488
+        "potentialNorm": 0.4065093666974538
       },
       {
         "id": "3941",
@@ -459,7 +531,7 @@
         "city": "Athens",
         "country": "Greece",
         "totalRoutes": 403,
-        "potentialNorm": 0.5752629946277334
+        "potentialNorm": 0.4904241008057713
       },
       {
         "id": "2948",
@@ -467,7 +539,7 @@
         "city": "St. Petersburg",
         "country": "Russia",
         "totalRoutes": 367,
-        "potentialNorm": 0.4000662788085037
+        "potentialNorm": 0.280415865177021
       },
       {
         "id": "1056",
@@ -475,7 +547,7 @@
         "city": "Tenerife",
         "country": "Spain",
         "totalRoutes": 318,
-        "potentialNorm": 0.7155177331370631
+        "potentialNorm": 0.6586956956752584
       },
       {
         "id": "1212",
@@ -483,7 +555,7 @@
         "city": "Alicante",
         "country": "Spain",
         "totalRoutes": 314,
-        "potentialNorm": 0.5405802285326253
+        "potentialNorm": 0.44817883338765835
       },
       {
         "id": "1354",
@@ -506,8 +578,8 @@
   {
     "id": 7,
     "label": "Cluster 8",
-    "nodeCount": 19,
-    "routeTotal": 4265,
+    "nodeCount": 18,
+    "routeTotal": 4190,
     "topAirports": [
       {
         "id": "2188",
@@ -515,7 +587,7 @@
         "city": "Dubai",
         "country": "United Arab Emirates",
         "totalRoutes": 698,
-        "potentialNorm": 0.86379572822658
+        "potentialNorm": 0.8320603840006833
       },
       {
         "id": "3093",
@@ -523,7 +595,7 @@
         "city": "Delhi",
         "country": "India",
         "totalRoutes": 517,
-        "potentialNorm": 0.9920474861719835
+        "potentialNorm": 0.9900516063668199
       },
       {
         "id": "2997",
@@ -539,7 +611,7 @@
         "city": "Cairo",
         "country": "Egypt",
         "totalRoutes": 301,
-        "potentialNorm": 0.48279687419122846
+        "potentialNorm": 0.3500784900651186
       },
       {
         "id": "2082",
@@ -547,7 +619,7 @@
         "city": "Riyadh",
         "country": "Saudi Arabia",
         "totalRoutes": 272,
-        "potentialNorm": 0.616756265645781
+        "potentialNorm": 0.49713962020292696
       },
       {
         "id": "4059",
@@ -555,7 +627,7 @@
         "city": "Nairobi",
         "country": "Kenya",
         "totalRoutes": 258,
-        "potentialNorm": 0.5770316959370319
+        "potentialNorm": 0.4920712744389009
       },
       {
         "id": "2170",
@@ -571,7 +643,7 @@
         "city": "Madras",
         "country": "India",
         "totalRoutes": 199,
-        "potentialNorm": 0.9689467128422444
+        "potentialNorm": 0.9624023851877721
       }
     ]
   },
@@ -587,7 +659,7 @@
         "city": "Manchester",
         "country": "United Kingdom",
         "totalRoutes": 627,
-        "potentialNorm": 0.788175364927136
+        "potentialNorm": 0.74622779278599
       },
       {
         "id": "1054",
@@ -595,7 +667,7 @@
         "city": "Gran Canaria",
         "country": "Spain",
         "totalRoutes": 306,
-        "potentialNorm": 0.5782563429806687
+        "potentialNorm": 0.48873687824932416
       },
       {
         "id": "1418",
@@ -603,7 +675,7 @@
         "city": "Nantes",
         "country": "France",
         "totalRoutes": 183,
-        "potentialNorm": 0.35711603768100736
+        "potentialNorm": 0.18953894941966015
       },
       {
         "id": "1253",
@@ -611,7 +683,7 @@
         "city": "Sevilla",
         "country": "Spain",
         "totalRoutes": 127,
-        "potentialNorm": 0.3894859310448767
+        "potentialNorm": 0.24465360663330826
       },
       {
         "id": "1715",
@@ -619,7 +691,7 @@
         "city": "Dalaman",
         "country": "Turkey",
         "totalRoutes": 116,
-        "potentialNorm": 0.4616472718668775
+        "potentialNorm": 0.3520070708353927
       },
       {
         "id": "1198",
@@ -634,8 +706,8 @@
   {
     "id": 9,
     "label": "Cluster 10",
-    "nodeCount": 8,
-    "routeTotal": 2352,
+    "nodeCount": 7,
+    "routeTotal": 2190,
     "topAirports": [
       {
         "id": "3386",
@@ -643,7 +715,7 @@
         "city": "Hangzhou",
         "country": "China",
         "totalRoutes": 506,
-        "potentialNorm": 0.8284570234387115
+        "potentialNorm": 0.8079052142467171
       },
       {
         "id": "3390",
@@ -651,7 +723,7 @@
         "city": "Qingdao",
         "country": "China",
         "totalRoutes": 376,
-        "potentialNorm": 0.5833661963830675
+        "potentialNorm": 0.5117884303753393
       },
       {
         "id": "3375",
@@ -659,7 +731,7 @@
         "city": "Zhengzhou",
         "country": "China",
         "totalRoutes": 348,
-        "potentialNorm": 0.7065796895687356
+        "potentialNorm": 0.6605877983480409
       },
       {
         "id": "4144",
@@ -667,7 +739,7 @@
         "city": "Shenyang",
         "country": "China",
         "totalRoutes": 268,
-        "potentialNorm": 0.44967132253847775
+        "potentialNorm": 0.35027708463249013
       },
       {
         "id": "3400",
@@ -675,7 +747,7 @@
         "city": "Harbin",
         "country": "China",
         "totalRoutes": 259,
-        "potentialNorm": 0.5315604679358755
+        "potentialNorm": 0.4491548877459296
       },
       {
         "id": "4030",
@@ -692,14 +764,6 @@
         "country": "China",
         "totalRoutes": 215,
         "potentialNorm": null
-      },
-      {
-        "id": "6347",
-        "code": "SJW",
-        "city": "Shijiazhuang",
-        "country": "China",
-        "totalRoutes": 162,
-        "potentialNorm": null
       }
     ]
   },
@@ -715,7 +779,7 @@
         "city": "Abu Dhabi",
         "country": "United Arab Emirates",
         "totalRoutes": 473,
-        "potentialNorm": 0.7355555459566212
+        "potentialNorm": 0.6863935295853824
       },
       {
         "id": "2194",
@@ -723,7 +787,7 @@
         "city": "Muscat",
         "country": "Oman",
         "totalRoutes": 204,
-        "potentialNorm": 0.6685705442443622
+        "potentialNorm": 0.6049582754723165
       },
       {
         "id": "2057",
@@ -731,7 +795,7 @@
         "city": "Bahrain",
         "country": "Bahrain",
         "totalRoutes": 170,
-        "potentialNorm": 0.6875096342033341
+        "potentialNorm": 0.6282395927818077
       },
       {
         "id": "2206",
@@ -739,7 +803,7 @@
         "city": "Karachi",
         "country": "Pakistan",
         "totalRoutes": 125,
-        "potentialNorm": 0.5291728218528822
+        "potentialNorm": 0.4369808211510539
       },
       {
         "id": "2223",
@@ -747,7 +811,7 @@
         "city": "Islamabad",
         "country": "Pakistan",
         "totalRoutes": 117,
-        "potentialNorm": 0.5472506882104045
+        "potentialNorm": 0.45924476875179554
       },
       {
         "id": "2207",
@@ -755,7 +819,7 @@
         "city": "Lahore",
         "country": "Pakistan",
         "totalRoutes": 111,
-        "potentialNorm": 0.5802309959685599
+        "potentialNorm": 0.49869850891415507
       },
       {
         "id": "1175",
@@ -771,23 +835,23 @@
     "id": 11,
     "label": "Cluster 12",
     "nodeCount": 3,
-    "routeTotal": 478,
+    "routeTotal": 423,
     "topAirports": [
       {
-        "id": "1353",
-        "code": "MRS",
-        "city": "Marseille",
+        "id": "1335",
+        "code": "LYS",
+        "city": "Lyon",
         "country": "France",
-        "totalRoutes": 261,
-        "potentialNorm": 0.5064458649105025
+        "totalRoutes": 273,
+        "potentialNorm": 0.3786465184079534
       },
       {
-        "id": "1075",
-        "code": "RAK",
-        "city": "Marrakech",
-        "country": "Morocco",
-        "totalRoutes": 145,
-        "potentialNorm": 0.5246773471963122
+        "id": "1324",
+        "code": "AJA",
+        "city": "Ajaccio",
+        "country": "France",
+        "totalRoutes": 78,
+        "potentialNorm": 0.1974140772634131
       },
       {
         "id": "1321",
@@ -795,7 +859,7 @@
         "city": "Bastia",
         "country": "France",
         "totalRoutes": 72,
-        "potentialNorm": 0.19718213305737758
+        "potentialNorm": null
       }
     ]
   },
@@ -803,23 +867,23 @@
     "id": 12,
     "label": "Cluster 13",
     "nodeCount": 2,
-    "routeTotal": 296,
+    "routeTotal": 406,
     "topAirports": [
       {
-        "id": "2006",
-        "code": "AKL",
-        "city": "Auckland",
-        "country": "New Zealand",
-        "totalRoutes": 213,
-        "potentialNorm": 0.8120782447052413
+        "id": "1353",
+        "code": "MRS",
+        "city": "Marseille",
+        "country": "France",
+        "totalRoutes": 261,
+        "potentialNorm": 0.45327613789753596
       },
       {
-        "id": "1960",
-        "code": "NAN",
-        "city": "Nandi",
-        "country": "Fiji",
-        "totalRoutes": 83,
-        "potentialNorm": 0.6176168226507747
+        "id": "1075",
+        "code": "RAK",
+        "city": "Marrakech",
+        "country": "Morocco",
+        "totalRoutes": 145,
+        "potentialNorm": 0.45717834892360953
       }
     ]
   },
@@ -835,7 +899,7 @@
         "city": "Guadalajara",
         "country": "Mexico",
         "totalRoutes": 185,
-        "potentialNorm": 0.7522746748784126
+        "potentialNorm": 0.7111154625186474
       },
       {
         "id": "3748",
@@ -843,7 +907,7 @@
         "city": "San Jose",
         "country": "United States",
         "totalRoutes": 120,
-        "potentialNorm": 0.6285326896620349
+        "potentialNorm": 0.5623738295055871
       }
     ]
   },
@@ -859,7 +923,7 @@
         "city": "Palermo",
         "country": "Italy",
         "totalRoutes": 126,
-        "potentialNorm": 0.4523117031110441
+        "potentialNorm": 0.34419599029811176
       },
       {
         "id": "1550",
@@ -867,39 +931,7 @@
         "city": "Villafranca",
         "country": "Italy",
         "totalRoutes": 77,
-        "potentialNorm": 0.32719810741368144
-      }
-    ]
-  },
-  {
-    "id": 15,
-    "label": "Cluster 16",
-    "nodeCount": 3,
-    "routeTotal": 311,
-    "topAirports": [
-      {
-        "id": "4331",
-        "code": "MHD",
-        "city": "Mashhad",
-        "country": "Iran",
-        "totalRoutes": 124,
-        "potentialNorm": 0.6185538340558095
-      },
-      {
-        "id": "2131",
-        "code": "THR",
-        "city": "Teheran",
-        "country": "Iran",
-        "totalRoutes": 117,
-        "potentialNorm": 0.5837982717119725
-      },
-      {
-        "id": "2157",
-        "code": "SYZ",
-        "city": "Shiraz",
-        "country": "Iran",
-        "totalRoutes": 70,
-        "potentialNorm": 0.5490427093681355
+        "potentialNorm": 0.1933545408223004
       }
     ]
   }

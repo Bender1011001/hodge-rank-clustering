@@ -1,0 +1,539 @@
+{
+  "net1": {
+    "dataset": "DREAM5 in-silico regulatory network",
+    "leakage_control": {
+      "gold_used_for_inference": false,
+      "gold_used_for_scoring_only": true,
+      "inference_inputs": [
+        "expression matrix",
+        "provided TF list"
+      ]
+    },
+    "counts": {
+      "genes": 1643,
+      "tfs": 195,
+      "gold_pairs_scored": 278392,
+      "gold_positive_edges": 4012,
+      "hodge_candidate_edges": 39000
+    },
+    "hodge_graph": {
+      "top_per_tf": 200,
+      "max_edges": 50000,
+      "residual_norm": 26.303769950426005,
+      "flow_norm": 52.71173611451057,
+      "residual_to_flow_ratio": 0.4990116412269916
+    },
+    "diagnostics": {
+      "candidate_positive_edges": 2028,
+      "candidate_negative_edges": 32411,
+      "positive_edges_scored": 4012,
+      "negative_edges_scored": 274380,
+      "mean_abs_corr_positive": 0.2563591264199238,
+      "mean_abs_corr_negative": 0.08854680738481796,
+      "mean_hodge_delta_positive": 0.26013900173879057,
+      "mean_hodge_delta_negative": 0.21609160418678433,
+      "potential_span": 0.5218077148739232,
+      "candidate_positive_rate": 0.5054835493519442,
+      "candidate_negative_rate": 0.11812449887018005,
+      "top_rank_diagnostics": {
+        "hodge_delta": {
+          "100": {
+            "positives": 1,
+            "unique_tfs": 11,
+            "unique_targets": 17,
+            "mean_abs_corr": 0.07135288299915747,
+            "mean_hodge_delta": 0.49192042979004214
+          },
+          "500": {
+            "positives": 15,
+            "unique_tfs": 32,
+            "unique_targets": 56,
+            "mean_abs_corr": 0.11301171269360816,
+            "mean_hodge_delta": 0.45527480695355366
+          },
+          "1000": {
+            "positives": 46,
+            "unique_tfs": 42,
+            "unique_targets": 136,
+            "mean_abs_corr": 0.16283147988016264,
+            "mean_hodge_delta": 0.4367749303650737
+          }
+        },
+        "abs_corr": {
+          "100": {
+            "positives": 72,
+            "unique_tfs": 37,
+            "unique_targets": 80,
+            "mean_abs_corr": 0.7724309247452819,
+            "mean_hodge_delta": 0.3257179149040698
+          },
+          "500": {
+            "positives": 298,
+            "unique_tfs": 86,
+            "unique_targets": 318,
+            "mean_abs_corr": 0.6915078591163974,
+            "mean_hodge_delta": 0.3099752169941161
+          },
+          "1000": {
+            "positives": 494,
+            "unique_tfs": 123,
+            "unique_targets": 523,
+            "mean_abs_corr": 0.636688574601979,
+            "mean_hodge_delta": 0.30759385790162264
+          }
+        }
+      }
+    },
+    "metrics": {
+      "pearson_abs": {
+        "precision_at_100": 0.72,
+        "precision_at_500": 0.596,
+        "precision_at_1000": 0.494,
+        "aupr": 0.18933849331402874,
+        "auroc": 0.7646358522653485
+      },
+      "pearson_signed": {
+        "precision_at_100": 0.52,
+        "precision_at_500": 0.442,
+        "precision_at_1000": 0.367,
+        "aupr": 0.09315116581456694,
+        "auroc": 0.5248597563240012
+      },
+      "hodge_delta": {
+        "precision_at_100": 0.01,
+        "precision_at_500": 0.03,
+        "precision_at_1000": 0.046,
+        "aupr": 0.029513056747914414,
+        "auroc": 0.6650780674232133
+      },
+      "hodge_reverse_delta": {
+        "precision_at_100": 0.0,
+        "precision_at_500": 0.0,
+        "precision_at_1000": 0.0,
+        "aupr": 0.01420015233747629,
+        "auroc": 0.48100831625685664
+      },
+      "hodge_abs_delta": {
+        "precision_at_100": 0.01,
+        "precision_at_500": 0.03,
+        "precision_at_1000": 0.046,
+        "aupr": 0.029505782264422922,
+        "auroc": 0.6643242388150077
+      },
+      "hodge_delta_norm": {
+        "precision_at_100": 0.01,
+        "precision_at_500": 0.03,
+        "precision_at_1000": 0.046,
+        "aupr": 0.029513056747914414,
+        "auroc": 0.6650780674232133
+      },
+      "hodge_weighted": {
+        "precision_at_100": 0.51,
+        "precision_at_500": 0.38,
+        "precision_at_1000": 0.335,
+        "aupr": 0.13792348800956256,
+        "auroc": 0.7652304230613066
+      },
+      "hodge_weighted_norm": {
+        "precision_at_100": 0.51,
+        "precision_at_500": 0.38,
+        "precision_at_1000": 0.335,
+        "aupr": 0.13792348800956256,
+        "auroc": 0.7652304230613066
+      },
+      "hodge_blend": {
+        "precision_at_100": 0.63,
+        "precision_at_500": 0.534,
+        "precision_at_1000": 0.45,
+        "aupr": 0.17839227551262243,
+        "auroc": 0.7866531110437184
+      },
+      "hodge_blend_norm": {
+        "precision_at_100": 0.66,
+        "precision_at_500": 0.58,
+        "precision_at_1000": 0.471,
+        "aupr": 0.1857089724142251,
+        "auroc": 0.7790478153701299
+      },
+      "candidate_abs_corr": {
+        "precision_at_100": 0.72,
+        "precision_at_500": 0.596,
+        "precision_at_1000": 0.494,
+        "aupr": 0.17845361551486053,
+        "auroc": 0.7130784754127443
+      },
+      "candidate_gradient": {
+        "precision_at_100": 0.27,
+        "precision_at_500": 0.204,
+        "precision_at_1000": 0.191,
+        "aupr": 0.06603367767121411,
+        "auroc": 0.7004862953235199
+      },
+      "candidate_fit_score": {
+        "precision_at_100": 0.27,
+        "precision_at_500": 0.238,
+        "precision_at_1000": 0.213,
+        "aupr": 0.08459146499973591,
+        "auroc": 0.705629973916722
+      }
+    }
+  },
+  "net3": {
+    "dataset": "DREAM5 E. coli regulatory network",
+    "leakage_control": {
+      "gold_used_for_inference": false,
+      "gold_used_for_scoring_only": true,
+      "inference_inputs": [
+        "expression matrix",
+        "provided TF list"
+      ]
+    },
+    "counts": {
+      "genes": 4511,
+      "tfs": 334,
+      "gold_pairs_scored": 152280,
+      "gold_positive_edges": 2066,
+      "hodge_candidate_edges": 50000
+    },
+    "hodge_graph": {
+      "top_per_tf": 200,
+      "max_edges": 50000,
+      "residual_norm": 33.84596829789695,
+      "flow_norm": 118.5001035441051,
+      "residual_to_flow_ratio": 0.2856197360646159
+    },
+    "diagnostics": {
+      "candidate_positive_edges": 291,
+      "candidate_negative_edges": 4362,
+      "positive_edges_scored": 2066,
+      "negative_edges_scored": 150214,
+      "mean_abs_corr_positive": 0.25848886143335853,
+      "mean_abs_corr_negative": 0.17110756672347574,
+      "mean_hodge_delta_positive": 0.48428562178833146,
+      "mean_hodge_delta_negative": 0.43142359724309115,
+      "potential_span": 1.0072569690808992,
+      "candidate_positive_rate": 0.14085188770571153,
+      "candidate_negative_rate": 0.02903857163779674,
+      "top_rank_diagnostics": {
+        "hodge_delta": {
+          "100": {
+            "positives": 1,
+            "unique_tfs": 20,
+            "unique_targets": 22,
+            "mean_abs_corr": 0.09732890467657705,
+            "mean_hodge_delta": 0.9103570464700635
+          },
+          "500": {
+            "positives": 10,
+            "unique_tfs": 71,
+            "unique_targets": 38,
+            "mean_abs_corr": 0.10983683676711424,
+            "mean_hodge_delta": 0.8589262864656075
+          },
+          "1000": {
+            "positives": 13,
+            "unique_tfs": 101,
+            "unique_targets": 51,
+            "mean_abs_corr": 0.1140795616764252,
+            "mean_hodge_delta": 0.8310971331417981
+          }
+        },
+        "abs_corr": {
+          "100": {
+            "positives": 51,
+            "unique_tfs": 34,
+            "unique_targets": 79,
+            "mean_abs_corr": 0.8336747573455164,
+            "mean_hodge_delta": 0.46748079596846004
+          },
+          "500": {
+            "positives": 143,
+            "unique_tfs": 62,
+            "unique_targets": 270,
+            "mean_abs_corr": 0.7149392018984049,
+            "mean_hodge_delta": 0.5148454578892656
+          },
+          "1000": {
+            "positives": 182,
+            "unique_tfs": 91,
+            "unique_targets": 402,
+            "mean_abs_corr": 0.6659298148501602,
+            "mean_hodge_delta": 0.49948539554191657
+          }
+        }
+      }
+    },
+    "metrics": {
+      "pearson_abs": {
+        "precision_at_100": 0.5,
+        "precision_at_500": 0.286,
+        "precision_at_1000": 0.182,
+        "aupr": 0.06714386152439342,
+        "auroc": 0.6133805412764398
+      },
+      "pearson_signed": {
+        "precision_at_100": 0.5,
+        "precision_at_500": 0.296,
+        "precision_at_1000": 0.196,
+        "aupr": 0.06975801119348334,
+        "auroc": 0.6202233667769832
+      },
+      "hodge_delta": {
+        "precision_at_100": 0.01,
+        "precision_at_500": 0.02,
+        "precision_at_1000": 0.013,
+        "aupr": 0.017682339650133366,
+        "auroc": 0.5931619985303703
+      },
+      "hodge_reverse_delta": {
+        "precision_at_100": 0.0,
+        "precision_at_500": 0.008,
+        "precision_at_1000": 0.005,
+        "aupr": 0.013314787207092438,
+        "auroc": 0.4777154599225467
+      },
+      "hodge_abs_delta": {
+        "precision_at_100": 0.01,
+        "precision_at_500": 0.02,
+        "precision_at_1000": 0.013,
+        "aupr": 0.017686570465577485,
+        "auroc": 0.5928059447063654
+      },
+      "hodge_delta_norm": {
+        "precision_at_100": 0.01,
+        "precision_at_500": 0.02,
+        "precision_at_1000": 0.013,
+        "aupr": 0.017682339650133366,
+        "auroc": 0.5931619985303703
+      },
+      "hodge_weighted": {
+        "precision_at_100": 0.5,
+        "precision_at_500": 0.232,
+        "precision_at_1000": 0.149,
+        "aupr": 0.05584093731131221,
+        "auroc": 0.6323311156431989
+      },
+      "hodge_weighted_norm": {
+        "precision_at_100": 0.5,
+        "precision_at_500": 0.232,
+        "precision_at_1000": 0.149,
+        "aupr": 0.05584093731131221,
+        "auroc": 0.6323311156431989
+      },
+      "hodge_blend": {
+        "precision_at_100": 0.51,
+        "precision_at_500": 0.27,
+        "precision_at_1000": 0.172,
+        "aupr": 0.06344702244219695,
+        "auroc": 0.6384003545712666
+      },
+      "hodge_blend_norm": {
+        "precision_at_100": 0.55,
+        "precision_at_500": 0.29,
+        "precision_at_1000": 0.182,
+        "aupr": 0.06779570632758128,
+        "auroc": 0.6224300701119131
+      },
+      "candidate_abs_corr": {
+        "precision_at_100": 0.5,
+        "precision_at_500": 0.282,
+        "precision_at_1000": 0.188,
+        "aupr": 0.05788810908339506,
+        "auroc": 0.5570798600321494
+      },
+      "candidate_gradient": {
+        "precision_at_100": 0.26,
+        "precision_at_500": 0.16,
+        "precision_at_1000": 0.133,
+        "aupr": 0.0311634088608077,
+        "auroc": 0.5549788545624571
+      },
+      "candidate_fit_score": {
+        "precision_at_100": 0.39,
+        "precision_at_500": 0.198,
+        "precision_at_1000": 0.153,
+        "aupr": 0.039763908103505954,
+        "auroc": 0.555229126742717
+      }
+    }
+  },
+  "net4": {
+    "dataset": "DREAM5 yeast regulatory network",
+    "leakage_control": {
+      "gold_used_for_inference": false,
+      "gold_used_for_scoring_only": true,
+      "inference_inputs": [
+        "expression matrix",
+        "provided TF list"
+      ]
+    },
+    "counts": {
+      "genes": 5950,
+      "tfs": 333,
+      "gold_pairs_scored": 227202,
+      "gold_positive_edges": 3940,
+      "hodge_candidate_edges": 50000
+    },
+    "hodge_graph": {
+      "top_per_tf": 200,
+      "max_edges": 50000,
+      "residual_norm": 41.17903002762666,
+      "flow_norm": 136.59089650616767,
+      "residual_to_flow_ratio": 0.3014771194928591
+    },
+    "diagnostics": {
+      "candidate_positive_edges": 192,
+      "candidate_negative_edges": 6164,
+      "positive_edges_scored": 3940,
+      "negative_edges_scored": 223262,
+      "mean_abs_corr_positive": 0.2383206436543779,
+      "mean_abs_corr_negative": 0.2188822359671213,
+      "mean_hodge_delta_positive": 0.5287604516210767,
+      "mean_hodge_delta_negative": 0.5222640530021022,
+      "potential_span": 0.9843252136873258,
+      "candidate_positive_rate": 0.048730964467005075,
+      "candidate_negative_rate": 0.027608818338991856,
+      "top_rank_diagnostics": {
+        "hodge_delta": {
+          "100": {
+            "positives": 0,
+            "unique_tfs": 84,
+            "unique_targets": 6,
+            "mean_abs_corr": 0.1703158085460984,
+            "mean_hodge_delta": 0.7988616686731257
+          },
+          "500": {
+            "positives": 8,
+            "unique_tfs": 112,
+            "unique_targets": 63,
+            "mean_abs_corr": 0.1924723617652716,
+            "mean_hodge_delta": 0.7490663271819046
+          },
+          "1000": {
+            "positives": 21,
+            "unique_tfs": 112,
+            "unique_targets": 165,
+            "mean_abs_corr": 0.2164130159383935,
+            "mean_hodge_delta": 0.7297536052011844
+          }
+        },
+        "abs_corr": {
+          "100": {
+            "positives": 7,
+            "unique_tfs": 28,
+            "unique_targets": 90,
+            "mean_abs_corr": 0.8072436532005871,
+            "mean_hodge_delta": 0.6036531339055429
+          },
+          "500": {
+            "positives": 15,
+            "unique_tfs": 55,
+            "unique_targets": 331,
+            "mean_abs_corr": 0.7512551156765404,
+            "mean_hodge_delta": 0.5821682662979806
+          },
+          "1000": {
+            "positives": 26,
+            "unique_tfs": 67,
+            "unique_targets": 537,
+            "mean_abs_corr": 0.7232678632815014,
+            "mean_hodge_delta": 0.5587421278301204
+          }
+        }
+      }
+    },
+    "metrics": {
+      "pearson_abs": {
+        "precision_at_100": 0.07,
+        "precision_at_500": 0.03,
+        "precision_at_1000": 0.026,
+        "aupr": 0.020393319690121495,
+        "auroc": 0.5314675038414043
+      },
+      "pearson_signed": {
+        "precision_at_100": 0.07,
+        "precision_at_500": 0.034,
+        "precision_at_1000": 0.03,
+        "aupr": 0.023179608653548105,
+        "auroc": 0.579588341998045
+      },
+      "hodge_delta": {
+        "precision_at_100": 0.0,
+        "precision_at_500": 0.016,
+        "precision_at_1000": 0.021,
+        "aupr": 0.01594417060534031,
+        "auroc": 0.4748369196519334
+      },
+      "hodge_reverse_delta": {
+        "precision_at_100": 0.0,
+        "precision_at_500": 0.01,
+        "precision_at_1000": 0.021,
+        "aupr": 0.017431664493571388,
+        "auroc": 0.5000296617204244
+      },
+      "hodge_abs_delta": {
+        "precision_at_100": 0.0,
+        "precision_at_500": 0.016,
+        "precision_at_1000": 0.021,
+        "aupr": 0.015952158241216405,
+        "auroc": 0.4753319141058782
+      },
+      "hodge_delta_norm": {
+        "precision_at_100": 0.0,
+        "precision_at_500": 0.016,
+        "precision_at_1000": 0.021,
+        "aupr": 0.01594417060534031,
+        "auroc": 0.4748369196519334
+      },
+      "hodge_weighted": {
+        "precision_at_100": 0.06,
+        "precision_at_500": 0.026,
+        "precision_at_1000": 0.021,
+        "aupr": 0.01943313800162458,
+        "auroc": 0.5290283019558593
+      },
+      "hodge_weighted_norm": {
+        "precision_at_100": 0.06,
+        "precision_at_500": 0.026,
+        "precision_at_1000": 0.021,
+        "aupr": 0.01943313800162458,
+        "auroc": 0.5290283019558593
+      },
+      "hodge_blend": {
+        "precision_at_100": 0.07,
+        "precision_at_500": 0.026,
+        "precision_at_1000": 0.025,
+        "aupr": 0.019921280713871024,
+        "auroc": 0.5326273809010078
+      },
+      "hodge_blend_norm": {
+        "precision_at_100": 0.07,
+        "precision_at_500": 0.032,
+        "precision_at_1000": 0.026,
+        "aupr": 0.02037660721244485,
+        "auroc": 0.533118628419857
+      },
+      "candidate_abs_corr": {
+        "precision_at_100": 0.07,
+        "precision_at_500": 0.034,
+        "precision_at_1000": 0.028,
+        "aupr": 0.018444841926525627,
+        "auroc": 0.5105063042637712
+      },
+      "candidate_gradient": {
+        "precision_at_100": 0.03,
+        "precision_at_500": 0.022,
+        "precision_at_1000": 0.019,
+        "aupr": 0.017674316016746308,
+        "auroc": 0.5087156086266268
+      },
+      "candidate_fit_score": {
+        "precision_at_100": 0.01,
+        "precision_at_500": 0.02,
+        "precision_at_1000": 0.021,
+        "aupr": 0.017755154110644787,
+        "auroc": 0.5087720025008063
+      }
+    }
+  }
+}

@@ -1,0 +1,962 @@
+[
+  {
+    "id": "G120",
+    "label": "G120",
+    "documentCount": 59,
+    "mentionCount": 59,
+    "kind": "tf",
+    "potentialNorm": 0.2455438475335653
+  },
+  {
+    "id": "G84",
+    "label": "G84",
+    "documentCount": 37,
+    "mentionCount": 37,
+    "kind": "tf",
+    "potentialNorm": 0.14962567518086847
+  },
+  {
+    "id": "G48",
+    "label": "G48",
+    "documentCount": 36,
+    "mentionCount": 36,
+    "kind": "tf",
+    "potentialNorm": 0.24740062435674637
+  },
+  {
+    "id": "G121",
+    "label": "G121",
+    "documentCount": 27,
+    "mentionCount": 27,
+    "kind": "tf",
+    "potentialNorm": 0.15501108404848962
+  },
+  {
+    "id": "G110",
+    "label": "G110",
+    "documentCount": 23,
+    "mentionCount": 23,
+    "kind": "tf",
+    "potentialNorm": 0.24567717625632643
+  },
+  {
+    "id": "G136",
+    "label": "G136",
+    "documentCount": 22,
+    "mentionCount": 22,
+    "kind": "tf",
+    "potentialNorm": 0.39715824164131086
+  },
+  {
+    "id": "G182",
+    "label": "G182",
+    "documentCount": 20,
+    "mentionCount": 20,
+    "kind": "tf",
+    "potentialNorm": 0.26173179025911075
+  },
+  {
+    "id": "G171",
+    "label": "G171",
+    "documentCount": 17,
+    "mentionCount": 17,
+    "kind": "tf",
+    "potentialNorm": 0.27149534238164125
+  },
+  {
+    "id": "G78",
+    "label": "G78",
+    "documentCount": 11,
+    "mentionCount": 11,
+    "kind": "tf",
+    "potentialNorm": 0.2575153694640986
+  },
+  {
+    "id": "G44",
+    "label": "G44",
+    "documentCount": 10,
+    "mentionCount": 10,
+    "kind": "tf",
+    "potentialNorm": 0.2749871033866945
+  },
+  {
+    "id": "G187",
+    "label": "G187",
+    "documentCount": 10,
+    "mentionCount": 10,
+    "kind": "tf",
+    "potentialNorm": 0.2828739958788468
+  },
+  {
+    "id": "G95",
+    "label": "G95",
+    "documentCount": 9,
+    "mentionCount": 9,
+    "kind": "tf",
+    "potentialNorm": 0.2476266014913327
+  },
+  {
+    "id": "G194",
+    "label": "G194",
+    "documentCount": 9,
+    "mentionCount": 9,
+    "kind": "tf",
+    "potentialNorm": 0.2995758285980734
+  },
+  {
+    "id": "G100",
+    "label": "G100",
+    "documentCount": 8,
+    "mentionCount": 8,
+    "kind": "tf",
+    "potentialNorm": 0.26577868469814175
+  },
+  {
+    "id": "G43",
+    "label": "G43",
+    "documentCount": 8,
+    "mentionCount": 8,
+    "kind": "tf",
+    "potentialNorm": 0.29138919674548414
+  },
+  {
+    "id": "G92",
+    "label": "G92",
+    "documentCount": 8,
+    "mentionCount": 8,
+    "kind": "tf",
+    "potentialNorm": 0.2769092752807556
+  },
+  {
+    "id": "G176",
+    "label": "G176",
+    "documentCount": 8,
+    "mentionCount": 8,
+    "kind": "tf",
+    "potentialNorm": 0.14302493278210687
+  },
+  {
+    "id": "G129",
+    "label": "G129",
+    "documentCount": 7,
+    "mentionCount": 7,
+    "kind": "tf",
+    "potentialNorm": 0.3892411716751097
+  },
+  {
+    "id": "G158",
+    "label": "G158",
+    "documentCount": 7,
+    "mentionCount": 7,
+    "kind": "tf",
+    "potentialNorm": 0.20412818499955346
+  },
+  {
+    "id": "G8",
+    "label": "G8",
+    "documentCount": 6,
+    "mentionCount": 6,
+    "kind": "tf",
+    "potentialNorm": 0.286843984189383
+  },
+  {
+    "id": "G52",
+    "label": "G52",
+    "documentCount": 6,
+    "mentionCount": 6,
+    "kind": "tf",
+    "potentialNorm": 0.3716163195777338
+  },
+  {
+    "id": "G115",
+    "label": "G115",
+    "documentCount": 6,
+    "mentionCount": 6,
+    "kind": "tf",
+    "potentialNorm": 0.27821816780224373
+  },
+  {
+    "id": "G141",
+    "label": "G141",
+    "documentCount": 5,
+    "mentionCount": 5,
+    "kind": "tf",
+    "potentialNorm": 0.30142349364135007
+  },
+  {
+    "id": "G13",
+    "label": "G13",
+    "documentCount": 5,
+    "mentionCount": 5,
+    "kind": "tf",
+    "potentialNorm": 0.3043816534070464
+  },
+  {
+    "id": "G119",
+    "label": "G119",
+    "documentCount": 5,
+    "mentionCount": 5,
+    "kind": "tf",
+    "potentialNorm": 0.29494044007845965
+  },
+  {
+    "id": "G88",
+    "label": "G88",
+    "documentCount": 5,
+    "mentionCount": 5,
+    "kind": "tf",
+    "potentialNorm": 0.38387516478191436
+  },
+  {
+    "id": "G98",
+    "label": "G98",
+    "documentCount": 5,
+    "mentionCount": 5,
+    "kind": "tf",
+    "potentialNorm": 0.2789450698392697
+  },
+  {
+    "id": "G83",
+    "label": "G83",
+    "documentCount": 4,
+    "mentionCount": 4,
+    "kind": "tf",
+    "potentialNorm": 0.33769493515261206
+  },
+  {
+    "id": "G10",
+    "label": "G10",
+    "documentCount": 4,
+    "mentionCount": 4,
+    "kind": "tf",
+    "potentialNorm": 0.45749950854567645
+  },
+  {
+    "id": "G188",
+    "label": "G188",
+    "documentCount": 4,
+    "mentionCount": 4,
+    "kind": "tf",
+    "potentialNorm": 0.6864694645358095
+  },
+  {
+    "id": "G16",
+    "label": "G16",
+    "documentCount": 4,
+    "mentionCount": 4,
+    "kind": "tf",
+    "potentialNorm": 0.2966189621849896
+  },
+  {
+    "id": "G26",
+    "label": "G26",
+    "documentCount": 4,
+    "mentionCount": 4,
+    "kind": "tf",
+    "potentialNorm": 0.30042517265328755
+  },
+  {
+    "id": "G134",
+    "label": "G134",
+    "documentCount": 4,
+    "mentionCount": 4,
+    "kind": "tf",
+    "potentialNorm": 0.7026875136766768
+  },
+  {
+    "id": "G12",
+    "label": "G12",
+    "documentCount": 4,
+    "mentionCount": 4,
+    "kind": "tf",
+    "potentialNorm": 0.3094637488046835
+  },
+  {
+    "id": "G35",
+    "label": "G35",
+    "documentCount": 3,
+    "mentionCount": 3,
+    "kind": "tf",
+    "potentialNorm": 0.4706343643011672
+  },
+  {
+    "id": "G27",
+    "label": "G27",
+    "documentCount": 3,
+    "mentionCount": 3,
+    "kind": "tf",
+    "potentialNorm": 0.5866355694384455
+  },
+  {
+    "id": "G4",
+    "label": "G4",
+    "documentCount": 3,
+    "mentionCount": 3,
+    "kind": "tf",
+    "potentialNorm": 0.4468935765909927
+  },
+  {
+    "id": "G1225",
+    "label": "G1225",
+    "documentCount": 3,
+    "mentionCount": 3,
+    "kind": "gene",
+    "potentialNorm": 0.6317798301448018
+  },
+  {
+    "id": "G143",
+    "label": "G143",
+    "documentCount": 3,
+    "mentionCount": 3,
+    "kind": "tf",
+    "potentialNorm": 0.1672105961123956
+  },
+  {
+    "id": "G192",
+    "label": "G192",
+    "documentCount": 3,
+    "mentionCount": 3,
+    "kind": "tf",
+    "potentialNorm": 0.4474172744047114
+  },
+  {
+    "id": "G97",
+    "label": "G97",
+    "documentCount": 3,
+    "mentionCount": 3,
+    "kind": "tf",
+    "potentialNorm": 0.37359764451850225
+  },
+  {
+    "id": "G80",
+    "label": "G80",
+    "documentCount": 3,
+    "mentionCount": 3,
+    "kind": "tf",
+    "potentialNorm": 0.5030201112139849
+  },
+  {
+    "id": "G71",
+    "label": "G71",
+    "documentCount": 3,
+    "mentionCount": 3,
+    "kind": "tf",
+    "potentialNorm": 0.3328652859077517
+  },
+  {
+    "id": "G112",
+    "label": "G112",
+    "documentCount": 3,
+    "mentionCount": 3,
+    "kind": "tf",
+    "potentialNorm": 0.31924603382856426
+  },
+  {
+    "id": "G1222",
+    "label": "G1222",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.5533163872218951
+  },
+  {
+    "id": "G1543",
+    "label": "G1543",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.4359754945657781
+  },
+  {
+    "id": "G163",
+    "label": "G163",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.3304782398583747
+  },
+  {
+    "id": "G167",
+    "label": "G167",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.33689765528508486
+  },
+  {
+    "id": "G173",
+    "label": "G173",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.5040976014766875
+  },
+  {
+    "id": "G137",
+    "label": "G137",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.40790583945541514
+  },
+  {
+    "id": "G183",
+    "label": "G183",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.32527228317159734
+  },
+  {
+    "id": "G108",
+    "label": "G108",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.5046515844150592
+  },
+  {
+    "id": "G102",
+    "label": "G102",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.5040976014766875
+  },
+  {
+    "id": "G189",
+    "label": "G189",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.4888418970218512
+  },
+  {
+    "id": "G191",
+    "label": "G191",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.2998248986676175
+  },
+  {
+    "id": "G144",
+    "label": "G144",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.3166280460292567
+  },
+  {
+    "id": "G909",
+    "label": "G909",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.596822121702143
+  },
+  {
+    "id": "G454",
+    "label": "G454",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.4125819029664388
+  },
+  {
+    "id": "G494",
+    "label": "G494",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.47728128617344817
+  },
+  {
+    "id": "G569",
+    "label": "G569",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.47578890533600776
+  },
+  {
+    "id": "G863",
+    "label": "G863",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.4106504871779348
+  },
+  {
+    "id": "G149",
+    "label": "G149",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.3138415748766169
+  },
+  {
+    "id": "G1404",
+    "label": "G1404",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.5576888581418431
+  },
+  {
+    "id": "G75",
+    "label": "G75",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.3315042128970096
+  },
+  {
+    "id": "G73",
+    "label": "G73",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.3500638995786621
+  },
+  {
+    "id": "G151",
+    "label": "G151",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.32601868546661156
+  },
+  {
+    "id": "G65",
+    "label": "G65",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.5124406347967524
+  },
+  {
+    "id": "G62",
+    "label": "G62",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.24352862972459366
+  },
+  {
+    "id": "G58",
+    "label": "G58",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.3341557375760761
+  },
+  {
+    "id": "G127",
+    "label": "G127",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.3241817233878655
+  },
+  {
+    "id": "G991",
+    "label": "G991",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.5826989838076481
+  },
+  {
+    "id": "G51",
+    "label": "G51",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.35078038027772784
+  },
+  {
+    "id": "G1093",
+    "label": "G1093",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.5981425467520172
+  },
+  {
+    "id": "G1235",
+    "label": "G1235",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.37093574829895903
+  },
+  {
+    "id": "G1567",
+    "label": "G1567",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.5558968147001397
+  },
+  {
+    "id": "G126",
+    "label": "G126",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.3083018803575002
+  },
+  {
+    "id": "G1618",
+    "label": "G1618",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "gene",
+    "potentialNorm": 0.6359552913527212
+  },
+  {
+    "id": "G32",
+    "label": "G32",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.3524664799986113
+  },
+  {
+    "id": "G154",
+    "label": "G154",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.3393795751268224
+  },
+  {
+    "id": "G57",
+    "label": "G57",
+    "documentCount": 2,
+    "mentionCount": 2,
+    "kind": "tf",
+    "potentialNorm": 0.5866358824536145
+  },
+  {
+    "id": "G1572",
+    "label": "G1572",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.6397138380645487
+  },
+  {
+    "id": "G1349",
+    "label": "G1349",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.3998442884172322
+  },
+  {
+    "id": "G1186",
+    "label": "G1186",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5194338501841645
+  },
+  {
+    "id": "G1073",
+    "label": "G1073",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5319913333454143
+  },
+  {
+    "id": "G1568",
+    "label": "G1568",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5087033601231717
+  },
+  {
+    "id": "G1184",
+    "label": "G1184",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.47767436791538526
+  },
+  {
+    "id": "G1565",
+    "label": "G1565",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.6143175831636517
+  },
+  {
+    "id": "G943",
+    "label": "G943",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.6145660732362038
+  },
+  {
+    "id": "G942",
+    "label": "G942",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5780350710144925
+  },
+  {
+    "id": "G1562",
+    "label": "G1562",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.7004881699044406
+  },
+  {
+    "id": "G995",
+    "label": "G995",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.6974659773726035
+  },
+  {
+    "id": "G994",
+    "label": "G994",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5014857470552616
+  },
+  {
+    "id": "G1341",
+    "label": "G1341",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.7091176979878459
+  },
+  {
+    "id": "G993",
+    "label": "G993",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.538684615170467
+  },
+  {
+    "id": "G1557",
+    "label": "G1557",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5056628509497494
+  },
+  {
+    "id": "G1178",
+    "label": "G1178",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5252521315647009
+  },
+  {
+    "id": "G1338",
+    "label": "G1338",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.6168497704841549
+  },
+  {
+    "id": "G1554",
+    "label": "G1554",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.4684478431220259
+  },
+  {
+    "id": "G1553",
+    "label": "G1553",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5181853440228719
+  },
+  {
+    "id": "G1552",
+    "label": "G1552",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5229384035571804
+  },
+  {
+    "id": "G1177",
+    "label": "G1177",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5003644086331607
+  },
+  {
+    "id": "G876",
+    "label": "G876",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5816014590692911
+  },
+  {
+    "id": "G1335",
+    "label": "G1335",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.4962903434133145
+  },
+  {
+    "id": "G1334",
+    "label": "G1334",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5070319356161719
+  },
+  {
+    "id": "G990",
+    "label": "G990",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5767019145865402
+  },
+  {
+    "id": "G1545",
+    "label": "G1545",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.474572077369347
+  },
+  {
+    "id": "G1331",
+    "label": "G1331",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5402895828300543
+  },
+  {
+    "id": "G1542",
+    "label": "G1542",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 1.0
+  },
+  {
+    "id": "G1330",
+    "label": "G1330",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.3649370990129416
+  },
+  {
+    "id": "G1329",
+    "label": "G1329",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5061363492505209
+  },
+  {
+    "id": "G1173",
+    "label": "G1173",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5215660519886085
+  },
+  {
+    "id": "G940",
+    "label": "G940",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.3941253686275924
+  },
+  {
+    "id": "G939",
+    "label": "G939",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.4479282565084734
+  },
+  {
+    "id": "G987",
+    "label": "G987",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5034891187959916
+  },
+  {
+    "id": "G1535",
+    "label": "G1535",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5186847669673404
+  },
+  {
+    "id": "G1324",
+    "label": "G1324",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.6524010747894226
+  },
+  {
+    "id": "G1169",
+    "label": "G1169",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5728278862605961
+  },
+  {
+    "id": "G1322",
+    "label": "G1322",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.6278358236230983
+  },
+  {
+    "id": "G1168",
+    "label": "G1168",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.6134458117434576
+  },
+  {
+    "id": "G1167",
+    "label": "G1167",
+    "documentCount": 1,
+    "mentionCount": 1,
+    "kind": "gene",
+    "potentialNorm": 0.5686083568817712
+  }
+]

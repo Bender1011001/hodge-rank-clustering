@@ -1,0 +1,970 @@
+[
+  {
+    "source": "G102",
+    "target": "G173",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.0,
+      "curl": 0.0,
+      "harmonic": 0.620293323322983,
+      "total": 0.620293323322983
+    }
+  },
+  {
+    "source": "G95",
+    "target": "G1073",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.721702454340561,
+      "curl": 0.0,
+      "harmonic": 2.244363730419252e-07,
+      "total": 0.7217026787769341
+    }
+  },
+  {
+    "source": "G4",
+    "target": "G1341",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6655107712039214,
+      "curl": 0.0,
+      "harmonic": 1.8811910348359717e-06,
+      "total": 0.6655126523949563
+    }
+  },
+  {
+    "source": "G83",
+    "target": "G909",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6576509164825834,
+      "curl": 0.0,
+      "harmonic": -9.538254505336852e-06,
+      "total": 0.6576413782280781
+    }
+  },
+  {
+    "source": "G121",
+    "target": "G10",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7676994152750656,
+      "curl": 0.0,
+      "harmonic": -5.8464656167434015e-06,
+      "total": 0.7676935688094488
+    }
+  },
+  {
+    "source": "G176",
+    "target": "G1235",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5784254392477685,
+      "curl": 0.0,
+      "harmonic": -6.791735112310349e-06,
+      "total": 0.5784186475126561
+    }
+  },
+  {
+    "source": "G27",
+    "target": "G57",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 7.944157287276266e-07,
+      "curl": 0.0,
+      "harmonic": 0.6613972616309433,
+      "total": 0.661398056046672
+    }
+  },
+  {
+    "source": "G176",
+    "target": "G940",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6372794532363537,
+      "curl": 0.0,
+      "harmonic": 1.0793898013172765e-06,
+      "total": 0.637280532626155
+    }
+  },
+  {
+    "source": "G84",
+    "target": "G569",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.8277848036352072,
+      "curl": -0.15195891543645396,
+      "harmonic": 0.1323130274344722,
+      "total": 0.8081389156332255
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G494",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5881372037191259,
+      "curl": 0.0,
+      "harmonic": 8.251274287718324e-06,
+      "total": 0.5881454549934136
+    }
+  },
+  {
+    "source": "G78",
+    "target": "G65",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6469866655559884,
+      "curl": 0.0,
+      "harmonic": -3.3017772638199716e-06,
+      "total": 0.6469833637787246
+    }
+  },
+  {
+    "source": "G182",
+    "target": "G1568",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6268006125833351,
+      "curl": 0.0,
+      "harmonic": 1.742045535602088e-07,
+      "total": 0.6268007867878886
+    }
+  },
+  {
+    "source": "G97",
+    "target": "G1093",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5698829316665943,
+      "curl": -0.004088387027266719,
+      "harmonic": 0.17322182596698604,
+      "total": 0.7390163706063136
+    }
+  },
+  {
+    "source": "G141",
+    "target": "G991",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7138621244459641,
+      "curl": -0.18709058896643335,
+      "harmonic": 0.1574344262087167,
+      "total": 0.6842059616882474
+    }
+  },
+  {
+    "source": "G121",
+    "target": "G1543",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7130726209631597,
+      "curl": 0.1350523127844633,
+      "harmonic": -0.13230994022391243,
+      "total": 0.7158149935237106
+    }
+  },
+  {
+    "source": "G97",
+    "target": "G1567",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.4626655270733322,
+      "curl": 0.004088148850865162,
+      "harmonic": 0.17322183341200614,
+      "total": 0.6399755093362035
+    }
+  },
+  {
+    "source": "G88",
+    "target": "G1225",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6291687589678969,
+      "curl": -0.00950088964318866,
+      "harmonic": -0.009506198024474354,
+      "total": 0.6101616713002339
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G1177",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6467209318221129,
+      "curl": 0.0,
+      "harmonic": 2.3816346339522454e-07,
+      "total": 0.6467211699855763
+    }
+  },
+  {
+    "source": "G10",
+    "target": "G995",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6090220414558952,
+      "curl": 0.0,
+      "harmonic": -1.8440635788374848e-06,
+      "total": 0.6090201973923164
+    }
+  },
+  {
+    "source": "G149",
+    "target": "G1338",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.769018566505916,
+      "curl": 0.0,
+      "harmonic": -2.661877385179423e-10,
+      "total": 0.7690185662397283
+    }
+  },
+  {
+    "source": "G171",
+    "target": "G1334",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5977792545370997,
+      "curl": 0.0,
+      "harmonic": -8.18938217239662e-09,
+      "total": 0.5977792463477175
+    }
+  },
+  {
+    "source": "G115",
+    "target": "G1173",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6176038924756739,
+      "curl": 0.0,
+      "harmonic": -1.5255774421518709e-10,
+      "total": 0.6176038923231162
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G97",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.32499367614644803,
+      "curl": 2.3817640155705117e-07,
+      "harmonic": 0.34644342110396825,
+      "total": 0.6714373354268178
+    }
+  },
+  {
+    "source": "G136",
+    "target": "G1618",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6060541183934312,
+      "curl": 0.17208604127148808,
+      "harmonic": -0.21226831848167094,
+      "total": 0.5658718411832483
+    }
+  },
+  {
+    "source": "G129",
+    "target": "G136",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.020093099409828563,
+      "curl": 0.0,
+      "harmonic": 0.5564459716181902,
+      "total": 0.5765390710280188
+    }
+  },
+  {
+    "source": "G136",
+    "target": "G129",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": -0.020093099409828563,
+      "curl": 0.17208604127148808,
+      "harmonic": 0.42454612916635937,
+      "total": 0.5765390710280188
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G1222",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7811102165287985,
+      "curl": -0.22045770654188646,
+      "harmonic": 2.379701244947796e-07,
+      "total": 0.5606527479570366
+    }
+  },
+  {
+    "source": "G149",
+    "target": "G876",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6795602405960723,
+      "curl": 0.0,
+      "harmonic": -4.486930826885782e-10,
+      "total": 0.6795602401473793
+    }
+  },
+  {
+    "source": "G129",
+    "target": "G1572",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6356862079902408,
+      "curl": 0.0,
+      "harmonic": -3.5947725105511807e-06,
+      "total": 0.6356826132177302
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G1552",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7040125215164923,
+      "curl": 0.0,
+      "harmonic": 2.3828034534378872e-07,
+      "total": 0.7040127597968376
+    }
+  },
+  {
+    "source": "G173",
+    "target": "G102",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.0,
+      "curl": 0.0,
+      "harmonic": 0.620293323322983,
+      "total": 0.620293323322983
+    }
+  },
+  {
+    "source": "G137",
+    "target": "G1222",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.36904417972593156,
+      "curl": 0.22045770654188646,
+      "harmonic": -1.8212503727355056e-10,
+      "total": 0.589501886085693
+    }
+  },
+  {
+    "source": "G44",
+    "target": "G994",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5748414227552415,
+      "curl": 0.0,
+      "harmonic": 1.9374264415006337e-09,
+      "total": 0.574841424692668
+    }
+  },
+  {
+    "source": "G176",
+    "target": "G1330",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.563201188743073,
+      "curl": 0.0,
+      "harmonic": 1.0792386729852055e-06,
+      "total": 0.563202267981746
+    }
+  },
+  {
+    "source": "G110",
+    "target": "G1329",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6610314267167265,
+      "curl": 0.0,
+      "harmonic": -6.437274885362498e-07,
+      "total": 0.661030782989238
+    }
+  },
+  {
+    "source": "G134",
+    "target": "G1542",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7545631614955033,
+      "curl": 0.0,
+      "harmonic": 1.4670348033041236e-06,
+      "total": 0.7545646285303066
+    }
+  },
+  {
+    "source": "G84",
+    "target": "G121",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.01366787917773149,
+      "curl": 0.0,
+      "harmonic": 0.7391753818373724,
+      "total": 0.7528432610151039
+    }
+  },
+  {
+    "source": "G141",
+    "target": "G1404",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6503877654469045,
+      "curl": -0.1371572414581298,
+      "harmonic": 0.15743443061628382,
+      "total": 0.6706649546050585
+    }
+  },
+  {
+    "source": "G136",
+    "target": "G134",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7754169234107279,
+      "curl": 0.0,
+      "harmonic": 1.980118281785792e-06,
+      "total": 0.7754189035290097
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G1335",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6363811725659781,
+      "curl": 0.0,
+      "harmonic": 2.3814236949082357e-07,
+      "total": 0.6363814107083476
+    }
+  },
+  {
+    "source": "G98",
+    "target": "G1167",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7351499035337468,
+      "curl": 0.0,
+      "harmonic": 1.00828123628105e-10,
+      "total": 0.7351499036345749
+    }
+  },
+  {
+    "source": "G121",
+    "target": "G863",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6487991090236479,
+      "curl": 0.13644307916860723,
+      "harmonic": -0.1323099357608533,
+      "total": 0.6529322524314018
+    }
+  },
+  {
+    "source": "G121",
+    "target": "G454",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6537009388174732,
+      "curl": 0.07843385812855708,
+      "harmonic": -0.13230993610122965,
+      "total": 0.5998248608448006
+    }
+  },
+  {
+    "source": "G158",
+    "target": "G4",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6161255574773357,
+      "curl": 0.0,
+      "harmonic": 4.973273751485152e-06,
+      "total": 0.6161305307510871
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G1554",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.565718398514547,
+      "curl": 0.0,
+      "harmonic": 2.3799820936254434e-07,
+      "total": 0.5657186365127563
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G1567",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7876592032197802,
+      "curl": -0.004088148850865162,
+      "harmonic": -0.17322158769196205,
+      "total": 0.610349466676953
+    }
+  },
+  {
+    "source": "G57",
+    "target": "G27",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": -7.944157287276266e-07,
+      "curl": 0.0,
+      "harmonic": 0.6613988504624008,
+      "total": 0.661398056046672
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G88",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.3510774719472771,
+      "curl": 0.11085603877320978,
+      "harmonic": 0.1322018694627553,
+      "total": 0.5941353801832422
+    }
+  },
+  {
+    "source": "G144",
+    "target": "G942",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.663437024287937,
+      "curl": 0.0,
+      "harmonic": -4.5470960330362686e-10,
+      "total": 0.6634370238332274
+    }
+  },
+  {
+    "source": "G88",
+    "target": "G80",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.30238349074323073,
+      "curl": 0.10135514913002111,
+      "harmonic": 0.1607081724839741,
+      "total": 0.5644468123572259
+    }
+  },
+  {
+    "source": "G84",
+    "target": "G1543",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7267405001408912,
+      "curl": -0.1350523127844633,
+      "harmonic": 0.13231303445084122,
+      "total": 0.7240012218072691
+    }
+  },
+  {
+    "source": "G136",
+    "target": "G1324",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6477926356576291,
+      "curl": 0.0,
+      "harmonic": -6.847133576792785e-07,
+      "total": 0.6477919509442714
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G189",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6174774146818901,
+      "curl": 0.0,
+      "harmonic": 2.08502619225559e-06,
+      "total": 0.6174794997080824
+    }
+  },
+  {
+    "source": "G194",
+    "target": "G1404",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6550770403363668,
+      "curl": 0.1371572414581298,
+      "harmonic": -0.15743651793280022,
+      "total": 0.6347977638616964
+    }
+  },
+  {
+    "source": "G48",
+    "target": "G1178",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7051722391407611,
+      "curl": 0.0,
+      "harmonic": 1.7143758279658527e-07,
+      "total": 0.7051724105783439
+    }
+  },
+  {
+    "source": "G84",
+    "target": "G1235",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5616731086806273,
+      "curl": 0.0,
+      "harmonic": -5.073598678406732e-06,
+      "total": 0.5616680350819488
+    }
+  },
+  {
+    "source": "G136",
+    "target": "G188",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7342563835882796,
+      "curl": 0.0,
+      "harmonic": 5.6312813924153104e-06,
+      "total": 0.734262014869672
+    }
+  },
+  {
+    "source": "G129",
+    "target": "G1618",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6261472178032597,
+      "curl": -0.17208604127148808,
+      "harmonic": 0.21227781068468832,
+      "total": 0.6663389872164599
+    }
+  },
+  {
+    "source": "G62",
+    "target": "G494",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5932517185511268,
+      "curl": 0.0,
+      "harmonic": -4.068045344807203e-06,
+      "total": 0.593247650505782
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G80",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6534609626905078,
+      "curl": -0.25256941470415056,
+      "harmonic": 0.29291004194672926,
+      "total": 0.6938015899330865
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G1225",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.980246230915174,
+      "curl": -0.1417133759309408,
+      "harmonic": -0.14170806748722964,
+      "total": 0.6968247874970036
+    }
+  },
+  {
+    "source": "G48",
+    "target": "G1553",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6872371109693169,
+      "curl": 0.0,
+      "harmonic": 1.714009929543181e-07,
+      "total": 0.6872372823703099
+    }
+  },
+  {
+    "source": "G43",
+    "target": "G1331",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6316958448128636,
+      "curl": 0.0,
+      "harmonic": -4.464477898480368e-09,
+      "total": 0.6316958403483857
+    }
+  },
+  {
+    "source": "G141",
+    "target": "G194",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": -0.004689274889462358,
+      "curl": 0.0,
+      "harmonic": 0.6484973287525719,
+      "total": 0.6438080538631096
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G1545",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5812613769226996,
+      "curl": 0.0,
+      "harmonic": 2.3802991866439527e-07,
+      "total": 0.5812616149526183
+    }
+  },
+  {
+    "source": "G84",
+    "target": "G939",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7570759695711091,
+      "curl": 0.0,
+      "harmonic": -4.881267787748556e-07,
+      "total": 0.7570754814443303
+    }
+  },
+  {
+    "source": "G121",
+    "target": "G569",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.8141169244574757,
+      "curl": 0.15195891543645396,
+      "harmonic": -0.1323099472402815,
+      "total": 0.8337658926536482
+    }
+  },
+  {
+    "source": "G182",
+    "target": "G993",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7028914316197348,
+      "curl": 0.0,
+      "harmonic": 1.7435978771906946e-07,
+      "total": 0.7028916059795225
+    }
+  },
+  {
+    "source": "G71",
+    "target": "G990",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6188442998125041,
+      "curl": 0.0,
+      "harmonic": 1.357377543698135e-10,
+      "total": 0.6188442999482419
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G1093",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.8948766078130423,
+      "curl": 0.004088387027266719,
+      "harmonic": -0.17322159513698215,
+      "total": 0.7257433997033269
+    }
+  },
+  {
+    "source": "G110",
+    "target": "G108",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6572631731119822,
+      "curl": 0.0,
+      "harmonic": 6.449901862048968e-06,
+      "total": 0.6572696230138443
+    }
+  },
+  {
+    "source": "G84",
+    "target": "G863",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6624669882013794,
+      "curl": -0.13644307916860723,
+      "harmonic": 0.13231303891390048,
+      "total": 0.6583369479466726
+    }
+  },
+  {
+    "source": "G84",
+    "target": "G454",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6673688179952046,
+      "curl": -0.07843385812855708,
+      "harmonic": 0.13231303857352417,
+      "total": 0.7212479984401717
+    }
+  },
+  {
+    "source": "G121",
+    "target": "G84",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": -0.01366787917773149,
+      "curl": 0.5018881655180816,
+      "harmonic": 0.2646229746747538,
+      "total": 0.7528432610151039
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G137",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.412066036802867,
+      "curl": 0.22045770654188646,
+      "harmonic": 2.381522495875643e-07,
+      "total": 0.6325239814970031
+    }
+  },
+  {
+    "source": "G32",
+    "target": "G1169",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5592654430255402,
+      "curl": 0.0,
+      "harmonic": -3.21560111871122e-10,
+      "total": 0.55926544270398
+    }
+  },
+  {
+    "source": "G48",
+    "target": "G1535",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6885046196453295,
+      "curl": 0.0,
+      "harmonic": 1.7140357866374245e-07,
+      "total": 0.6885047910489082
+    }
+  },
+  {
+    "source": "G194",
+    "target": "G141",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.004689274889462358,
+      "curl": 0.3242478304245632,
+      "harmonic": 0.31487094854908415,
+      "total": 0.6438080538631097
+    }
+  },
+  {
+    "source": "G121",
+    "target": "G129",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5944634133014763,
+      "curl": 0.0,
+      "harmonic": -4.97522927289662e-06,
+      "total": 0.5944584380722034
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G987",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6546512788061231,
+      "curl": 0.0,
+      "harmonic": 2.381796423422955e-07,
+      "total": 0.6546515169857654
+    }
+  },
+  {
+    "source": "G143",
+    "target": "G35",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7700732674523988,
+      "curl": 0.0,
+      "harmonic": -2.965005813981847e-06,
+      "total": 0.7700703024465848
+    }
+  },
+  {
+    "source": "G48",
+    "target": "G1557",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6554556944539501,
+      "curl": 0.0,
+      "harmonic": 1.7133615537456848e-07,
+      "total": 0.6554558657901055
+    }
+  },
+  {
+    "source": "G48",
+    "target": "G1184",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.5844224240217546,
+      "curl": 0.0,
+      "harmonic": 1.7119123929543179e-07,
+      "total": 0.5844225952129939
+    }
+  },
+  {
+    "source": "G136",
+    "target": "G1562",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7698351067486814,
+      "curl": 0.0,
+      "harmonic": -6.844643769543524e-07,
+      "total": 0.7698344222843044
+    }
+  },
+  {
+    "source": "G120",
+    "target": "G1186",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6951181528154863,
+      "curl": 0.0,
+      "harmonic": 2.3826219985867425e-07,
+      "total": 0.6951183910776861
+    }
+  },
+  {
+    "source": "G84",
+    "target": "G1349",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.6350414346988695,
+      "curl": 0.0,
+      "harmonic": -4.883757429574587e-07,
+      "total": 0.6350409463231266
+    }
+  },
+  {
+    "source": "G194",
+    "target": "G991",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.7185513993354264,
+      "curl": 0.18709058896643335,
+      "harmonic": -0.15743652234036729,
+      "total": 0.7482054659614925
+    }
+  },
+  {
+    "source": "G80",
+    "target": "G1225",
+    "documentCount": 1,
+    "hodge": {
+      "gradient": 0.32678526822466625,
+      "curl": 0.15121426557412945,
+      "harmonic": 0.15120197445949976,
+      "total": 0.6292015082582955
+    }
+  }
+]

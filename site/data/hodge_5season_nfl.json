@@ -1,0 +1,157 @@
+{
+  "NFL": {
+    "sport": "NFL",
+    "n_seasons": 5,
+    "means": {
+      "hodge": 0.6606638760373064,
+      "hodge+curl": 0.6491664830726298,
+      "elo": 0.651388705294852,
+      "home": 0.5418462216347212
+    },
+    "stds": {
+      "hodge": 0.06151339692964744,
+      "hodge+curl": 0.0471590192591897,
+      "elo": 0.0640256398284112,
+      "home": 0.05034825269133892
+    },
+    "mean_vpct": {
+      "g": 36.89867577732989,
+      "c": 56.806442793068825,
+      "h": 6.294881429600717
+    },
+    "mean_hfa": 1.204733181586918,
+    "edge_vs_elo": 0.00927517074245432,
+    "seasons": [
+      {
+        "label": "NFL 2020",
+        "teams": 32,
+        "games": 256,
+        "train": 171,
+        "test": 85,
+        "accs": {
+          "hodge": 0.7294117647058823,
+          "hodge+curl": 0.7058823529411765,
+          "elo": 0.7058823529411765,
+          "home": 0.4470588235294118
+        },
+        "vpct": {
+          "g": 39.46201964599957,
+          "c": 50.27418926485288,
+          "h": 10.263791089147437
+        },
+        "hfa": 0.4327485380116959,
+        "top5": [
+          "Kansas City Chiefs",
+          "Pittsburgh Steelers",
+          "Tampa Bay Buccaneers",
+          "New Orleans Saints",
+          "Baltimore Ravens"
+        ]
+      },
+      {
+        "label": "NFL 2021",
+        "teams": 32,
+        "games": 272,
+        "train": 182,
+        "test": 90,
+        "accs": {
+          "hodge": 0.5888888888888889,
+          "hodge+curl": 0.6444444444444445,
+          "elo": 0.6333333333333333,
+          "home": 0.5666666666666667
+        },
+        "vpct": {
+          "g": 32.22539705437772,
+          "c": 64.40206559385379,
+          "h": 3.372537351768596
+        },
+        "hfa": 0.4340659340659341,
+        "top5": [
+          "Arizona Cardinals",
+          "Buffalo Bills",
+          "New England Patriots",
+          "Tampa Bay Buccaneers",
+          "Dallas Cowboys"
+        ]
+      },
+      {
+        "label": "NFL 2022",
+        "teams": 32,
+        "games": 271,
+        "train": 181,
+        "test": 90,
+        "accs": {
+          "hodge": 0.651685393258427,
+          "hodge+curl": 0.5955056179775281,
+          "elo": 0.5955056179775281,
+          "home": 0.5955056179775281
+        },
+        "vpct": {
+          "g": 31.519424791976373,
+          "c": 64.31891380738482,
+          "h": 4.161661400636421
+        },
+        "hfa": 1.5469613259668509,
+        "top5": [
+          "Buffalo Bills",
+          "Dallas Cowboys",
+          "Philadelphia Eagles",
+          "Baltimore Ravens",
+          "Kansas City Chiefs"
+        ]
+      },
+      {
+        "label": "NFL 2023",
+        "teams": 32,
+        "games": 272,
+        "train": 182,
+        "test": 90,
+        "accs": {
+          "hodge": 0.6,
+          "hodge+curl": 0.6,
+          "elo": 0.5777777777777777,
+          "home": 0.5444444444444444
+        },
+        "vpct": {
+          "g": 40.846579061542904,
+          "c": 52.2204253262478,
+          "h": 6.932995612208803
+        },
+        "hfa": 2.2967032967032965,
+        "top5": [
+          "San Francisco 49ers",
+          "Baltimore Ravens",
+          "Dallas Cowboys",
+          "Kansas City Chiefs",
+          "Philadelphia Eagles"
+        ]
+      },
+      {
+        "label": "NFL 2024",
+        "teams": 32,
+        "games": 272,
+        "train": 182,
+        "test": 90,
+        "accs": {
+          "hodge": 0.7333333333333333,
+          "hodge+curl": 0.7,
+          "elo": 0.7444444444444445,
+          "home": 0.5555555555555556
+        },
+        "vpct": {
+          "g": 40.43995833275285,
+          "c": 52.8166199730048,
+          "h": 6.743421694242331
+        },
+        "hfa": 1.3131868131868132,
+        "top5": [
+          "Detroit Lions",
+          "Buffalo Bills",
+          "Green Bay Packers",
+          "Minnesota Vikings",
+          "Philadelphia Eagles"
+        ]
+      }
+    ]
+  }
+}

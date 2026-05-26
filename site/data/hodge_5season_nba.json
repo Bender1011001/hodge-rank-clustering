@@ -1,0 +1,157 @@
+{
+  "NBA": {
+    "sport": "NBA",
+    "n_seasons": 5,
+    "means": {
+      "hodge": 0.6462926868704125,
+      "hodge+curl": 0.6112289273141058,
+      "elo": 0.6450945715906942,
+      "home": 0.5421500241005022
+    },
+    "stds": {
+      "hodge": 0.027226990560838993,
+      "hodge+curl": 0.054094819606595,
+      "elo": 0.03231520686255488,
+      "home": 0.02146124508921018
+    },
+    "mean_vpct": {
+      "g": 37.28565779347745,
+      "c": 61.868154802535024,
+      "h": 0.846187403987528
+    },
+    "mean_hfa": 1.9379646307854244,
+    "edge_vs_elo": 0.0011981152797183592,
+    "seasons": [
+      {
+        "label": "NBA 2021",
+        "teams": 30,
+        "games": 1085,
+        "train": 813,
+        "test": 272,
+        "accs": {
+          "hodge": 0.6507352941176471,
+          "hodge+curl": 0.6139705882352942,
+          "elo": 0.6544117647058824,
+          "home": 0.5772058823529411
+        },
+        "vpct": {
+          "g": 33.05834570554955,
+          "c": 66.3057418551599,
+          "h": 0.6359124392905415
+        },
+        "hfa": 0.9286592865928659,
+        "top5": [
+          "Utah Jazz",
+          "LA Clippers",
+          "Phoenix Suns",
+          "Milwaukee Bucks",
+          "Philadelphia 76ers"
+        ]
+      },
+      {
+        "label": "NBA 2022",
+        "teams": 30,
+        "games": 1244,
+        "train": 933,
+        "test": 311,
+        "accs": {
+          "hodge": 0.6302250803858521,
+          "hodge+curl": 0.6430868167202572,
+          "elo": 0.6463022508038585,
+          "home": 0.5466237942122186
+        },
+        "vpct": {
+          "g": 37.184680321135986,
+          "c": 62.24093874568125,
+          "h": 0.5743809331827837
+        },
+        "hfa": 1.5691318327974277,
+        "top5": [
+          "Phoenix Suns",
+          "Golden State Warriors",
+          "Utah Jazz",
+          "Miami Heat",
+          "Memphis Grizzlies"
+        ]
+      },
+      {
+        "label": "NBA 2023",
+        "teams": 30,
+        "games": 1240,
+        "train": 930,
+        "test": 310,
+        "accs": {
+          "hodge": 0.6064516129032258,
+          "hodge+curl": 0.5161290322580645,
+          "elo": 0.6,
+          "home": 0.532258064516129
+        },
+        "vpct": {
+          "g": 28.604914263381815,
+          "c": 70.49211724675621,
+          "h": 0.9029684898619719
+        },
+        "hfa": 3.1473118279569894,
+        "top5": [
+          "Cleveland Cavaliers",
+          "Boston Celtics",
+          "Milwaukee Bucks",
+          "Memphis Grizzlies",
+          "Denver Nuggets"
+        ]
+      },
+      {
+        "label": "NBA 2024",
+        "teams": 30,
+        "games": 1242,
+        "train": 931,
+        "test": 311,
+        "accs": {
+          "hodge": 0.6559485530546624,
+          "hodge+curl": 0.6045016077170418,
+          "elo": 0.6270096463022508,
+          "home": 0.5112540192926045
+        },
+        "vpct": {
+          "g": 42.17014363957789,
+          "c": 56.7186422637635,
+          "h": 1.1112140966586193
+        },
+        "hfa": 2.3619763694951663,
+        "top5": [
+          "Boston Celtics",
+          "Oklahoma City Thunder",
+          "Minnesota Timberwolves",
+          "LA Clippers",
+          "New Orleans Pelicans"
+        ]
+      },
+      {
+        "label": "NBA 2025",
+        "teams": 30,
+        "games": 1244,
+        "train": 933,
+        "test": 311,
+        "accs": {
+          "hodge": 0.6881028938906752,
+          "hodge+curl": 0.6784565916398714,
+          "elo": 0.6977491961414791,
+          "home": 0.5434083601286174
+        },
+        "vpct": {
+          "g": 45.41020503774199,
+          "c": 53.583333901314276,
+          "h": 1.0064610609437232
+        },
+        "hfa": 1.682743837084673,
+        "top5": [
+          "Oklahoma City Thunder",
+          "Cleveland Cavaliers",
+          "Boston Celtics",
+          "Denver Nuggets",
+          "Memphis Grizzlies"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "dataset": "DREAM5 Gene Regulatory Network",
+  "counts": {
+    "genes": 1643,
+    "active_edges": 482
+  },
+  "hodge": {
+    "gradient_norm": 14.142250148155858,
+    "residual_norm": 3.147696694099247,
+    "total_norm": 14.488327602872562
+  },
+  "top_regulators": [
+    "G273",
+    "G448",
+    "G726",
+    "G1324",
+    "G1089",
+    "G1572",
+    "G752",
+    "G1618",
+    "G1084",
+    "G940"
+  ],
+  "net1": {
+    "dataset": "DREAM5 in-silico regulatory network",
+    "counts": {
+      "genes": 1643,
+      "interactions": 482,
+      "triangles": 14
+    },
+    "hodge": {
+      "gradientNorm": 14.315682889555157,
+      "curlNorm": 0.980286304925644,
+      "harmonicNorm": 2.0029694113881753,
+      "totalNorm": 14.488327602872562
+    },
+    "top_regulators": [
+      {
+        "rank": 1,
+        "gene": "G96",
+        "potential": 0.0
+      },
+      {
+        "rank": 2,
+        "gene": "G74",
+        "potential": 0.1342900814764725
+      },
+      {
+        "rank": 3,
+        "gene": "G176",
+        "potential": 0.14302493278210687
+      },
+      {
+        "rank": 4,
+        "gene": "G84",
+        "potential": 0.14962567518086847
+      },
+      {
+        "rank": 5,
+        "gene": "G121",
+        "potential": 0.15501108404848962
+      },
+      {
+        "rank": 6,
+        "gene": "G143",
+        "potential": 0.1672105961123956
+      },
+      {
+        "rank": 7,
+        "gene": "G158",
+        "potential": 0.20412818499955346
+      },
+      {
+        "rank": 8,
+        "gene": "G161",
+        "potential": 0.20984139608979807
+      },
+      {
+        "rank": 9,
+        "gene": "G62",
+        "potential": 0.24352862972459366
+      },
+      {
+        "rank": 10,
+        "gene": "G120",
+        "potential": 0.2455438475335653
+      }
+    ],
+    "top_targets": [
+      {
+        "rank": 1,
+        "gene": "G1542",
+        "potential": 1.0
+      },
+      {
+        "rank": 2,
+        "gene": "G426",
+        "potential": 0.9890616570708062
+      },
+      {
+        "rank": 3,
+        "gene": "G1025",
+        "potential": 0.9672105930168536
+      },
+      {
+        "rank": 4,
+        "gene": "G1489",
+        "potential": 0.9669911842129382
+      },
+      {
+        "rank": 5,
+        "gene": "G938",
+        "potential": 0.9413467987529905
+      },
+      {
+        "rank": 6,
+        "gene": "G1258",
+        "potential": 0.905623284914242
+      },
+      {
+        "rank": 7,
+        "gene": "G1589",
+        "potential": 0.7702601523255604
+      },
+      {
+        "rank": 8,
+        "gene": "G227",
+        "potential": 0.7656086225999914
+      },
+      {
+        "rank": 9,
+        "gene": "G498",
+        "potential": 0.7562522518439988
+      },
+      {
+        "rank": 10,
+        "gene": "G901",
+        "potential": 0.7443942292722129
+      }
+    ]
+  },
+  "net3": {
+    "dataset": "DREAM5 ecoli regulatory network",
+    "counts": {
+      "genes": 4511,
+      "interactions": 232,
+      "triangles": 31
+    },
+    "hodge": {
+      "gradientNorm": 10.090696590824965,
+      "curlNorm": 1.5665844586020856,
+      "harmonicNorm": 3.150924768651833,
+      "totalNorm": 10.686657979249171
+    },
+    "top_regulators": [
+      {
+        "rank": 1,
+        "gene": "G176",
+        "potential": 0.0
+      },
+      {
+        "rank": 2,
+        "gene": "G259",
+        "potential": 0.1572614064191351
+      },
+      {
+        "rank": 3,
+        "gene": "G23",
+        "potential": 0.16329415223296
+      },
+      {
+        "rank": 4,
+        "gene": "G219",
+        "potential": 0.16761683853905707
+      },
+      {
+        "rank": 5,
+        "gene": "G4",
+        "potential": 0.1721053085539005
+      },
+      {
+        "rank": 6,
+        "gene": "G116",
+        "potential": 0.1861131711868913
+      },
+      {
+        "rank": 7,
+        "gene": "G254",
+        "potential": 0.1882466049772022
+      },
+      {
+        "rank": 8,
+        "gene": "G187",
+        "potential": 0.18938764155147678
+      },
+      {
+        "rank": 9,
+        "gene": "G55",
+        "potential": 0.20120130312116188
+      },
+      {
+        "rank": 10,
+        "gene": "G260",
+        "potential": 0.20290950914589653
+      }
+    ],
+    "top_targets": [
+      {
+        "rank": 1,
+        "gene": "G3544",
+        "potential": 1.0
+      },
+      {
+        "rank": 2,
+        "gene": "G1868",
+        "potential": 0.9567549168037874
+      },
+      {
+        "rank": 3,
+        "gene": "G3423",
+        "potential": 0.8237863165052881
+      },
+      {
+        "rank": 4,
+        "gene": "G2737",
+        "potential": 0.7933842500303029
+      },
+      {
+        "rank": 5,
+        "gene": "G2532",
+        "potential": 0.7646788727697235
+      },
+      {
+        "rank": 6,
+        "gene": "G1702",
+        "potential": 0.7586760297234357
+      },
+      {
+        "rank": 7,
+        "gene": "G1101",
+        "potential": 0.7553763467504473
+      },
+      {
+        "rank": 8,
+        "gene": "G1905",
+        "potential": 0.7510595899648882
+      },
+      {
+        "rank": 9,
+        "gene": "G2157",
+        "potential": 0.7499192924178815
+      },
+      {
+        "rank": 10,
+        "gene": "G4356",
+        "potential": 0.7438702482390039
+      }
+    ]
+  },
+  "net4": {
+    "dataset": "DREAM5 yeast regulatory network",
+    "counts": {
+      "genes": 5950,
+      "interactions": 193,
+      "triangles": 1
+    },
+    "hodge": {
+      "gradientNorm": 8.650851222424668,
+      "curlNorm": 0.38787856302076446,
+      "harmonicNorm": 0.029184895723947366,
+      "totalNorm": 8.659591725781864
+    },
+    "top_regulators": [
+      {
+        "rank": 1,
+        "gene": "G14",
+        "potential": 0.0
+      },
+      {
+        "rank": 2,
+        "gene": "G94",
+        "potential": 0.007710586218517244
+      },
+      {
+        "rank": 3,
+        "gene": "G143",
+        "potential": 0.05314693144589416
+      },
+      {
+        "rank": 4,
+        "gene": "G22",
+        "potential": 0.08901423204081033
+      },
+      {
+        "rank": 5,
+        "gene": "G223",
+        "potential": 0.09077310909448676
+      },
+      {
+        "rank": 6,
+        "gene": "G152",
+        "potential": 0.09240121912862341
+      },
+      {
+        "rank": 7,
+        "gene": "G68",
+        "potential": 0.1057211330095657
+      },
+      {
+        "rank": 8,
+        "gene": "G47",
+        "potential": 0.12495230195200425
+      },
+      {
+        "rank": 9,
+        "gene": "G15",
+        "potential": 0.12861203248739556
+      },
+      {
+        "rank": 10,
+        "gene": "G65",
+        "potential": 0.13042826341422076
+      }
+    ],
+    "top_targets": [
+      {
+        "rank": 1,
+        "gene": "G255",
+        "potential": 1.0
+      },
+      {
+        "rank": 2,
+        "gene": "G2696",
+        "potential": 0.9987691999951951
+      },
+      {
+        "rank": 3,
+        "gene": "G5050",
+        "potential": 0.9455669282605716
+      },
+      {
+        "rank": 4,
+        "gene": "G2688",
+        "potential": 0.9362248103866327
+      },
+      {
+        "rank": 5,
+        "gene": "G1987",
+        "potential": 0.9299199188690044
+      },
+      {
+        "rank": 6,
+        "gene": "G5401",
+        "potential": 0.9250023327128388
+      },
+      {
+        "rank": 7,
+        "gene": "G955",
+        "potential": 0.9200471831263018
+      },
+      {
+        "rank": 8,
+        "gene": "G3324",
+        "potential": 0.9123562867493423
+      },
+      {
+        "rank": 9,
+        "gene": "G1070",
+        "potential": 0.9119451783157202
+      },
+      {
+        "rank": 10,
+        "gene": "G1928",
+        "potential": 0.908498677408982
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "CFB": {
+    "sport": "CFB",
+    "n_seasons": 5,
+    "means": {
+      "hodge": 0.7065654865149815,
+      "hodge+curl": 0.7073719381278847,
+      "elo": 0.6597115721130058,
+      "home": 0.5531727780685095
+    },
+    "stds": {
+      "hodge": 0.026520832845698405,
+      "hodge+curl": 0.02629570976495148,
+      "elo": 0.013630100056759522,
+      "home": 0.02269440624645538
+    },
+    "mean_vpct": {
+      "g": 64.51541983071084,
+      "c": 15.442209578020933,
+      "h": 20.042370591268167
+    },
+    "mean_hfa": 4.186486977255313,
+    "edge_vs_elo": 0.04685391440197573,
+    "seasons": [
+      {
+        "label": "CFB 2020",
+        "teams": 102,
+        "games": 409,
+        "train": 274,
+        "test": 135,
+        "accs": {
+          "hodge": 0.7185185185185186,
+          "hodge+curl": 0.7185185185185186,
+          "elo": 0.6518518518518519,
+          "home": 0.5481481481481482
+        },
+        "vpct": {
+          "g": 70.58466769657097,
+          "c": 19.171666693706495,
+          "h": 10.24366560972225
+        },
+        "hfa": 1.8503649635036497,
+        "top5": [
+          "Cincinnati Bearcats",
+          "Clemson Tigers",
+          "BYU Cougars",
+          "Alabama Crimson Tide",
+          "Notre Dame Fighting Irish"
+        ]
+      },
+      {
+        "label": "CFB 2021",
+        "teams": 130,
+        "games": 732,
+        "train": 490,
+        "test": 242,
+        "accs": {
+          "hodge": 0.7520661157024794,
+          "hodge+curl": 0.7520661157024794,
+          "elo": 0.6818181818181818,
+          "home": 0.5702479338842975
+        },
+        "vpct": {
+          "g": 63.43231878859284,
+          "c": 16.920075275310623,
+          "h": 19.647605936096575
+        },
+        "hfa": 4.414285714285715,
+        "top5": [
+          "Georgia Bulldogs",
+          "Alabama Crimson Tide",
+          "Ohio State Buckeyes",
+          "Cincinnati Bearcats",
+          "Michigan Wolverines"
+        ]
+      },
+      {
+        "label": "CFB 2022",
+        "teams": 131,
+        "games": 734,
+        "train": 491,
+        "test": 243,
+        "accs": {
+          "hodge": 0.6872427983539094,
+          "hodge+curl": 0.6872427983539094,
+          "elo": 0.6584362139917695,
+          "home": 0.51440329218107
+        },
+        "vpct": {
+          "g": 60.029995266282,
+          "c": 16.60537477683713,
+          "h": 23.364629956880854
+        },
+        "hfa": 5.29938900203666,
+        "top5": [
+          "Ohio State Buckeyes",
+          "Georgia Bulldogs",
+          "Alabama Crimson Tide",
+          "Tennessee Volunteers",
+          "Kansas State Wildcats"
+        ]
+      },
+      {
+        "label": "CFB 2023",
+        "teams": 133,
+        "games": 750,
+        "train": 502,
+        "test": 248,
+        "accs": {
+          "hodge": 0.6975806451612904,
+          "hodge+curl": 0.7016129032258065,
+          "elo": 0.6411290322580645,
+          "home": 0.5524193548387096
+        },
+        "vpct": {
+          "g": 65.00095033735941,
+          "c": 12.471558900312946,
+          "h": 22.527490762327616
+        },
+        "hfa": 4.302788844621514,
+        "top5": [
+          "Oregon Ducks",
+          "Ohio State Buckeyes",
+          "Michigan Wolverines",
+          "Kansas State Wildcats",
+          "Notre Dame Fighting Irish"
+        ]
+      },
+      {
+        "label": "CFB 2024",
+        "teams": 134,
+        "games": 751,
+        "train": 503,
+        "test": 248,
+        "accs": {
+          "hodge": 0.6774193548387096,
+          "hodge+curl": 0.6774193548387096,
+          "elo": 0.6653225806451613,
+          "home": 0.5806451612903226
+        },
+        "vpct": {
+          "g": 63.52916706474899,
+          "c": 12.042372243937466,
+          "h": 24.42846069131354
+        },
+        "hfa": 5.065606361829026,
+        "top5": [
+          "Ohio State Buckeyes",
+          "Alabama Crimson Tide",
+          "Ole Miss Rebels",
+          "Indiana Hoosiers",
+          "Oregon Ducks"
+        ]
+      }
+    ]
+  }
+}

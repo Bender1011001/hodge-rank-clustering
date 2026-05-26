@@ -7,9 +7,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.3575875623394014,
-      "curl": 1.4594658483083665,
-      "harmonic": -0.10187828596896509
+      "gradient": -1.371308581652488,
+      "curl": 1.4594650921699555,
+      "harmonic": -0.08815651051746753
     }
   },
   {
@@ -20,9 +20,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.3575875623394014,
-      "curl": 1.4594658483083665,
-      "harmonic": -0.10187828596896509
+      "gradient": -1.371308581652488,
+      "curl": 1.4594650921699555,
+      "harmonic": -0.08815651051746753
     }
   },
   {
@@ -33,9 +33,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.6844128832172136,
-      "curl": -0.6488626352961675,
-      "harmonic": -0.6667244814866189
+      "gradient": -2.3975228051610964,
+      "curl": -0.6573692266562415,
+      "harmonic": 0.05489203181733793
     }
   },
   {
@@ -46,9 +46,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.681599714874034,
-      "curl": 2.1892126848170848,
-      "harmonic": 0.4923870300569493
+      "gradient": -0.6714175714495498,
+      "curl": 2.189196192860325,
+      "harmonic": 0.48222137858922487
     }
   },
   {
@@ -59,9 +59,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.440717300838106,
+      "gradient": -2.44864222703369,
       "curl": 0.0,
-      "harmonic": 1.4407173008381058
+      "harmonic": 1.44864222703369
     }
   },
   {
@@ -72,9 +72,9 @@
     "targetCluster": 10,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.284879882156395,
-      "curl": 0.49999918632066037,
-      "harmonic": 0.7848806958357346
+      "gradient": -1.292832035409631,
+      "curl": 0.4999996001609746,
+      "harmonic": 0.7928324352486564
     }
   },
   {
@@ -85,9 +85,9 @@
     "targetCluster": 10,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.6624410877105247,
-      "curl": 0.49999918632066026,
-      "harmonic": 0.16244190138986442
+      "gradient": -0.6346643861744325,
+      "curl": 0.4999996001609747,
+      "harmonic": 0.13466478601345783
     }
   },
   {
@@ -98,9 +98,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.7710962728647477,
-      "curl": -0.7027261872606047,
-      "harmonic": -0.06837008560414304
+      "gradient": 0.754921352494426,
+      "curl": -0.7027087574466504,
+      "harmonic": -0.052212595047775645
     }
   },
   {
@@ -111,9 +111,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.7710962728647477,
-      "curl": -0.7027261872606047,
-      "harmonic": -0.06837008560414304
+      "gradient": 0.754921352494426,
+      "curl": -0.7027087574466504,
+      "harmonic": -0.052212595047775645
     }
   },
   {
@@ -124,9 +124,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.440717300838106,
+      "gradient": -2.44864222703369,
       "curl": 0.0,
-      "harmonic": 1.4407173008381058
+      "harmonic": 1.44864222703369
     }
   },
   {
@@ -137,9 +137,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.038677268200558,
+      "gradient": 2.030018461476905,
       "curl": 0.0,
-      "harmonic": -2.038677268200558
+      "harmonic": -2.030018461476905
     }
   },
   {
@@ -150,9 +150,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.264994071089741,
-      "curl": -1.1466479256205002,
-      "harmonic": -0.11834614546924072
+      "gradient": 1.3184432723161055,
+      "curl": -1.1518099315002597,
+      "harmonic": -0.1666333408158458
     }
   },
   {
@@ -163,9 +163,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.264994071089741,
-      "curl": -1.1466479256205002,
-      "harmonic": -0.11834614546924072
+      "gradient": 1.3184432723161055,
+      "curl": -1.1518099315002597,
+      "harmonic": -0.1666333408158458
     }
   },
   {
@@ -176,9 +176,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.6505070888249325,
-      "curl": -0.29731844536236157,
-      "harmonic": -0.05217446581270596
+      "gradient": -1.6449973508763804,
+      "curl": -0.2972979399130141,
+      "harmonic": -0.05770470921060544
     }
   },
   {
@@ -189,9 +189,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.6505070888249325,
-      "curl": -0.29731844536236157,
-      "harmonic": -0.05217446581270596
+      "gradient": -1.6449973508763804,
+      "curl": -0.2972979399130141,
+      "harmonic": -0.05770470921060544
     }
   },
   {
@@ -202,9 +202,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.2785748365979126,
-      "curl": -0.05555111303924838,
-      "harmonic": -0.665874050362839
+      "gradient": -1.282844054678252,
+      "curl": -0.055550408159413395,
+      "harmonic": -0.6616055371623346
     }
   },
   {
@@ -215,9 +215,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.4301189071802023,
+      "gradient": 2.424969124651089,
       "curl": 0.0,
-      "harmonic": -1.4301189071802023
+      "harmonic": -1.424969124651089
     }
   },
   {
@@ -228,9 +228,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.4301189071802023,
+      "gradient": 2.424969124651089,
       "curl": 0.0,
-      "harmonic": -1.4301189071802023
+      "harmonic": -1.424969124651089
     }
   },
   {
@@ -241,9 +241,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.0693164410249372,
-      "curl": -0.10810444090426119,
-      "harmonic": 0.17742088192919836
+      "gradient": -1.0593901962995949,
+      "curl": -0.10810123366952851,
+      "harmonic": 0.16749142996912336
     }
   },
   {
@@ -254,9 +254,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.0693164410249372,
-      "curl": -0.10810444090426119,
-      "harmonic": 0.17742088192919836
+      "gradient": -1.0593901962995949,
+      "curl": -0.10810123366952851,
+      "harmonic": 0.16749142996912336
     }
   },
   {
@@ -267,9 +267,9 @@
     "targetCluster": 10,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.284879882156395,
-      "curl": 0.49999918632066037,
-      "harmonic": 0.7848806958357346
+      "gradient": -1.292832035409631,
+      "curl": 0.4999996001609746,
+      "harmonic": 0.7928324352486564
     }
   },
   {
@@ -277,12 +277,12 @@
     "target": "2006",
     "count": 11,
     "sourceCluster": 5,
-    "targetCluster": 12,
-    "sameCluster": false,
+    "targetCluster": 5,
+    "sameCluster": true,
     "hodge": {
-      "gradient": 0.19006972673225242,
-      "curl": 0.45613791160385175,
-      "harmonic": -0.6462076383361042
+      "gradient": -0.34200790520733193,
+      "curl": 0.4561358449235093,
+      "harmonic": -0.11412793971617735
     }
   },
   {
@@ -293,9 +293,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.11085702004981,
-      "curl": 0.888892162624186,
-      "harmonic": -0.778035142574376
+      "gradient": -3.1058185181957,
+      "curl": 0.8888967271119153,
+      "harmonic": -0.7830782089162154
     }
   },
   {
@@ -306,9 +306,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.11085702004981,
-      "curl": 0.888892162624186,
-      "harmonic": -0.778035142574376
+      "gradient": -3.1058185181957,
+      "curl": 0.8888967271119153,
+      "harmonic": -0.7830782089162154
     }
   },
   {
@@ -318,11 +318,7 @@
     "sourceCluster": 5,
     "targetCluster": 5,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -5.228161605273367,
-      "curl": 0.0,
-      "harmonic": 1.2281616052733666
-    }
+    "hodge": null
   },
   {
     "source": "3469",
@@ -341,9 +337,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.6325893798128464,
-      "curl": -0.5466273063186637,
-      "harmonic": 0.1792166861315101
+      "gradient": -1.5050359940553415,
+      "curl": -0.5619797580533974,
+      "harmonic": 0.06701575210873889
     }
   },
   {
@@ -354,9 +350,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.229511327366116,
-      "curl": 2.1556187851939725,
-      "harmonic": 0.07389254217214347
+      "gradient": -2.3000950410620487,
+      "curl": 2.12322396889026,
+      "harmonic": 0.17687107217178877
     }
   },
   {
@@ -367,9 +363,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.229511327366116,
-      "curl": 2.1556187851939725,
-      "harmonic": 0.07389254217214347
+      "gradient": -2.3000950410620487,
+      "curl": 2.12322396889026,
+      "harmonic": 0.17687107217178877
     }
   },
   {
@@ -380,9 +376,9 @@
     "targetCluster": 9,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.337802946592013,
-      "curl": -0.33333311339316424,
-      "harmonic": 1.6711360599851774
+      "gradient": -2.338749681840987,
+      "curl": -0.3333332477694731,
+      "harmonic": 1.6720829296104602
     }
   },
   {
@@ -393,9 +389,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.3557960009416243,
-      "curl": 0.6765331351052657,
-      "harmonic": 0.6792628658363586
+      "gradient": -1.3544963674950665,
+      "curl": 0.6765344211946629,
+      "harmonic": 0.6779619463004036
     }
   },
   {
@@ -406,9 +402,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.79496954246861,
-      "curl": 0.33333311339316424,
-      "harmonic": 1.4616364290754458
+      "gradient": -3.7962869025387205,
+      "curl": 0.3333332477694731,
+      "harmonic": 1.4629536547692474
     }
   },
   {
@@ -419,9 +415,9 @@
     "targetCluster": 9,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.337802946592013,
-      "curl": -0.33333311339316424,
-      "harmonic": 1.6711360599851774
+      "gradient": -2.338749681840987,
+      "curl": -0.3333332477694731,
+      "harmonic": 1.6720829296104602
     }
   },
   {
@@ -432,9 +428,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.79496954246861,
-      "curl": 0.33333311339316424,
-      "harmonic": 1.4616364290754458
+      "gradient": -3.7962869025387205,
+      "curl": 0.3333332477694731,
+      "harmonic": 1.4629536547692474
     }
   },
   {
@@ -445,9 +441,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.3557960009416243,
-      "curl": 0.6765331351052657,
-      "harmonic": 0.6792628658363586
+      "gradient": -1.3544963674950665,
+      "curl": 0.6765344211946629,
+      "harmonic": 0.6779619463004036
     }
   },
   {
@@ -458,9 +454,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.2048327944930817,
-      "curl": -0.8222094425362851,
-      "harmonic": -0.38262335195679653
+      "gradient": 2.256144587355128,
+      "curl": -0.8250866450660956,
+      "harmonic": -0.4310579422890324
     }
   },
   {
@@ -471,9 +467,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.9398387234033407,
-      "curl": 0.3244354583731286,
-      "harmonic": -0.26427418177646933
+      "gradient": 0.9377013150390225,
+      "curl": 0.3267281943517135,
+      "harmonic": -0.26442950939073606
     }
   },
   {
@@ -484,9 +480,9 @@
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.2048327944930817,
-      "curl": -0.8222094425362851,
-      "harmonic": -0.38262335195679653
+      "gradient": 2.256144587355128,
+      "curl": -0.8250866450660956,
+      "harmonic": -0.4310579422890324
     }
   },
   {
@@ -497,9 +493,9 @@
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.9398387234033407,
-      "curl": 0.3244354583731286,
-      "harmonic": -0.26427418177646933
+      "gradient": 0.9377013150390225,
+      "curl": 0.3267281943517135,
+      "harmonic": -0.26442950939073606
     }
   },
   {
@@ -510,9 +506,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.2432257730492009,
-      "curl": -1.3911082781594637,
-      "harmonic": -0.8521174948897372
+      "gradient": 0.24147572176223164,
+      "curl": -1.3918420719949884,
+      "harmonic": -0.8496336497672432
     }
   },
   {
@@ -523,9 +519,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.2432257730492009,
-      "curl": -1.3911082781594637,
-      "harmonic": -0.8521174948897372
+      "gradient": 0.24147572176223164,
+      "curl": -1.3918420719949884,
+      "harmonic": -0.8496336497672432
     }
   },
   {
@@ -536,22 +532,22 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.6844128832172136,
-      "curl": -0.6488626352961675,
-      "harmonic": -0.6667244814866189
+      "gradient": -2.3975228051610964,
+      "curl": -0.6573692266562415,
+      "harmonic": 0.05489203181733793
     }
   },
   {
     "source": "2006",
     "target": "3361",
     "count": 10,
-    "sourceCluster": 12,
+    "sourceCluster": 5,
     "targetCluster": 5,
-    "sameCluster": false,
+    "sameCluster": true,
     "hodge": {
-      "gradient": 0.19006972673225242,
-      "curl": 0.45613791160385175,
-      "harmonic": -0.6462076383361042
+      "gradient": -0.34200790520733193,
+      "curl": 0.4561358449235093,
+      "harmonic": -0.11412793971617735
     }
   },
   {
@@ -562,9 +558,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.6624410877105247,
-      "curl": 0.49999918632066026,
-      "harmonic": 0.16244190138986442
+      "gradient": -0.6346643861744325,
+      "curl": 0.4999996001609747,
+      "harmonic": 0.13466478601345783
     }
   },
   {
@@ -575,9 +571,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.4612115332293039,
+      "gradient": -1.4513893452242583,
       "curl": 0.0,
-      "harmonic": 0.46121153322930386
+      "harmonic": 0.45138934522425833
     }
   },
   {
@@ -588,9 +584,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.2785748365979126,
-      "curl": -0.05555111303924838,
-      "harmonic": -0.665874050362839
+      "gradient": -1.282844054678252,
+      "curl": -0.055550408159413395,
+      "harmonic": -0.6616055371623346
     }
   },
   {
@@ -601,9 +597,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.926150672337096,
+      "gradient": -4.933429652839061,
       "curl": 0.0,
-      "harmonic": 1.926150672337096
+      "harmonic": 1.9334296528390613
     }
   },
   {
@@ -614,9 +610,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.3035109885119294,
-      "curl": 2.33333179375215,
-      "harmonic": -0.029820805240220682
+      "gradient": -3.2715517202012374,
+      "curl": 2.3333327343863117,
+      "harmonic": -0.06178101418507431
     }
   },
   {
@@ -627,9 +623,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.926150672337096,
+      "gradient": -4.933429652839061,
       "curl": 0.0,
-      "harmonic": 1.926150672337096
+      "harmonic": 1.9334296528390613
     }
   },
   {
@@ -640,9 +636,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.2984607763738216,
-      "curl": -0.9599939044529416,
-      "harmonic": 0.25845468082676326
+      "gradient": -0.2957733135793177,
+      "curl": -0.9585856061603808,
+      "harmonic": 0.2543589197396985
     }
   },
   {
@@ -653,9 +649,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.4612115332293039,
+      "gradient": -1.4513893452242583,
       "curl": 0.0,
-      "harmonic": 0.46121153322930386
+      "harmonic": 0.45138934522425833
     }
   },
   {
@@ -666,9 +662,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.3035109885119294,
-      "curl": 2.33333179375215,
-      "harmonic": -0.029820805240220682
+      "gradient": -3.2715517202012374,
+      "curl": 2.3333327343863117,
+      "harmonic": -0.06178101418507431
     }
   },
   {
@@ -679,9 +675,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.2984607763738216,
-      "curl": -0.9599939044529416,
-      "harmonic": 0.25845468082676326
+      "gradient": -0.2957733135793177,
+      "curl": -0.9585856061603808,
+      "harmonic": 0.2543589197396985
     }
   },
   {
@@ -691,11 +687,7 @@
     "sourceCluster": 5,
     "targetCluster": 5,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -5.228161605273367,
-      "curl": 0.0,
-      "harmonic": 1.2281616052733666
-    }
+    "hodge": null
   },
   {
     "source": "3682",
@@ -714,9 +706,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.229092902278188,
-      "curl": -1.4594658483083665,
-      "harmonic": 0.6885587505865542
+      "gradient": -2.212040351019678,
+      "curl": -1.4594650921699555,
+      "harmonic": 0.6715054431896337
     }
   },
   {
@@ -727,9 +719,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.39859451868098006,
-      "curl": 0.13934713272330146,
-      "harmonic": 0.2592473859576786
+      "gradient": -0.27735425575345474,
+      "curl": 0.10072535567912255,
+      "harmonic": 0.17662890007433218
     }
   },
   {
@@ -740,9 +732,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.39859451868098006,
-      "curl": 0.13934713272330146,
-      "harmonic": 0.2592473859576786
+      "gradient": -0.27735425575345474,
+      "curl": 0.10072535567912255,
+      "harmonic": 0.17662890007433218
     }
   },
   {
@@ -750,7 +742,7 @@
     "target": "3156",
     "count": 10,
     "sourceCluster": 5,
-    "targetCluster": 0,
+    "targetCluster": -1,
     "sameCluster": false,
     "hodge": null
   },
@@ -758,7 +750,7 @@
     "source": "3156",
     "target": "3024",
     "count": 10,
-    "sourceCluster": 0,
+    "sourceCluster": -1,
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": null
@@ -771,9 +763,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.038677268200558,
+      "gradient": 2.030018461476905,
       "curl": 0.0,
-      "harmonic": -2.038677268200558
+      "harmonic": -2.030018461476905
     }
   },
   {
@@ -784,9 +776,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.628105846047096,
-      "curl": 1.2949578540555438,
-      "harmonic": 0.3331479919915523
+      "gradient": -2.5774492968155034,
+      "curl": 1.2239359996453363,
+      "harmonic": 0.3535132971701671
     }
   },
   {
@@ -797,9 +789,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.3552428265428618,
-      "curl": 0.9973512044183994,
-      "harmonic": 0.35789162212446235
+      "gradient": -3.4681175747004866,
+      "curl": 1.0833143622611718,
+      "harmonic": 0.3848032124393148
     }
   },
   {
@@ -810,9 +802,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.628105846047096,
-      "curl": 1.2949578540555438,
-      "harmonic": 0.3331479919915523
+      "gradient": -2.5774492968155034,
+      "curl": 1.2239359996453363,
+      "harmonic": 0.3535132971701671
     }
   },
   {
@@ -823,9 +815,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.3552428265428618,
-      "curl": 0.9973512044183994,
-      "harmonic": 0.35789162212446235
+      "gradient": -3.4681175747004866,
+      "curl": 1.0833143622611718,
+      "harmonic": 0.3848032124393148
     }
   },
   {
@@ -836,9 +828,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.255714859250945,
-      "curl": -1.5013287954859447,
-      "harmonic": 0.75704365473689
+      "gradient": -5.361286146943289,
+      "curl": -1.4583415303424077,
+      "harmonic": 0.819627677285697
     }
   },
   {
@@ -849,9 +841,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.6325893798128464,
-      "curl": -0.5466273063186637,
-      "harmonic": 0.1792166861315101
+      "gradient": -1.5050359940553415,
+      "curl": -0.5619797580533974,
+      "harmonic": 0.06701575210873889
     }
   },
   {
@@ -862,9 +854,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.255714859250945,
-      "curl": -1.5013287954859447,
-      "harmonic": 0.75704365473689
+      "gradient": -5.361286146943289,
+      "curl": -1.4583415303424077,
+      "harmonic": 0.819627677285697
     }
   },
   {
@@ -875,9 +867,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.9267313910858035,
+      "gradient": 0.9268083607425754,
       "curl": 0.0,
-      "harmonic": -0.9267313910858035
+      "harmonic": -0.9268083607425754
     }
   },
   {
@@ -888,9 +880,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.13118606629884155,
-      "curl": -0.9267045675841399,
-      "harmonic": 1.0578906338829814
+      "gradient": -0.1311793160462016,
+      "curl": -0.926700422282205,
+      "harmonic": 1.0578797383284066
     }
   },
   {
@@ -901,9 +893,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.8629969488470941,
-      "curl": -0.5070551153831213,
-      "harmonic": 1.6440581665360272
+      "gradient": 0.8636227859333143,
+      "curl": -0.5070595418497528,
+      "harmonic": 1.6434367559164385
     }
   },
   {
@@ -914,9 +906,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.15402422943673066,
-      "curl": -0.014094309004109129,
-      "harmonic": -0.13992992043262154
+      "gradient": 0.155157388656733,
+      "curl": -0.014096661010031819,
+      "harmonic": -0.1410607276467012
     }
   },
   {
@@ -927,9 +919,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.8629969488470941,
-      "curl": -0.5070551153831213,
-      "harmonic": 1.6440581665360272
+      "gradient": 0.8636227859333143,
+      "curl": -0.5070595418497528,
+      "harmonic": 1.6434367559164385
     }
   },
   {
@@ -940,9 +932,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.13118606629884155,
-      "curl": -0.9267045675841399,
-      "harmonic": 1.0578906338829814
+      "gradient": -0.1311793160462016,
+      "curl": -0.926700422282205,
+      "harmonic": 1.0578797383284066
     }
   },
   {
@@ -953,9 +945,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.15402422943673066,
-      "curl": -0.014094309004109129,
-      "harmonic": -0.13992992043262154
+      "gradient": 0.155157388656733,
+      "curl": -0.014096661010031819,
+      "harmonic": -0.1410607276467012
     }
   },
   {
@@ -966,9 +958,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.9267313910858035,
+      "gradient": 0.9268083607425754,
       "curl": 0.0,
-      "harmonic": -0.9267313910858035
+      "harmonic": -0.9268083607425754
     }
   },
   {
@@ -979,9 +971,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.926708770738629,
+      "gradient": -1.9267929752706952,
       "curl": 0.0,
-      "harmonic": 0.926708770738629
+      "harmonic": 0.9267929752706952
     }
   },
   {
@@ -992,9 +984,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.926708770738629,
+      "gradient": -1.9267929752706952,
       "curl": 0.0,
-      "harmonic": 0.926708770738629
+      "harmonic": 0.9267929752706952
     }
   },
   {
@@ -1005,9 +997,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.677894374652964,
-      "curl": 2.3382721243765996,
-      "harmonic": 0.3396222502763644
+      "gradient": -4.677234787798963,
+      "curl": 2.33826805048277,
+      "harmonic": 0.3389667373161931
     }
   },
   {
@@ -1018,9 +1010,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.677894374652964,
-      "curl": 2.3382721243765996,
-      "harmonic": 0.3396222502763644
+      "gradient": -4.677234787798963,
+      "curl": 2.33826805048277,
+      "harmonic": 0.3389667373161931
     }
   },
   {
@@ -1031,9 +1023,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9408760772352647,
+      "gradient": -2.9468881956564967,
       "curl": 0.0,
-      "harmonic": -0.059123922764735326
+      "harmonic": -0.053111804343503266
     }
   },
   {
@@ -1044,9 +1036,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9408760772352647,
+      "gradient": -2.9468881956564967,
       "curl": 0.0,
-      "harmonic": -0.059123922764735326
+      "harmonic": -0.053111804343503266
     }
   },
   {
@@ -1066,9 +1058,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.527724769213829,
-      "curl": 0.7222173398255767,
-      "harmonic": -0.19449257061174796
+      "gradient": -6.526440181888148,
+      "curl": 0.7222169036983597,
+      "harmonic": -0.19577672181021155
     }
   },
   {
@@ -1079,9 +1071,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.055440949410144,
-      "curl": -1.5555583894105143,
-      "harmonic": -0.3890006611793415
+      "gradient": -5.05291067492848,
+      "curl": -1.5555632226508616,
+      "harmonic": -0.39152610242065844
     }
   },
   {
@@ -1092,9 +1084,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.2556337393087356,
+      "gradient": -2.288336198644986,
       "curl": 0.0,
-      "harmonic": -1.7443662606912644
+      "harmonic": -1.711663801355014
     }
   },
   {
@@ -1105,9 +1097,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.5969219475532697,
-      "curl": -2.2977364128858038,
-      "harmonic": -0.10534163956092657
+      "gradient": -0.7950590470067072,
+      "curl": -2.314763573798119,
+      "harmonic": 0.10982262080482608
     }
   },
   {
@@ -1127,9 +1119,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.37808179473059944,
+      "gradient": 0.3740556998430562,
       "curl": 0.0,
-      "harmonic": -0.37808179473059944
+      "harmonic": -0.3740556998430562
     }
   },
   {
@@ -1149,9 +1141,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.10632355679059913,
-      "curl": -0.3333331133931643,
-      "harmonic": 1.4396566701837634
+      "gradient": -0.10697604421553297,
+      "curl": -0.3333332477694734,
+      "harmonic": 1.4403092919850065
     }
   },
   {
@@ -1162,9 +1154,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -5.984469058023259,
+      "gradient": -5.986782607702177,
       "curl": 0.0,
-      "harmonic": -0.015530941976741097
+      "harmonic": -0.013217392297822705
     }
   },
   {
@@ -1175,9 +1167,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.10632355679059913,
-      "curl": -0.3333331133931643,
-      "harmonic": 1.4396566701837634
+      "gradient": -0.10697604421553297,
+      "curl": -0.3333332477694734,
+      "harmonic": 1.4403092919850065
     }
   },
   {
@@ -1197,9 +1189,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.2556337393087356,
+      "gradient": -2.288336198644986,
       "curl": 0.0,
-      "harmonic": -1.7443662606912644
+      "harmonic": -1.711663801355014
     }
   },
   {
@@ -1210,9 +1202,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -5.984469058023259,
+      "gradient": -5.986782607702177,
       "curl": 0.0,
-      "harmonic": -0.015530941976741097
+      "harmonic": -0.013217392297822705
     }
   },
   {
@@ -1223,9 +1215,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.1416394803022287,
+      "gradient": -3.152247337441746,
       "curl": 0.0,
-      "harmonic": -1.8583605196977713
+      "harmonic": -1.8477526625582539
     }
   },
   {
@@ -1236,9 +1228,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.5969219475532697,
-      "curl": -2.2977364128858038,
-      "harmonic": -0.10534163956092657
+      "gradient": -0.7950590470067072,
+      "curl": -2.314763573798119,
+      "harmonic": 0.10982262080482608
     }
   },
   {
@@ -1249,9 +1241,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.179796008030435,
+      "gradient": -1.105518115494946,
       "curl": 0.0,
-      "harmonic": 1.179796008030435
+      "harmonic": 1.105518115494946
     }
   },
   {
@@ -1271,9 +1263,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.19781110108615074,
-      "curl": -0.8108306281648658,
-      "harmonic": 0.6130195270787151
+      "gradient": 0.21865842693240456,
+      "curl": -0.8108099911161789,
+      "harmonic": 0.5921515641837743
     }
   },
   {
@@ -1284,9 +1276,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.1416394803022287,
+      "gradient": -3.152247337441746,
       "curl": 0.0,
-      "harmonic": -1.8583605196977713
+      "harmonic": -1.8477526625582539
     }
   },
   {
@@ -1297,9 +1289,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.19781110108615074,
-      "curl": -0.8108306281648658,
-      "harmonic": 0.6130195270787151
+      "gradient": 0.21865842693240456,
+      "curl": -0.8108099911161789,
+      "harmonic": 0.5921515641837743
     }
   },
   {
@@ -1310,9 +1302,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.527724769213829,
-      "curl": 0.7222173398255767,
-      "harmonic": -0.19449257061174796
+      "gradient": -6.526440181888148,
+      "curl": 0.7222169036983597,
+      "harmonic": -0.19577672181021155
     }
   },
   {
@@ -1323,9 +1315,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.055440949410144,
-      "curl": -1.5555583894105143,
-      "harmonic": -0.3890006611793415
+      "gradient": -5.05291067492848,
+      "curl": -1.5555632226508616,
+      "harmonic": -0.39152610242065844
     }
   },
   {
@@ -1345,9 +1337,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.2114407622236194,
-      "curl": -0.7017551878038248,
-      "harmonic": -1.0868040499725558
+      "gradient": -3.3211661033503996,
+      "curl": -0.701753614713803,
+      "harmonic": -0.9770802819357973
     }
   },
   {
@@ -1358,9 +1350,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.2114407622236194,
-      "curl": -0.7017551878038248,
-      "harmonic": -1.0868040499725558
+      "gradient": -3.3211661033503996,
+      "curl": -0.701753614713803,
+      "harmonic": -0.9770802819357973
     }
   },
   {
@@ -1488,9 +1480,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.229092902278188,
-      "curl": -1.4594658483083665,
-      "harmonic": 0.6885587505865542
+      "gradient": -2.212040351019678,
+      "curl": -1.4594650921699555,
+      "harmonic": 0.6715054431896337
     }
   },
   {
@@ -1519,9 +1511,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.1899056250647524,
-      "curl": -1.8918942394547231,
-      "harmonic": -0.29801138561002927
+      "gradient": 0.16931419791764046,
+      "curl": -1.891898252947311,
+      "harmonic": -0.2774159449703295
     }
   },
   {
@@ -1532,9 +1524,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.1899056250647524,
-      "curl": -1.8918942394547231,
-      "harmonic": -0.29801138561002927
+      "gradient": 0.16931419791764046,
+      "curl": -1.891898252947311,
+      "harmonic": -0.2774159449703295
     }
   },
   {
@@ -1545,9 +1537,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.3784534262563906,
+      "gradient": -2.393486603052377,
       "curl": 0.0,
-      "harmonic": 2.3784534262563906
+      "harmonic": 2.393486603052377
     }
   },
   {
@@ -1576,9 +1568,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.3784534262563906,
+      "gradient": -2.393486603052377,
       "curl": 0.0,
-      "harmonic": 2.3784534262563906
+      "harmonic": 2.393486603052377
     }
   },
   {
@@ -1589,9 +1581,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.7898192562674726,
-      "curl": 0.7017551878038248,
-      "harmonic": -0.9119359315363522
+      "gradient": -2.643381703972302,
+      "curl": 0.701753614713803,
+      "harmonic": -1.058371910741501
     }
   },
   {
@@ -1602,9 +1594,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.7898192562674726,
-      "curl": 0.7017551878038248,
-      "harmonic": -0.9119359315363522
+      "gradient": -2.643381703972302,
+      "curl": 0.701753614713803,
+      "harmonic": -1.058371910741501
     }
   },
   {
@@ -1615,9 +1607,9 @@
     "targetCluster": 9,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.5644823372291197,
+      "gradient": -2.564086575680915,
       "curl": 0.0,
-      "harmonic": 1.5644823372291197
+      "harmonic": 1.564086575680915
     }
   },
   {
@@ -1628,9 +1620,9 @@
     "targetCluster": 9,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.5644823372291197,
+      "gradient": -2.564086575680915,
       "curl": 0.0,
-      "harmonic": 1.5644823372291197
+      "harmonic": 1.564086575680915
     }
   },
   {
@@ -1641,9 +1633,9 @@
     "targetCluster": 9,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.7012355741604255,
+      "gradient": -4.701026215008327,
       "curl": 0.0,
-      "harmonic": 0.7012355741604255
+      "harmonic": 0.7010262150083273
     }
   },
   {
@@ -1654,9 +1646,9 @@
     "targetCluster": 9,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.7012355741604255,
+      "gradient": -4.701026215008327,
       "curl": 0.0,
-      "harmonic": 0.7012355741604255
+      "harmonic": 0.7010262150083273
     }
   },
   {
@@ -1667,9 +1659,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.1249287430368295,
-      "curl": 2.1991244699567205,
-      "harmonic": -0.07419572691989096
+      "gradient": -1.1262209555898608,
+      "curl": 2.199126277584955,
+      "harmonic": -0.07290532199509459
     }
   },
   {
@@ -1689,9 +1681,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.8975834509025873,
-      "curl": -2.3999717418633075,
-      "harmonic": 0.2975551927658948
+      "gradient": -2.823479266371447,
+      "curl": -2.410153042400963,
+      "harmonic": 0.23363230877240992
     }
   },
   {
@@ -1702,9 +1694,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.7446537116611363,
-      "curl": 0.5911138845552143,
-      "harmonic": 0.15353982710592196
+      "gradient": -2.7431275909648183,
+      "curl": 0.5910592220203352,
+      "harmonic": 0.15206836894448306
     }
   },
   {
@@ -1715,9 +1707,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.8975834509025873,
-      "curl": -2.3999717418633075,
-      "harmonic": 0.2975551927658948
+      "gradient": -2.823479266371447,
+      "curl": -2.410153042400963,
+      "harmonic": 0.23363230877240992
     }
   },
   {
@@ -1728,9 +1720,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.7446537116611363,
-      "curl": 0.5911138845552143,
-      "harmonic": 0.15353982710592196
+      "gradient": -2.7431275909648183,
+      "curl": 0.5910592220203352,
+      "harmonic": 0.15206836894448306
     }
   },
   {
@@ -1741,9 +1733,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.198518482491353,
-      "curl": 0.39999760244033045,
-      "harmonic": -0.5985160849316835
+      "gradient": 1.190373748154122,
+      "curl": 0.3999963548113192,
+      "harmonic": -0.5903701029654411
     }
   },
   {
@@ -1754,9 +1746,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.198518482491353,
-      "curl": 0.39999760244033045,
-      "harmonic": -0.5985160849316835
+      "gradient": 1.190373748154122,
+      "curl": 0.3999963548113192,
+      "harmonic": -0.5903701029654411
     }
   },
   {
@@ -1767,9 +1759,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.995128889081672,
-      "curl": -0.19912553893626173,
-      "harmonic": -0.8057455719820662
+      "gradient": -3.9947128736034387,
+      "curl": -0.19912694576732853,
+      "harmonic": -0.8061601806292327
     }
   },
   {
@@ -1780,9 +1772,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.998775467483897,
-      "curl": -0.2008767023240981,
-      "harmonic": 0.1996521698079951
+      "gradient": -1.0002118351567404,
+      "curl": -0.20087349998495713,
+      "harmonic": 0.20108533514169752
     }
   },
   {
@@ -1793,9 +1785,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.587981169866967,
+      "gradient": -3.5881333054726503,
       "curl": 0.0,
-      "harmonic": 0.5879811698669668
+      "harmonic": 0.5881333054726503
     }
   },
   {
@@ -1806,9 +1798,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.3786341640795134,
-      "curl": 0.38266580495025637,
-      "harmonic": 0.23870003097023018
+      "gradient": 1.378474440105598,
+      "curl": 0.3826686921757528,
+      "harmonic": 0.23885686771864928
     }
   },
   {
@@ -1819,9 +1811,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.4051875062262718,
+      "gradient": -1.4053705093768336,
       "curl": 0.0,
-      "harmonic": 0.40518750622627175
+      "harmonic": 0.4053705093768336
     }
   },
   {
@@ -1832,9 +1824,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.995128889081672,
-      "curl": -0.19912553893626173,
-      "harmonic": -0.8057455719820662
+      "gradient": -3.9947128736034387,
+      "curl": -0.19912694576732853,
+      "harmonic": -0.8061601806292327
     }
   },
   {
@@ -1845,9 +1837,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.1212821646346045,
-      "curl": -1.7991222286963606,
-      "harmonic": -1.0795956066690349
+      "gradient": -4.120721994036559,
+      "curl": -1.7991258318326695,
+      "harmonic": -1.0801521741307711
     }
   },
   {
@@ -1858,9 +1850,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.2246099346427828,
-      "curl": -1.3967601535797158,
-      "harmonic": -0.3786299117775014
+      "gradient": -1.223317051448865,
+      "curl": -1.3967588438852725,
+      "harmonic": -0.37992410466586257
     }
   },
   {
@@ -1871,9 +1863,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.996353421597775,
-      "curl": 1.0017610450546277,
-      "harmonic": -1.0054076234568528
+      "gradient": -2.9945010384466983,
+      "curl": 1.0017575558673304,
+      "harmonic": -1.007256517420632
     }
   },
   {
@@ -1884,9 +1876,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.1212821646346045,
-      "curl": -1.7991222286963606,
-      "harmonic": -1.0795956066690349
+      "gradient": -4.120721994036559,
+      "curl": -1.7991258318326695,
+      "harmonic": -1.0801521741307711
     }
   },
   {
@@ -1897,9 +1889,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.4051875062262718,
+      "gradient": -1.4053705093768336,
       "curl": 0.0,
-      "harmonic": 0.40518750622627175
+      "harmonic": 0.4053705093768336
     }
   },
   {
@@ -1910,9 +1902,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.3786341640795134,
-      "curl": 0.38266580495025637,
-      "harmonic": 0.23870003097023018
+      "gradient": 1.378474440105598,
+      "curl": 0.3826686921757528,
+      "harmonic": 0.23885686771864928
     }
   },
   {
@@ -1923,9 +1915,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.2246099346427828,
-      "curl": -1.3967601535797158,
-      "harmonic": -0.3786299117775014
+      "gradient": -1.223317051448865,
+      "curl": -1.3967588438852725,
+      "harmonic": -0.37992410466586257
     }
   },
   {
@@ -1936,9 +1928,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.998775467483897,
-      "curl": -0.2008767023240981,
-      "harmonic": 0.1996521698079951
+      "gradient": -1.0002118351567404,
+      "curl": -0.20087349998495713,
+      "harmonic": 0.20108533514169752
     }
   },
   {
@@ -1949,9 +1941,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.996353421597775,
-      "curl": 1.0017610450546277,
-      "harmonic": -1.0054076234568528
+      "gradient": -2.9945010384466983,
+      "curl": 1.0017575558673304,
+      "harmonic": -1.007256517420632
     }
   },
   {
@@ -1962,9 +1954,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.3736352321120013,
+      "gradient": -1.3613256669308997,
       "curl": 0.0,
-      "harmonic": -0.6263647678879987
+      "harmonic": -0.6386743330691003
     }
   },
   {
@@ -1975,9 +1967,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.49479557496548,
+      "gradient": 0.4937127304791744,
       "curl": 0.0,
-      "harmonic": 0.50520442503452
+      "harmonic": 0.5062872695208256
     }
   },
   {
@@ -1988,9 +1980,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.7089727194103634,
-      "curl": 0.5070551153831213,
-      "harmonic": 1.7839721652065152
+      "gradient": 0.7084653972765813,
+      "curl": 0.5070595418497528,
+      "harmonic": 1.784475060873666
     }
   },
   {
@@ -2001,9 +1993,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.7089727194103634,
-      "curl": 0.5070551153831213,
-      "harmonic": 1.7839721652065152
+      "gradient": 0.7084653972765813,
+      "curl": 0.5070595418497528,
+      "harmonic": 1.784475060873666
     }
   },
   {
@@ -2014,9 +2006,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.535666873203728,
-      "curl": 0.005281712195188248,
-      "harmonic": -0.4696148389914603
+      "gradient": -5.53556038582944,
+      "curl": 0.005280597269815557,
+      "harmonic": -0.4697202114403758
     }
   },
   {
@@ -2027,9 +2019,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.49479557496548,
+      "gradient": 0.4937127304791744,
       "curl": 0.0,
-      "harmonic": 0.50520442503452
+      "harmonic": 0.5062872695208256
     }
   },
   {
@@ -2049,9 +2041,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.535666873203728,
-      "curl": 0.005281712195188248,
-      "harmonic": -0.4696148389914603
+      "gradient": -5.53556038582944,
+      "curl": 0.005280597269815557,
+      "harmonic": -0.4697202114403758
     }
   },
   {
@@ -2089,9 +2081,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7107838220306131,
-      "curl": 0.5777761638431744,
-      "harmonic": 0.13300765818743865
+      "gradient": -0.7163302340102962,
+      "curl": 0.577253580852556,
+      "harmonic": 0.1390766531577402
     }
   },
   {
@@ -2120,9 +2112,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7107838220306131,
-      "curl": 0.5777761638431744,
-      "harmonic": 0.13300765818743865
+      "gradient": -0.7163302340102962,
+      "curl": 0.577253580852556,
+      "harmonic": 0.1390766531577402
     }
   },
   {
@@ -2160,9 +2152,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.9616070214438808,
-      "curl": 0.4311143737065221,
-      "harmonic": -0.46950735226264134
+      "gradient": -2.0146688655928964,
+      "curl": 0.43325646583460764,
+      "harmonic": -0.41858760024171127
     }
   },
   {
@@ -2170,12 +2162,12 @@
     "target": "2006",
     "count": 8,
     "sourceCluster": 5,
-    "targetCluster": 12,
-    "sameCluster": false,
+    "targetCluster": 5,
+    "sameCluster": true,
     "hodge": {
-      "gradient": 0.6116912326883992,
-      "curl": -0.1403470379845504,
-      "harmonic": -0.4713441947038488
+      "gradient": 0.3357764941707657,
+      "curl": -0.14034823425977694,
+      "harmonic": -0.19542825991098878
     }
   },
   {
@@ -2204,9 +2196,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.5627600422886756,
+      "gradient": -3.6303624699524546,
       "curl": 0.0,
-      "harmonic": -0.4372399577113244
+      "harmonic": -0.3696375300475454
     }
   },
   {
@@ -2217,9 +2209,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.782289474708272,
+      "gradient": -5.79708098386979,
       "curl": 0.0,
-      "harmonic": -0.21771052529172774
+      "harmonic": -0.20291901613020968
     }
   },
   {
@@ -2248,9 +2240,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.8404127138896849,
-      "curl": 0.4054077418982431,
-      "harmonic": -0.24582045578792794
+      "gradient": 1.814311548794021,
+      "curl": 0.4054108175336363,
+      "harmonic": -0.21972236632765718
     }
   },
   {
@@ -2270,9 +2262,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.8404127138896849,
-      "curl": 0.4054077418982431,
-      "harmonic": -0.24582045578792794
+      "gradient": 1.814311548794021,
+      "curl": 0.4054108175336363,
+      "harmonic": -0.21972236632765718
     }
   },
   {
@@ -2283,9 +2275,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -7.079590606391243,
+      "gradient": -7.043363754850166,
       "curl": 0.0,
-      "harmonic": 1.0795906063912426
+      "harmonic": 1.0433637548501657
     }
   },
   {
@@ -2305,9 +2297,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.782289474708272,
+      "gradient": -5.79708098386979,
       "curl": 0.0,
-      "harmonic": -0.21771052529172774
+      "harmonic": -0.20291901613020968
     }
   },
   {
@@ -2327,9 +2319,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.418205466869201,
-      "curl": -2.33333179375215,
-      "harmonic": 0.7515372606213506
+      "gradient": -5.408228229876194,
+      "curl": -2.3333327343863117,
+      "harmonic": 0.7415609642625056
     }
   },
   {
@@ -2340,9 +2332,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.37808179473059944,
+      "gradient": 0.3740556998430562,
       "curl": 0.0,
-      "harmonic": -0.37808179473059944
+      "harmonic": -0.3740556998430562
     }
   },
   {
@@ -2362,9 +2354,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.681599714874034,
-      "curl": 2.1892126848170848,
-      "harmonic": 0.4923870300569493
+      "gradient": -0.6714175714495498,
+      "curl": 2.189196192860325,
+      "harmonic": 0.48222137858922487
     }
   },
   {
@@ -2375,9 +2367,9 @@
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.9616070214438808,
-      "curl": 0.4311143737065221,
-      "harmonic": -0.46950735226264134
+      "gradient": -2.0146688655928964,
+      "curl": 0.43325646583460764,
+      "harmonic": -0.41858760024171127
     }
   },
   {
@@ -2388,9 +2380,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.179796008030435,
+      "gradient": -1.105518115494946,
       "curl": 0.0,
-      "harmonic": 1.179796008030435
+      "harmonic": 1.105518115494946
     }
   },
   {
@@ -2410,9 +2402,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.5627600422886756,
+      "gradient": -3.6303624699524546,
       "curl": 0.0,
-      "harmonic": -0.4372399577113244
+      "harmonic": -0.3696375300475454
     }
   },
   {
@@ -2423,9 +2415,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.418205466869201,
-      "curl": -2.33333179375215,
-      "harmonic": 0.7515372606213506
+      "gradient": -5.408228229876194,
+      "curl": -2.3333327343863117,
+      "harmonic": 0.7415609642625056
     }
   },
   {
@@ -2445,9 +2437,9 @@
     "targetCluster": 10,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.9215977286503849,
-      "curl": -0.49999918632066037,
-      "harmonic": 1.4215969149710452
+      "gradient": -0.9232275788132593,
+      "curl": -0.4999996001609746,
+      "harmonic": 1.423227178974234
     }
   },
   {
@@ -2458,9 +2450,9 @@
     "targetCluster": 10,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.9215977286503849,
-      "curl": -0.49999918632066037,
-      "harmonic": 1.4215969149710452
+      "gradient": -0.9232275788132593,
+      "curl": -0.4999996001609746,
+      "harmonic": 1.423227178974234
     }
   },
   {
@@ -2471,9 +2463,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.358068388883418,
-      "curl": 0.3333331133931643,
-      "harmonic": 1.024735275490254
+      "gradient": -2.3741081292046844,
+      "curl": 0.3333332477694734,
+      "harmonic": 1.040774881435211
     }
   },
   {
@@ -2484,23 +2476,19 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.358068388883418,
-      "curl": 0.3333331133931643,
-      "harmonic": 1.024735275490254
+      "gradient": -2.3741081292046844,
+      "curl": 0.3333332477694734,
+      "harmonic": 1.040774881435211
     }
   },
   {
     "source": "245",
     "target": "253",
     "count": 8,
-    "sourceCluster": 1,
+    "sourceCluster": -1,
     "targetCluster": 1,
-    "sameCluster": true,
-    "hodge": {
-      "gradient": -3.436383718784259,
-      "curl": -0.5636351985808707,
-      "harmonic": 1.8917365129711428e-05
-    }
+    "sameCluster": false,
+    "hodge": null
   },
   {
     "source": "3682",
@@ -2609,9 +2597,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.7587498095380525,
-      "curl": 2.33333179375215,
-      "harmonic": 1.4254180157859024
+      "gradient": -6.679400705771444,
+      "curl": 2.333332734386312,
+      "harmonic": 1.346067971385132
     }
   },
   {
@@ -2690,7 +2678,7 @@
     "source": "1353",
     "target": "1382",
     "count": 8,
-    "sourceCluster": 11,
+    "sourceCluster": 12,
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": null
@@ -2757,9 +2745,9 @@
     "targetCluster": 3,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.9795181502668173,
+      "gradient": 0.9881811306567161,
       "curl": 0.0,
-      "harmonic": -0.9795181502668173
+      "harmonic": -0.9881811306567161
     }
   },
   {
@@ -2770,9 +2758,9 @@
     "targetCluster": 3,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.5223785663694356,
-      "curl": -0.37500007278356307,
-      "harmonic": -0.14737849358587252
+      "gradient": 1.5187849655975751,
+      "curl": -0.37499999111252136,
+      "harmonic": -0.14378497448505378
     }
   },
   {
@@ -2783,9 +2771,9 @@
     "targetCluster": 3,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.9795181502668173,
+      "gradient": 0.9881811306567161,
       "curl": 0.0,
-      "harmonic": -0.9795181502668173
+      "harmonic": -0.9881811306567161
     }
   },
   {
@@ -2796,9 +2784,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.5223785663694356,
-      "curl": -0.37500007278356307,
-      "harmonic": -0.14737849358587252
+      "gradient": 1.5187849655975751,
+      "curl": -0.37499999111252136,
+      "harmonic": -0.14378497448505378
     }
   },
   {
@@ -2809,9 +2797,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.1943383094084448,
+      "gradient": -2.2115714778511477,
       "curl": 0.0,
-      "harmonic": 1.1943383094084448
+      "harmonic": 1.2115714778511477
     }
   },
   {
@@ -2822,9 +2810,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.1943383094084448,
+      "gradient": -2.2115714778511477,
       "curl": 0.0,
-      "harmonic": 1.1943383094084448
+      "harmonic": 1.2115714778511477
     }
   },
   {
@@ -2835,9 +2823,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.9368986500802308,
-      "curl": 1.799995624652462,
-      "harmonic": 0.13690302542776878
+      "gradient": -3.937005704727593,
+      "curl": 1.7999981777677567,
+      "harmonic": 0.1370075269598361
     }
   },
   {
@@ -2848,9 +2836,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.555375598829157,
+      "gradient": 2.5618402479486515,
       "curl": 0.0,
-      "harmonic": 2.444624401170843
+      "harmonic": 2.4381597520513485
     }
   },
   {
@@ -2861,9 +2849,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.024402250433441,
+      "gradient": -5.023875790005953,
       "curl": 0.0,
-      "harmonic": -0.9755977495665586
+      "harmonic": -0.9761242099940466
     }
   },
   {
@@ -2874,9 +2862,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.9368986500802308,
-      "curl": 1.799995624652462,
-      "harmonic": 0.13690302542776878
+      "gradient": -3.937005704727593,
+      "curl": 1.7999981777677567,
+      "harmonic": 0.1370075269598361
     }
   },
   {
@@ -2887,9 +2875,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.1249287430368295,
-      "curl": 2.1991244699567205,
-      "harmonic": -0.07419572691989096
+      "gradient": -1.1262209555898608,
+      "curl": 2.199126277584955,
+      "harmonic": -0.07290532199509459
     }
   },
   {
@@ -2900,9 +2888,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.555375598829157,
+      "gradient": 2.5618402479486515,
       "curl": 0.0,
-      "harmonic": 2.444624401170843
+      "harmonic": 2.4381597520513485
     }
   },
   {
@@ -2922,9 +2910,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.411932314731251,
-      "curl": 1.2353793009518932,
-      "harmonic": 0.3526883843168558
+      "gradient": 1.4157833993208615,
+      "curl": 1.2353749356164077,
+      "harmonic": 0.34884166506273084
     }
   },
   {
@@ -2935,9 +2923,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.5393134516059535,
-      "curl": -0.9964867225779946,
-      "harmonic": 0.5358001741839481
+      "gradient": -2.541059347382742,
+      "curl": -0.9964952217326678,
+      "harmonic": 0.5375545691154097
     }
   },
   {
@@ -2948,9 +2936,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.024402250433441,
+      "gradient": -5.023875790005953,
       "curl": 0.0,
-      "harmonic": -0.9755977495665586
+      "harmonic": -0.9761242099940466
     }
   },
   {
@@ -2961,9 +2949,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.411932314731251,
-      "curl": 1.2353793009518932,
-      "harmonic": 0.3526883843168558
+      "gradient": 1.4157833993208615,
+      "curl": 1.2353749356164077,
+      "harmonic": 0.34884166506273084
     }
   },
   {
@@ -2983,9 +2971,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.0372028154874227,
+      "gradient": -1.0228510592621824,
       "curl": 0.0,
-      "harmonic": 1.0372028154874227
+      "harmonic": 1.0228510592621824
     }
   },
   {
@@ -2996,9 +2984,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.393690034870989,
+      "gradient": -1.3896229649412248,
       "curl": 0.0,
-      "harmonic": 1.393690034870989
+      "harmonic": 1.3896229649412248
     }
   },
   {
@@ -3009,9 +2997,9 @@
     "targetCluster": 8,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.0372028154874227,
+      "gradient": -1.0228510592621824,
       "curl": 0.0,
-      "harmonic": 1.0372028154874227
+      "harmonic": 1.0228510592621824
     }
   },
   {
@@ -3021,23 +3009,19 @@
     "sourceCluster": 1,
     "targetCluster": 1,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -0.1090809751930033,
-      "curl": 0.10909354372111915,
-      "harmonic": -1.2568528115847188e-05
-    }
+    "hodge": null
   },
   {
     "source": "3339",
     "target": "2006",
     "count": 8,
     "sourceCluster": 5,
-    "targetCluster": 12,
-    "sameCluster": false,
+    "targetCluster": 5,
+    "sameCluster": true,
     "hodge": {
-      "gradient": 1.320977687682218,
-      "curl": 0.8070152768598233,
-      "harmonic": -0.12799296454204123
+      "gradient": 1.0626549199732613,
+      "curl": 0.8070190892421588,
+      "harmonic": 0.13032599078457985
     }
   },
   {
@@ -3066,9 +3050,9 @@
     "targetCluster": 9,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.3571496770683487,
+      "gradient": -3.3566204605537413,
       "curl": 0.0,
-      "harmonic": 0.35714967706834866
+      "harmonic": 0.3566204605537413
     }
   },
   {
@@ -3097,9 +3081,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.05613631378962669,
-      "curl": -2.0881006918977256,
-      "harmonic": 1.031964378108099
+      "gradient": 0.06128703182579498,
+      "curl": -2.088102049395228,
+      "harmonic": 1.026815017569433
     }
   },
   {
@@ -3110,9 +3094,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.449606331724885,
-      "curl": 0.19999894432910892,
-      "harmonic": 1.249607387395776
+      "gradient": -3.450354919695112,
+      "curl": 0.19999911559290062,
+      "harmonic": 1.2503558041022114
     }
   },
   {
@@ -3123,9 +3107,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.3220983737113396,
-      "curl": -2.3382721243765996,
-      "harmonic": -0.33962950191206076
+      "gradient": -3.3227384203038968,
+      "curl": -2.33826805048277,
+      "harmonic": -0.33899352921333303
     }
   },
   {
@@ -3136,9 +3120,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.03329815065173758,
-      "curl": 0.8527213909458323,
-      "harmonic": 0.1139804584024301
+      "gradient": 0.03730895921526356,
+      "curl": 0.8527271137788204,
+      "harmonic": 0.10996392700591606
     }
   },
   {
@@ -3149,9 +3133,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.9548740108068956,
-      "curl": 0.5999988676407444,
-      "harmonic": -0.6451248568338488
+      "gradient": -3.954440394302051,
+      "curl": 0.5999957911293077,
+      "harmonic": -0.6455553968272567
     }
   },
   {
@@ -3162,9 +3146,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.381642643766997,
-      "curl": 0.9912050103828064,
-      "harmonic": -0.6095623666158091
+      "gradient": -5.380402997172707,
+      "curl": 0.9912146244628522,
+      "harmonic": -0.610811627290145
     }
   },
   {
@@ -3193,9 +3177,9 @@
     "targetCluster": 9,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.3571496770683487,
+      "gradient": -3.3566204605537413,
       "curl": 0.0,
-      "harmonic": 0.35714967706834866
+      "harmonic": 0.3566204605537413
     }
   },
   {
@@ -3206,9 +3190,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.243974504946301,
+      "gradient": -1.2436140509887639,
       "curl": 0.0,
-      "harmonic": 1.243974504946301
+      "harmonic": 1.2436140509887639
     }
   },
   {
@@ -3264,9 +3248,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.05613631378962669,
-      "curl": -2.0881006918977256,
-      "harmonic": 1.031964378108099
+      "gradient": 0.06128703182579498,
+      "curl": -2.088102049395228,
+      "harmonic": 1.026815017569433
     }
   },
   {
@@ -3277,9 +3261,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.03329815065173758,
-      "curl": 0.8527213909458323,
-      "harmonic": 0.1139804584024301
+      "gradient": 0.03730895921526356,
+      "curl": 0.8527271137788204,
+      "harmonic": 0.10996392700591606
     }
   },
   {
@@ -3290,9 +3274,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.9548740108068956,
-      "curl": 0.5999988676407444,
-      "harmonic": -0.6451248568338488
+      "gradient": -3.954440394302051,
+      "curl": 0.5999957911293077,
+      "harmonic": -0.6455553968272567
     }
   },
   {
@@ -3303,9 +3287,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.587981169866967,
+      "gradient": -3.5881333054726503,
       "curl": 0.0,
-      "harmonic": 0.5879811698669668
+      "harmonic": 0.5881333054726503
     }
   },
   {
@@ -3316,9 +3300,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.243974504946301,
+      "gradient": -1.2436140509887639,
       "curl": 0.0,
-      "harmonic": 1.243974504946301
+      "harmonic": 1.2436140509887639
     }
   },
   {
@@ -3338,9 +3322,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.449606331724885,
-      "curl": 0.19999894432910892,
-      "harmonic": 1.249607387395776
+      "gradient": -3.450354919695112,
+      "curl": 0.19999911559290062,
+      "harmonic": 1.2503558041022114
     }
   },
   {
@@ -3351,9 +3335,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.381642643766997,
-      "curl": 0.9912050103828064,
-      "harmonic": -0.6095623666158091
+      "gradient": -5.380402997172707,
+      "curl": 0.9912146244628522,
+      "harmonic": -0.610811627290145
     }
   },
   {
@@ -3400,9 +3384,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.3220983737113396,
-      "curl": -2.3382721243765996,
-      "harmonic": -0.33962950191206076
+      "gradient": -3.3227384203038968,
+      "curl": -2.33826805048277,
+      "harmonic": -0.33899352921333303
     }
   },
   {
@@ -3413,9 +3397,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.3736352321120013,
+      "gradient": -1.3613256669308997,
       "curl": 0.0,
-      "harmonic": -0.6263647678879987
+      "harmonic": -0.6386743330691003
     }
   },
   {
@@ -3426,9 +3410,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -7.685054475458168,
+      "gradient": -7.684778168477164,
       "curl": 0.0,
-      "harmonic": 0.685054475458168
+      "harmonic": 0.6847781684771643
     }
   },
   {
@@ -3439,9 +3423,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -7.685054475458168,
+      "gradient": -7.684778168477164,
       "curl": 0.0,
-      "harmonic": 0.685054475458168
+      "harmonic": 0.6847781684771643
     }
   },
   {
@@ -3452,9 +3436,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.109272868699753,
-      "curl": 1.8216077308687098,
-      "harmonic": 0.2876651378310431
+      "gradient": -2.8180007336412176,
+      "curl": 1.8216074892698726,
+      "harmonic": -0.0036067556286549785
     }
   },
   {
@@ -3465,9 +3449,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.5956519060075438,
-      "curl": 1.6076758779658336,
-      "harmonic": -0.012023971958289748
+      "gradient": -0.596884008205496,
+      "curl": 1.6076768652636657,
+      "harmonic": -0.01079285705816968
     }
   },
   {
@@ -3478,9 +3462,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.109272868699753,
-      "curl": 1.8216077308687098,
-      "harmonic": 0.2876651378310431
+      "gradient": -2.8180007336412176,
+      "curl": 1.8216074892698726,
+      "harmonic": -0.0036067556286549785
     }
   },
   {
@@ -3491,9 +3475,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.5956519060075438,
-      "curl": 1.6076758779658336,
-      "harmonic": -0.012023971958289748
+      "gradient": -0.596884008205496,
+      "curl": 1.6076768652636657,
+      "harmonic": -0.01079285705816968
     }
   },
   {
@@ -3522,9 +3506,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -7.0365789187840955,
+      "gradient": -7.033679272913544,
       "curl": 0.0,
-      "harmonic": 1.0365789187840955
+      "harmonic": 1.0336792729135436
     }
   },
   {
@@ -3535,9 +3519,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -7.0365789187840955,
+      "gradient": -7.033679272913544,
       "curl": 0.0,
-      "harmonic": 1.0365789187840955
+      "harmonic": 1.0336792729135436
     }
   },
   {
@@ -3548,9 +3532,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.799888714985757,
-      "curl": 0.23999321300110632,
-      "harmonic": -0.44010449801534934
+      "gradient": -2.7974251827819043,
+      "curl": 0.24063247646351998,
+      "harmonic": -0.44320729368161565
     }
   },
   {
@@ -3561,9 +3545,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.799888714985757,
-      "curl": 0.23999321300110632,
-      "harmonic": -0.44010449801534934
+      "gradient": -2.7974251827819043,
+      "curl": 0.24063247646351998,
+      "harmonic": -0.44320729368161565
     }
   },
   {
@@ -3592,9 +3576,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.2621855482960471,
-      "curl": -0.39999760244033045,
-      "harmonic": 0.6621831507363776
+      "gradient": -1.2705822447508504,
+      "curl": -0.3999963548113192,
+      "harmonic": 0.6705785995621696
     }
   },
   {
@@ -3605,9 +3589,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.4607040307874,
-      "curl": 0.19999865811122153,
-      "harmonic": 1.2607053726761785
+      "gradient": -2.4609559929049722,
+      "curl": 0.19999723921841855,
+      "harmonic": 1.2609587536865536
     }
   },
   {
@@ -3618,9 +3602,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.437865867649511,
-      "curl": -0.5999988676407444,
-      "harmonic": -0.9621352647097448
+      "gradient": -2.436977920294441,
+      "curl": -0.5999957911293077,
+      "harmonic": -0.9630262885762515
     }
   },
   {
@@ -3631,9 +3615,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.8986744429697784,
+      "gradient": -2.8953551573901426,
       "curl": 0.0,
-      "harmonic": -1.1013255570302216
+      "harmonic": -1.1046448426098574
     }
   },
   {
@@ -3650,8 +3634,8 @@
     "target": "6347",
     "count": 7,
     "sourceCluster": 9,
-    "targetCluster": 9,
-    "sameCluster": true,
+    "targetCluster": -1,
+    "sameCluster": false,
     "hodge": null
   },
   {
@@ -3671,9 +3655,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.2842899046973484,
-      "curl": 0.25333093371314624,
-      "harmonic": 0.46237916158950537
+      "gradient": 0.2756686728458124,
+      "curl": 0.2544381176312993,
+      "harmonic": 0.46989320952288827
     }
   },
   {
@@ -3684,9 +3668,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.4554375336917493,
-      "curl": -0.8311070975563206,
-      "harmonic": 0.28654463124806995
+      "gradient": -3.4594578249751144,
+      "curl": -0.8316916984838553,
+      "harmonic": 0.2911495234589697
     }
   },
   {
@@ -3697,9 +3681,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.720750383320398,
+      "gradient": -4.7188904007438435,
       "curl": 0.0,
-      "harmonic": -1.2792496166796017
+      "harmonic": -1.2811095992561565
     }
   },
   {
@@ -3710,9 +3694,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.8986744429697784,
+      "gradient": -2.8953551573901426,
       "curl": 0.0,
-      "harmonic": -1.1013255570302216
+      "harmonic": -1.1046448426098574
     }
   },
   {
@@ -3723,9 +3707,9 @@
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.2842899046973484,
-      "curl": 0.25333093371314624,
-      "harmonic": 0.46237916158950537
+      "gradient": 0.2756686728458124,
+      "curl": 0.2544381176312993,
+      "harmonic": 0.46989320952288827
     }
   },
   {
@@ -3736,9 +3720,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.4554375336917493,
-      "curl": -0.8311070975563206,
-      "harmonic": 0.28654463124806995
+      "gradient": -3.4594578249751144,
+      "curl": -0.8316916984838553,
+      "harmonic": 0.2911495234589697
     }
   },
   {
@@ -3749,9 +3733,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.720750383320398,
+      "gradient": -4.7188904007438435,
       "curl": 0.0,
-      "harmonic": -1.2792496166796017
+      "harmonic": -1.2811095992561565
     }
   },
   {
@@ -3762,9 +3746,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.2621855482960471,
-      "curl": -0.39999760244033045,
-      "harmonic": 0.6621831507363776
+      "gradient": -1.2705822447508504,
+      "curl": -0.3999963548113192,
+      "harmonic": 0.6705785995621696
     }
   },
   {
@@ -3775,9 +3759,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.4607040307874,
-      "curl": 0.19999865811122153,
-      "harmonic": 1.2607053726761785
+      "gradient": -2.4609559929049722,
+      "curl": 0.19999723921841855,
+      "harmonic": 1.2609587536865536
     }
   },
   {
@@ -3788,9 +3772,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.437865867649511,
-      "curl": -0.5999988676407444,
-      "harmonic": -0.9621352647097448
+      "gradient": -2.436977920294441,
+      "curl": -0.5999957911293077,
+      "harmonic": -0.9630262885762515
     }
   },
   {
@@ -3801,9 +3785,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.5170081431573847,
-      "curl": 0.8000016565727973,
-      "harmonic": -0.31700979973018206
+      "gradient": 1.5174624740076101,
+      "curl": 0.7999990801925885,
+      "harmonic": -0.3174615542001986
     }
   },
   {
@@ -3819,9 +3803,9 @@
     "source": "6347",
     "target": "3386",
     "count": 7,
-    "sourceCluster": 9,
+    "sourceCluster": -1,
     "targetCluster": 9,
-    "sameCluster": true,
+    "sameCluster": false,
     "hodge": null
   },
   {
@@ -3832,9 +3816,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.5170081431573847,
-      "curl": 0.8000016565727973,
-      "harmonic": -0.31700979973018206
+      "gradient": 1.5174624740076101,
+      "curl": 0.7999990801925885,
+      "harmonic": -0.3174615542001986
     }
   },
   {
@@ -3868,13 +3852,13 @@
     "source": "2006",
     "target": "3320",
     "count": 7,
-    "sourceCluster": 12,
+    "sourceCluster": 5,
     "targetCluster": 5,
-    "sameCluster": false,
+    "sameCluster": true,
     "hodge": {
-      "gradient": 0.6116912326883992,
-      "curl": -0.1403470379845504,
-      "harmonic": -0.4713441947038488
+      "gradient": 0.3357764941707657,
+      "curl": -0.14034823425977694,
+      "harmonic": -0.19542825991098878
     }
   },
   {
@@ -3885,9 +3869,9 @@
     "targetCluster": 10,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9793742536865717,
+      "gradient": -2.979767647973757,
       "curl": 0.0,
-      "harmonic": -0.020625746313428284
+      "harmonic": -0.02023235202624285
     }
   },
   {
@@ -3906,11 +3890,7 @@
     "sourceCluster": 5,
     "targetCluster": 5,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -4.270015449981729,
-      "curl": 0.0,
-      "harmonic": 1.270015449981729
-    }
+    "hodge": null
   },
   {
     "source": "3751",
@@ -3929,9 +3909,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.944583929360334,
-      "curl": 0.5555590492310216,
-      "harmonic": 0.38902488012931236
+      "gradient": -1.9470921567327804,
+      "curl": 0.5555634793424422,
+      "harmonic": 0.39152867739033814
     }
   },
   {
@@ -3942,9 +3922,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.0155616840723605,
+      "gradient": -5.013202828275347,
       "curl": 0.0,
-      "harmonic": 0.015561684072360471
+      "harmonic": 0.01320282827534669
     }
   },
   {
@@ -3964,9 +3944,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9627737090814517,
+      "gradient": -2.9828566158652348,
       "curl": 0.0,
-      "harmonic": -2.0372262909185483
+      "harmonic": -2.0171433841347652
     }
   },
   {
@@ -3986,9 +3966,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.352952278742322,
+      "gradient": -3.3425866873195598,
       "curl": 0.0,
-      "harmonic": -0.6470477212576782
+      "harmonic": -0.6574133126804402
     }
   },
   {
@@ -4071,9 +4051,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.8715053399387864,
-      "curl": 0.08108379165614776,
-      "harmonic": 0.7904215482826387
+      "gradient": -0.8407317693671903,
+      "curl": 0.08107889042580929,
+      "harmonic": 0.759652878941381
     }
   },
   {
@@ -4111,9 +4091,9 @@
     "targetCluster": 10,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9793742536865717,
+      "gradient": -2.979767647973757,
       "curl": 0.0,
-      "harmonic": -0.020625746313428284
+      "harmonic": -0.02023235202624285
     }
   },
   {
@@ -4169,9 +4149,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.1309079609499655,
-      "curl": 1.649118595517107,
-      "harmonic": -0.5182106345671416
+      "gradient": -1.4046628251805933,
+      "curl": 1.6491214038026019,
+      "harmonic": -0.2444585786220086
     }
   },
   {
@@ -4191,9 +4171,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.352952278742322,
+      "gradient": -3.3425866873195598,
       "curl": 0.0,
-      "harmonic": -0.6470477212576782
+      "harmonic": -0.6574133126804402
     }
   },
   {
@@ -4204,9 +4184,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -7.079590606391243,
+      "gradient": -7.043363754850166,
       "curl": 0.0,
-      "harmonic": 1.0795906063912426
+      "harmonic": 1.0433637548501657
     }
   },
   {
@@ -4217,9 +4197,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.0155616840723605,
+      "gradient": -5.013202828275347,
       "curl": 0.0,
-      "harmonic": 0.015561684072360471
+      "harmonic": 0.01320282827534669
     }
   },
   {
@@ -4230,9 +4210,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9627737090814517,
+      "gradient": -2.9828566158652348,
       "curl": 0.0,
-      "harmonic": -2.0372262909185483
+      "harmonic": -2.0171433841347652
     }
   },
   {
@@ -4243,9 +4223,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.944583929360334,
-      "curl": 0.5555590492310216,
-      "harmonic": 0.38902488012931236
+      "gradient": -1.9470921567327804,
+      "curl": 0.5555634793424422,
+      "harmonic": 0.39152867739033814
     }
   },
   {
@@ -4291,11 +4271,7 @@
     "sourceCluster": 5,
     "targetCluster": 5,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -4.270015449981729,
-      "curl": 0.0,
-      "harmonic": 1.270015449981729
-    }
+    "hodge": null
   },
   {
     "source": "3361",
@@ -4305,9 +4281,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.1309079609499655,
-      "curl": 1.649118595517107,
-      "harmonic": -0.5182106345671416
+      "gradient": -1.4046628251805933,
+      "curl": 1.6491214038026019,
+      "harmonic": -0.2444585786220086
     }
   },
   {
@@ -4327,9 +4303,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.7499981357393628,
-      "curl": 3.249998262908246,
-      "harmonic": 3.6013523914135703e-06
+      "gradient": 0.7500013574684266,
+      "curl": 3.249998914203644,
+      "harmonic": -2.716720706175124e-07
     }
   },
   {
@@ -4340,9 +4316,9 @@
     "targetCluster": 10,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.2021360031820696,
+      "gradient": 0.19807491129884758,
       "curl": 0.0,
-      "harmonic": 0.7978639968179304
+      "harmonic": 0.8019250887011524
     }
   },
   {
@@ -4497,9 +4473,9 @@
     "targetCluster": 3,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.2021360031820696,
+      "gradient": 0.19807491129884758,
       "curl": 0.0,
-      "harmonic": 0.7978639968179304
+      "harmonic": 0.8019250887011524
     }
   },
   {
@@ -4654,9 +4630,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.8111727664073562,
+      "gradient": -0.8651676866444649,
       "curl": 0.0,
-      "harmonic": 0.8111727664073562
+      "harmonic": 0.8651676866444649
     }
   },
   {
@@ -4667,9 +4643,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.8111727664073562,
+      "gradient": -0.8651676866444649,
       "curl": 0.0,
-      "harmonic": 0.8111727664073562
+      "harmonic": 0.8651676866444649
     }
   },
   {
@@ -4680,9 +4656,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.0354183591372759,
-      "curl": 1.2841610974917737,
-      "harmonic": -0.24874273835449778
+      "gradient": -0.5846497823563834,
+      "curl": 0.7999989774458068,
+      "harmonic": -0.2153491950894234
     }
   },
   {
@@ -4693,9 +4669,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.0354183591372759,
-      "curl": 1.2841610974917737,
-      "harmonic": -0.24874273835449778
+      "gradient": -0.5846497823563834,
+      "curl": 0.7999989774458068,
+      "harmonic": -0.2153491950894234
     }
   },
   {
@@ -4706,9 +4682,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.794377294021364,
+      "gradient": -4.795403556786549,
       "curl": 0.0,
-      "harmonic": 2.7943772940213636
+      "harmonic": 2.7954035567865487
     }
   },
   {
@@ -4719,9 +4695,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.794377294021364,
+      "gradient": -4.795403556786549,
       "curl": 0.0,
-      "harmonic": 2.7943772940213636
+      "harmonic": 2.7954035567865487
     }
   },
   {
@@ -4732,9 +4708,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.9423240091672245,
+      "gradient": -4.941484695742368,
       "curl": 0.0,
-      "harmonic": 1.9423240091672245
+      "harmonic": 1.9414846957423677
     }
   },
   {
@@ -4745,9 +4721,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.9423240091672245,
+      "gradient": -4.941484695742368,
       "curl": 0.0,
-      "harmonic": 1.9423240091672245
+      "harmonic": 1.9414846957423677
     }
   },
   {
@@ -4794,9 +4770,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.055235003324620724,
-      "curl": 1.648889049321514,
-      "harmonic": -0.5936540459968933
+      "gradient": -0.054297591817086044,
+      "curl": 1.6495680462458506,
+      "harmonic": -0.5952704544287646
     }
   },
   {
@@ -4807,9 +4783,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.055235003324620724,
-      "curl": 1.648889049321514,
-      "harmonic": -0.5936540459968933
+      "gradient": -0.054297591817086044,
+      "curl": 1.6495680462458506,
+      "harmonic": -0.5952704544287646
     }
   },
   {
@@ -4820,9 +4796,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.1709620886090084,
+      "gradient": -2.170274453992683,
       "curl": 0.0,
-      "harmonic": 1.1709620886090084
+      "harmonic": 1.170274453992683
     }
   },
   {
@@ -4878,9 +4854,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.1709620886090084,
+      "gradient": -2.170274453992683,
       "curl": 0.0,
-      "harmonic": 1.1709620886090084
+      "harmonic": 1.170274453992683
     }
   },
   {
@@ -4891,9 +4867,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7454872176674481,
+      "gradient": -0.7387604582791036,
       "curl": 0.0,
-      "harmonic": -1.254512782332552
+      "harmonic": -1.2612395417208964
     }
   },
   {
@@ -4904,9 +4880,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7454872176674481,
+      "gradient": -0.7387604582791036,
       "curl": 0.0,
-      "harmonic": -1.254512782332552
+      "harmonic": -1.2612395417208964
     }
   },
   {
@@ -4917,9 +4893,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.9889023009374848,
-      "curl": 3.844602944003128e-06,
-      "harmonic": -0.011101543665459235
+      "gradient": -0.9893989267901397,
+      "curl": 4.173470380119948e-06,
+      "harmonic": -0.010605246680240377
     }
   },
   {
@@ -4939,9 +4915,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.9889023009374848,
-      "curl": 3.844602944003128e-06,
-      "harmonic": -0.011101543665459235
+      "gradient": -0.9893989267901397,
+      "curl": 4.173470380119948e-06,
+      "harmonic": -0.010605246680240377
     }
   },
   {
@@ -4988,9 +4964,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.5393134516059535,
-      "curl": -0.9964867225779946,
-      "harmonic": 0.5358001741839481
+      "gradient": -2.541059347382742,
+      "curl": -0.9964952217326678,
+      "harmonic": 0.5375545691154097
     }
   },
   {
@@ -5010,9 +4986,9 @@
     "targetCluster": 8,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.5778051517189349,
+      "gradient": -1.5715380901424543,
       "curl": 0.0,
-      "harmonic": 0.5778051517189349
+      "harmonic": 0.5715380901424543
     }
   },
   {
@@ -5023,9 +4999,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.5778051517189349,
+      "gradient": -1.5715380901424543,
       "curl": 0.0,
-      "harmonic": 0.5778051517189349
+      "harmonic": 0.5715380901424543
     }
   },
   {
@@ -5035,11 +5011,7 @@
     "sourceCluster": 1,
     "targetCluster": 1,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -0.1090809751930033,
-      "curl": 0.10909354372111915,
-      "harmonic": -1.2568528115847188e-05
-    }
+    "hodge": null
   },
   {
     "source": "3410",
@@ -5048,11 +5020,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -1.7790179982465464,
-      "curl": 2.149998207113441,
-      "harmonic": -0.37098020886689476
-    }
+    "hodge": null
   },
   {
     "source": "2072",
@@ -5061,23 +5029,19 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -1.7790179982465464,
-      "curl": 2.149998207113441,
-      "harmonic": -0.37098020886689476
-    }
+    "hodge": null
   },
   {
     "source": "2006",
     "target": "3339",
     "count": 7,
-    "sourceCluster": 12,
+    "sourceCluster": 5,
     "targetCluster": 5,
-    "sameCluster": false,
+    "sameCluster": true,
     "hodge": {
-      "gradient": 1.320977687682218,
-      "curl": 0.8070152768598233,
-      "harmonic": -0.12799296454204123
+      "gradient": 1.0626549199732613,
+      "curl": 0.8070190892421588,
+      "harmonic": 0.13032599078457985
     }
   },
   {
@@ -5115,9 +5079,9 @@
     "targetCluster": 8,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.393690034870989,
+      "gradient": -1.3896229649412248,
       "curl": 0.0,
-      "harmonic": 1.393690034870989
+      "harmonic": 1.3896229649412248
     }
   },
   {
@@ -5128,9 +5092,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7271369804957657,
-      "curl": -0.2976155215870263,
-      "harmonic": 0.024752502082792005
+      "gradient": -0.8906682778849833,
+      "curl": -0.1406127884683085,
+      "harmonic": 0.03128106635329175
     }
   },
   {
@@ -5141,9 +5105,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7271369804957657,
-      "curl": -0.2976155215870263,
-      "harmonic": 0.024752502082792005
+      "gradient": -0.8906682778849833,
+      "curl": -0.1406127884683085,
+      "harmonic": 0.03128106635329175
     }
   },
   {
@@ -5307,9 +5271,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.063051925633164,
-      "curl": -1.799995624652462,
-      "harmonic": -0.13695244971437437
+      "gradient": -4.063014825160713,
+      "curl": -1.7999981777677567,
+      "harmonic": -0.13698699707153028
     }
   },
   {
@@ -5383,9 +5347,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.6560085762454507,
+      "gradient": -0.6554691888672443,
       "curl": 0.0,
-      "harmonic": 0.6560085762454507
+      "harmonic": 0.6554691888672443
     }
   },
   {
@@ -5396,9 +5360,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.063051925633164,
-      "curl": -1.799995624652462,
-      "harmonic": -0.13695244971437437
+      "gradient": -4.063014825160713,
+      "curl": -1.7999981777677567,
+      "harmonic": -0.13698699707153028
     }
   },
   {
@@ -5517,9 +5481,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.6560085762454507,
+      "gradient": -0.6554691888672443,
       "curl": 0.0,
-      "harmonic": 0.6560085762454507
+      "harmonic": 0.6554691888672443
     }
   },
   {
@@ -5611,9 +5575,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.373611069100428,
+      "gradient": -1.3613443918447155,
       "curl": 0.0,
-      "harmonic": -0.626388930899572
+      "harmonic": -0.6386556081552845
     }
   },
   {
@@ -5624,9 +5588,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.5951785699125902,
+      "gradient": -0.5667343121485361,
       "curl": 0.0,
-      "harmonic": 1.5951785699125902
+      "harmonic": 1.5667343121485362
     }
   },
   {
@@ -5637,9 +5601,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.531824093466427,
+      "gradient": 2.5204621378136705,
       "curl": 0.0,
-      "harmonic": -0.5318240934664269
+      "harmonic": -0.5204621378136705
     }
   },
   {
@@ -5650,9 +5614,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.5951785699125902,
+      "gradient": -0.5667343121485361,
       "curl": 0.0,
-      "harmonic": 1.5951785699125902
+      "harmonic": 1.5667343121485362
     }
   },
   {
@@ -5663,9 +5627,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9789544632830416,
+      "gradient": -2.976103906046885,
       "curl": 0.0,
-      "harmonic": 0.9789544632830416
+      "harmonic": 0.9761039060468848
     }
   },
   {
@@ -5676,9 +5640,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9789544632830416,
+      "gradient": -2.976103906046885,
       "curl": 0.0,
-      "harmonic": 0.9789544632830416
+      "harmonic": 0.9761039060468848
     }
   },
   {
@@ -5689,9 +5653,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.531824093466427,
+      "gradient": 2.5204621378136705,
       "curl": 0.0,
-      "harmonic": -0.5318240934664269
+      "harmonic": -0.5204621378136705
     }
   },
   {
@@ -5720,9 +5684,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.31490523154822,
+      "gradient": -5.315258656454812,
       "curl": 0.0,
-      "harmonic": -0.6850947684517799
+      "harmonic": -0.6847413435451877
     }
   },
   {
@@ -5733,9 +5697,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.31490523154822,
+      "gradient": -5.315258656454812,
       "curl": 0.0,
-      "harmonic": -0.6850947684517799
+      "harmonic": -0.6847413435451877
     }
   },
   {
@@ -5746,9 +5710,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.8571367627101605,
-      "curl": -0.14285713577128156,
-      "harmonic": -6.1015185579549325e-06
+      "gradient": -1.8571357074049466,
+      "curl": -0.14285714361787555,
+      "harmonic": -7.1489771778510125e-06
     }
   },
   {
@@ -5759,9 +5723,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.7045947791467109,
-      "curl": -0.3475482031421925,
-      "harmonic": 0.05214298228890335
+      "gradient": -1.6991991708285008,
+      "curl": -0.3475473220967161,
+      "harmonic": 0.04674649292521693
     }
   },
   {
@@ -5772,9 +5736,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.2614848567026167,
-      "curl": 0.24946700931341192,
-      "harmonic": 0.01201784738920475
+      "gradient": -1.2602516991994506,
+      "curl": 0.24946750147748376,
+      "harmonic": 0.010784197721966815
     }
   },
   {
@@ -5785,9 +5749,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.8571367627101605,
-      "curl": -0.14285713577128156,
-      "harmonic": -6.1015185579549325e-06
+      "gradient": -1.8571357074049466,
+      "curl": -0.14285714361787555,
+      "harmonic": -7.1489771778510125e-06
     }
   },
   {
@@ -5798,9 +5762,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.1525419835634496,
-      "curl": 1.7953099772234882,
-      "harmonic": 0.052148039213062214
+      "gradient": 0.1579365365764458,
+      "curl": 1.7953097393427875,
+      "harmonic": 0.04675372408076672
     }
   },
   {
@@ -5811,9 +5775,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.8592685187582685,
-      "curl": 1.1549415040823814,
-      "harmonic": -0.2956729853241129
+      "gradient": -5.151339382410306,
+      "curl": 1.1549409937309258,
+      "harmonic": -0.0036016113206196465
     }
   },
   {
@@ -5824,9 +5788,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.2735597276413992,
-      "curl": 2.1492557980093387,
-      "harmonic": 0.1243039296320605
+      "gradient": -3.2607454883610725,
+      "curl": 2.1492555522730186,
+      "harmonic": 0.11148993608805391
     }
   },
   {
@@ -5837,9 +5801,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.7045947791467109,
-      "curl": -0.3475482031421925,
-      "harmonic": 0.05214298228890335
+      "gradient": -1.6991991708285008,
+      "curl": -0.3475473220967161,
+      "harmonic": 0.04674649292521693
     }
   },
   {
@@ -5850,9 +5814,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.1525419835634496,
-      "curl": 1.7953099772234882,
-      "harmonic": 0.052148039213062214
+      "gradient": 0.1579365365764458,
+      "curl": 1.7953097393427875,
+      "harmonic": 0.04675372408076672
     }
   },
   {
@@ -5863,9 +5827,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.2735597276413992,
-      "curl": 2.1492557980093387,
-      "harmonic": 0.1243039296320605
+      "gradient": -3.2607454883610725,
+      "curl": 2.1492555522730186,
+      "harmonic": 0.11148993608805391
     }
   },
   {
@@ -5876,9 +5840,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.8592685187582685,
-      "curl": 1.1549415040823814,
-      "harmonic": -0.2956729853241129
+      "gradient": -5.151339382410306,
+      "curl": 1.1549409937309258,
+      "harmonic": -0.0036016113206196465
     }
   },
   {
@@ -5961,9 +5925,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.1261532755529325,
-      "curl": 1.399993383392102,
-      "harmonic": -0.2738401078391697
+      "gradient": -0.12600912043312051,
+      "curl": 1.399997732015471,
+      "harmonic": -0.27398861158235044
     }
   },
   {
@@ -6010,9 +5974,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.1261532755529325,
-      "curl": 1.399993383392102,
-      "harmonic": -0.2738401078391697
+      "gradient": -0.12600912043312051,
+      "curl": 1.399997732015471,
+      "harmonic": -0.27398861158235044
     }
   },
   {
@@ -6050,9 +6014,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.5434040184536664,
+      "gradient": -1.5429995680976945,
       "curl": 0.0,
-      "harmonic": 0.5434040184536664
+      "harmonic": 0.5429995680976945
     }
   },
   {
@@ -6063,9 +6027,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.5434040184536664,
+      "gradient": -1.5429995680976945,
       "curl": 0.0,
-      "harmonic": 0.5434040184536664
+      "harmonic": 0.5429995680976945
     }
   },
   {
@@ -6103,9 +6067,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.4354630273445768,
+      "gradient": -2.435925399376102,
       "curl": 0.0,
-      "harmonic": -1.5645369726554232
+      "harmonic": -1.564074600623898
     }
   },
   {
@@ -6143,9 +6107,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.40037275766382,
+      "gradient": -1.400425508780572,
       "curl": 0.0,
-      "harmonic": -0.5996272423361799
+      "harmonic": -0.5995744912194281
     }
   },
   {
@@ -6174,9 +6138,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.4354630273445768,
+      "gradient": -2.435925399376102,
       "curl": 0.0,
-      "harmonic": -1.5645369726554232
+      "harmonic": -1.564074600623898
     }
   },
   {
@@ -6196,9 +6160,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.40037275766382,
+      "gradient": -1.400425508780572,
       "curl": 0.0,
-      "harmonic": -0.5996272423361799
+      "harmonic": -0.5995744912194281
     }
   },
   {
@@ -6245,9 +6209,9 @@
     "targetCluster": 3,
     "sameCluster": false,
     "hodge": {
-      "gradient": 5.0143455656089895,
+      "gradient": 5.021594614902353,
       "curl": 0.0,
-      "harmonic": 1.9856544343910105
+      "harmonic": 1.9784053850976466
     }
   },
   {
@@ -6267,9 +6231,9 @@
     "targetCluster": 10,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.611989508782176,
+      "gradient": -3.6061187259455543,
       "curl": 0.0,
-      "harmonic": -1.3880104912178242
+      "harmonic": -1.3938812740544457
     }
   },
   {
@@ -6289,9 +6253,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.5402242589707926,
+      "gradient": 1.5398538721984942,
       "curl": 0.0,
-      "harmonic": -0.5402242589707926
+      "harmonic": -0.5398538721984942
     }
   },
   {
@@ -6329,9 +6293,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7606124406155228,
+      "gradient": -0.7598820984237857,
       "curl": 0.0,
-      "harmonic": 0.7606124406155228
+      "harmonic": 0.7598820984237857
     }
   },
   {
@@ -6369,9 +6333,9 @@
     "targetCluster": 10,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.611989508782176,
+      "gradient": -3.6061187259455543,
       "curl": 0.0,
-      "harmonic": -1.3880104912178242
+      "harmonic": -1.3938812740544457
     }
   },
   {
@@ -6472,9 +6436,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.375032270765525,
-      "curl": 1.3749995382937932,
-      "harmonic": 3.2732471731522494e-05
+      "gradient": -4.374985966281059,
+      "curl": 1.3749996570213345,
+      "harmonic": -1.3690740275240643e-05
     }
   },
   {
@@ -6485,9 +6449,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.6250341350261612,
-      "curl": -1.3749995382937932,
-      "harmonic": 3.367331995440814e-05
+      "gradient": -3.6249846088126327,
+      "curl": -1.3749996570213345,
+      "harmonic": -1.5734166032732588e-05
     }
   },
   {
@@ -6570,9 +6534,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.5190777789557797,
+      "gradient": -0.358893019719154,
       "curl": 0.0,
-      "harmonic": 0.5190777789557797
+      "harmonic": 0.358893019719154
     }
   },
   {
@@ -6628,9 +6592,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.47228319319152967,
-      "curl": -0.2777820003539159,
-      "harmonic": -0.19450119283761375
+      "gradient": 0.4735398662843804,
+      "curl": -0.2777828396100597,
+      "harmonic": -0.1957570266743207
     }
   },
   {
@@ -6641,9 +6605,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7606124406155228,
+      "gradient": -0.7598820984237857,
       "curl": 0.0,
-      "harmonic": 0.7606124406155228
+      "harmonic": 0.7598820984237857
     }
   },
   {
@@ -6672,9 +6636,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.8715053399387864,
-      "curl": 0.08108379165614776,
-      "harmonic": 0.7904215482826387
+      "gradient": -0.8407317693671903,
+      "curl": 0.08107889042580929,
+      "harmonic": 0.759652878941381
     }
   },
   {
@@ -6766,9 +6730,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.5190777789557797,
+      "gradient": -0.358893019719154,
       "curl": 0.0,
-      "harmonic": 0.5190777789557797
+      "harmonic": 0.358893019719154
     }
   },
   {
@@ -6779,9 +6743,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.467124908072641,
+      "gradient": -3.4550598664005774,
       "curl": 0.0,
-      "harmonic": -1.5328750919273588
+      "harmonic": -1.5449401335994226
     }
   },
   {
@@ -6801,9 +6765,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.114694478357271,
-      "curl": 2.33333179375215,
-      "harmonic": 0.7813626846051211
+      "gradient": -2.136676509674956,
+      "curl": 2.3333327343863117,
+      "harmonic": 0.8033437752886443
     }
   },
   {
@@ -6832,9 +6796,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.375032270765525,
-      "curl": 1.3749995382937932,
-      "harmonic": 3.2732471731522494e-05
+      "gradient": -4.374985966281059,
+      "curl": 1.3749996570213345,
+      "harmonic": -1.3690740275240643e-05
     }
   },
   {
@@ -6890,9 +6854,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.6250341350261612,
-      "curl": -1.3749995382937932,
-      "harmonic": 3.367331995440814e-05
+      "gradient": -3.6249846088126327,
+      "curl": -1.3749996570213345,
+      "harmonic": -1.5734166032732588e-05
     }
   },
   {
@@ -6930,9 +6894,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.342383708938937,
+      "gradient": -2.34163754305297,
       "curl": 0.0,
-      "harmonic": 0.3423837089389372
+      "harmonic": 0.3416375430529701
     }
   },
   {
@@ -6961,9 +6925,9 @@
     "targetCluster": 3,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.3411838793439188,
-      "curl": -1.624996672499079,
-      "harmonic": -0.03381944815700222
+      "gradient": -1.3422557563445647,
+      "curl": -1.624998409531378,
+      "harmonic": -0.03274583412405718
     }
   },
   {
@@ -6974,9 +6938,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.342383708938937,
+      "gradient": -2.34163754305297,
       "curl": 0.0,
-      "harmonic": 0.3423837089389372
+      "harmonic": 0.3416375430529701
     }
   },
   {
@@ -6987,9 +6951,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.1325360452585516,
-      "curl": 2.8749960043868654,
-      "harmonic": 0.25754004087168614
+      "gradient": -3.128924338074559,
+      "curl": 2.8749979919173945,
+      "harmonic": 0.2539263461571646
     }
   },
   {
@@ -7000,9 +6964,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.499341570327567,
+      "gradient": -3.602508555210908,
       "curl": 0.0,
-      "harmonic": 1.4993415703275672
+      "harmonic": 1.6025085552109082
     }
   },
   {
@@ -7013,9 +6977,9 @@
     "targetCluster": 3,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.62176012211062,
+      "gradient": -2.623398347470049,
       "curl": 0.0,
-      "harmonic": 0.6217601221106199
+      "harmonic": 0.6233983474700491
     }
   },
   {
@@ -7035,9 +6999,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.1250244188004372,
-      "curl": -1.874998724614453,
-      "harmonic": 2.3143414890292036e-05
+      "gradient": -2.124963185842447,
+      "curl": -1.8749992571823093,
+      "harmonic": -3.7556975243768775e-05
     }
   },
   {
@@ -7048,9 +7012,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.8750225545398003,
-      "curl": 1.874998724614453,
-      "harmonic": 2.3829925347218506e-05
+      "gradient": -2.8749645433108735,
+      "curl": 1.8749992571823093,
+      "harmonic": -3.471387143583193e-05
     }
   },
   {
@@ -7061,9 +7025,9 @@
     "targetCluster": 3,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.62176012211062,
+      "gradient": -2.623398347470049,
       "curl": 0.0,
-      "harmonic": 0.6217601221106199
+      "harmonic": 0.6233983474700491
     }
   },
   {
@@ -7083,9 +7047,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9691756245030323,
+      "gradient": -3.037833668629795,
       "curl": 0.0,
-      "harmonic": -0.030824375496967704
+      "harmonic": 0.03783366862979509
     }
   },
   {
@@ -7096,9 +7060,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9691756245030323,
+      "gradient": -3.037833668629795,
       "curl": 0.0,
-      "harmonic": -0.030824375496967704
+      "harmonic": 0.03783366862979509
     }
   },
   {
@@ -7109,9 +7073,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.7520226532613017,
+      "gradient": -1.629216591700028,
       "curl": 0.0,
-      "harmonic": -2.2479773467386983
+      "harmonic": -2.370783408299972
     }
   },
   {
@@ -7122,9 +7086,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.499341570327567,
+      "gradient": -3.602508555210908,
       "curl": 0.0,
-      "harmonic": 1.4993415703275672
+      "harmonic": 1.6025085552109082
     }
   },
   {
@@ -7135,9 +7099,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.7520226532613017,
+      "gradient": -1.629216591700028,
       "curl": 0.0,
-      "harmonic": -2.2479773467386983
+      "harmonic": -2.370783408299972
     }
   },
   {
@@ -7148,9 +7112,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.1250244188004372,
-      "curl": -1.874998724614453,
-      "harmonic": 2.3143414890292036e-05
+      "gradient": -2.124963185842447,
+      "curl": -1.8749992571823093,
+      "harmonic": -3.7556975243768775e-05
     }
   },
   {
@@ -7161,9 +7125,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.7499981357393628,
-      "curl": 3.249998262908246,
-      "harmonic": 3.6013523914135703e-06
+      "gradient": 0.7500013574684266,
+      "curl": 3.249998914203644,
+      "harmonic": -2.716720706175124e-07
     }
   },
   {
@@ -7183,9 +7147,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.8750225545398003,
-      "curl": 1.874998724614453,
-      "harmonic": 2.3829925347218506e-05
+      "gradient": -2.8749645433108735,
+      "curl": 1.8749992571823093,
+      "harmonic": -3.471387143583193e-05
     }
   },
   {
@@ -7286,9 +7250,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.050845352038131,
-      "curl": -2.33333179375215,
-      "harmonic": 1.384177145790281
+      "gradient": -6.1109465287131375,
+      "curl": -2.333332734386312,
+      "harmonic": 1.4442792630994497
     }
   },
   {
@@ -7308,9 +7272,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.050845352038131,
-      "curl": -2.33333179375215,
-      "harmonic": 1.384177145790281
+      "gradient": -6.1109465287131375,
+      "curl": -2.333332734386312,
+      "harmonic": 1.4442792630994497
     }
   },
   {
@@ -7321,9 +7285,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.7348343166515714,
+      "gradient": -1.7473219506322235,
       "curl": 0.0,
-      "harmonic": 1.7348343166515714
+      "harmonic": 1.7473219506322235
     }
   },
   {
@@ -7370,9 +7334,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.7348343166515714,
+      "gradient": -1.7473219506322235,
       "curl": 0.0,
-      "harmonic": 1.7348343166515714
+      "harmonic": 1.7473219506322235
     }
   },
   {
@@ -7473,9 +7437,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": 2.554436462244902,
-      "curl": -1.2841610974917737,
-      "harmonic": -0.2702753647531282
+      "gradient": 1.9435672507812671,
+      "curl": -0.7999989774458068,
+      "harmonic": -0.1435682733354603
     }
   },
   {
@@ -7486,9 +7450,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": 2.554436462244902,
-      "curl": -1.2841610974917737,
-      "harmonic": -0.2702753647531282
+      "gradient": 1.9435672507812671,
+      "curl": -0.7999989774458068,
+      "harmonic": -0.1435682733354603
     }
   },
   {
@@ -7508,9 +7472,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.2658265383415759,
-      "curl": -0.6666662267863286,
-      "harmonic": -0.06750723487209553
+      "gradient": -1.312020806920179,
+      "curl": -0.6666664955389466,
+      "harmonic": -0.02131269754087428
     }
   },
   {
@@ -7521,9 +7485,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.30690541123432036,
+      "gradient": -0.2996520351756715,
       "curl": 0.0,
-      "harmonic": -0.6930945887656796
+      "harmonic": -0.7003479648243285
     }
   },
   {
@@ -7534,9 +7498,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.1951649031198142,
+      "gradient": -1.214240166235756,
       "curl": 0.0,
-      "harmonic": -1.8048350968801858
+      "harmonic": -1.785759833764244
     }
   },
   {
@@ -7547,9 +7511,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.30690541123432036,
+      "gradient": -0.2996520351756715,
       "curl": 0.0,
-      "harmonic": -0.6930945887656796
+      "harmonic": -0.7003479648243285
     }
   },
   {
@@ -7560,9 +7524,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.1951649031198142,
+      "gradient": -1.214240166235756,
       "curl": 0.0,
-      "harmonic": -1.8048350968801858
+      "harmonic": -1.785759833764244
     }
   },
   {
@@ -7591,9 +7555,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.2658265383415759,
-      "curl": -0.6666662267863286,
-      "harmonic": -0.06750723487209553
+      "gradient": -1.312020806920179,
+      "curl": -0.6666664955389466,
+      "harmonic": -0.02131269754087428
     }
   },
   {
@@ -7604,9 +7568,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": -5.525109270516048,
+      "gradient": -5.522208837640715,
       "curl": 0.0,
-      "harmonic": -0.4748907294839517
+      "harmonic": -0.477791162359285
     }
   },
   {
@@ -7617,9 +7581,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.549920522668997,
+      "gradient": -5.553649138485106,
       "curl": 0.0,
-      "harmonic": -1.4500794773310028
+      "harmonic": -1.446350861514894
     }
   },
   {
@@ -7630,9 +7594,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.5720245516833025,
-      "curl": 0.6666662267863286,
-      "harmonic": 1.761309221530369
+      "gradient": 0.5327787652519262,
+      "curl": 0.6666664955389466,
+      "harmonic": 1.8005547392091272
     }
   },
   {
@@ -7652,9 +7616,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -5.525109270516048,
+      "gradient": -5.522208837640715,
       "curl": 0.0,
-      "harmonic": -0.4748907294839517
+      "harmonic": -0.477791162359285
     }
   },
   {
@@ -7665,9 +7629,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.549920522668997,
+      "gradient": -5.553649138485106,
       "curl": 0.0,
-      "harmonic": -1.4500794773310028
+      "harmonic": -1.446350861514894
     }
   },
   {
@@ -7678,9 +7642,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.5720245516833025,
-      "curl": 0.6666662267863286,
-      "harmonic": 1.761309221530369
+      "gradient": 0.5327787652519262,
+      "curl": 0.6666664955389466,
+      "harmonic": 1.8005547392091272
     }
   },
   {
@@ -7700,9 +7664,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.5281058422199,
-      "curl": -0.20000278893205292,
-      "harmonic": -0.32810305328784706
+      "gradient": 0.5280635472174704,
+      "curl": -0.20000328906328074,
+      "harmonic": -0.32806025815418965
     }
   },
   {
@@ -7722,9 +7686,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.5281058422199,
-      "curl": -0.20000278893205292,
-      "harmonic": -0.32810305328784706
+      "gradient": 0.5280635472174704,
+      "curl": -0.20000328906328074,
+      "harmonic": -0.32806025815418965
     }
   },
   {
@@ -7744,9 +7708,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.9950737267279615,
-      "curl": -0.6755574241565325,
-      "harmonic": -0.329368849115506
+      "gradient": -0.9919989068561086,
+      "curl": -0.6771767989176904,
+      "harmonic": -0.33082429422620097
     }
   },
   {
@@ -7775,9 +7739,9 @@
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.9950737267279615,
-      "curl": -0.6755574241565325,
-      "harmonic": -0.329368849115506
+      "gradient": -0.9919989068561086,
+      "curl": -0.6771767989176904,
+      "harmonic": -0.33082429422620097
     }
   },
   {
@@ -7833,9 +7797,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.6666488728075803,
+      "gradient": -1.6729479742463749,
       "curl": 0.0,
-      "harmonic": 1.6666488728075803
+      "harmonic": 1.6729479742463749
     }
   },
   {
@@ -7846,9 +7810,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.457166595876597,
-      "curl": -0.33333311339316424,
-      "harmonic": -0.20950029073023885
+      "gradient": -1.4575372206977335,
+      "curl": -0.3333332477694731,
+      "harmonic": -0.2091295315327934
     }
   },
   {
@@ -7859,9 +7823,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.2792425362272173,
+      "gradient": -3.2810724640514346,
       "curl": 0.0,
-      "harmonic": 1.2792425362272173
+      "harmonic": 1.2810724640514346
     }
   },
   {
@@ -7881,9 +7845,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.457166595876597,
-      "curl": -0.33333311339316424,
-      "harmonic": -0.20950029073023885
+      "gradient": -1.4575372206977335,
+      "curl": -0.3333332477694731,
+      "harmonic": -0.2091295315327934
     }
   },
   {
@@ -7903,9 +7867,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.9433704040276738,
+      "gradient": 1.936577175645886,
       "curl": 0.0,
-      "harmonic": -0.9433704040276738
+      "harmonic": -0.936577175645886
     }
   },
   {
@@ -7925,9 +7889,9 @@
     "targetCluster": 9,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.9937170494999363,
+      "gradient": -0.9943439273864014,
       "curl": 0.0,
-      "harmonic": -2.0062829505000637
+      "harmonic": -2.005656072613599
     }
   },
   {
@@ -7965,9 +7929,9 @@
     "targetCluster": 9,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.2792425362272173,
+      "gradient": -3.2810724640514346,
       "curl": 0.0,
-      "harmonic": 1.2792425362272173
+      "harmonic": 1.2810724640514346
     }
   },
   {
@@ -8041,9 +8005,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.246757453673534,
+      "gradient": 1.2403515823690952,
       "curl": 0.0,
-      "harmonic": -0.24675745367353397
+      "harmonic": -0.24035158236909515
     }
   },
   {
@@ -8063,9 +8027,9 @@
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.9433704040276738,
+      "gradient": 1.936577175645886,
       "curl": 0.0,
-      "harmonic": -0.9433704040276738
+      "harmonic": -0.936577175645886
     }
   },
   {
@@ -8085,9 +8049,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.246757453673534,
+      "gradient": 1.2403515823690952,
       "curl": 0.0,
-      "harmonic": -0.24675745367353397
+      "harmonic": -0.24035158236909515
     }
   },
   {
@@ -8161,9 +8125,9 @@
     "targetCluster": 9,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.9937170494999363,
+      "gradient": -0.9943439273864014,
       "curl": 0.0,
-      "harmonic": -2.0062829505000637
+      "harmonic": -2.005656072613599
     }
   },
   {
@@ -8228,9 +8192,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.6666488728075803,
+      "gradient": -1.6729479742463749,
       "curl": 0.0,
-      "harmonic": 1.6666488728075803
+      "harmonic": 1.6729479742463749
     }
   },
   {
@@ -8277,9 +8241,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.6916661444888157,
+      "gradient": 2.723198661490245,
       "curl": 0.0,
-      "harmonic": 0.3083338555111843
+      "harmonic": 0.2768013385097552
     }
   },
   {
@@ -8290,9 +8254,9 @@
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.6916661444888157,
+      "gradient": 2.723198661490245,
       "curl": 0.0,
-      "harmonic": 0.3083338555111843
+      "harmonic": 0.2768013385097552
     }
   },
   {
@@ -8303,9 +8267,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.1953365732910137,
+      "gradient": 0.19415413504634993,
       "curl": 0.0,
-      "harmonic": -0.1953365732910137
+      "harmonic": -0.19415413504634993
     }
   },
   {
@@ -8316,9 +8280,9 @@
     "targetCluster": 4,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.1953365732910137,
+      "gradient": 0.19415413504634993,
       "curl": 0.0,
-      "harmonic": -0.1953365732910137
+      "harmonic": -0.19415413504634993
     }
   },
   {
@@ -8329,9 +8293,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.2264534600274177,
+      "gradient": 2.2232992118735364,
       "curl": 0.0,
-      "harmonic": -0.22645346002741773
+      "harmonic": -0.2232992118735364
     }
   },
   {
@@ -8342,9 +8306,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.2264534600274177,
+      "gradient": 2.2232992118735364,
       "curl": 0.0,
-      "harmonic": -0.22645346002741773
+      "harmonic": -0.2232992118735364
     }
   },
   {
@@ -8355,9 +8319,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.4723007361688043,
-      "curl": 0.2777820003539159,
-      "harmonic": 0.19451873581488838
+      "gradient": -1.4735522904484,
+      "curl": 0.2777828396100597,
+      "harmonic": 0.1957694508383403
     }
   },
   {
@@ -8368,9 +8332,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.4723007361688043,
-      "curl": 0.2777820003539159,
-      "harmonic": 0.19451873581488838
+      "gradient": -1.4735522904484,
+      "curl": 0.2777828396100597,
+      "harmonic": 0.1957694508383403
     }
   },
   {
@@ -8381,9 +8345,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.8378510900248783,
-      "curl": 0.6666662267863286,
-      "harmonic": -1.8288151367614502
+      "gradient": -1.8447995721721053,
+      "curl": 0.6666664955389466,
+      "harmonic": -1.8218669233668412
     }
   },
   {
@@ -8394,9 +8358,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.8378510900248783,
-      "curl": 0.6666662267863286,
-      "harmonic": -1.8288151367614502
+      "gradient": -1.8447995721721053,
+      "curl": 0.6666664955389466,
+      "harmonic": -1.8218669233668412
     }
   },
   {
@@ -8406,11 +8370,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -0.6786777879726231,
-      "curl": 0.4999997327551148,
-      "harmonic": 0.17867805521750835
-    }
+    "hodge": null
   },
   {
     "source": "2176",
@@ -8419,11 +8379,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -0.6786777879726231,
-      "curl": 0.4999997327551148,
-      "harmonic": 0.17867805521750835
-    }
+    "hodge": null
   },
   {
     "source": "1055",
@@ -8433,9 +8389,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.979105387510727,
+      "gradient": -2.9891676581829056,
       "curl": 0.0,
-      "harmonic": 0.9791053875107272
+      "harmonic": 0.9891676581829056
     }
   },
   {
@@ -8446,9 +8402,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.979105387510727,
+      "gradient": -2.9891676581829056,
       "curl": 0.0,
-      "harmonic": 0.9791053875107272
+      "harmonic": 0.9891676581829056
     }
   },
   {
@@ -8459,9 +8415,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.163220504358673,
+      "gradient": -3.171082783384135,
       "curl": 0.0,
-      "harmonic": 1.163220504358673
+      "harmonic": 1.171082783384135
     }
   },
   {
@@ -8472,9 +8428,9 @@
     "targetCluster": 8,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.026583881263089,
+      "gradient": -4.08781806805358,
       "curl": 0.0,
-      "harmonic": -0.9734161187369113
+      "harmonic": -0.9121819319464199
     }
   },
   {
@@ -8485,9 +8441,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.691205502956965,
-      "curl": 0.8749992591042236,
-      "harmonic": -1.1837937561472587
+      "gradient": -2.6979759211263783,
+      "curl": 0.8749995912734958,
+      "harmonic": -1.1770236701471175
     }
   },
   {
@@ -8498,9 +8454,9 @@
     "targetCluster": 8,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.026583881263089,
+      "gradient": -4.08781806805358,
       "curl": 0.0,
-      "harmonic": -0.9734161187369113
+      "harmonic": -0.9121819319464199
     }
   },
   {
@@ -8511,9 +8467,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.691205502956965,
-      "curl": 0.8749992591042236,
-      "harmonic": -1.1837937561472587
+      "gradient": -2.6979759211263783,
+      "curl": 0.8749995912734958,
+      "harmonic": -1.1770236701471175
     }
   },
   {
@@ -8533,9 +8489,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.163220504358673,
+      "gradient": -3.171082783384135,
       "curl": 0.0,
-      "harmonic": 1.163220504358673
+      "harmonic": 1.171082783384135
     }
   },
   {
@@ -8546,9 +8502,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.909045632435898,
-      "curl": 0.9008029176565987,
-      "harmonic": 0.008242714779299498
+      "gradient": -3.3562716254342586,
+      "curl": 1.3437589457016461,
+      "harmonic": 0.012512679732612497
     }
   },
   {
@@ -8559,9 +8515,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.909045632435898,
-      "curl": 0.9008029176565987,
-      "harmonic": 0.008242714779299498
+      "gradient": -3.3562716254342586,
+      "curl": 1.3437589457016461,
+      "harmonic": 0.012512679732612497
     }
   },
   {
@@ -8572,9 +8528,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.0021745147730168,
+      "gradient": -1.0004873347112384,
       "curl": 0.0,
-      "harmonic": 1.0021745147730168
+      "harmonic": 1.0004873347112384
     }
   },
   {
@@ -8585,9 +8541,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.0021745147730168,
+      "gradient": -1.0004873347112384,
       "curl": 0.0,
-      "harmonic": 1.0021745147730168
+      "harmonic": 1.0004873347112384
     }
   },
   {
@@ -8598,9 +8554,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.42543155240499386,
-      "curl": 0.37500007278356307,
-      "harmonic": 0.19956837481144307
+      "gradient": 0.4149438725715844,
+      "curl": 0.37499999111252136,
+      "harmonic": 0.21005613631589426
     }
   },
   {
@@ -8611,9 +8567,9 @@
     "targetCluster": 3,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.42543155240499386,
-      "curl": 0.37500007278356307,
-      "harmonic": 0.19956837481144307
+      "gradient": 0.4149438725715844,
+      "curl": 0.37499999111252136,
+      "harmonic": 0.21005613631589426
     }
   },
   {
@@ -8624,9 +8580,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.701434442544733,
+      "gradient": 2.6696955292244704,
       "curl": 0.0,
-      "harmonic": 1.2985655574552668
+      "harmonic": 1.3303044707755296
     }
   },
   {
@@ -8637,9 +8593,9 @@
     "targetCluster": 8,
     "sameCluster": false,
     "hodge": {
-      "gradient": 2.701434442544733,
+      "gradient": 2.6696955292244704,
       "curl": 0.0,
-      "harmonic": 1.2985655574552668
+      "harmonic": 1.3303044707755296
     }
   },
   {
@@ -8650,9 +8606,9 @@
     "targetCluster": 8,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.263333089610642,
+      "gradient": -6.2584833056752585,
       "curl": 0.0,
-      "harmonic": -0.7366669103893582
+      "harmonic": -0.7415166943247415
     }
   },
   {
@@ -8663,9 +8619,9 @@
     "targetCluster": 8,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.263333089610642,
+      "gradient": -6.2584833056752585,
       "curl": 0.0,
-      "harmonic": -0.7366669103893582
+      "harmonic": -0.7415166943247415
     }
   },
   {
@@ -8676,9 +8632,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.0007071711932997715,
-      "curl": 0.3333331133931643,
-      "harmonic": -0.33404028458646406
+      "gradient": 0.00015739042177731477,
+      "curl": 0.3333332477694733,
+      "harmonic": -0.33349063819125063
     }
   },
   {
@@ -8689,9 +8645,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.0007071711932997715,
-      "curl": 0.3333331133931643,
-      "harmonic": -0.33404028458646406
+      "gradient": 0.00015739042177731477,
+      "curl": 0.3333332477694733,
+      "harmonic": -0.33349063819125063
     }
   },
   {
@@ -8710,11 +8666,7 @@
     "sourceCluster": 1,
     "targetCluster": 1,
     "sameCluster": true,
-    "hodge": {
-      "gradient": 0.8363790209951363,
-      "curl": 0.16363426245937554,
-      "harmonic": -1.3283454511819892e-05
-    }
+    "hodge": null
   },
   {
     "source": "2397",
@@ -9102,9 +9054,9 @@
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.2686277565602881,
+      "gradient": -1.2409835551241697,
       "curl": 0.0,
-      "harmonic": 0.26862775656028814
+      "harmonic": 0.2409835551241697
     }
   },
   {
@@ -9115,9 +9067,9 @@
     "targetCluster": 7,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.2686277565602881,
+      "gradient": -1.2409835551241697,
       "curl": 0.0,
-      "harmonic": 0.26862775656028814
+      "harmonic": 0.2409835551241697
     }
   },
   {
@@ -9128,9 +9080,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.460326681270009,
+      "gradient": -1.5081702547776512,
       "curl": 0.0,
-      "harmonic": -0.5396733187299909
+      "harmonic": -0.4918297452223488
     }
   },
   {
@@ -9141,9 +9093,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.460326681270009,
+      "gradient": -1.5081702547776512,
       "curl": 0.0,
-      "harmonic": -0.5396733187299909
+      "harmonic": -0.4918297452223488
     }
   },
   {
@@ -9154,9 +9106,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.6263930751832634,
+      "gradient": -1.6386488670824029,
       "curl": 0.0,
-      "harmonic": 0.6263930751832634
+      "harmonic": 0.6386488670824029
     }
   },
   {
@@ -9167,9 +9119,9 @@
     "targetCluster": 13,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.6263930751832634,
+      "gradient": -1.6386488670824029,
       "curl": 0.0,
-      "harmonic": 0.6263930751832634
+      "harmonic": 0.6386488670824029
     }
   },
   {
@@ -9180,9 +9132,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.814080816762099,
+      "gradient": 1.8329413737736773,
       "curl": 0.0,
-      "harmonic": 0.18591918323790102
+      "harmonic": 0.16705862622632273
     }
   },
   {
@@ -9193,9 +9145,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.814080816762099,
+      "gradient": 1.8329413737736773,
       "curl": 0.0,
-      "harmonic": 0.18591918323790102
+      "harmonic": 0.16705862622632273
     }
   },
   {
@@ -9206,9 +9158,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.8439201764611415,
+      "gradient": -3.8662660946628513,
       "curl": 0.0,
-      "harmonic": -0.15607982353885852
+      "harmonic": -0.13373390533714868
     }
   },
   {
@@ -9237,9 +9189,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.0102071385892626,
+      "gradient": 1.0035852438141202,
       "curl": 0.0,
-      "harmonic": -1.0102071385892626
+      "harmonic": -1.0035852438141202
     }
   },
   {
@@ -9259,9 +9211,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.8439201764611415,
+      "gradient": -3.8662660946628513,
       "curl": 0.0,
-      "harmonic": -0.15607982353885852
+      "harmonic": -0.13373390533714868
     }
   },
   {
@@ -9272,9 +9224,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.0102071385892626,
+      "gradient": 1.0035852438141202,
       "curl": 0.0,
-      "harmonic": -1.0102071385892626
+      "harmonic": -1.0035852438141202
     }
   },
   {
@@ -9294,9 +9246,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.0606526313709184,
-      "curl": -1.2499993318877864,
-      "harmonic": -0.6893480367412952
+      "gradient": -3.061164957643536,
+      "curl": -1.2499995823860164,
+      "harmonic": -0.6888354599704478
     }
   },
   {
@@ -9307,9 +9259,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.0606526313709184,
-      "curl": -1.2499993318877864,
-      "harmonic": -0.6893480367412952
+      "gradient": -3.061164957643536,
+      "curl": -1.2499995823860164,
+      "harmonic": -0.6888354599704478
     }
   },
   {
@@ -9320,9 +9272,9 @@
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.314914240585327,
+      "gradient": -2.315221920205266,
       "curl": 0.0,
-      "harmonic": -0.6850857594146729
+      "harmonic": -0.684778079794734
     }
   },
   {
@@ -9333,9 +9285,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.314914240585327,
+      "gradient": -2.315221920205266,
       "curl": 0.0,
-      "harmonic": -0.6850857594146729
+      "harmonic": -0.684778079794734
     }
   },
   {
@@ -9364,9 +9316,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.5689649484946884,
-      "curl": -0.4968022019128159,
-      "harmonic": -0.0721627465818725
+      "gradient": 1.5615463175325717,
+      "curl": -0.4968029130307825,
+      "harmonic": -0.06474340450178917
     }
   },
   {
@@ -9377,9 +9329,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.2521361059895924,
-      "curl": -1.0355364925427675,
-      "harmonic": 0.2876725985323598
+      "gradient": -0.960865026236271,
+      "curl": -1.0355364341728919,
+      "harmonic": -0.003598539590837113
     }
   },
   {
@@ -9390,9 +9342,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.426101711204849,
-      "curl": -2.6460579999221547,
-      "harmonic": 0.07215971112700359
+      "gradient": -3.4186820249375183,
+      "curl": -2.646058465303801,
+      "harmonic": 0.06474049024131912
     }
   },
   {
@@ -9403,9 +9355,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.5689649484946884,
-      "curl": -0.4968022019128159,
-      "harmonic": -0.0721627465818725
+      "gradient": 1.5615463175325717,
+      "curl": -0.4968029130307825,
+      "harmonic": -0.06474340450178917
     }
   },
   {
@@ -9416,9 +9368,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.426101711204849,
-      "curl": -2.6460579999221547,
-      "harmonic": 0.07215971112700359
+      "gradient": -3.4186820249375183,
+      "curl": -2.646058465303801,
+      "harmonic": 0.06474049024131912
     }
   },
   {
@@ -9429,9 +9381,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.2521361059895924,
-      "curl": -1.0355364925427675,
-      "harmonic": 0.2876725985323598
+      "gradient": -0.960865026236271,
+      "curl": -1.0355364341728919,
+      "harmonic": -0.003598539590837113
     }
   },
   {
@@ -9442,9 +9394,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.513620962692209,
-      "curl": -0.7860712383259423,
-      "harmonic": 0.2996922010181513
+      "gradient": -2.2211167254357216,
+      "curl": -0.7860710550969807,
+      "harmonic": 0.007187780532702304
     }
   },
   {
@@ -9455,9 +9407,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": 2.4600746349623845,
+      "gradient": 2.508202569183072,
       "curl": 0.0,
-      "harmonic": 0.5399253650376155
+      "harmonic": 0.49179743081692795
     }
   },
   {
@@ -9468,9 +9420,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -7.271075925871199,
+      "gradient": -7.250857151081687,
       "curl": 0.0,
-      "harmonic": 0.271075925871199
+      "harmonic": 0.2508571510816866
     }
   },
   {
@@ -9481,9 +9433,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.4431099224440942,
-      "curl": -3.5970175720906346,
-      "harmonic": 0.04012749453472875
+      "gradient": -0.43894747162905023,
+      "curl": -3.59701796951909,
+      "harmonic": 0.035965441148140265
     }
   },
   {
@@ -9494,9 +9446,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": 2.4600746349623845,
+      "gradient": 2.508202569183072,
       "curl": 0.0,
-      "harmonic": 0.5399253650376155
+      "harmonic": 0.49179743081692795
     }
   },
   {
@@ -9507,9 +9459,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -7.271075925871199,
+      "gradient": -7.250857151081687,
       "curl": 0.0,
-      "harmonic": 0.271075925871199
+      "harmonic": 0.2508571510816866
     }
   },
   {
@@ -9520,9 +9472,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.2614848567026167,
-      "curl": 0.24946700931341192,
-      "harmonic": 0.01201784738920475
+      "gradient": -1.2602516991994506,
+      "curl": 0.24946750147748376,
+      "harmonic": 0.010784197721966815
     }
   },
   {
@@ -9533,9 +9485,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.513620962692209,
-      "curl": -0.7860712383259423,
-      "harmonic": 0.2996922010181513
+      "gradient": -2.2211167254357216,
+      "curl": -0.7860710550969807,
+      "harmonic": 0.007187780532702304
     }
   },
   {
@@ -9546,9 +9498,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.4431099224440942,
-      "curl": -3.5970175720906346,
-      "harmonic": 0.04012749453472875
+      "gradient": -0.43894747162905023,
+      "curl": -3.59701796951909,
+      "harmonic": 0.035965441148140265
     }
   },
   {
@@ -9559,9 +9511,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.00797420336808,
+      "gradient": -2.0018076937078435,
       "curl": 0.0,
-      "harmonic": 0.00797420336808008
+      "harmonic": 0.0018076937078435051
     }
   },
   {
@@ -9572,9 +9524,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.00797420336808,
+      "gradient": -2.0018076937078435,
       "curl": 0.0,
-      "harmonic": 0.00797420336808008
+      "harmonic": 0.0018076937078435051
     }
   },
   {
@@ -9762,7 +9714,7 @@
     "target": "6347",
     "count": 5,
     "sourceCluster": 0,
-    "targetCluster": 9,
+    "targetCluster": -1,
     "sameCluster": false,
     "hodge": null
   },
@@ -9788,7 +9740,7 @@
     "source": "6347",
     "target": "3391",
     "count": 5,
-    "sourceCluster": 9,
+    "sourceCluster": -1,
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": null
@@ -9873,9 +9825,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.3147992533063495,
+      "gradient": -2.2959139058964797,
       "curl": 0.0,
-      "harmonic": -0.6852007466936505
+      "harmonic": -0.7040860941035203
     }
   },
   {
@@ -9904,9 +9856,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.3147992533063495,
+      "gradient": -2.2959139058964797,
       "curl": 0.0,
-      "harmonic": -0.6852007466936505
+      "harmonic": -0.7040860941035203
     }
   },
   {
@@ -9953,9 +9905,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": 4.343801611371955,
+      "gradient": 4.348522949083396,
       "curl": 0.0,
-      "harmonic": 1.6561983886280451
+      "harmonic": 1.6514770509166041
     }
   },
   {
@@ -9966,9 +9918,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.3249299748149936,
+      "gradient": -2.332844679898717,
       "curl": 0.0,
-      "harmonic": -1.6750700251850064
+      "harmonic": -1.667155320101283
     }
   },
   {
@@ -9979,9 +9931,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.057674625917856964,
+      "gradient": -0.05850375443330813,
       "curl": 0.0,
-      "harmonic": -1.9423253740821431
+      "harmonic": -1.9414962455666918
     }
   },
   {
@@ -10001,9 +9953,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.3249299748149936,
+      "gradient": -2.332844679898717,
       "curl": 0.0,
-      "harmonic": -1.6750700251850064
+      "harmonic": -1.667155320101283
     }
   },
   {
@@ -10032,9 +9984,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.5354613435687443,
-      "curl": -1.0175471542920347,
-      "harmonic": -0.446991502139221
+      "gradient": -3.607813692635514,
+      "curl": -1.0175416909643993,
+      "harmonic": -0.3746446164000867
     }
   },
   {
@@ -10090,9 +10042,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.2035966268591327,
+      "gradient": 0.2374227738369532,
       "curl": 0.0,
-      "harmonic": -2.2035966268591327
+      "harmonic": -2.237422773836953
     }
   },
   {
@@ -10112,9 +10064,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.5354613435687443,
-      "curl": -1.0175471542920347,
-      "harmonic": -0.446991502139221
+      "gradient": -3.607813692635514,
+      "curl": -1.0175416909643993,
+      "harmonic": -0.3746446164000867
     }
   },
   {
@@ -10125,9 +10077,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7092864549938187,
-      "curl": -0.9473623148443736,
-      "harmonic": -0.3433512301618077
+      "gradient": -0.7268784258024956,
+      "curl": -0.9473673235019349,
+      "harmonic": -0.3257542506955695
     }
   },
   {
@@ -10138,9 +10090,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.4216215059561468,
-      "curl": -1.403501319317134,
-      "harmonic": -0.17487717472671926
+      "gradient": -0.6777843993780976,
+      "curl": -1.4035036340123082,
+      "harmonic": 0.0812880333904058
     }
   },
   {
@@ -10151,9 +10103,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.521726775343648,
+      "gradient": -6.492027112080778,
       "curl": 0.0,
-      "harmonic": -0.4782732246563519
+      "harmonic": -0.5079728879192222
     }
   },
   {
@@ -10208,11 +10160,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": 1.0580658521171866,
-      "curl": 0.6974853839284126,
-      "harmonic": 0.24444876395440074
-    }
+    "hodge": null
   },
   {
     "source": "3751",
@@ -10222,9 +10170,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.8322821834518974,
-      "curl": -0.05555111303924838,
-      "harmonic": -0.1121667035088542
+      "gradient": -1.8229744635174479,
+      "curl": -0.055550408159413395,
+      "harmonic": -0.12147512832313875
     }
   },
   {
@@ -10235,9 +10183,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.467124908072641,
+      "gradient": -3.4550598664005774,
       "curl": 0.0,
-      "harmonic": -1.5328750919273588
+      "harmonic": -1.5449401335994226
     }
   },
   {
@@ -10248,9 +10196,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.5402242589707926,
+      "gradient": 1.5398538721984942,
       "curl": 0.0,
-      "harmonic": -0.5402242589707926
+      "harmonic": -0.5398538721984942
     }
   },
   {
@@ -10261,9 +10209,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.8322821834518974,
-      "curl": -0.05555111303924838,
-      "harmonic": -0.1121667035088542
+      "gradient": -1.8229744635174479,
+      "curl": -0.055550408159413395,
+      "harmonic": -0.12147512832313875
     }
   },
   {
@@ -10274,9 +10222,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.251744832092819,
-      "curl": -0.3333331133931643,
-      "harmonic": -0.41492205451401665
+      "gradient": -2.2671320849891514,
+      "curl": -0.3333332477694734,
+      "harmonic": -0.3995346672413752
     }
   },
   {
@@ -10359,9 +10307,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.9634322755813732,
+      "gradient": 0.9662544334233545,
       "curl": 0.0,
-      "harmonic": 1.0365677244186267
+      "harmonic": 1.0337455665766455
     }
   },
   {
@@ -10372,9 +10320,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.9634322755813732,
+      "gradient": 0.9662544334233545,
       "curl": 0.0,
-      "harmonic": 1.0365677244186267
+      "harmonic": 1.0337455665766455
     }
   },
   {
@@ -10385,9 +10333,9 @@
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": {
-      "gradient": -4.157329423731577,
+      "gradient": -4.218909842995496,
       "curl": 0.0,
-      "harmonic": -0.8426705762684232
+      "harmonic": -0.7810901570045043
     }
   },
   {
@@ -10677,9 +10625,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.251744832092819,
-      "curl": -0.3333331133931643,
-      "harmonic": -0.41492205451401665
+      "gradient": -2.2671320849891514,
+      "curl": -0.3333332477694734,
+      "harmonic": -0.3995346672413752
     }
   },
   {
@@ -10690,9 +10638,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.0896023678526259,
+      "gradient": -1.1013339126337134,
       "curl": 0.0,
-      "harmonic": 1.0896023678526259
+      "harmonic": 1.1013339126337134
     }
   },
   {
@@ -10730,9 +10678,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.8261748885749256,
-      "curl": -0.07017062717194839,
-      "harmonic": -0.10365448425312601
+      "gradient": -2.8809352668330184,
+      "curl": -0.07017515717706385,
+      "harmonic": -0.04888957598991778
     }
   },
   {
@@ -10743,9 +10691,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7092864549938187,
-      "curl": -0.9473623148443736,
-      "harmonic": -0.3433512301618077
+      "gradient": -0.7268784258024956,
+      "curl": -0.9473673235019349,
+      "harmonic": -0.3257542506955695
     }
   },
   {
@@ -10756,9 +10704,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.334987642033507,
-      "curl": -0.035088369015141445,
-      "harmonic": -0.6299239889513516
+      "gradient": -1.313241617790394,
+      "curl": -0.035089851764427964,
+      "harmonic": -0.651668530445178
     }
   },
   {
@@ -10778,9 +10726,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.2035966268591327,
+      "gradient": 0.2374227738369532,
       "curl": 0.0,
-      "harmonic": -2.2035966268591327
+      "harmonic": -2.237422773836953
     }
   },
   {
@@ -10791,9 +10739,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.521726775343648,
+      "gradient": -6.492027112080778,
       "curl": 0.0,
-      "harmonic": -0.4782732246563519
+      "harmonic": -0.5079728879192222
     }
   },
   {
@@ -10822,9 +10770,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.0896023678526259,
+      "gradient": -1.1013339126337134,
       "curl": 0.0,
-      "harmonic": 1.0896023678526259
+      "harmonic": 1.1013339126337134
     }
   },
   {
@@ -10844,9 +10792,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.874113559887493,
+      "gradient": -2.882516228031028,
       "curl": 0.0,
-      "harmonic": -1.1258864401125068
+      "harmonic": -1.1174837719689719
     }
   },
   {
@@ -10884,9 +10832,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.874113559887493,
+      "gradient": -2.882516228031028,
       "curl": 0.0,
-      "harmonic": -1.1258864401125068
+      "harmonic": -1.1174837719689719
     }
   },
   {
@@ -11041,9 +10989,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.334987642033507,
-      "curl": -0.035088369015141445,
-      "harmonic": -0.6299239889513516
+      "gradient": -1.313241617790394,
+      "curl": -0.035089851764427964,
+      "harmonic": -0.651668530445178
     }
   },
   {
@@ -11081,9 +11029,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.47228319319152967,
-      "curl": -0.2777820003539159,
-      "harmonic": -0.19450119283761375
+      "gradient": 0.4735398662843804,
+      "curl": -0.2777828396100597,
+      "harmonic": -0.1957570266743207
     }
   },
   {
@@ -11184,9 +11132,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.114694478357271,
-      "curl": 2.33333179375215,
-      "harmonic": 0.7813626846051211
+      "gradient": -2.136676509674956,
+      "curl": 2.3333327343863117,
+      "harmonic": 0.8033437752886443
     }
   },
   {
@@ -11278,9 +11226,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.4216215059561468,
-      "curl": -1.403501319317134,
-      "harmonic": -0.17487717472671926
+      "gradient": -0.6777843993780976,
+      "curl": -1.4035036340123082,
+      "harmonic": 0.0812880333904058
     }
   },
   {
@@ -11300,9 +11248,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -4.157329423731577,
+      "gradient": -4.218909842995496,
       "curl": 0.0,
-      "harmonic": -0.8426705762684232
+      "harmonic": -0.7810901570045043
     }
   },
   {
@@ -11403,9 +11351,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.0230265534338594,
+      "gradient": -2.0305647955063213,
       "curl": 0.0,
-      "harmonic": 0.023026553433859398
+      "harmonic": 0.030564795506321296
     }
   },
   {
@@ -11425,9 +11373,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.8617906489508302,
+      "gradient": 0.8561156037179454,
       "curl": 0.0,
-      "harmonic": 1.1382093510491698
+      "harmonic": 1.1438843962820546
     }
   },
   {
@@ -11456,9 +11404,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.0196322211097801,
+      "gradient": -1.0297394770750543,
       "curl": 0.0,
-      "harmonic": -0.9803677788902199
+      "harmonic": -0.9702605229249457
     }
   },
   {
@@ -11469,9 +11417,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.205588415538052,
+      "gradient": 1.1968156796997542,
       "curl": 0.0,
-      "harmonic": 0.7944115844619479
+      "harmonic": 0.8031843203002458
     }
   },
   {
@@ -11491,9 +11439,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.3411838793439188,
-      "curl": -1.624996672499079,
-      "harmonic": -0.03381944815700222
+      "gradient": -1.3422557563445647,
+      "curl": -1.624998409531378,
+      "harmonic": -0.03274583412405718
     }
   },
   {
@@ -11504,9 +11452,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.7194687520269993,
-      "curl": -1.624996672499079,
-      "harmonic": -0.6555345754739217
+      "gradient": -1.7189092012989713,
+      "curl": -1.624998409531378,
+      "harmonic": -0.6560923891696506
     }
   },
   {
@@ -11517,9 +11465,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.05884591855545773,
+      "gradient": 0.0765249139996319,
       "curl": 0.0,
-      "harmonic": -0.05884591855545773
+      "harmonic": -0.0765249139996319
     }
   },
   {
@@ -11530,9 +11478,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.0196322211097801,
+      "gradient": -1.0297394770750543,
       "curl": 0.0,
-      "harmonic": -0.9803677788902199
+      "harmonic": -0.9702605229249457
     }
   },
   {
@@ -11543,9 +11491,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.6663363652153227,
+      "gradient": -0.6735373464058905,
       "curl": 0.0,
-      "harmonic": -2.3336636347846773
+      "harmonic": -2.3264626535941098
     }
   },
   {
@@ -11592,9 +11540,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.8144463568288622,
+      "gradient": -3.8518345334608943,
       "curl": 0.0,
-      "harmonic": -0.18555364317113776
+      "harmonic": -0.14816546653910567
     }
   },
   {
@@ -11605,9 +11553,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.205588415538052,
+      "gradient": 1.1968156796997542,
       "curl": 0.0,
-      "harmonic": 0.7944115844619479
+      "harmonic": 0.8031843203002458
     }
   },
   {
@@ -11627,9 +11575,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.0230265534338594,
+      "gradient": -2.0305647955063213,
       "curl": 0.0,
-      "harmonic": 0.023026553433859398
+      "harmonic": 0.030564795506321296
     }
   },
   {
@@ -11640,9 +11588,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.05884591855545773,
+      "gradient": 0.0765249139996319,
       "curl": 0.0,
-      "harmonic": -0.05884591855545773
+      "harmonic": -0.0765249139996319
     }
   },
   {
@@ -11653,9 +11601,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.5876744564599492,
+      "gradient": 0.6172277338294974,
       "curl": 0.0,
-      "harmonic": 0.4123255435400508
+      "harmonic": 0.38277226617050264
     }
   },
   {
@@ -11693,9 +11641,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.8617906489508302,
+      "gradient": 0.8561156037179454,
       "curl": 0.0,
-      "harmonic": 1.1382093510491698
+      "harmonic": 1.1438843962820546
     }
   },
   {
@@ -11706,9 +11654,9 @@
     "targetCluster": 3,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.7194687520269993,
-      "curl": -1.624996672499079,
-      "harmonic": -0.6555345754739217
+      "gradient": -1.7189092012989713,
+      "curl": -1.624998409531378,
+      "harmonic": -0.6560923891696506
     }
   },
   {
@@ -11719,9 +11667,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.6663363652153227,
+      "gradient": -0.6735373464058905,
       "curl": 0.0,
-      "harmonic": -2.3336636347846773
+      "harmonic": -2.3264626535941098
     }
   },
   {
@@ -11741,9 +11689,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.8144463568288622,
+      "gradient": -3.8518345334608943,
       "curl": 0.0,
-      "harmonic": -0.18555364317113776
+      "harmonic": -0.14816546653910567
     }
   },
   {
@@ -11754,9 +11702,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.5876744564599492,
+      "gradient": 0.6172277338294974,
       "curl": 0.0,
-      "harmonic": 0.4123255435400508
+      "harmonic": 0.38277226617050264
     }
   },
   {
@@ -11785,9 +11733,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.1325360452585516,
-      "curl": 2.8749960043868654,
-      "harmonic": 0.25754004087168614
+      "gradient": -3.128924338074559,
+      "curl": 2.8749979919173945,
+      "harmonic": 0.2539263461571646
     }
   },
   {
@@ -11797,11 +11745,7 @@
     "sourceCluster": 1,
     "targetCluster": 1,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -7.000097881906216,
-      "curl": 0.0,
-      "harmonic": 9.788190621584647e-05
-    }
+    "hodge": null
   },
   {
     "source": "302",
@@ -11837,11 +11781,7 @@
     "sourceCluster": 1,
     "targetCluster": 1,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -7.000097881906216,
-      "curl": 0.0,
-      "harmonic": 9.788190621584647e-05
-    }
+    "hodge": null
   },
   {
     "source": "897",
@@ -11860,9 +11800,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 4.9028786587480875,
+      "gradient": 4.907004985487836,
       "curl": 0.0,
-      "harmonic": -0.9028786587480875
+      "harmonic": -0.9070049854878359
     }
   },
   {
@@ -11873,9 +11813,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.4809677393131526,
+      "gradient": 0.641091443277555,
       "curl": 0.0,
-      "harmonic": 0.5190322606868474
+      "harmonic": 0.35890855672244504
     }
   },
   {
@@ -11904,9 +11844,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 4.9028786587480875,
+      "gradient": 4.907004985487836,
       "curl": 0.0,
-      "harmonic": -0.9028786587480875
+      "harmonic": -0.9070049854878359
     }
   },
   {
@@ -11917,9 +11857,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.4809677393131526,
+      "gradient": 0.641091443277555,
       "curl": 0.0,
-      "harmonic": 0.5190322606868474
+      "harmonic": 0.35890855672244504
     }
   },
   {
@@ -12062,8 +12002,8 @@
     "target": "1335",
     "count": 5,
     "sourceCluster": 0,
-    "targetCluster": 0,
-    "sameCluster": true,
+    "targetCluster": 11,
+    "sameCluster": false,
     "hodge": null
   },
   {
@@ -12083,9 +12023,9 @@
     "targetCluster": 10,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.0257232412165347,
-      "curl": -0.49999918632066026,
-      "harmonic": -0.47427757246280505
+      "gradient": -1.0042688427708044,
+      "curl": -0.4999996001609747,
+      "harmonic": -0.49573155706822086
     }
   },
   {
@@ -12141,9 +12081,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.0257232412165347,
-      "curl": -0.49999918632066026,
-      "harmonic": -0.47427757246280505
+      "gradient": -1.0042688427708044,
+      "curl": -0.4999996001609747,
+      "harmonic": -0.49573155706822086
     }
   },
   {
@@ -12262,9 +12202,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.087490935663944,
-      "curl": 0.6488626352961675,
-      "harmonic": -0.5613716996322236
+      "gradient": -1.6024637581543892,
+      "curl": 0.6573692266562415,
+      "harmonic": -0.054905468501852295
     }
   },
   {
@@ -12275,9 +12215,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.087490935663944,
-      "curl": 0.6488626352961675,
-      "harmonic": -0.5613716996322236
+      "gradient": -1.6024637581543892,
+      "curl": 0.6573692266562415,
+      "harmonic": -0.054905468501852295
     }
   },
   {
@@ -12288,9 +12228,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.0969470139644417,
-      "curl": -1.2499993318877867,
-      "harmonic": 0.3469463458522284
+      "gradient": -1.1038410930259908,
+      "curl": -1.249999582386017,
+      "harmonic": 0.3538406754120078
     }
   },
   {
@@ -12301,9 +12241,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.0969470139644417,
-      "curl": -1.2499993318877867,
-      "harmonic": 0.3469463458522284
+      "gradient": -1.1038410930259908,
+      "curl": -1.249999582386017,
+      "harmonic": 0.3538406754120078
     }
   },
   {
@@ -12314,9 +12254,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.800277699180626,
+      "gradient": -4.815948827849295,
       "curl": 0.0,
-      "harmonic": 0.8002776991806257
+      "harmonic": 0.8159488278492946
     }
   },
   {
@@ -12327,9 +12267,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.800277699180626,
+      "gradient": -4.815948827849295,
       "curl": 0.0,
-      "harmonic": 0.8002776991806257
+      "harmonic": 0.8159488278492946
     }
   },
   {
@@ -12340,9 +12280,9 @@
     "targetCluster": 14,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.6001130224266884,
+      "gradient": 1.6053119840955152,
       "curl": 0.0,
-      "harmonic": -0.6001130224266884
+      "harmonic": -0.6053119840955152
     }
   },
   {
@@ -12353,9 +12293,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.6001130224266884,
+      "gradient": 1.6053119840955152,
       "curl": 0.0,
-      "harmonic": -0.6001130224266884
+      "harmonic": -0.6053119840955152
     }
   },
   {
@@ -12363,7 +12303,7 @@
     "target": "1075",
     "count": 5,
     "sourceCluster": 6,
-    "targetCluster": 11,
+    "targetCluster": 12,
     "sameCluster": false,
     "hodge": null
   },
@@ -12371,7 +12311,7 @@
     "source": "1075",
     "target": "502",
     "count": 5,
-    "sourceCluster": 11,
+    "sourceCluster": 12,
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": null
@@ -12537,9 +12477,9 @@
     "targetCluster": 7,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.719009235861628,
+      "gradient": -2.601109250688598,
       "curl": 0.0,
-      "harmonic": -0.2809907641383722
+      "harmonic": -0.398890749311402
     }
   },
   {
@@ -12982,9 +12922,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.478348209019142,
+      "gradient": -5.50794857049741,
       "curl": 0.0,
-      "harmonic": 0.478348209019142
+      "harmonic": 0.50794857049741
     }
   },
   {
@@ -13211,9 +13151,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.478348209019142,
+      "gradient": -5.50794857049741,
       "curl": 0.0,
-      "harmonic": 0.478348209019142
+      "harmonic": 0.50794857049741
     }
   },
   {
@@ -13962,9 +13902,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.407925345825376,
+      "gradient": -4.4090540935860325,
       "curl": 0.0,
-      "harmonic": 0.407925345825376
+      "harmonic": 0.4090540935860325
     }
   },
   {
@@ -13984,9 +13924,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.407925345825376,
+      "gradient": -4.4090540935860325,
       "curl": 0.0,
-      "harmonic": 0.407925345825376
+      "harmonic": 0.4090540935860325
     }
   },
   {
@@ -14047,7 +13987,7 @@
     "source": "2908",
     "target": "2910",
     "count": 5,
-    "sourceCluster": 6,
+    "sourceCluster": -1,
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": null
@@ -14057,7 +13997,7 @@
     "target": "2908",
     "count": 5,
     "sourceCluster": 2,
-    "targetCluster": 6,
+    "targetCluster": -1,
     "sameCluster": false,
     "hodge": null
   },
@@ -14114,9 +14054,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.20559764848429252,
+      "gradient": -0.20458564901917686,
       "curl": 0.0,
-      "harmonic": -2.7944023515157075
+      "harmonic": -2.795414350980823
     }
   },
   {
@@ -14136,9 +14076,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.5018562646198972,
-      "curl": 0.5999992301707805,
-      "harmonic": 0.9018570344491167
+      "gradient": -1.192492173758831,
+      "curl": 2.3279343200225863e-07,
+      "harmonic": 1.192491940965399
     }
   },
   {
@@ -14158,9 +14098,9 @@
     "targetCluster": 7,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.5018562646198972,
-      "curl": 0.5999992301707805,
-      "harmonic": 0.9018570344491167
+      "gradient": -1.192492173758831,
+      "curl": 2.3279343200225863e-07,
+      "harmonic": 1.192491940965399
     }
   },
   {
@@ -14207,9 +14147,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.5898548213821777,
-      "curl": -0.4316744047204594,
-      "harmonic": 0.021529226102637133
+      "gradient": -2.5282170331376506,
+      "curl": -1.3999977320154708,
+      "harmonic": -0.0717852348468786
     }
   },
   {
@@ -14220,9 +14160,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.0591119594636424,
+      "gradient": -2.053110028480475,
       "curl": 0.0,
-      "harmonic": 0.05911195946364245
+      "harmonic": 0.05311002848047508
     }
   },
   {
@@ -14233,9 +14173,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.0591119594636424,
+      "gradient": -2.053110028480475,
       "curl": 0.0,
-      "harmonic": 0.05911195946364245
+      "harmonic": 0.05311002848047508
     }
   },
   {
@@ -14246,9 +14186,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.1003402102739233,
-      "curl": -1.3499999221723606,
-      "harmonic": -0.5496598675537161
+      "gradient": -1.2315311759985477,
+      "curl": -0.9999994331153811,
+      "harmonic": -0.7684693908860712
     }
   },
   {
@@ -14259,9 +14199,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.1003402102739233,
-      "curl": -1.3499999221723606,
-      "harmonic": -0.5496598675537161
+      "gradient": -1.2315311759985477,
+      "curl": -0.9999994331153811,
+      "harmonic": -0.7684693908860712
     }
   },
   {
@@ -14299,9 +14239,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.9829527549579349,
+      "gradient": -1.967752231822751,
       "curl": 0.0,
-      "harmonic": -2.017047245042065
+      "harmonic": -2.032247768177249
     }
   },
   {
@@ -14330,9 +14270,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.76705579625893,
+      "gradient": -2.7719862427538082,
       "curl": 0.0,
-      "harmonic": -1.23294420374107
+      "harmonic": -1.2280137572461918
     }
   },
   {
@@ -14343,9 +14283,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.4105685768753635,
+      "gradient": -2.4052143370747654,
       "curl": 0.0,
-      "harmonic": 1.4105685768753635
+      "harmonic": 1.4052143370747654
     }
   },
   {
@@ -14365,9 +14305,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9348186431248258,
+      "gradient": -2.9344385900685794,
       "curl": 0.0,
-      "harmonic": -0.06518135687517423
+      "harmonic": -0.06556140993142057
     }
   },
   {
@@ -14378,9 +14318,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.9829527549579349,
+      "gradient": -1.967752231822751,
       "curl": 0.0,
-      "harmonic": -2.017047245042065
+      "harmonic": -2.032247768177249
     }
   },
   {
@@ -14391,9 +14331,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.5942584889925233,
-      "curl": -0.8749992591042236,
-      "harmonic": -1.530742251903253
+      "gradient": -1.5941348281003875,
+      "curl": -0.8749995912734958,
+      "harmonic": -1.5308655806261164
     }
   },
   {
@@ -14404,9 +14344,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.519707723742239,
+      "gradient": -3.5378546890631775,
       "curl": 0.0,
-      "harmonic": -0.48029227625776105
+      "harmonic": -0.46214531093682254
     }
   },
   {
@@ -14453,9 +14393,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.5942584889925233,
-      "curl": -0.8749992591042236,
-      "harmonic": -1.530742251903253
+      "gradient": -1.5941348281003875,
+      "curl": -0.8749995912734958,
+      "harmonic": -1.5308655806261164
     }
   },
   {
@@ -14475,9 +14415,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.76705579625893,
+      "gradient": -2.7719862427538082,
       "curl": 0.0,
-      "harmonic": -1.23294420374107
+      "harmonic": -1.2280137572461918
     }
   },
   {
@@ -14488,9 +14428,9 @@
     "targetCluster": 1,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.519707723742239,
+      "gradient": -3.5378546890631775,
       "curl": 0.0,
-      "harmonic": -0.48029227625776105
+      "harmonic": -0.46214531093682254
     }
   },
   {
@@ -14501,9 +14441,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.4105685768753635,
+      "gradient": -2.4052143370747654,
       "curl": 0.0,
-      "harmonic": 1.4105685768753635
+      "harmonic": 1.4052143370747654
     }
   },
   {
@@ -14514,9 +14454,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.9348186431248258,
+      "gradient": -2.9344385900685794,
       "curl": 0.0,
-      "harmonic": -0.06518135687517423
+      "harmonic": -0.06556140993142057
     }
   },
   {
@@ -14526,11 +14466,7 @@
     "sourceCluster": 5,
     "targetCluster": 5,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -5.20452000097841,
-      "curl": 1.2003944293867732,
-      "harmonic": 0.004125571591636623
-    }
+    "hodge": null
   },
   {
     "source": "3275",
@@ -14539,11 +14475,7 @@
     "sourceCluster": 5,
     "targetCluster": 5,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -5.20452000097841,
-      "curl": 1.2003944293867732,
-      "harmonic": 0.004125571591636623
-    }
+    "hodge": null
   },
   {
     "source": "3940",
@@ -14553,9 +14485,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.9004720327080833,
-      "curl": 1.5013287954859447,
-      "harmonic": 0.3991432372221386
+      "gradient": -1.8931685722428027,
+      "curl": 1.4583415303424077,
+      "harmonic": 0.434827041900395
     }
   },
   {
@@ -14566,9 +14498,9 @@
     "targetCluster": 5,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.9004720327080833,
-      "curl": 1.5013287954859447,
-      "harmonic": 0.3991432372221386
+      "gradient": -1.8931685722428027,
+      "curl": 1.4583415303424077,
+      "harmonic": 0.434827041900395
     }
   },
   {
@@ -14579,9 +14511,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.5468423196184857,
+      "gradient": -2.5952589520356595,
       "curl": 0.0,
-      "harmonic": -0.45315768038151427
+      "harmonic": -0.4047410479643405
     }
   },
   {
@@ -14592,9 +14524,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.5468423196184857,
+      "gradient": -2.5952589520356595,
       "curl": 0.0,
-      "harmonic": -0.45315768038151427
+      "harmonic": -0.4047410479643405
     }
   },
   {
@@ -14605,9 +14537,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": 3.322821219801853,
+      "gradient": 3.340759855818699,
       "curl": 0.0,
-      "harmonic": 0.677178780198147
+      "harmonic": 0.6592401441813012
     }
   },
   {
@@ -14618,9 +14550,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": 3.322821219801853,
+      "gradient": 3.340759855818699,
       "curl": 0.0,
-      "harmonic": 0.677178780198147
+      "harmonic": 0.6592401441813012
     }
   },
   {
@@ -14631,9 +14563,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.4400923388553166,
+      "gradient": 1.4371483968818919,
       "curl": 0.0,
-      "harmonic": -0.4400923388553166
+      "harmonic": -0.4371483968818919
     }
   },
   {
@@ -14644,9 +14576,9 @@
     "targetCluster": 3,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.4400923388553166,
+      "gradient": 1.4371483968818919,
       "curl": 0.0,
-      "harmonic": -0.4400923388553166
+      "harmonic": -0.4371483968818919
     }
   },
   {
@@ -14675,9 +14607,9 @@
     "targetCluster": 3,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.058326469691159,
+      "gradient": -5.056476436979461,
       "curl": 0.0,
-      "harmonic": 1.058326469691159
+      "harmonic": 1.0564764369794606
     }
   },
   {
@@ -14688,9 +14620,9 @@
     "targetCluster": 3,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.9416894143292,
+      "gradient": 1.943556643281498,
       "curl": 0.0,
-      "harmonic": 1.0583105856708
+      "harmonic": 1.056443356718502
     }
   },
   {
@@ -14701,9 +14633,9 @@
     "targetCluster": 3,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.058326469691159,
+      "gradient": -5.056476436979461,
       "curl": 0.0,
-      "harmonic": 1.058326469691159
+      "harmonic": 1.0564764369794606
     }
   },
   {
@@ -14714,9 +14646,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.9416894143292,
+      "gradient": 1.943556643281498,
       "curl": 0.0,
-      "harmonic": 1.0583105856708
+      "harmonic": 1.056443356718502
     }
   },
   {
@@ -14745,9 +14677,9 @@
     "targetCluster": 7,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.236757267589739,
-      "curl": -0.1999990547703001,
-      "harmonic": -0.5632436776399607
+      "gradient": -4.124569797465859,
+      "curl": 0.9999996659088131,
+      "harmonic": -0.8754298684429542
     }
   },
   {
@@ -14758,9 +14690,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.236757267589739,
-      "curl": -0.1999990547703001,
-      "harmonic": -0.5632436776399607
+      "gradient": -4.124569797465859,
+      "curl": 0.9999996659088131,
+      "harmonic": -0.8754298684429542
     }
   },
   {
@@ -14888,9 +14820,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.5217618032248597,
+      "gradient": -3.4920493255394423,
       "curl": 0.0,
-      "harmonic": -0.47823819677514035
+      "harmonic": -0.5079506744605577
     }
   },
   {
@@ -14901,9 +14833,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.5217618032248597,
+      "gradient": -3.4920493255394423,
       "curl": 0.0,
-      "harmonic": -0.47823819677514035
+      "harmonic": -0.5079506744605577
     }
   },
   {
@@ -14913,11 +14845,7 @@
     "sourceCluster": 1,
     "targetCluster": 1,
     "sameCluster": true,
-    "hodge": {
-      "gradient": 0.8363790209951363,
-      "curl": 0.16363426245937554,
-      "harmonic": -1.3283454511819892e-05
-    }
+    "hodge": null
   },
   {
     "source": "3999",
@@ -15206,9 +15134,9 @@
     "targetCluster": 7,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.728888441669511,
+      "gradient": -2.7491281075964444,
       "curl": 0.0,
-      "harmonic": -0.27111155833048883
+      "harmonic": -0.25087189240355556
     }
   },
   {
@@ -15219,9 +15147,9 @@
     "targetCluster": 5,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.728888441669511,
+      "gradient": -2.7491281075964444,
       "curl": 0.0,
-      "harmonic": -0.27111155833048883
+      "harmonic": -0.25087189240355556
     }
   },
   {
@@ -15340,9 +15268,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.373611069100428,
+      "gradient": -1.3613443918447155,
       "curl": 0.0,
-      "harmonic": -0.626388930899572
+      "harmonic": -0.6386556081552845
     }
   },
   {
@@ -15389,9 +15317,9 @@
     "targetCluster": 8,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.8545391106854759,
+      "gradient": -0.801299085871454,
       "curl": 0.0,
-      "harmonic": -0.14546088931452406
+      "harmonic": -0.19870091412854596
     }
   },
   {
@@ -15438,9 +15366,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7537338266352093,
+      "gradient": -0.7495487492720765,
       "curl": 0.0,
-      "harmonic": -1.2462661733647908
+      "harmonic": -1.2504512507279235
     }
   },
   {
@@ -15478,9 +15406,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.7537338266352093,
+      "gradient": -0.7495487492720765,
       "curl": 0.0,
-      "harmonic": -1.2462661733647908
+      "harmonic": -1.2504512507279235
     }
   },
   {
@@ -15518,9 +15446,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.8545391106854759,
+      "gradient": -0.801299085871454,
       "curl": 0.0,
-      "harmonic": -0.14546088931452406
+      "harmonic": -0.19870091412854596
     }
   },
   {
@@ -15729,9 +15657,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.002131756048108,
-      "curl": 0.2977959610298895,
-      "harmonic": -0.2956642049817815
+      "gradient": -3.29420367500536,
+      "curl": 0.29779655690500134,
+      "harmonic": -0.003592881899641298
     }
   },
   {
@@ -15796,9 +15724,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.263616612750725,
-      "curl": -1.4527374651122709,
-      "harmonic": -0.28364592213700446
+      "gradient": -4.55445537420481,
+      "curl": -1.4527375506359272,
+      "harmonic": 0.0071929248407374136
     }
   },
   {
@@ -15818,9 +15746,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -3.002131756048108,
-      "curl": 0.2977959610298895,
-      "harmonic": -0.2956642049817815
+      "gradient": -3.29420367500536,
+      "curl": 0.29779655690500134,
+      "harmonic": -0.003592881899641298
     }
   },
   {
@@ -15831,9 +15759,9 @@
     "targetCluster": 7,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.263616612750725,
-      "curl": -1.4527374651122709,
-      "harmonic": -0.28364592213700446
+      "gradient": -4.55445537420481,
+      "curl": -1.4527375506359272,
+      "harmonic": 0.0071929248407374136
     }
   },
   {
@@ -15898,9 +15826,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.963420137509601,
+      "gradient": -2.9663138739328607,
       "curl": 0.0,
-      "harmonic": -1.0365798624903988
+      "harmonic": -1.0336861260671393
     }
   },
   {
@@ -15911,9 +15839,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.963420137509601,
+      "gradient": -2.9663138739328607,
       "curl": 0.0,
-      "harmonic": -1.0365798624903988
+      "harmonic": -1.0336861260671393
     }
   },
   {
@@ -15924,9 +15852,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.9978040093238607,
+      "gradient": -0.9994899152943999,
       "curl": 0.0,
-      "harmonic": -1.0021959906761393
+      "harmonic": -1.0005100847056
     }
   },
   {
@@ -15937,9 +15865,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.9978040093238607,
+      "gradient": -0.9994899152943999,
       "curl": 0.0,
-      "harmonic": -1.0021959906761393
+      "harmonic": -1.0005100847056
     }
   },
   {
@@ -16094,9 +16022,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.228896999156758,
+      "gradient": -4.22056953465876,
       "curl": 0.0,
-      "harmonic": 0.22889699915675799
+      "harmonic": 0.22056953465876017
     }
   },
   {
@@ -16107,9 +16035,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.228896999156758,
+      "gradient": -4.22056953465876,
       "curl": 0.0,
-      "harmonic": 0.22889699915675799
+      "harmonic": 0.22056953465876017
     }
   },
   {
@@ -16135,7 +16063,7 @@
     "target": "6347",
     "count": 4,
     "sourceCluster": 4,
-    "targetCluster": 9,
+    "targetCluster": -1,
     "sameCluster": false,
     "hodge": null
   },
@@ -16162,7 +16090,7 @@
     "target": "6347",
     "count": 4,
     "sourceCluster": 4,
-    "targetCluster": 9,
+    "targetCluster": -1,
     "sameCluster": false,
     "hodge": null
   },
@@ -16233,7 +16161,7 @@
     "source": "6347",
     "target": "3393",
     "count": 4,
-    "sourceCluster": 9,
+    "sourceCluster": -1,
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": null
@@ -16242,7 +16170,7 @@
     "source": "6347",
     "target": "3382",
     "count": 4,
-    "sourceCluster": 9,
+    "sourceCluster": -1,
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": null
@@ -16251,7 +16179,7 @@
     "source": "6347",
     "target": "3374",
     "count": 4,
-    "sourceCluster": 9,
+    "sourceCluster": -1,
     "targetCluster": 4,
     "sameCluster": false,
     "hodge": null
@@ -16270,7 +16198,7 @@
     "target": "6347",
     "count": 4,
     "sourceCluster": 4,
-    "targetCluster": 9,
+    "targetCluster": -1,
     "sameCluster": false,
     "hodge": null
   },
@@ -16380,11 +16308,7 @@
     "sourceCluster": 7,
     "targetCluster": 7,
     "sameCluster": true,
-    "hodge": {
-      "gradient": 5.8749892903253595,
-      "curl": 0.0,
-      "harmonic": -0.8749892903253595
-    }
+    "hodge": null
   },
   {
     "source": "3093",
@@ -16429,11 +16353,7 @@
     "sourceCluster": 7,
     "targetCluster": 7,
     "sameCluster": true,
-    "hodge": {
-      "gradient": 5.8749892903253595,
-      "curl": 0.0,
-      "harmonic": -0.8749892903253595
-    }
+    "hodge": null
   },
   {
     "source": "3316",
@@ -16470,9 +16390,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.9423633086478154,
+      "gradient": -0.9415077807240512,
       "curl": 0.0,
-      "harmonic": 1.9423633086478154
+      "harmonic": 1.9415077807240513
     }
   },
   {
@@ -16483,9 +16403,9 @@
     "targetCluster": 6,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.057674625917856964,
+      "gradient": -0.05850375443330813,
       "curl": 0.0,
-      "harmonic": -1.9423253740821431
+      "harmonic": -1.9414962455666918
     }
   },
   {
@@ -16541,9 +16461,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": -0.9423633086478154,
+      "gradient": -0.9415077807240512,
       "curl": 0.0,
-      "harmonic": 1.9423633086478154
+      "harmonic": 1.9415077807240513
     }
   },
   {
@@ -16623,7 +16543,7 @@
     "target": "1335",
     "count": 4,
     "sourceCluster": 1,
-    "targetCluster": 0,
+    "targetCluster": 11,
     "sameCluster": false,
     "hodge": null
   },
@@ -16632,15 +16552,15 @@
     "target": "1335",
     "count": 4,
     "sourceCluster": 0,
-    "targetCluster": 0,
-    "sameCluster": true,
+    "targetCluster": 11,
+    "sameCluster": false,
     "hodge": null
   },
   {
     "source": "1335",
     "target": "302",
     "count": 4,
-    "sourceCluster": 0,
+    "sourceCluster": 11,
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": null
@@ -16649,16 +16569,16 @@
     "source": "1335",
     "target": "1555",
     "count": 4,
-    "sourceCluster": 0,
+    "sourceCluster": 11,
     "targetCluster": 0,
-    "sameCluster": true,
+    "sameCluster": false,
     "hodge": null
   },
   {
     "source": "2006",
     "target": "4075",
     "count": 4,
-    "sourceCluster": 12,
+    "sourceCluster": 5,
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": null
@@ -17103,9 +17023,9 @@
     "targetCluster": 13,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.373569953249997,
+      "gradient": -2.3613599570947224,
       "curl": 0.0,
-      "harmonic": -0.626430046750003
+      "harmonic": -0.6386400429052776
     }
   },
   {
@@ -17446,8 +17366,8 @@
     "target": "1960",
     "count": 4,
     "sourceCluster": 0,
-    "targetCluster": 12,
-    "sameCluster": false,
+    "targetCluster": 0,
+    "sameCluster": true,
     "hodge": null
   },
   {
@@ -17877,9 +17797,9 @@
     "source": "1960",
     "target": "3484",
     "count": 4,
-    "sourceCluster": 12,
+    "sourceCluster": 0,
     "targetCluster": 0,
-    "sameCluster": false,
+    "sameCluster": true,
     "hodge": null
   },
   {
@@ -18241,9 +18161,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.472283819803685,
-      "curl": 0.7222173398255767,
-      "harmonic": -0.19450115962926162
+      "gradient": 1.4735295069596681,
+      "curl": 0.7222169036983597,
+      "harmonic": -0.19574641065802778
     }
   },
   {
@@ -18344,9 +18264,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 1.472283819803685,
-      "curl": 0.7222173398255767,
-      "harmonic": -0.19450115962926162
+      "gradient": 1.4735295069596681,
+      "curl": 0.7222169036983597,
+      "harmonic": -0.19574641065802778
     }
   },
   {
@@ -18417,7 +18337,7 @@
     "target": "2006",
     "count": 4,
     "sourceCluster": 0,
-    "targetCluster": 12,
+    "targetCluster": 5,
     "sameCluster": false,
     "hodge": null
   },
@@ -18627,9 +18547,9 @@
     "targetCluster": 13,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.373569953249997,
+      "gradient": -2.3613599570947224,
       "curl": 0.0,
-      "harmonic": -0.626430046750003
+      "harmonic": -0.6386400429052776
     }
   },
   {
@@ -18883,9 +18803,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.45183040525407503,
+      "gradient": 0.44726886487968054,
       "curl": 0.0,
-      "harmonic": -0.45183040525407503
+      "harmonic": -0.44726886487968054
     }
   },
   {
@@ -18959,9 +18879,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.4874329570775755,
+      "gradient": -3.4994941889838094,
       "curl": 0.0,
-      "harmonic": 0.4874329570775755
+      "harmonic": 0.4994941889838094
     }
   },
   {
@@ -18999,9 +18919,9 @@
     "targetCluster": 8,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.9791739271864033,
+      "gradient": -2.0613817649772774,
       "curl": 0.0,
-      "harmonic": -1.0208260728135967
+      "harmonic": -0.9386182350227226
     }
   },
   {
@@ -19066,9 +18986,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.45183040525407503,
+      "gradient": 0.44726886487968054,
       "curl": 0.0,
-      "harmonic": -0.45183040525407503
+      "harmonic": -0.44726886487968054
     }
   },
   {
@@ -19106,9 +19026,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -1.9791739271864033,
+      "gradient": -2.0613817649772774,
       "curl": 0.0,
-      "harmonic": -1.0208260728135967
+      "harmonic": -0.9386182350227226
     }
   },
   {
@@ -19299,9 +19219,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": -3.4874329570775755,
+      "gradient": -3.4994941889838094,
       "curl": 0.0,
-      "harmonic": 0.4874329570775755
+      "harmonic": 0.4994941889838094
     }
   },
   {
@@ -19348,9 +19268,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.0718834138876332,
-      "curl": 2.8749960043868654,
-      "harmonic": -0.9468794182744986
+      "gradient": 0.06775938043102303,
+      "curl": 2.8749979919173945,
+      "harmonic": -0.9427573723484175
     }
   },
   {
@@ -19406,9 +19326,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": 0.0718834138876332,
-      "curl": 2.8749960043868654,
-      "harmonic": -0.9468794182744986
+      "gradient": 0.06775938043102303,
+      "curl": 2.8749979919173945,
+      "harmonic": -0.9427573723484175
     }
   },
   {
@@ -19416,8 +19336,8 @@
     "target": "245",
     "count": 4,
     "sourceCluster": 1,
-    "targetCluster": 1,
-    "sameCluster": true,
+    "targetCluster": -1,
+    "sameCluster": false,
     "hodge": null
   },
   {
@@ -19553,11 +19473,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -1.3944391033779029,
-      "curl": 1.375325282931873,
-      "harmonic": 0.01911382044602994
-    }
+    "hodge": null
   },
   {
     "source": "2531",
@@ -19567,9 +19483,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.08502895350704,
-      "curl": -0.01561550372302034,
-      "harmonic": 0.10064445723006021
+      "gradient": -4.764108569782392,
+      "curl": 0.7999992102392386,
+      "harmonic": -0.03589064045684642
     }
   },
   {
@@ -19579,11 +19495,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -1.3944391033779029,
-      "curl": 1.375325282931873,
-      "harmonic": 0.01911382044602994
-    }
+    "hodge": null
   },
   {
     "source": "2537",
@@ -19602,9 +19514,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -4.08502895350704,
-      "curl": -0.01561550372302034,
-      "harmonic": 0.10064445723006021
+      "gradient": -4.764108569782392,
+      "curl": 0.7999992102392386,
+      "harmonic": -0.03589064045684642
     }
   },
   {
@@ -19623,11 +19535,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -6.520399393582823,
-      "curl": 0.0,
-      "harmonic": -0.4796006064171774
-    }
+    "hodge": null
   },
   {
     "source": "2564",
@@ -19646,9 +19554,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.250330664965567,
-      "curl": -0.8368711890482938,
-      "harmonic": 0.08720185401386082
+      "gradient": -5.764110379740293,
+      "curl": -0.2000004556695747,
+      "harmonic": -0.03588916459013225
     }
   },
   {
@@ -19658,11 +19566,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -6.520399393582823,
-      "curl": 0.0,
-      "harmonic": -0.4796006064171774
-    }
+    "hodge": null
   },
   {
     "source": "2610",
@@ -19680,11 +19584,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -1.114575009924489,
-      "curl": 1.0982988989709441,
-      "harmonic": 0.016276110953544976
-    }
+    "hodge": null
   },
   {
     "source": "2621",
@@ -19694,9 +19594,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.250330664965567,
-      "curl": -0.8368711890482938,
-      "harmonic": 0.08720185401386082
+      "gradient": -5.764110379740293,
+      "curl": -0.2000004556695747,
+      "harmonic": -0.03588916459013225
     }
   },
   {
@@ -19706,11 +19606,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -1.114575009924489,
-      "curl": 1.0982988989709441,
-      "harmonic": 0.016276110953544976
-    }
+    "hodge": null
   },
   {
     "source": "3371",
@@ -19752,13 +19648,13 @@
     "source": "1324",
     "target": "1335",
     "count": 4,
-    "sourceCluster": 0,
-    "targetCluster": 0,
+    "sourceCluster": 11,
+    "targetCluster": 11,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.912380685947393,
+      "gradient": -2.8771704382704137,
       "curl": 0.0,
-      "harmonic": 0.9123806859473929
+      "harmonic": 0.8771704382704137
     }
   },
   {
@@ -19975,11 +19871,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -3.4934362921929685,
-      "curl": -2.5744423233314024,
-      "harmonic": 0.06787861552437091
-    }
+    "hodge": null
   },
   {
     "source": "3502",
@@ -20015,11 +19907,7 @@
     "sourceCluster": 2,
     "targetCluster": 2,
     "sameCluster": true,
-    "hodge": {
-      "gradient": -3.988610424317831,
-      "curl": 4.8416116690952355,
-      "harmonic": 0.14699875522259553
-    }
+    "hodge": null
   },
   {
     "source": "3484",
@@ -20061,13 +19949,13 @@
     "source": "1335",
     "target": "1324",
     "count": 4,
-    "sourceCluster": 0,
-    "targetCluster": 0,
+    "sourceCluster": 11,
+    "targetCluster": 11,
     "sameCluster": true,
     "hodge": {
-      "gradient": -2.912380685947393,
+      "gradient": -2.8771704382704137,
       "curl": 0.0,
-      "harmonic": 0.9123806859473929
+      "harmonic": 0.8771704382704137
     }
   },
   {
@@ -20110,7 +19998,7 @@
     "source": "1353",
     "target": "1524",
     "count": 4,
-    "sourceCluster": 11,
+    "sourceCluster": 12,
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": null
@@ -20129,7 +20017,7 @@
     "target": "1353",
     "count": 4,
     "sourceCluster": 1,
-    "targetCluster": 11,
+    "targetCluster": 12,
     "sameCluster": false,
     "hodge": null
   },
@@ -20249,9 +20137,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.7587498095380525,
-      "curl": 2.33333179375215,
-      "harmonic": 1.4254180157859024
+      "gradient": -6.679400705771444,
+      "curl": 2.333332734386312,
+      "harmonic": 1.346067971385132
     }
   },
   {
@@ -20469,9 +20357,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.799784968407339,
+      "gradient": -5.789361729605977,
       "curl": 0.0,
-      "harmonic": -0.20021503159266096
+      "harmonic": -0.21063827039402305
     }
   },
   {
@@ -20482,9 +20370,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.200202583041781,
+      "gradient": 1.2106598104454425,
       "curl": 0.0,
-      "harmonic": -0.20020258304178107
+      "harmonic": -0.21065981044544246
     }
   },
   {
@@ -20513,9 +20401,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -5.799784968407339,
+      "gradient": -5.789361729605977,
       "curl": 0.0,
-      "harmonic": -0.20021503159266096
+      "harmonic": -0.21063827039402305
     }
   },
   {
@@ -20526,9 +20414,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.399898033684698,
+      "gradient": -6.394632420441677,
       "curl": 0.0,
-      "harmonic": -0.600101966315302
+      "harmonic": -0.6053675795583233
     }
   },
   {
@@ -20566,9 +20454,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": 1.200202583041781,
+      "gradient": 1.2106598104454425,
       "curl": 0.0,
-      "harmonic": -0.20020258304178107
+      "harmonic": -0.21065981044544246
     }
   },
   {
@@ -20579,9 +20467,9 @@
     "targetCluster": 0,
     "sameCluster": true,
     "hodge": {
-      "gradient": -6.399898033684698,
+      "gradient": -6.394632420441677,
       "curl": 0.0,
-      "harmonic": -0.600101966315302
+      "harmonic": -0.6053675795583233
     }
   },
   {
@@ -20700,9 +20588,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.9973083194946488,
+      "gradient": -0.8668482059147844,
       "curl": 0.0,
-      "harmonic": 0.9973083194946488
+      "harmonic": 0.8668482059147844
     }
   },
   {
@@ -20740,9 +20628,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -0.9973083194946488,
+      "gradient": -0.8668482059147844,
       "curl": 0.0,
-      "harmonic": 0.9973083194946488
+      "harmonic": 0.8668482059147844
     }
   },
   {
@@ -20753,9 +20641,9 @@
     "targetCluster": 0,
     "sameCluster": false,
     "hodge": {
-      "gradient": -2.4782296822020906,
+      "gradient": -2.5079457485743117,
       "curl": 0.0,
-      "harmonic": 0.4782296822020906
+      "harmonic": 0.5079457485743117
     }
   },
   {
@@ -20847,9 +20735,9 @@
     "targetCluster": 2,
     "sameCluster": false,
     "hodge": {
-      "gradient": 5.0143455656089895,
+      "gradient": 5.021594614902353,
       "curl": 0.0,
-      "harmonic": 1.9856544343910105
+      "harmonic": 1.9784053850976466
     }
   },
   {
@@ -21261,27 +21149,19 @@
     "source": "4331",
     "target": "2131",
     "count": 4,
-    "sourceCluster": 15,
-    "targetCluster": 15,
-    "sameCluster": true,
-    "hodge": {
-      "gradient": -0.6666674883499458,
-      "curl": 0.6666662267863286,
-      "harmonic": 1.2615636172386147e-06
-    }
+    "sourceCluster": 2,
+    "targetCluster": -1,
+    "sameCluster": false,
+    "hodge": null
   },
   {
     "source": "2131",
     "target": "4331",
     "count": 4,
-    "sourceCluster": 15,
-    "targetCluster": 15,
-    "sameCluster": true,
-    "hodge": {
-      "gradient": -0.6666674883499458,
-      "curl": 0.6666662267863286,
-      "harmonic": 1.2615636172386147e-06
-    }
+    "sourceCluster": -1,
+    "targetCluster": 2,
+    "sameCluster": false,
+    "hodge": null
   },
   {
     "source": "3885",
@@ -21507,9 +21387,9 @@
     "targetCluster": 1,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.945013636385189,
+      "gradient": 0.9368633235591932,
       "curl": 0.0,
-      "harmonic": -0.945013636385189
+      "harmonic": -0.9368633235591932
     }
   },
   {
@@ -21520,9 +21400,9 @@
     "targetCluster": 6,
     "sameCluster": false,
     "hodge": {
-      "gradient": 0.945013636385189,
+      "gradient": 0.9368633235591932,
       "curl": 0.0,
-      "harmonic": -0.945013636385189
+      "harmonic": -0.9368633235591932
     }
   },
   {
@@ -21740,9 +21620,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.656185866061728,
+      "gradient": -1.6514919045920826,
       "curl": 0.0,
-      "harmonic": 1.656185866061728
+      "harmonic": 1.6514919045920826
     }
   },
   {
@@ -21884,9 +21764,9 @@
     "source": "4109",
     "target": "3374",
     "count": 4,
-    "sourceCluster": 4,
+    "sourceCluster": -1,
     "targetCluster": 4,
-    "sameCluster": true,
+    "sameCluster": false,
     "hodge": null
   },
   {
@@ -21969,9 +21849,9 @@
     "targetCluster": 2,
     "sameCluster": true,
     "hodge": {
-      "gradient": -1.656185866061728,
+      "gradient": -1.6514919045920826,
       "curl": 0.0,
-      "harmonic": 1.656185866061728
+      "harmonic": 1.6514919045920826
     }
   },
   {

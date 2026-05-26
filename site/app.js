@@ -42,6 +42,51 @@ const state = {
     hoveredNode: null,
     selectedNode: null,
   },
+  geneHuman: {
+    nodes: [],
+    edges: [],
+    summary: null,
+    nodeById: new Map(),
+    layout: null,
+    hoveredNode: null,
+    selectedNode: null,
+  },
+  geneMouse: {
+    nodes: [],
+    edges: [],
+    summary: null,
+    nodeById: new Map(),
+    layout: null,
+    hoveredNode: null,
+    selectedNode: null,
+  },
+  geneNet1: {
+    nodes: [],
+    edges: [],
+    summary: null,
+    nodeById: new Map(),
+    layout: null,
+    hoveredNode: null,
+    selectedNode: null,
+  },
+  geneNet3: {
+    nodes: [],
+    edges: [],
+    summary: null,
+    nodeById: new Map(),
+    layout: null,
+    hoveredNode: null,
+    selectedNode: null,
+  },
+  geneNet4: {
+    nodes: [],
+    edges: [],
+    summary: null,
+    nodeById: new Map(),
+    layout: null,
+    hoveredNode: null,
+    selectedNode: null,
+  },
   benchmark: {
     points: [],
     labelMode: "true", // "true", "hodge", or "rbl"
@@ -53,6 +98,11 @@ const els = {
   datasetLabel: document.getElementById("datasetLabel"),
   flightViewButton: document.getElementById("flightViewButton"),
   corpusViewButton: document.getElementById("corpusViewButton"),
+  geneHumanViewButton: document.getElementById("geneHumanViewButton"),
+  geneMouseViewButton: document.getElementById("geneMouseViewButton"),
+  geneNet1ViewButton: document.getElementById("geneNet1ViewButton"),
+  geneNet3ViewButton: document.getElementById("geneNet3ViewButton"),
+  geneNet4ViewButton: document.getElementById("geneNet4ViewButton"),
   metricOneLabel: document.getElementById("metricOneLabel"),
   metricOneValue: document.getElementById("metricOneValue"),
   metricTwoLabel: document.getElementById("metricTwoLabel"),
@@ -90,6 +140,15 @@ const els = {
   showTrueLabelsButton: document.getElementById("showTrueLabelsButton"),
   showPredLabelsButton: document.getElementById("showPredLabelsButton"),
   showRblLabelsButton: document.getElementById("showRblLabelsButton"),
+  storyGuideToggle: document.getElementById("storyGuideToggle"),
+  storyGuideBox: document.getElementById("storyGuideBox"),
+  storyStepDetails: document.getElementById("storyStepDetails"),
+  legendList: document.getElementById("legendList"),
+  storyStep1: document.getElementById("storyStep1"),
+  storyStep2: document.getElementById("storyStep2"),
+  storyStep3: document.getElementById("storyStep3"),
+  storyStep4: document.getElementById("storyStep4"),
+  storyStep5: document.getElementById("storyStep5"),
 };
 
 function clusterColor(clusterId) {
@@ -632,6 +691,253 @@ function nearestCorpusNode(x, y) {
   return best;
 }
 
+function buildGraphLayout(viewKey) {
+  const box = chartBox();
+  const centerX = box.x + box.width / 2;
+  const centerY = box.y + box.height / 2;
+  const radiusX = box.width * 0.39;
+  const radiusY = box.height * 0.38;
+  const subState = state[viewKey];
+  const nodes = subState.nodes.map((node, index) => {
+    const angle = (index / Math.max(1, subState.nodes.length)) * Math.PI * 2 - Math.PI / 2;
+    return {
+      ...node,
+      index,
+      x: centerX + Math.cos(angle) * radiusX,
+      y: centerY + Math.sin(angle) * radiusY,
+      vx: 0,
+      vy: 0,
+      radius: Math.max(7, Math.min(24, Math.sqrt(node.documentCount) * 2.2)),
+    };
+  });
+  const nodeById = new Map(nodes.map((node) => [node.id, node]));
+  const edges = subState.edges
+    .map((edge) => ({
+      ...edge,
+      sourceNode: nodeById.get(edge.source),
+      targetNode: nodeById.get(edge.target),
+    }))
+    .filter((edge) => edge.sourceNode && edge.targetNode);
+
+  for (let step = 0; step < 260; step += 1) {
+    for (let i = 0; i < nodes.length; i += 1) {
+      const a = nodes[i];
+      for (let j = i + 1; j < nodes.length; j += 1) {
+        const b = nodes[j];
+        const dx = b.x - a.x;
+        const dy = b.y - a.y;
+        const distance = Math.max(1, Math.hypot(dx, dy));
+        const force = 1800 / (distance * distance);
+        const fx = (dx / distance) * force;
+        const fy = (dy / distance) * force;
+        a.vx -= fx;
+        a.vy -= fy;
+        b.vx += fx;
+        b.vy += fy;
+      }
+    }
+
+    for (const edge of edges) {
+      const a = edge.sourceNode;
+      const b = edge.targetNode;
+      const dx = b.x - a.x;
+      const dy = b.y - a.y;
+      const distance = Math.max(1, Math.hypot(dx, dy));
+      const desired = 95;
+      const strength = 0.004;
+      const force = (distance - desired) * strength;
+      const fx = (dx / distance) * force;
+      const fy = (dy / distance) * force;
+      a.vx += fx;
+      a.vy += fy;
+      b.vx -= fx;
+      b.vy -= fy;
+    }
+
+    for (const node of nodes) {
+      node.vx += (centerX - node.x) * 0.002;
+      node.vy += (centerY - node.y) * 0.002;
+      node.vx *= 0.78;
+      node.vy *= 0.78;
+      node.x = Math.max(box.x + 28, Math.min(box.x + box.width - 28, node.x + node.vx));
+      node.y = Math.max(box.y + 28, Math.min(box.y + box.height - 28, node.y + node.vy));
+    }
+  }
+
+  subState.layout = {
+    width: state.width,
+    height: state.height,
+    box,
+    nodes,
+    edges,
+    nodeById,
+  };
+  return subState.layout;
+}
+
+function getGraphLayout(viewKey) {
+  const subState = state[viewKey];
+  if (
+    subState.layout &&
+    subState.layout.width === state.width &&
+    subState.layout.height === state.height
+  ) {
+    return subState.layout;
+  }
+  return buildGraphLayout(viewKey);
+}
+
+function geneColor(potentialNorm, kind) {
+  if (potentialNorm === null || potentialNorm === undefined) {
+    return kind === "tf" ? "#58c6a4" : "#7aa6ff";
+  }
+  const hue = 110 + potentialNorm * 100;
+  return `hsl(${hue}, 85%, 60%)`;
+}
+
+function drawGeneGraph(viewKey) {
+  const layout = getGraphLayout(viewKey);
+  const { box } = layout;
+  const subState = state[viewKey];
+  const selectedId = subState.selectedNode;
+  const hoveredId = subState.hoveredNode ? subState.hoveredNode.id : null;
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(box.x, box.y, box.width, box.height);
+  ctx.clip();
+
+  const networkGradient = ctx.createLinearGradient(box.x, box.y, box.x + box.width, box.y + box.height);
+  networkGradient.addColorStop(0, "rgba(18, 30, 24, 0.52)");
+  networkGradient.addColorStop(0.55, "rgba(10, 18, 20, 0.32)");
+  networkGradient.addColorStop(1, "rgba(22, 14, 30, 0.44)");
+  ctx.fillStyle = networkGradient;
+  ctx.fillRect(box.x, box.y, box.width, box.height);
+
+  ctx.strokeStyle = "rgba(243, 239, 226, 0.06)";
+  ctx.lineWidth = 0.8;
+  for (let x = box.x + 60; x < box.x + box.width; x += 60) {
+    ctx.beginPath();
+    ctx.moveTo(x, box.y);
+    ctx.lineTo(x, box.y + box.height);
+    ctx.stroke();
+  }
+  for (let y = box.y + 60; y < box.y + box.height; y += 60) {
+    ctx.beginPath();
+    ctx.moveTo(box.x, y);
+    ctx.lineTo(box.x + box.width, y);
+    ctx.stroke();
+  }
+
+  const visibleEdges = layout.edges
+    .filter((edge) => !selectedId || edge.source === selectedId || edge.target === selectedId)
+    .slice(0, state.edgeLimit);
+    
+  for (const edge of visibleEdges) {
+    const active = edge.source === selectedId || edge.target === selectedId || edge.source === hoveredId || edge.target === hoveredId;
+    const source = edge.sourceNode;
+    const target = edge.targetNode;
+    
+    ctx.beginPath();
+    ctx.moveTo(source.x, source.y);
+    const midX = (source.x + target.x) / 2;
+    const midY = (source.y + target.y) / 2;
+    const dx = target.x - source.x;
+    const dy = target.y - source.y;
+    const distance = Math.max(1, Math.hypot(dx, dy));
+    const bend = Math.min(30, Math.max(6, distance * 0.06));
+    
+    ctx.quadraticCurveTo(midX - (dy / distance) * bend, midY + (dx / distance) * bend, target.x, target.y);
+    ctx.strokeStyle = active ? "rgba(243, 239, 226, 0.8)" : "rgba(243, 239, 226, 0.11)";
+    ctx.globalAlpha = active ? 1.0 : 0.4;
+    ctx.lineWidth = active ? 2.0 : 1.0;
+    ctx.stroke();
+    
+    if (active && distance > 30) {
+      const t = 0.5;
+      const ax = (1-t)*(1-t)*source.x + 2*(1-t)*t*(midX - (dy / distance) * bend) + t*t*target.x;
+      const ay = (1-t)*(1-t)*source.y + 2*(1-t)*t*(midY + (dx / distance) * bend) + t*t*target.y;
+      const tx = 2*(1-t)*((midX - (dy / distance) * bend) - source.x) + 2*t*(target.x - (midX - (dy / distance) * bend));
+      const ty = 2*(1-t)*((midY + (dx / distance) * bend) - source.y) + 2*t*(target.y - (midY + (dx / distance) * bend));
+      const angle = Math.atan2(ty, tx);
+      
+      ctx.save();
+      ctx.translate(ax, ay);
+      ctx.rotate(angle);
+      ctx.beginPath();
+      ctx.moveTo(-6, -4);
+      ctx.lineTo(2, 0);
+      ctx.lineTo(-6, 4);
+      ctx.closePath();
+      ctx.fillStyle = "#f3efe2";
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+  ctx.globalAlpha = 1.0;
+
+  const sortedNodes = [...layout.nodes].sort((a, b) => a.documentCount - b.documentCount);
+  for (const node of sortedNodes) {
+    const active = !selectedId || node.id === selectedId || visibleEdges.some((edge) => edge.source === node.id || edge.target === node.id);
+    const highlighted = node.id === selectedId || node.id === hoveredId;
+    const color = geneColor(node.potentialNorm, node.kind);
+    
+    ctx.save();
+    ctx.globalAlpha = active ? 1 : 0.22;
+    ctx.beginPath();
+    ctx.fillStyle = color;
+    ctx.shadowColor = color;
+    ctx.shadowBlur = highlighted ? 24 : 9;
+    
+    const r = highlighted ? node.radius + 3 : node.radius;
+    ctx.arc(node.x, node.y, r, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.shadowBlur = 0;
+    
+    ctx.lineWidth = highlighted ? 2 : 1;
+    ctx.strokeStyle = highlighted ? "#f3efe2" : "rgba(12, 14, 13, 0.85)";
+    ctx.stroke();
+    
+    if (node.kind === "tf") {
+      ctx.beginPath();
+      ctx.arc(node.x, node.y, r * 0.45, 0, Math.PI * 2);
+      ctx.fillStyle = "#ffffff";
+      ctx.globalAlpha = active ? 0.8 : 0.3;
+      ctx.fill();
+    }
+    
+    ctx.restore();
+  }
+
+  ctx.font = "italic 600 11px Inter, system-ui, sans-serif";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "top";
+  for (const node of layout.nodes) {
+    const highlighted = node.id === selectedId || node.id === hoveredId;
+    const tf = node.kind === "tf";
+    if (!highlighted && node.documentCount < 10 && !tf) continue;
+    ctx.fillStyle = highlighted ? "#f3efe2" : (tf ? "rgba(243, 239, 226, 0.88)" : "rgba(243, 239, 226, 0.65)");
+    ctx.fillText(node.label, node.x, node.y + node.radius + 6);
+  }
+
+  ctx.restore();
+}
+
+function nearestGeneNode(viewKey, x, y) {
+  const layout = getGraphLayout(viewKey);
+  let best = null;
+  let bestDistance = Infinity;
+  for (const node of layout.nodes) {
+    const distance = Math.hypot(node.x - x, node.y - y);
+    const threshold = node.radius + 8;
+    if (distance < threshold && distance < bestDistance) {
+      best = node;
+      bestDistance = distance;
+    }
+  }
+  return best;
+}
+
 function draw() {
   if (!ctx) return;
   ctx.clearRect(0, 0, state.width, state.height);
@@ -644,6 +950,26 @@ function draw() {
 
   if (state.viewMode === "corpus") {
     drawCorpusGraph();
+    return;
+  }
+  if (state.viewMode === "geneHuman") {
+    drawGeneGraph("geneHuman");
+    return;
+  }
+  if (state.viewMode === "geneMouse") {
+    drawGeneGraph("geneMouse");
+    return;
+  }
+  if (state.viewMode === "geneNet1") {
+    drawGeneGraph("geneNet1");
+    return;
+  }
+  if (state.viewMode === "geneNet3") {
+    drawGeneGraph("geneNet3");
+    return;
+  }
+  if (state.viewMode === "geneNet4") {
+    drawGeneGraph("geneNet4");
     return;
   }
   if (state.viewMode === "benchmark") {
@@ -800,6 +1126,21 @@ function nearestNode(x, y) {
   if (state.viewMode === "corpus") {
     return nearestCorpusNode(x, y);
   }
+  if (state.viewMode === "geneHuman") {
+    return nearestGeneNode("geneHuman", x, y);
+  }
+  if (state.viewMode === "geneMouse") {
+    return nearestGeneNode("geneMouse", x, y);
+  }
+  if (state.viewMode === "geneNet1") {
+    return nearestGeneNode("geneNet1", x, y);
+  }
+  if (state.viewMode === "geneNet3") {
+    return nearestGeneNode("geneNet3", x, y);
+  }
+  if (state.viewMode === "geneNet4") {
+    return nearestGeneNode("geneNet4", x, y);
+  }
   if (state.viewMode === "benchmark") {
     return nearestBenchmarkPoint(x, y);
   }
@@ -873,9 +1214,65 @@ function updateBenchmarkDetails(node) {
   }
 }
 
+function updateGeneLabels() {
+  els.detailTotalLabel.textContent = "Connectivity";
+  els.detailInboundLabel.textContent = "Type";
+  els.detailOutboundLabel.textContent = "Potential Value";
+  els.detailPotentialLabel.textContent = "Potential";
+}
+
+function updateGeneDetails(viewKey, node) {
+  updateGeneLabels();
+  const summary = state[viewKey].summary;
+  let name = "";
+  if (viewKey === "geneHuman") name = "Human";
+  else if (viewKey === "geneMouse") name = "Mouse";
+  else if (viewKey === "geneNet1") name = "Net 1 (In Silico)";
+  else if (viewKey === "geneNet3") name = "Net 3 (E. coli)";
+  else if (viewKey === "geneNet4") name = "Net 4 (Yeast)";
+
+  if (!node) {
+    els.detailCode.textContent = "GRN";
+    els.detailName.textContent = `Hover a gene (${name})`;
+    els.detailLocation.textContent = viewKey.startsWith("geneNet") ? "Gene Regulatory Network from DREAM5 Challenge." : "Transcriptional regulatory network from GRNPedia TRRUST database.";
+    els.detailTotal.textContent = summary ? fmt(summary.counts.genes) : "--";
+    els.detailInbound.textContent = summary ? fmt(summary.counts.interactions) : "--";
+    els.detailOutbound.textContent = summary ? fmt(summary.counts.triangles) : "--";
+    els.detailPotential.textContent = "--";
+    return;
+  }
+  els.detailCode.textContent = node.kind.toUpperCase();
+  els.detailName.textContent = node.label;
+  els.detailLocation.textContent = node.kind === "tf" ? "Transcription Factor (Regulator)" : "Target Gene";
+  els.detailTotal.textContent = `${node.documentCount} connections`;
+  els.detailInbound.textContent = node.kind === "tf" ? "Master Regulator" : "Downstream Target";
+  els.detailOutbound.textContent = `${Math.round(node.potentialNorm * 100)}%`;
+  els.detailPotential.textContent = `${Math.round(node.potentialNorm * 100)}%`;
+}
+
 function updateDetails(node) {
   if (state.viewMode === "corpus") {
     updateCorpusDetails(node);
+    return;
+  }
+  if (state.viewMode === "geneHuman") {
+    updateGeneDetails("geneHuman", node);
+    return;
+  }
+  if (state.viewMode === "geneMouse") {
+    updateGeneDetails("geneMouse", node);
+    return;
+  }
+  if (state.viewMode === "geneNet1") {
+    updateGeneDetails("geneNet1", node);
+    return;
+  }
+  if (state.viewMode === "geneNet3") {
+    updateGeneDetails("geneNet3", node);
+    return;
+  }
+  if (state.viewMode === "geneNet4") {
+    updateGeneDetails("geneNet4", node);
     return;
   }
   if (state.viewMode === "benchmark") {
@@ -936,9 +1333,42 @@ function updateBenchmarkMeters() {
   els.harmonicMeter.value = 0.875;
 }
 
+function updateGeneMeters(viewKey) {
+  const summary = state[viewKey].summary;
+  if (!summary) return;
+  const hodge = summary.hodge;
+  const total = Math.max(1, hodge.gradientNorm + hodge.curlNorm + hodge.harmonicNorm);
+  els.gradientLabel.textContent = "Gradient";
+  els.curlLabel.textContent = "Curl";
+  els.harmonicLabel.textContent = "Harmonic";
+  els.gradientMeter.value = hodge.gradientNorm / total;
+  els.curlMeter.value = hodge.curlNorm / total;
+  els.harmonicMeter.value = hodge.harmonicNorm / total;
+}
+
 function updateMeters() {
   if (state.viewMode === "corpus") {
     updateCorpusMeters();
+    return;
+  }
+  if (state.viewMode === "geneHuman") {
+    updateGeneMeters("geneHuman");
+    return;
+  }
+  if (state.viewMode === "geneMouse") {
+    updateGeneMeters("geneMouse");
+    return;
+  }
+  if (state.viewMode === "geneNet1") {
+    updateGeneMeters("geneNet1");
+    return;
+  }
+  if (state.viewMode === "geneNet3") {
+    updateGeneMeters("geneNet3");
+    return;
+  }
+  if (state.viewMode === "geneNet4") {
+    updateGeneMeters("geneNet4");
     return;
   }
   if (state.viewMode === "benchmark") {
@@ -1014,9 +1444,104 @@ function renderBenchmarkClusters() {
   }
 }
 
+function renderGeneClusters(viewKey) {
+  els.clusterList.innerHTML = "";
+  const subState = state[viewKey];
+  const summary = subState.summary;
+  if (!summary) return;
+
+  const headerReg = document.createElement("div");
+  headerReg.className = "legend-header";
+  headerReg.style = "font-size:0.88rem; font-weight:700; margin:10px 0 6px 0; color:#58c6a4; letter-spacing:0.5px; text-transform:uppercase;";
+  headerReg.textContent = "Top Master Regulators (Basins)";
+  els.clusterList.appendChild(headerReg);
+
+  summary.top_regulators.forEach((reg) => {
+    const button = document.createElement("button");
+    button.className = "cluster-button gene-button";
+    button.type = "button";
+    const active = subState.selectedNode === reg.gene;
+    if (active) button.classList.add("active");
+    button.innerHTML = `
+      <span class="cluster-swatch" style="background:#58c6a4"></span>
+      <span class="cluster-copy">
+        <strong>${reg.gene}</strong>
+        <p>Rank #${reg.rank} Regulator</p>
+      </span>
+      <span class="cluster-count">${Math.round(reg.potential * 100)}%</span>
+    `;
+    button.addEventListener("click", () => {
+      const layout = getGraphLayout(viewKey);
+      const node = layout.nodes.find(n => n.id === reg.gene);
+      if (node) {
+        subState.selectedNode = subState.selectedNode === node.id ? null : node.id;
+        document.querySelectorAll(".cluster-button").forEach((item) => item.classList.remove("active"));
+        if (subState.selectedNode !== null) button.classList.add("active");
+        updateDetails(subState.selectedNode ? node : null);
+        draw();
+      }
+    });
+    els.clusterList.appendChild(button);
+  });
+
+  const headerTgt = document.createElement("div");
+  headerTgt.className = "legend-header";
+  headerTgt.style = "font-size:0.88rem; font-weight:700; margin:18px 0 6px 0; color:#7aa6ff; letter-spacing:0.5px; text-transform:uppercase;";
+  headerTgt.textContent = "Top Target Genes (Sinks)";
+  els.clusterList.appendChild(headerTgt);
+
+  summary.top_targets.forEach((tgt) => {
+    const button = document.createElement("button");
+    button.className = "cluster-button gene-button";
+    button.type = "button";
+    const active = subState.selectedNode === tgt.gene;
+    if (active) button.classList.add("active");
+    button.innerHTML = `
+      <span class="cluster-swatch" style="background:#7aa6ff"></span>
+      <span class="cluster-copy">
+        <strong>${tgt.gene}</strong>
+        <p>Rank #${tgt.rank} Target</p>
+      </span>
+      <span class="cluster-count">${Math.round(tgt.potential * 100)}%</span>
+    `;
+    button.addEventListener("click", () => {
+      const layout = getGraphLayout(viewKey);
+      const node = layout.nodes.find(n => n.id === tgt.gene);
+      if (node) {
+        subState.selectedNode = subState.selectedNode === node.id ? null : node.id;
+        document.querySelectorAll(".cluster-button").forEach((item) => item.classList.remove("active"));
+        if (subState.selectedNode !== null) button.classList.add("active");
+        updateDetails(subState.selectedNode ? node : null);
+        draw();
+      }
+    });
+    els.clusterList.appendChild(button);
+  });
+}
+
 function renderClusters() {
   if (state.viewMode === "corpus") {
     renderCorpusTerms();
+    return;
+  }
+  if (state.viewMode === "geneHuman") {
+    renderGeneClusters("geneHuman");
+    return;
+  }
+  if (state.viewMode === "geneMouse") {
+    renderGeneClusters("geneMouse");
+    return;
+  }
+  if (state.viewMode === "geneNet1") {
+    renderGeneClusters("geneNet1");
+    return;
+  }
+  if (state.viewMode === "geneNet3") {
+    renderGeneClusters("geneNet3");
+    return;
+  }
+  if (state.viewMode === "geneNet4") {
+    renderGeneClusters("geneNet4");
     return;
   }
   if (state.viewMode === "benchmark") {
@@ -1136,15 +1661,88 @@ function renderBenchmarkSummary() {
   els.sourceLine.textContent = "Visual representation of the 600-sample benchmark dataset, exploring the Bayes error limit.";
 }
 
+function updateLegend(viewMode) {
+  if (!els.legendList) return;
+  if (viewMode === "corpus") {
+    els.legendList.innerHTML = `
+      <li><strong>Gradient:</strong> <span class="analogy-label">"Core Target"</span> - central investigation topics or key entities.</li>
+      <li><strong>Curl:</strong> <span class="analogy-label">"Local Gossip"</span> - tight local loops where entities are co-mentioned.</li>
+      <li><strong>Harmonic:</strong> <span class="analogy-label">"Indirect Orbits"</span> - larger circular paths of documents linking nodes.</li>
+    `;
+  } else if (viewMode === "geneHuman" || viewMode === "geneMouse" || viewMode.startsWith("geneNet")) {
+    els.legendList.innerHTML = `
+      <li><strong>Gradient:</strong> <span class="analogy-label">"Regulator Waterfall"</span> - flow going from low potential basins (sources/TFs) to high potential sinks (target genes).</li>
+      <li><strong>Curl:</strong> <span class="analogy-label">"Regulatory Whirlpools"</span> - circular feedback loops of regulatory interactions.</li>
+      <li><strong>Harmonic:</strong> <span class="analogy-label">"Indirect Orbits"</span> - larger cycles routing through non-triangular pathways.</li>
+    `;
+  } else if (viewMode === "benchmark") {
+    els.legendList.innerHTML = `
+      <li><strong>Gradient:</strong> <span class="analogy-label">"City Core"</span> - stable, dense coordinate clusters of true residents.</li>
+      <li><strong>Curl:</strong> <span class="analogy-label">"Wandering Tourists"</span> - random points flagged as outliers (noise).</li>
+      <li><strong>Harmonic:</strong> <span class="analogy-label">"Bayes Limit"</span> - the optimal accuracy separating noise from signal.</li>
+    `;
+  } else {
+    els.legendList.innerHTML = `
+      <li><strong>Gradient:</strong> <span class="analogy-label">"Hub Waterfall"</span> - one-way routes draining towards regional hub cities.</li>
+      <li><strong>Curl:</strong> <span class="analogy-label">"Local Whirlpools"</span> - circular 3-airport loops (e.g. feeders).</li>
+      <li><strong>Harmonic:</strong> <span class="analogy-label">"Global Orbits"</span> - large loops winding around the network boundaries.</li>
+    `;
+  }
+}
+
+function renderGeneSummary(viewKey) {
+  const subState = state[viewKey];
+  const summary = subState.summary;
+  let name = "";
+  if (viewKey === "geneHuman") name = "Human";
+  else if (viewKey === "geneMouse") name = "Mouse";
+  else if (viewKey === "geneNet1") name = "Net 1 (In Silico)";
+  else if (viewKey === "geneNet3") name = "Net 3 (E. coli)";
+  else if (viewKey === "geneNet4") name = "Net 4 (Yeast)";
+
+  els.datasetLabel.textContent = viewKey.startsWith("geneNet") ? `DREAM5 ${name} Regulatory Network` : `TRRUST ${name} Regulatory Network`;
+  els.metricOneLabel.textContent = "Genes";
+  els.metricOneValue.textContent = fmt(summary.counts.genes);
+  els.metricTwoLabel.textContent = "Interactions";
+  els.metricTwoValue.textContent = fmt(summary.counts.interactions);
+  els.metricThreeLabel.textContent = "Triangles";
+  els.metricThreeValue.textContent = fmt(summary.counts.triangles);
+  els.metricFourLabel.textContent = "Sub-edges";
+  els.metricFourValue.textContent = fmt(subState.edges.length);
+  els.edgeLimitLabel.textContent = "Graph density";
+  els.edgeLimit.min = "10";
+  els.edgeLimit.step = "5";
+  els.edgeLimit.max = String(Math.max(10, subState.edges.length));
+  els.edgeLimit.value = String(Math.min(Math.max(state.edgeLimit, 10), subState.edges.length));
+  state.edgeLimit = Number(els.edgeLimit.value);
+  els.interClusterControl.hidden = true;
+  els.sourceLine.textContent = viewKey.startsWith("geneNet") ? `Source: DREAM5 Challenge. Top 120 nodes shown.` : `Source: GRNPedia TRRUST ${name} v2. Top 120 nodes shown.`;
+}
+
 function setViewMode(viewMode) {
   if (viewMode === "corpus" && !state.corpus.summary) return;
   if (viewMode === "benchmark" && !state.benchmark.points.length) return;
+  if (viewMode === "geneHuman" && !state.geneHuman.summary) return;
+  if (viewMode === "geneMouse" && !state.geneMouse.summary) return;
+  if (viewMode === "geneNet1" && !state.geneNet1.summary) return;
+  if (viewMode === "geneNet3" && !state.geneNet3.summary) return;
+  if (viewMode === "geneNet4" && !state.geneNet4.summary) return;
   state.viewMode = viewMode;
   state.hoveredNode = null;
   state.corpus.hoveredNode = null;
   state.benchmark.hoveredPoint = null;
+  state.geneHuman.hoveredNode = null;
+  state.geneMouse.hoveredNode = null;
+  state.geneNet1.hoveredNode = null;
+  state.geneNet3.hoveredNode = null;
+  state.geneNet4.hoveredNode = null;
   els.flightViewButton.classList.toggle("active", viewMode === "flights");
   els.corpusViewButton.classList.toggle("active", viewMode === "corpus");
+  els.geneHumanViewButton.classList.toggle("active", viewMode === "geneHuman");
+  els.geneMouseViewButton.classList.toggle("active", viewMode === "geneMouse");
+  els.geneNet1ViewButton.classList.toggle("active", viewMode === "geneNet1");
+  els.geneNet3ViewButton.classList.toggle("active", viewMode === "geneNet3");
+  els.geneNet4ViewButton.classList.toggle("active", viewMode === "geneNet4");
   els.benchmarkViewButton.classList.toggle("active", viewMode === "benchmark");
   els.mainControls.style.display = viewMode === "benchmark" ? "none" : "block";
   els.benchmarkControls.style.display = viewMode === "benchmark" ? "block" : "none";
@@ -1152,9 +1750,20 @@ function setViewMode(viewMode) {
     renderCorpusSummary();
   } else if (viewMode === "benchmark") {
     renderBenchmarkSummary();
+  } else if (viewMode === "geneHuman") {
+    renderGeneSummary("geneHuman");
+  } else if (viewMode === "geneMouse") {
+    renderGeneSummary("geneMouse");
+  } else if (viewMode === "geneNet1") {
+    renderGeneSummary("geneNet1");
+  } else if (viewMode === "geneNet3") {
+    renderGeneSummary("geneNet3");
+  } else if (viewMode === "geneNet4") {
+    renderGeneSummary("geneNet4");
   } else {
     renderFlightSummary();
   }
+  updateLegend(viewMode);
   renderClusters();
   updateMeters();
   updateDetails(null);
@@ -1162,7 +1771,13 @@ function setViewMode(viewMode) {
 }
 
 async function loadData() {
-  const [nodes, edges, clusters, summary, land, corpusNodes, corpusEdges, corpusSummary, benchmarkPoints] = await Promise.all([
+  const [
+    nodes, edges, clusters, summary, land,
+    corpusNodes, corpusEdges, corpusSummary,
+    benchmarkPoints,
+    trrustHumanNodes, trrustHumanEdges, trrustMouseNodes, trrustMouseEdges, trrustSummary,
+    net1Nodes, net1Edges, net3Nodes, net3Edges, net4Nodes, net4Edges, dream5Summary
+  ] = await Promise.all([
     fetch("data/openflights/nodes.json").then((response) => response.json()),
     fetch("data/openflights/edges.json").then((response) => response.json()),
     fetch("data/openflights/clusters.json").then((response) => response.json()),
@@ -1172,6 +1787,18 @@ async function loadData() {
     fetch("data/epstein/mention_edges.json").then((response) => response.json()),
     fetch("data/epstein/summary.json").then((response) => response.json()),
     fetch("data/benchmark.json").then((response) => response.json()),
+    fetch("data/trrust/human_nodes.json").then((response) => response.json()),
+    fetch("data/trrust/human_edges.json").then((response) => response.json()),
+    fetch("data/trrust/mouse_nodes.json").then((response) => response.json()),
+    fetch("data/trrust/mouse_edges.json").then((response) => response.json()),
+    fetch("data/trrust/summary.json").then((response) => response.json()),
+    fetch("data/dream5/net1_nodes.json").then((response) => response.json()),
+    fetch("data/dream5/net1_edges.json").then((response) => response.json()),
+    fetch("data/dream5/net3_nodes.json").then((response) => response.json()),
+    fetch("data/dream5/net3_edges.json").then((response) => response.json()),
+    fetch("data/dream5/net4_nodes.json").then((response) => response.json()),
+    fetch("data/dream5/net4_edges.json").then((response) => response.json()),
+    fetch("data/dream5/summary.json").then((response) => response.json()),
   ]);
 
   state.nodes = nodes;
@@ -1185,6 +1812,31 @@ async function loadData() {
   state.corpus.summary = corpusSummary;
   state.corpus.nodeById = new Map(corpusNodes.map((node) => [node.id, node]));
   state.benchmark.points = benchmarkPoints;
+  
+  state.geneHuman.nodes = trrustHumanNodes;
+  state.geneHuman.edges = trrustHumanEdges;
+  state.geneHuman.summary = trrustSummary.human;
+  state.geneHuman.nodeById = new Map(trrustHumanNodes.map((node) => [node.id, node]));
+  
+  state.geneMouse.nodes = trrustMouseNodes;
+  state.geneMouse.edges = trrustMouseEdges;
+  state.geneMouse.summary = trrustSummary.mouse;
+  state.geneMouse.nodeById = new Map(trrustMouseNodes.map((node) => [node.id, node]));
+
+  state.geneNet1.nodes = net1Nodes;
+  state.geneNet1.edges = net1Edges;
+  state.geneNet1.summary = dream5Summary.net1;
+  state.geneNet1.nodeById = new Map(net1Nodes.map((node) => [node.id, node]));
+
+  state.geneNet3.nodes = net3Nodes;
+  state.geneNet3.edges = net3Edges;
+  state.geneNet3.summary = dream5Summary.net3;
+  state.geneNet3.nodeById = new Map(net3Nodes.map((node) => [node.id, node]));
+
+  state.geneNet4.nodes = net4Nodes;
+  state.geneNet4.edges = net4Edges;
+  state.geneNet4.summary = dream5Summary.net4;
+  state.geneNet4.nodeById = new Map(net4Nodes.map((node) => [node.id, node]));
 
   resizeCanvas();
   setViewMode("flights");
@@ -1201,6 +1853,26 @@ els.flightViewButton.addEventListener("click", () => {
 
 els.corpusViewButton.addEventListener("click", () => {
   setViewMode("corpus");
+});
+
+els.geneHumanViewButton.addEventListener("click", () => {
+  setViewMode("geneHuman");
+});
+
+els.geneMouseViewButton.addEventListener("click", () => {
+  setViewMode("geneMouse");
+});
+
+els.geneNet1ViewButton.addEventListener("click", () => {
+  setViewMode("geneNet1");
+});
+
+els.geneNet3ViewButton.addEventListener("click", () => {
+  setViewMode("geneNet3");
+});
+
+els.geneNet4ViewButton.addEventListener("click", () => {
+  setViewMode("geneNet4");
 });
 
 els.benchmarkViewButton.addEventListener("click", () => {
@@ -1251,6 +1923,16 @@ canvas.addEventListener("mousemove", (event) => {
   let currentHovered;
   if (state.viewMode === "corpus") {
     currentHovered = state.corpus.hoveredNode;
+  } else if (state.viewMode === "geneHuman") {
+    currentHovered = state.geneHuman.hoveredNode;
+  } else if (state.viewMode === "geneMouse") {
+    currentHovered = state.geneMouse.hoveredNode;
+  } else if (state.viewMode === "geneNet1") {
+    currentHovered = state.geneNet1.hoveredNode;
+  } else if (state.viewMode === "geneNet3") {
+    currentHovered = state.geneNet3.hoveredNode;
+  } else if (state.viewMode === "geneNet4") {
+    currentHovered = state.geneNet4.hoveredNode;
   } else if (state.viewMode === "benchmark") {
     currentHovered = state.benchmark.hoveredPoint;
   } else {
@@ -1260,6 +1942,16 @@ canvas.addEventListener("mousemove", (event) => {
   if ((hovered && !currentHovered) || (!hovered && currentHovered) || (hovered && currentHovered.id !== hovered.id)) {
     if (state.viewMode === "corpus") {
       state.corpus.hoveredNode = hovered;
+    } else if (state.viewMode === "geneHuman") {
+      state.geneHuman.hoveredNode = hovered;
+    } else if (state.viewMode === "geneMouse") {
+      state.geneMouse.hoveredNode = hovered;
+    } else if (state.viewMode === "geneNet1") {
+      state.geneNet1.hoveredNode = hovered;
+    } else if (state.viewMode === "geneNet3") {
+      state.geneNet3.hoveredNode = hovered;
+    } else if (state.viewMode === "geneNet4") {
+      state.geneNet4.hoveredNode = hovered;
     } else if (state.viewMode === "benchmark") {
       state.benchmark.hoveredPoint = hovered;
     } else {
@@ -1273,10 +1965,185 @@ canvas.addEventListener("mousemove", (event) => {
 canvas.addEventListener("mouseleave", () => {
   state.hoveredNode = null;
   state.corpus.hoveredNode = null;
+  state.geneHuman.hoveredNode = null;
+  state.geneMouse.hoveredNode = null;
+  state.geneNet1.hoveredNode = null;
+  state.geneNet3.hoveredNode = null;
+  state.geneNet4.hoveredNode = null;
   state.benchmark.hoveredPoint = null;
   updateDetails(null);
   draw();
 });
+
+// --- Storyteller & Layperson Guide Logic ---
+if (els.storyGuideToggle) {
+  els.storyGuideToggle.addEventListener("click", () => {
+    const visible = els.storyGuideBox.style.display === "flex";
+    els.storyGuideBox.style.display = visible ? "none" : "flex";
+    els.storyGuideToggle.classList.toggle("active", !visible);
+  });
+}
+
+function clearActiveSteps() {
+  const steps = [els.storyStep1, els.storyStep2, els.storyStep3, els.storyStep4, els.storyStep5];
+  steps.forEach(btn => btn && btn.classList.remove("active"));
+}
+
+if (els.storyStep1) {
+  els.storyStep1.addEventListener("click", () => {
+    setViewMode("flights");
+    clearActiveSteps();
+    els.storyStep1.classList.add("active");
+
+    const minNode = state.nodes.reduce((min, n) => {
+      if (n.potentialNorm === null) return min;
+      if (!min) return n;
+      return n.potentialNorm < min.potentialNorm ? n : min;
+    }, null) || state.nodes[0];
+
+    if (minNode) {
+      state.hoveredNode = minNode;
+      state.selectedCluster = minNode.cluster;
+      els.edgeLimit.value = "600";
+      state.edgeLimit = 600;
+      updateDetails(minNode);
+      updateMeters();
+      draw();
+      els.storyStepDetails.innerHTML = `
+        <strong>📍 Hub Waterfall (Gradient Sink)</strong><br>
+        Flights naturally drain into regional hubs. We highlighted <b>${minNode.city || minNode.name} (${minNode.code})</b>, which has the lowest potential (${Math.round((minNode.potentialNorm || 0) * 100)}%). Think of it as a massive gravity well on the map.
+      `;
+    }
+  });
+}
+
+if (els.storyStep2) {
+  els.storyStep2.addEventListener("click", () => {
+    setViewMode("flights");
+    clearActiveSteps();
+    els.storyStep2.classList.add("active");
+
+    let maxCurlEdge = null;
+    let maxCurl = -1;
+    for (const edge of state.edges) {
+      if (edge.hodge && edge.hodge.curl !== undefined) {
+        const absCurl = Math.abs(edge.hodge.curl);
+        if (absCurl > maxCurl) {
+          maxCurl = absCurl;
+          maxCurlEdge = edge;
+        }
+      }
+    }
+
+    if (maxCurlEdge) {
+      const node = state.nodeById.get(maxCurlEdge.source);
+      if (node) {
+        state.hoveredNode = node;
+        state.selectedCluster = node.cluster;
+        els.edgeLimit.value = "400";
+        state.edgeLimit = 400;
+        updateDetails(node);
+        updateMeters();
+        draw();
+        els.storyStepDetails.innerHTML = `
+          <strong>🌀 Local Whirlpools (Curl Loops)</strong><br>
+          These represent circular "rock-paper-scissors" connections between three nearby airports. We highlighted <b>${node.city} (${node.code})</b>. Part of its flow is trapped in regional loops, defying the main hub hierarchy!
+        `;
+      }
+    } else {
+      els.storyStepDetails.innerHTML = `No high-curl loops found in the current selection. Try increasing flight data density.`;
+    }
+  });
+}
+
+if (els.storyStep3) {
+  els.storyStep3.addEventListener("click", () => {
+    setViewMode("flights");
+    clearActiveSteps();
+    els.storyStep3.classList.add("active");
+
+    let maxHarmEdge = null;
+    let maxHarm = -1;
+    for (const edge of state.edges) {
+      if (edge.hodge && edge.hodge.harmonic !== undefined) {
+        const absHarm = Math.abs(edge.hodge.harmonic);
+        if (absHarm > maxHarm) {
+          maxHarm = absHarm;
+          maxHarmEdge = edge;
+        }
+      }
+    }
+
+    if (maxHarmEdge) {
+      const node = state.nodeById.get(maxHarmEdge.source);
+      if (node) {
+        state.hoveredNode = node;
+        state.selectedCluster = node.cluster;
+        els.edgeLimit.value = "800";
+        state.edgeLimit = 800;
+        updateDetails(node);
+        updateMeters();
+        draw();
+        els.storyStepDetails.innerHTML = `
+          <strong>🌍 Global Orbits (Harmonic Flow)</strong><br>
+          These are large circular flows that route around the entire network boundaries. We selected <b>${node.city} (${node.code})</b>. Click the <span class="interactive-action-link" id="actionToggleInter">Inter-cluster toggle</span> to see how these routes orbit between clusters.
+        `;
+        const toggleBtn = document.getElementById("actionToggleInter");
+        if (toggleBtn) {
+          toggleBtn.addEventListener("click", () => {
+            els.interClusterToggle.checked = !els.interClusterToggle.checked;
+            state.showIntercluster = els.interClusterToggle.checked;
+            draw();
+          });
+        }
+      }
+    } else {
+      els.storyStepDetails.innerHTML = `No harmonic orbits found in the current selection.`;
+    }
+  });
+}
+
+if (els.storyStep4) {
+  els.storyStep4.addEventListener("click", () => {
+    setViewMode("corpus");
+    clearActiveSteps();
+    els.storyStep4.classList.add("active");
+
+    const epsteinNode = state.corpus.nodes.find(n => n.label.includes("Epstein")) || state.corpus.nodes[0];
+    if (epsteinNode) {
+      state.corpus.selectedNode = epsteinNode.id;
+      updateDetails(epsteinNode);
+      updateMeters();
+      draw();
+      els.storyStepDetails.innerHTML = `
+        <strong>🔍 DOJ Investigation Centrality</strong><br>
+        This maps connections in Epstein DOJ disclosure documents. We selected <b>${epsteinNode.label}</b>, which sits at the bottom of the "blame waterfall" (gradient sink). Notice how terms cluster tightly around core targets.
+      `;
+    }
+  });
+}
+
+if (els.storyStep5) {
+  els.storyStep5.addEventListener("click", () => {
+    setViewMode("benchmark");
+    clearActiveSteps();
+    els.storyStep5.classList.add("active");
+    els.showPredLabelsButton.click();
+
+    els.storyStepDetails.innerHTML = `
+      <strong>🎮 The Cities & Tourists Game</strong><br>
+      There are 4 cities and 60 tourists wandering the wilderness (noise). Try toggling <span class="interactive-action-link" id="actionShowTrue">True Labels</span>, <span class="interactive-action-link" id="actionShowHodge">Hodge</span>, or <span class="interactive-action-link" id="actionShowRbl">RBL</span> to watch the potential field sweep away the noise!
+    `;
+    
+    const showTrue = document.getElementById("actionShowTrue");
+    const showHodge = document.getElementById("actionShowHodge");
+    const showRbl = document.getElementById("actionShowRbl");
+    
+    if (showTrue) showTrue.addEventListener("click", () => els.showTrueLabelsButton.click());
+    if (showHodge) showHodge.addEventListener("click", () => els.showPredLabelsButton.click());
+    if (showRbl) showRbl.addEventListener("click", () => els.showRblLabelsButton.click());
+  });
+}
 
 window.addEventListener("resize", resizeCanvas);
 

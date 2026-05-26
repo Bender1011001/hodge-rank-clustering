@@ -1,0 +1,22 @@
+{
+  "aggregate": {
+    "Pinnacle": {
+      "bets": 443,
+      "wins": 243,
+      "bankroll": 3289.06,
+      "roi": 3189.1
+    },
+    "Max": {
+      "bets": 440,
+      "wins": 239,
+      "bankroll": 4942.65,
+      "roi": 4842.7
+    },
+    "Bet365": {
+      "bets": 445,
+      "wins": 248,
+      "bankroll": 2814.11,
+      "roi": 2714.1
+    }
+  }
+}

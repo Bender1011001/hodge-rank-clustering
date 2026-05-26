@@ -19,9 +19,35 @@
           </div>
         </div>
 
+        <!-- Plain English Interactive Guide -->
+        <button id="storyGuideToggle" class="story-guide-toggle" type="button">
+          💡 Layperson's Guide
+        </button>
+        <div id="storyGuideBox" class="story-guide-box" style="display: none;">
+          <h3 id="storyTitle">Interactive Tour</h3>
+          <p id="storyText">
+            Hodge theory translates vector calculus into simple natural flows. Select a step to explore:
+          </p>
+          <div class="story-steps">
+            <button class="story-step-btn" id="storyStep1" type="button" title="Find the gravity wells of the map">📍 Hubs (Sinks)</button>
+            <button class="story-step-btn" id="storyStep2" type="button" title="Find local rock-paper-scissors loops">🌀 Whirlpools (Curl)</button>
+            <button class="story-step-btn" id="storyStep3" type="button" title="Find global circular paths">🌍 Orbits (Harmonic)</button>
+            <button class="story-step-btn" id="storyStep4" type="button" title="Browse DOJ Epstein co-mentions">🔍 DOJ Topics</button>
+            <button class="story-step-btn" id="storyStep5" type="button" title="See noise filtering in action">🎮 Cities Game</button>
+          </div>
+          <div id="storyStepDetails" class="story-step-details">
+            Click one of the buttons above to start an interactive tour!
+          </div>
+        </div>
+
         <div class="view-switch" role="tablist" aria-label="Atlas view">
           <button id="flightViewButton" class="active" type="button">Flight map</button>
           <button id="corpusViewButton" type="button">DOJ graph</button>
+          <button id="geneHumanViewButton" type="button">Human GRN</button>
+          <button id="geneMouseViewButton" type="button">Mouse GRN</button>
+          <button id="geneNet1ViewButton" type="button">Net 1 (In Silico)</button>
+          <button id="geneNet3ViewButton" type="button">Net 3 (E. coli)</button>
+          <button id="geneNet4ViewButton" type="button">Net 4 (Yeast)</button>
           <button id="benchmarkViewButton" type="button">Cities & Tourists</button>
         </div>
 
@@ -108,6 +134,15 @@
             <span id="harmonicLabel">Harmonic</span>
             <meter id="harmonicMeter" min="0" max="1" value="0"></meter>
           </div>
+        </div>
+        <!-- Plain English Legend -->
+        <div class="legend-for-humans" id="legendForHumans">
+          <h3>Legend for Humans</h3>
+          <ul id="legendList">
+            <li><strong>Gradient:</strong> <span class="analogy-label">"Hub Waterfall"</span> - one-way routes draining towards regional hub cities.</li>
+            <li><strong>Curl:</strong> <span class="analogy-label">"Local Whirlpools"</span> - circular 3-airport loops (e.g. feeders).</li>
+            <li><strong>Harmonic:</strong> <span class="analogy-label">"Global Orbits"</span> - large loops winding around the network boundaries.</li>
+          </ul>
         </div>
         <p class="source-line" id="sourceLine">Source attribution loads with the artifact.</p>
       </section>

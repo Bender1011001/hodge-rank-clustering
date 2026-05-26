@@ -1,0 +1,30 @@
+{
+  "elliptic": {
+    "dataset": "Elliptic Bitcoin",
+    "counts": {
+      "nodes": 203769,
+      "edges": 234355
+    },
+    "hodge": {
+      "gradient_norm": 450.87189453790285,
+      "residual_norm": 176.26564013602618,
+      "total_norm": 484.10226192406907
+    },
+    "potentials": {
+      "avg_illicit_potential": 0.12743238535743143,
+      "avg_licit_potential": 0.12653198458355794
+    }
+  },
+  "amlsim": {
+    "dataset": "IBM AMLSim",
+    "counts": {
+      "nodes": 9936,
+      "edges": 46793,
+      "triangles": 1316
+    },
+    "laundering_loop_signature": {
+      "avg_laundering_harmonic_flow": 400.7706072893976,
+      "avg_legitimate_harmonic_flow": 724.2483459158672
+    }
+  }
+}

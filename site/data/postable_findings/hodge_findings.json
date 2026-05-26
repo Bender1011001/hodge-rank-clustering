@@ -1,0 +1,1999 @@
+{
+  "trrust": {
+    "human": {
+      "dataset": "TRRUST human regulatory network",
+      "counts": {
+        "genes": 2861,
+        "edges": 8403,
+        "feedback_cycle_edges": 1296,
+        "triangles": 5118
+      },
+      "metrics": {
+        "feedback_edge_base_rate": 0.15423063191717243,
+        "roc_auc": 0.7273893804925418,
+        "average_precision": 0.4604706593581163,
+        "mean_abs_harmonic_feedback_edges": 0.3332453404792319,
+        "mean_abs_harmonic_other_edges": 0.09539987073335197,
+        "top_k": {
+          "10": {
+            "feedback_cycle_edges": 9,
+            "reciprocal_edges": 3,
+            "nonreciprocal_feedback_cycle_edges": 6,
+            "precision": 0.9,
+            "lift_over_base_rate": 5.835416666666667
+          },
+          "25": {
+            "feedback_cycle_edges": 23,
+            "reciprocal_edges": 10,
+            "nonreciprocal_feedback_cycle_edges": 13,
+            "precision": 0.92,
+            "lift_over_base_rate": 5.965092592592593
+          },
+          "50": {
+            "feedback_cycle_edges": 48,
+            "reciprocal_edges": 23,
+            "nonreciprocal_feedback_cycle_edges": 25,
+            "precision": 0.96,
+            "lift_over_base_rate": 6.224444444444445
+          },
+          "100": {
+            "feedback_cycle_edges": 97,
+            "reciprocal_edges": 44,
+            "nonreciprocal_feedback_cycle_edges": 53,
+            "precision": 0.97,
+            "lift_over_base_rate": 6.289282407407407
+          },
+          "200": {
+            "feedback_cycle_edges": 193,
+            "reciprocal_edges": 81,
+            "nonreciprocal_feedback_cycle_edges": 112,
+            "precision": 0.965,
+            "lift_over_base_rate": 6.256863425925926
+          },
+          "500": {
+            "feedback_cycle_edges": 353,
+            "reciprocal_edges": 122,
+            "nonreciprocal_feedback_cycle_edges": 231,
+            "precision": 0.706,
+            "lift_over_base_rate": 4.5775601851851855
+          }
+        },
+        "score_baselines": {
+          "harmonic_abs": {
+            "roc_auc": 0.7273893804925418,
+            "average_precision": 0.4604706593581163,
+            "precision_at_100": 0.97,
+            "precision_at_500": 0.706
+          },
+          "degree_product": {
+            "roc_auc": 0.7970956950806629,
+            "average_precision": 0.4643978322369695,
+            "precision_at_100": 0.83,
+            "precision_at_500": 0.592
+          },
+          "degree_sum": {
+            "roc_auc": 0.6780840203624665,
+            "average_precision": 0.2538267643572928,
+            "precision_at_100": 0.57,
+            "precision_at_500": 0.156
+          },
+          "source_out_degree": {
+            "roc_auc": 0.5117281344944212,
+            "average_precision": 0.15118009406760718,
+            "precision_at_100": 0.1,
+            "precision_at_500": 0.108
+          },
+          "target_in_degree": {
+            "roc_auc": 0.6351150057237951,
+            "average_precision": 0.22158185833790045,
+            "precision_at_100": 0.0,
+            "precision_at_500": 0.272
+          },
+          "pagerank_sum": {
+            "roc_auc": 0.6272467958906799,
+            "average_precision": 0.21727815475320003,
+            "precision_at_100": 0.0,
+            "precision_at_500": 0.266
+          },
+          "reciprocal_edge": {
+            "roc_auc": 0.5794753086419753,
+            "average_precision": 0.2886661950537947,
+            "precision_at_100": 1.0,
+            "precision_at_500": 0.5
+          }
+        }
+      },
+      "top_harmonic_edges": [
+        {
+          "rank": 1,
+          "source": "IRF7",
+          "target": "ATF4",
+          "harmonic": 1.5506775204488261,
+          "abs_harmonic": 1.5506775204488261,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 2,
+          "source": "ID1",
+          "target": "ZNF148",
+          "harmonic": 1.475975475271278,
+          "abs_harmonic": 1.475975475271278,
+          "is_feedback_cycle_edge": false,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 3,
+          "source": "GATA4",
+          "target": "HDAC9",
+          "harmonic": 1.4668176078595612,
+          "abs_harmonic": 1.4668176078595612,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 4,
+          "source": "NKX2-1",
+          "target": "SP1",
+          "harmonic": 1.4440205013775365,
+          "abs_harmonic": 1.4440205013775365,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 5,
+          "source": "MYB",
+          "target": "LMO2",
+          "harmonic": 1.4220830649910792,
+          "abs_harmonic": 1.4220830649910792,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 6,
+          "source": "GFI1B",
+          "target": "MEF2C",
+          "harmonic": 1.4170874087286707,
+          "abs_harmonic": 1.4170874087286707,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 7,
+          "source": "NR2F1",
+          "target": "DR1",
+          "harmonic": 1.3997210012010461,
+          "abs_harmonic": 1.3997210012010461,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 8,
+          "source": "FOXC1",
+          "target": "FOXO1",
+          "harmonic": 1.3939162973180457,
+          "abs_harmonic": 1.3939162973180457,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 9,
+          "source": "MCM5",
+          "target": "STAT1",
+          "harmonic": 1.3902685518928257,
+          "abs_harmonic": 1.3902685518928257,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 10,
+          "source": "MYBL2",
+          "target": "SP1",
+          "harmonic": 1.3809511378615904,
+          "abs_harmonic": 1.3809511378615904,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 11,
+          "source": "BRD7",
+          "target": "E2F3",
+          "harmonic": 1.3742593669627654,
+          "abs_harmonic": 1.3742593669627654,
+          "is_feedback_cycle_edge": false,
+          "regulation_types": {
+            "Repression": 1,
+            "Unknown": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 12,
+          "source": "MYC",
+          "target": "TLX1",
+          "harmonic": 1.3702681170448123,
+          "abs_harmonic": 1.3702681170448123,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 13,
+          "source": "PPARA",
+          "target": "STAT5A",
+          "harmonic": 1.338418339387026,
+          "abs_harmonic": 1.338418339387026,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 14,
+          "source": "ATF3",
+          "target": "TP53",
+          "harmonic": 1.3308458484681767,
+          "abs_harmonic": 1.3308458484681767,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 15,
+          "source": "EPAS1",
+          "target": "USF2",
+          "harmonic": 1.329169844658681,
+          "abs_harmonic": 1.329169844658681,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 16,
+          "source": "DDIT3",
+          "target": "ATF5",
+          "harmonic": 1.328911717506183,
+          "abs_harmonic": 1.328911717506183,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 17,
+          "source": "NANOG",
+          "target": "GATA2",
+          "harmonic": 1.3249899091974435,
+          "abs_harmonic": 1.3249899091974435,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 18,
+          "source": "E2F1",
+          "target": "ZNF350",
+          "harmonic": 1.3147154370704288,
+          "abs_harmonic": 1.3147154370704288,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 19,
+          "source": "AR",
+          "target": "RELA",
+          "harmonic": 1.3141791283084707,
+          "abs_harmonic": 1.3141791283084707,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 20,
+          "source": "PRDM1",
+          "target": "LMO2",
+          "harmonic": 1.303826083155919,
+          "abs_harmonic": 1.303826083155919,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 21,
+          "source": "ESRRG",
+          "target": "NR0B1",
+          "harmonic": 1.2926135229077247,
+          "abs_harmonic": 1.2926135229077247,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 22,
+          "source": "IRF4",
+          "target": "IRF3",
+          "harmonic": 1.2902304493640142,
+          "abs_harmonic": 1.2902304493640142,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 23,
+          "source": "TRIB3",
+          "target": "ATF4",
+          "harmonic": 1.2849733999724648,
+          "abs_harmonic": 1.2849733999724648,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 24,
+          "source": "TRIB3",
+          "target": "SMAD3",
+          "harmonic": 1.2769546787887127,
+          "abs_harmonic": 1.2769546787887127,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 25,
+          "source": "TP73",
+          "target": "E2F1",
+          "harmonic": 1.276009983401442,
+          "abs_harmonic": 1.276009983401442,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 26,
+          "source": "AR",
+          "target": "NFKB1",
+          "harmonic": 1.2723153625774495,
+          "abs_harmonic": 1.2723153625774495,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 27,
+          "source": "MYCN",
+          "target": "MXI1",
+          "harmonic": 1.2463262027092488,
+          "abs_harmonic": 1.2463262027092488,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 28,
+          "source": "NKX2-1",
+          "target": "LMO3",
+          "harmonic": 1.2452341039707404,
+          "abs_harmonic": 1.2452341039707404,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 29,
+          "source": "STAT1",
+          "target": "CEBPE",
+          "harmonic": 1.2403130721266515,
+          "abs_harmonic": 1.2403130721266515,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 30,
+          "source": "AR",
+          "target": "JUN",
+          "harmonic": 1.2342883992132392,
+          "abs_harmonic": 1.2342883992132392,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 31,
+          "source": "BCL11A",
+          "target": "GATA1",
+          "harmonic": 1.2275828558213049,
+          "abs_harmonic": 1.2275828558213049,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1,
+            "Unknown": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 32,
+          "source": "NR4A3",
+          "target": "PPARG",
+          "harmonic": 1.2159142363010638,
+          "abs_harmonic": 1.2159142363010638,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 33,
+          "source": "HINFP",
+          "target": "MBD2",
+          "harmonic": 1.2153106427153881,
+          "abs_harmonic": 1.2153106427153881,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 34,
+          "source": "SCD5",
+          "target": "EGR2",
+          "harmonic": 1.2089356424433586,
+          "abs_harmonic": 1.2089356424433586,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 35,
+          "source": "AR",
+          "target": "MED1",
+          "harmonic": 1.2078666025056353,
+          "abs_harmonic": 1.2078666025056353,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 36,
+          "source": "HOXB13",
+          "target": "TCF4",
+          "harmonic": 1.2016714206910455,
+          "abs_harmonic": 1.2016714206910455,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 37,
+          "source": "HIF1A",
+          "target": "ARNT",
+          "harmonic": 1.1987276576218906,
+          "abs_harmonic": 1.1987276576218906,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 38,
+          "source": "LYL1",
+          "target": "NFKB1",
+          "harmonic": 1.1962664854622687,
+          "abs_harmonic": 1.1962664854622687,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 39,
+          "source": "AR",
+          "target": "ELK4",
+          "harmonic": 1.1947300975127852,
+          "abs_harmonic": 1.1947300975127852,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 40,
+          "source": "ELF4",
+          "target": "TP53",
+          "harmonic": 1.1919705234669076,
+          "abs_harmonic": 1.1919705234669076,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 41,
+          "source": "WT1",
+          "target": "PAX2",
+          "harmonic": 1.1836700061135588,
+          "abs_harmonic": 1.1836700061135588,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 42,
+          "source": "SPI1",
+          "target": "GATA1",
+          "harmonic": 1.1805269694184888,
+          "abs_harmonic": 1.1805269694184888,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1,
+            "Unknown": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 43,
+          "source": "PGR",
+          "target": "RELA",
+          "harmonic": 1.1750814828601035,
+          "abs_harmonic": 1.1750814828601035,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 44,
+          "source": "NR0B2",
+          "target": "E2F1",
+          "harmonic": 1.1724722941170354,
+          "abs_harmonic": 1.1724722941170354,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 45,
+          "source": "CREB1",
+          "target": "ETV3",
+          "harmonic": 1.1715258442760679,
+          "abs_harmonic": 1.1715258442760679,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 46,
+          "source": "TCF7L2",
+          "target": "GATA3",
+          "harmonic": 1.1534517915339728,
+          "abs_harmonic": 1.1534517915339728,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 47,
+          "source": "WT1",
+          "target": "HOXA10",
+          "harmonic": 1.153226221457721,
+          "abs_harmonic": 1.153226221457721,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 48,
+          "source": "CRABP2",
+          "target": "RARA",
+          "harmonic": 1.1503673693722791,
+          "abs_harmonic": 1.1503673693722791,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 49,
+          "source": "IRF4",
+          "target": "BCL6",
+          "harmonic": 1.1478906823782813,
+          "abs_harmonic": 1.1478906823782813,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 50,
+          "source": "ATF4",
+          "target": "NUPR1",
+          "harmonic": 1.1398402607660905,
+          "abs_harmonic": 1.1398402607660905,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        }
+      ],
+      "recognizable_high_harmonic_edges": [
+        {
+          "rank": 9,
+          "source": "MCM5",
+          "target": "STAT1",
+          "harmonic": 1.3902685518928257,
+          "abs_harmonic": 1.3902685518928257,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 12,
+          "source": "MYC",
+          "target": "TLX1",
+          "harmonic": 1.3702681170448123,
+          "abs_harmonic": 1.3702681170448123,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 14,
+          "source": "ATF3",
+          "target": "TP53",
+          "harmonic": 1.3308458484681767,
+          "abs_harmonic": 1.3308458484681767,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 18,
+          "source": "E2F1",
+          "target": "ZNF350",
+          "harmonic": 1.3147154370704288,
+          "abs_harmonic": 1.3147154370704288,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 19,
+          "source": "AR",
+          "target": "RELA",
+          "harmonic": 1.3141791283084707,
+          "abs_harmonic": 1.3141791283084707,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 25,
+          "source": "TP73",
+          "target": "E2F1",
+          "harmonic": 1.276009983401442,
+          "abs_harmonic": 1.276009983401442,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 26,
+          "source": "AR",
+          "target": "NFKB1",
+          "harmonic": 1.2723153625774495,
+          "abs_harmonic": 1.2723153625774495,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 29,
+          "source": "STAT1",
+          "target": "CEBPE",
+          "harmonic": 1.2403130721266515,
+          "abs_harmonic": 1.2403130721266515,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 30,
+          "source": "AR",
+          "target": "JUN",
+          "harmonic": 1.2342883992132392,
+          "abs_harmonic": 1.2342883992132392,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 38,
+          "source": "LYL1",
+          "target": "NFKB1",
+          "harmonic": 1.1962664854622687,
+          "abs_harmonic": 1.1962664854622687,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 40,
+          "source": "ELF4",
+          "target": "TP53",
+          "harmonic": 1.1919705234669076,
+          "abs_harmonic": 1.1919705234669076,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 43,
+          "source": "PGR",
+          "target": "RELA",
+          "harmonic": 1.1750814828601035,
+          "abs_harmonic": 1.1750814828601035,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 44,
+          "source": "NR0B2",
+          "target": "E2F1",
+          "harmonic": 1.1724722941170354,
+          "abs_harmonic": 1.1724722941170354,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 59,
+          "source": "NFKBIA",
+          "target": "RELA",
+          "harmonic": 1.1125617941412123,
+          "abs_harmonic": 1.1125617941412123,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1,
+            "Repression": 1,
+            "Unknown": 1
+          },
+          "reference_count": 6
+        },
+        {
+          "rank": 62,
+          "source": "STAT1",
+          "target": "STAT3",
+          "harmonic": 1.1089362806007732,
+          "abs_harmonic": 1.1089362806007732,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 65,
+          "source": "CIITA",
+          "target": "STAT1",
+          "harmonic": 1.1045967336824902,
+          "abs_harmonic": 1.1045967336824902,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 66,
+          "source": "ING1",
+          "target": "TP53",
+          "harmonic": 1.1035550100055218,
+          "abs_harmonic": 1.1035550100055218,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 73,
+          "source": "DNMT1",
+          "target": "TP53",
+          "harmonic": 1.0874648563687594,
+          "abs_harmonic": 1.0874648563687594,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 76,
+          "source": "NFKBIA",
+          "target": "NFKB1",
+          "harmonic": 1.0706980284101908,
+          "abs_harmonic": 1.0706980284101908,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1,
+            "Repression": 1,
+            "Unknown": 1
+          },
+          "reference_count": 6
+        },
+        {
+          "rank": 80,
+          "source": "E2F1",
+          "target": "CTNNBIP1",
+          "harmonic": 1.0573871403141906,
+          "abs_harmonic": 1.0573871403141906,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        }
+      ]
+    },
+    "mouse": {
+      "dataset": "TRRUST mouse regulatory network",
+      "counts": {
+        "genes": 2455,
+        "edges": 6462,
+        "feedback_cycle_edges": 1475,
+        "triangles": 2413
+      },
+      "metrics": {
+        "feedback_edge_base_rate": 0.2282575054162798,
+        "roc_auc": 0.7792080426056901,
+        "average_precision": 0.6038120531777822,
+        "mean_abs_harmonic_feedback_edges": 0.42252692726481755,
+        "mean_abs_harmonic_other_edges": 0.12453181717236128,
+        "top_k": {
+          "10": {
+            "feedback_cycle_edges": 10,
+            "reciprocal_edges": 5,
+            "nonreciprocal_feedback_cycle_edges": 5,
+            "precision": 1.0,
+            "lift_over_base_rate": 4.381016949152542
+          },
+          "25": {
+            "feedback_cycle_edges": 25,
+            "reciprocal_edges": 12,
+            "nonreciprocal_feedback_cycle_edges": 13,
+            "precision": 1.0,
+            "lift_over_base_rate": 4.381016949152542
+          },
+          "50": {
+            "feedback_cycle_edges": 49,
+            "reciprocal_edges": 23,
+            "nonreciprocal_feedback_cycle_edges": 26,
+            "precision": 0.98,
+            "lift_over_base_rate": 4.293396610169491
+          },
+          "100": {
+            "feedback_cycle_edges": 97,
+            "reciprocal_edges": 42,
+            "nonreciprocal_feedback_cycle_edges": 55,
+            "precision": 0.97,
+            "lift_over_base_rate": 4.249586440677966
+          },
+          "200": {
+            "feedback_cycle_edges": 190,
+            "reciprocal_edges": 63,
+            "nonreciprocal_feedback_cycle_edges": 127,
+            "precision": 0.95,
+            "lift_over_base_rate": 4.161966101694915
+          },
+          "500": {
+            "feedback_cycle_edges": 414,
+            "reciprocal_edges": 103,
+            "nonreciprocal_feedback_cycle_edges": 311,
+            "precision": 0.828,
+            "lift_over_base_rate": 3.627482033898305
+          }
+        },
+        "score_baselines": {
+          "harmonic_abs": {
+            "roc_auc": 0.7792080426056901,
+            "average_precision": 0.6038120531777822,
+            "precision_at_100": 0.97,
+            "precision_at_500": 0.828
+          },
+          "degree_product": {
+            "roc_auc": 0.7824655290195186,
+            "average_precision": 0.5330260002175282,
+            "precision_at_100": 0.9,
+            "precision_at_500": 0.656
+          },
+          "degree_sum": {
+            "roc_auc": 0.6604212307932829,
+            "average_precision": 0.33113512325302963,
+            "precision_at_100": 0.61,
+            "precision_at_500": 0.314
+          },
+          "source_out_degree": {
+            "roc_auc": 0.5141377071912396,
+            "average_precision": 0.22430295385324783,
+            "precision_at_100": 0.13,
+            "precision_at_500": 0.168
+          },
+          "target_in_degree": {
+            "roc_auc": 0.6639702548660414,
+            "average_precision": 0.33679513274908135,
+            "precision_at_100": 0.24,
+            "precision_at_500": 0.4
+          },
+          "pagerank_sum": {
+            "roc_auc": 0.6591905734570901,
+            "average_precision": 0.3317103601122011,
+            "precision_at_100": 0.5,
+            "precision_at_500": 0.336
+          },
+          "reciprocal_edge": {
+            "roc_auc": 0.5555932203389831,
+            "average_precision": 0.31406480650897817,
+            "precision_at_100": 1.0,
+            "precision_at_500": 0.484
+          }
+        }
+      },
+      "top_harmonic_edges": [
+        {
+          "rank": 1,
+          "source": "Il10",
+          "target": "Foxc1",
+          "harmonic": 2.14033959038601,
+          "abs_harmonic": 2.14033959038601,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 2,
+          "source": "Mmp9",
+          "target": "Jun",
+          "harmonic": 1.8120233320487165,
+          "abs_harmonic": 1.8120233320487165,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 3,
+          "source": "Gsc",
+          "target": "Foxh1",
+          "harmonic": 1.77010895943532,
+          "abs_harmonic": 1.77010895943532,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 4,
+          "source": "Mdm2",
+          "target": "Trp53",
+          "harmonic": 1.7617043438497904,
+          "abs_harmonic": 1.7617043438497904,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 5,
+          "source": "Nfkbia",
+          "target": "Nfkb1",
+          "harmonic": 1.7048592404502787,
+          "abs_harmonic": 1.7048592404502787,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 3
+        },
+        {
+          "rank": 6,
+          "source": "Foxp3",
+          "target": "Nfkb1",
+          "harmonic": 1.6999563570517833,
+          "abs_harmonic": 1.6999563570517833,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 7,
+          "source": "Pdx1",
+          "target": "Nr5a2",
+          "harmonic": 1.6527426185936276,
+          "abs_harmonic": 1.6527426185936276,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 8,
+          "source": "Myb",
+          "target": "Rara",
+          "harmonic": 1.5993308403373525,
+          "abs_harmonic": 1.5993308403373525,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 9,
+          "source": "Cdx4",
+          "target": "Hoxa9",
+          "harmonic": 1.5696949740124468,
+          "abs_harmonic": 1.5696949740124468,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 10,
+          "source": "Sox10",
+          "target": "Sufu",
+          "harmonic": 1.5166043566897403,
+          "abs_harmonic": 1.5166043566897403,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 11,
+          "source": "Mmp9",
+          "target": "Fos",
+          "harmonic": 1.5092783292171847,
+          "abs_harmonic": 1.5092783292171847,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 12,
+          "source": "Utf1",
+          "target": "Tcf3",
+          "harmonic": 1.5037946558311608,
+          "abs_harmonic": 1.5037946558311608,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 13,
+          "source": "Nanog",
+          "target": "Tcf3",
+          "harmonic": 1.4940680061651372,
+          "abs_harmonic": 1.4940680061651372,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 14,
+          "source": "Egr2",
+          "target": "Hoxa2",
+          "harmonic": 1.4652111106617154,
+          "abs_harmonic": 1.4652111106617154,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 15,
+          "source": "Btg2",
+          "target": "Creb1",
+          "harmonic": 1.461378478955157,
+          "abs_harmonic": 1.461378478955157,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 16,
+          "source": "Nr0b1",
+          "target": "Esrrg",
+          "harmonic": 1.4544648211317106,
+          "abs_harmonic": 1.4544648211317106,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 17,
+          "source": "Tbx1",
+          "target": "Pitx2",
+          "harmonic": 1.4527529618916653,
+          "abs_harmonic": 1.4527529618916653,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1,
+            "Repression": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 18,
+          "source": "Erg",
+          "target": "Snai1",
+          "harmonic": 1.449744170863563,
+          "abs_harmonic": 1.449744170863563,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 19,
+          "source": "Nanog",
+          "target": "Bmi1",
+          "harmonic": 1.4461127380107504,
+          "abs_harmonic": 1.4461127380107504,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 20,
+          "source": "Nr0b1",
+          "target": "Hnf4a",
+          "harmonic": 1.4292433683875054,
+          "abs_harmonic": 1.4292433683875054,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 21,
+          "source": "Gfi1",
+          "target": "Gfi1b",
+          "harmonic": 1.4285731564020456,
+          "abs_harmonic": 1.4285731564020456,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 22,
+          "source": "Pitx3",
+          "target": "En1",
+          "harmonic": 1.4285102106244745,
+          "abs_harmonic": 1.4285102106244745,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 23,
+          "source": "Ebf1",
+          "target": "Pparg",
+          "harmonic": 1.4203055625929752,
+          "abs_harmonic": 1.4203055625929752,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 24,
+          "source": "Mapk14",
+          "target": "Egr1",
+          "harmonic": 1.39435089901122,
+          "abs_harmonic": 1.39435089901122,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 25,
+          "source": "Foxp3",
+          "target": "Brca1",
+          "harmonic": 1.392851744179565,
+          "abs_harmonic": 1.392851744179565,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 26,
+          "source": "Cops5",
+          "target": "Hand2",
+          "harmonic": 1.384902879963164,
+          "abs_harmonic": 1.384902879963164,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 27,
+          "source": "Mycn",
+          "target": "Hdac2",
+          "harmonic": 1.3839095355705149,
+          "abs_harmonic": 1.3839095355705149,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 28,
+          "source": "Smad7",
+          "target": "Smad3",
+          "harmonic": 1.3833775432874846,
+          "abs_harmonic": 1.3833775432874846,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 29,
+          "source": "Pou5f1",
+          "target": "Pax2",
+          "harmonic": 1.3679809237941432,
+          "abs_harmonic": 1.3679809237941432,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 30,
+          "source": "Cd7",
+          "target": "Nfkb1",
+          "harmonic": 1.3600463842468973,
+          "abs_harmonic": 1.3600463842468973,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 31,
+          "source": "Atoh1",
+          "target": "Nr2f6",
+          "harmonic": 1.3590057549787227,
+          "abs_harmonic": 1.3590057549787227,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 32,
+          "source": "Brca1",
+          "target": "Sirt1",
+          "harmonic": 1.3438042968448263,
+          "abs_harmonic": 1.3438042968448263,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 33,
+          "source": "Tbx21",
+          "target": "Gata3",
+          "harmonic": 1.3424337926311911,
+          "abs_harmonic": 1.3424337926311911,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 34,
+          "source": "Otx2",
+          "target": "Nkx2-2",
+          "harmonic": 1.3386120124206238,
+          "abs_harmonic": 1.3386120124206238,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 35,
+          "source": "Cebpa",
+          "target": "Nfkb1",
+          "harmonic": 1.3318887428038408,
+          "abs_harmonic": 1.3318887428038408,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 36,
+          "source": "Spi1",
+          "target": "Irf8",
+          "harmonic": 1.3197362272495226,
+          "abs_harmonic": 1.3197362272495226,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 37,
+          "source": "Pou5f1",
+          "target": "Sox2",
+          "harmonic": 1.3195452943828228,
+          "abs_harmonic": 1.3195452943828228,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1,
+            "Repression": 1,
+            "Unknown": 1
+          },
+          "reference_count": 4
+        },
+        {
+          "rank": 38,
+          "source": "Smad6",
+          "target": "Map3k7",
+          "harmonic": 1.3133001457254823,
+          "abs_harmonic": 1.3133001457254823,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 39,
+          "source": "Map3k7",
+          "target": "Nfkb1",
+          "harmonic": 1.3132969469446003,
+          "abs_harmonic": 1.3132969469446003,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 40,
+          "source": "Shox2",
+          "target": "Nkx2-5",
+          "harmonic": 1.3069260510196723,
+          "abs_harmonic": 1.3069260510196723,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1,
+            "Unknown": 1
+          },
+          "reference_count": 3
+        },
+        {
+          "rank": 41,
+          "source": "Fos",
+          "target": "Nfe2l2",
+          "harmonic": 1.3045620210600357,
+          "abs_harmonic": 1.3045620210600357,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 42,
+          "source": "Ebf1",
+          "target": "Zfp423",
+          "harmonic": 1.3002781609102205,
+          "abs_harmonic": 1.3002781609102205,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 43,
+          "source": "Pura",
+          "target": "E2f1",
+          "harmonic": 1.2948759037523936,
+          "abs_harmonic": 1.2948759037523936,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 44,
+          "source": "Nkx2-1",
+          "target": "Pax8",
+          "harmonic": 1.2902101945315958,
+          "abs_harmonic": 1.2902101945315958,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 45,
+          "source": "En2",
+          "target": "Pax5",
+          "harmonic": 1.289980338752105,
+          "abs_harmonic": 1.289980338752105,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 46,
+          "source": "Foxj1",
+          "target": "Foxa1",
+          "harmonic": 1.2873208783518053,
+          "abs_harmonic": 1.2873208783518053,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 47,
+          "source": "Tbx21",
+          "target": "Hand2",
+          "harmonic": 1.2850718147647084,
+          "abs_harmonic": 1.2850718147647084,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 48,
+          "source": "Nkx6-1",
+          "target": "Mafa",
+          "harmonic": 1.282875270950834,
+          "abs_harmonic": 1.282875270950834,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 49,
+          "source": "Atoh1",
+          "target": "Hes6",
+          "harmonic": 1.2825723072673711,
+          "abs_harmonic": 1.2825723072673711,
+          "is_feedback_cycle_edge": false,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 50,
+          "source": "Hoxa9",
+          "target": "Sox4",
+          "harmonic": 1.277789067876396,
+          "abs_harmonic": 1.277789067876396,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        }
+      ],
+      "recognizable_high_harmonic_edges": [
+        {
+          "rank": 2,
+          "source": "Mmp9",
+          "target": "Jun",
+          "harmonic": 1.8120233320487165,
+          "abs_harmonic": 1.8120233320487165,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 4,
+          "source": "Mdm2",
+          "target": "Trp53",
+          "harmonic": 1.7617043438497904,
+          "abs_harmonic": 1.7617043438497904,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 5,
+          "source": "Nfkbia",
+          "target": "Nfkb1",
+          "harmonic": 1.7048592404502787,
+          "abs_harmonic": 1.7048592404502787,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 3
+        },
+        {
+          "rank": 6,
+          "source": "Foxp3",
+          "target": "Nfkb1",
+          "harmonic": 1.6999563570517833,
+          "abs_harmonic": 1.6999563570517833,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 11,
+          "source": "Mmp9",
+          "target": "Fos",
+          "harmonic": 1.5092783292171847,
+          "abs_harmonic": 1.5092783292171847,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 12,
+          "source": "Utf1",
+          "target": "Tcf3",
+          "harmonic": 1.5037946558311608,
+          "abs_harmonic": 1.5037946558311608,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 13,
+          "source": "Nanog",
+          "target": "Tcf3",
+          "harmonic": 1.4940680061651372,
+          "abs_harmonic": 1.4940680061651372,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 19,
+          "source": "Nanog",
+          "target": "Bmi1",
+          "harmonic": 1.4461127380107504,
+          "abs_harmonic": 1.4461127380107504,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 30,
+          "source": "Cd7",
+          "target": "Nfkb1",
+          "harmonic": 1.3600463842468973,
+          "abs_harmonic": 1.3600463842468973,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 35,
+          "source": "Cebpa",
+          "target": "Nfkb1",
+          "harmonic": 1.3318887428038408,
+          "abs_harmonic": 1.3318887428038408,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 39,
+          "source": "Map3k7",
+          "target": "Nfkb1",
+          "harmonic": 1.3132969469446003,
+          "abs_harmonic": 1.3132969469446003,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 41,
+          "source": "Fos",
+          "target": "Nfe2l2",
+          "harmonic": 1.3045620210600357,
+          "abs_harmonic": 1.3045620210600357,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 54,
+          "source": "Trp53",
+          "target": "Zfp385a",
+          "harmonic": 1.2613372073860456,
+          "abs_harmonic": 1.2613372073860456,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 57,
+          "source": "Nfkbiz",
+          "target": "Nfkb1",
+          "harmonic": 1.2530027524651919,
+          "abs_harmonic": 1.2530027524651919,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 58,
+          "source": "Trp53",
+          "target": "Elf4",
+          "harmonic": 1.2500795480044888,
+          "abs_harmonic": 1.2500795480044888,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 61,
+          "source": "Trp73",
+          "target": "Trp53",
+          "harmonic": 1.2408981193215152,
+          "abs_harmonic": 1.2408981193215152,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 69,
+          "source": "Fos",
+          "target": "Trp53",
+          "harmonic": 1.2066246091691304,
+          "abs_harmonic": 1.2066246091691304,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 2
+        },
+        {
+          "rank": 72,
+          "source": "Myc",
+          "target": "Trp53",
+          "harmonic": 1.182011384581164,
+          "abs_harmonic": 1.182011384581164,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Activation": 1,
+            "Unknown": 1
+          },
+          "reference_count": 3
+        },
+        {
+          "rank": 82,
+          "source": "Tcf3",
+          "target": "Notch1",
+          "harmonic": 1.1578781728219198,
+          "abs_harmonic": 1.1578781728219198,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Unknown": 1
+          },
+          "reference_count": 1
+        },
+        {
+          "rank": 91,
+          "source": "Mxi1",
+          "target": "Myc",
+          "harmonic": 1.1348307268055633,
+          "abs_harmonic": 1.1348307268055633,
+          "is_feedback_cycle_edge": true,
+          "regulation_types": {
+            "Repression": 1
+          },
+          "reference_count": 2
+        }
+      ]
+    }
+  },
+  "cfb_backtest": {
+    "dataset": "ESPN college football scores, five-season backtest",
+    "means": {
+      "hodge": 0.7065654865149815,
+      "hodge+curl": 0.7073719381278847,
+      "elo": 0.6597115721130058,
+      "home": 0.5531727780685095
+    },
+    "edge_vs_elo": 0.04685391440197573,
+    "mean_vpct": {
+      "g": 64.51541983071084,
+      "c": 15.442209578020933,
+      "h": 20.042370591268167
+    },
+    "seasons": [
+      {
+        "label": "CFB 2020",
+        "games": 409,
+        "hodge_plus_curl_accuracy": 0.7185185185185186,
+        "elo_accuracy": 0.6518518518518519,
+        "home_accuracy": 0.5481481481481482,
+        "top5": [
+          "Cincinnati Bearcats",
+          "Clemson Tigers",
+          "BYU Cougars",
+          "Alabama Crimson Tide",
+          "Notre Dame Fighting Irish"
+        ]
+      },
+      {
+        "label": "CFB 2021",
+        "games": 732,
+        "hodge_plus_curl_accuracy": 0.7520661157024794,
+        "elo_accuracy": 0.6818181818181818,
+        "home_accuracy": 0.5702479338842975,
+        "top5": [
+          "Georgia Bulldogs",
+          "Alabama Crimson Tide",
+          "Ohio State Buckeyes",
+          "Cincinnati Bearcats",
+          "Michigan Wolverines"
+        ]
+      },
+      {
+        "label": "CFB 2022",
+        "games": 734,
+        "hodge_plus_curl_accuracy": 0.6872427983539094,
+        "elo_accuracy": 0.6584362139917695,
+        "home_accuracy": 0.51440329218107,
+        "top5": [
+          "Ohio State Buckeyes",
+          "Georgia Bulldogs",
+          "Alabama Crimson Tide",
+          "Tennessee Volunteers",
+          "Kansas State Wildcats"
+        ]
+      },
+      {
+        "label": "CFB 2023",
+        "games": 750,
+        "hodge_plus_curl_accuracy": 0.7016129032258065,
+        "elo_accuracy": 0.6411290322580645,
+        "home_accuracy": 0.5524193548387096,
+        "top5": [
+          "Oregon Ducks",
+          "Ohio State Buckeyes",
+          "Michigan Wolverines",
+          "Kansas State Wildcats",
+          "Notre Dame Fighting Irish"
+        ]
+      },
+      {
+        "label": "CFB 2024",
+        "games": 751,
+        "hodge_plus_curl_accuracy": 0.6774193548387096,
+        "elo_accuracy": 0.6653225806451613,
+        "home_accuracy": 0.5806451612903226,
+        "top5": [
+          "Ohio State Buckeyes",
+          "Alabama Crimson Tide",
+          "Ole Miss Rebels",
+          "Indiana Hoosiers",
+          "Oregon Ducks"
+        ]
+      }
+    ]
+  }
+}

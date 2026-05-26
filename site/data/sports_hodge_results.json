@@ -1,0 +1,47 @@
+{
+  "EPL": {
+    "sport": "EPL",
+    "n_teams": 20,
+    "n_games_train": 254,
+    "n_games_test": 109,
+    "hfa": 0.023622047244094488,
+    "variance_pct": {
+      "gradient": 38.09332677184686,
+      "curl": 61.45937505219664,
+      "harmonic": 0.4472981759565032
+    },
+    "results": {
+      "hodge": {
+        "accuracy": 0.6551724137931034,
+        "correct": 57,
+        "total": 87,
+        "mae": 1.3644442180820733,
+        "rmse": 1.6652122923025934,
+        "correlation": 0.44401567969957095
+      },
+      "hodge+curl": {
+        "accuracy": 0.6436781609195402,
+        "correct": 56,
+        "total": 87,
+        "mae": 1.4240370239745002,
+        "rmse": 1.7538650703586751,
+        "correlation": 0.41507777948932695
+      },
+      "elo": {
+        "accuracy": 0.7011494252873564,
+        "correct": 61,
+        "total": 87
+      },
+      "elo+hfa": {
+        "accuracy": 0.7011494252873564,
+        "correct": 61,
+        "total": 87
+      },
+      "home_always": {
+        "accuracy": 0.5862068965517241,
+        "correct": 51,
+        "total": 87
+      }
+    }
+  }
+}

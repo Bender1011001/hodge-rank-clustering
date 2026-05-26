@@ -1,0 +1,157 @@
+{
+  "NHL": {
+    "sport": "NHL",
+    "n_seasons": 5,
+    "means": {
+      "hodge": 0.6280152672150031,
+      "hodge+curl": 0.5987609452814618,
+      "elo": 0.5974035421237314,
+      "home": 0.561669207599652
+    },
+    "stds": {
+      "hodge": 0.029607470737637465,
+      "hodge+curl": 0.008085515621544016,
+      "elo": 0.02044022667824887,
+      "home": 0.027796847587536123
+    },
+    "mean_vpct": {
+      "g": 28.322234893556164,
+      "c": 70.90986710025739,
+      "h": 0.7678980061864614
+    },
+    "mean_hfa": 0.20417673380537638,
+    "edge_vs_elo": 0.030611725091271746,
+    "seasons": [
+      {
+        "label": "NHL 2021",
+        "teams": 31,
+        "games": 886,
+        "train": 664,
+        "test": 222,
+        "accs": {
+          "hodge": 0.5855855855855856,
+          "hodge+curl": 0.5945945945945946,
+          "elo": 0.5720720720720721,
+          "home": 0.5675675675675675
+        },
+        "vpct": {
+          "g": 53.744498553399346,
+          "c": 45.72651523634452,
+          "h": 0.5289862102561284
+        },
+        "hfa": 0.21084337349397592,
+        "top5": [
+          "Colorado Avalanche",
+          "Vegas Golden Knights",
+          "Tampa Bay Lightning",
+          "Carolina Hurricanes",
+          "Pittsburgh Penguins"
+        ]
+      },
+      {
+        "label": "NHL 2022",
+        "teams": 32,
+        "games": 1330,
+        "train": 997,
+        "test": 333,
+        "accs": {
+          "hodge": 0.6636636636636637,
+          "hodge+curl": 0.6096096096096096,
+          "elo": 0.6186186186186187,
+          "home": 0.5375375375375375
+        },
+        "vpct": {
+          "g": 25.611554725667375,
+          "c": 73.91079954101552,
+          "h": 0.47764573331710747
+        },
+        "hfa": 0.2156469408224674,
+        "top5": [
+          "Florida Panthers",
+          "Colorado Avalanche",
+          "Calgary Flames",
+          "Carolina Hurricanes",
+          "St. Louis Blues"
+        ]
+      },
+      {
+        "label": "NHL 2023",
+        "teams": 32,
+        "games": 1346,
+        "train": 1009,
+        "test": 337,
+        "accs": {
+          "hodge": 0.655786350148368,
+          "hodge+curl": 0.6053412462908012,
+          "elo": 0.6053412462908012,
+          "home": 0.5252225519287834
+        },
+        "vpct": {
+          "g": 25.319109332926544,
+          "c": 73.7142625897872,
+          "h": 0.9666280772862621
+        },
+        "hfa": 0.16551040634291378,
+        "top5": [
+          "Boston Bruins",
+          "New Jersey Devils",
+          "Carolina Hurricanes",
+          "Toronto Maple Leafs",
+          "Tampa Bay Lightning"
+        ]
+      },
+      {
+        "label": "NHL 2024",
+        "teams": 32,
+        "games": 1314,
+        "train": 985,
+        "test": 329,
+        "accs": {
+          "hodge": 0.6048632218844985,
+          "hodge+curl": 0.5866261398176292,
+          "elo": 0.6170212765957447,
+          "home": 0.574468085106383
+        },
+        "vpct": {
+          "g": 20.7975457461447,
+          "c": 78.22413446080574,
+          "h": 0.9783197930496097
+        },
+        "hfa": 0.16852791878172588,
+        "top5": [
+          "Florida Panthers",
+          "Edmonton Oilers",
+          "Winnipeg Jets",
+          "Vancouver Canucks",
+          "Colorado Avalanche"
+        ]
+      },
+      {
+        "label": "NHL 2025",
+        "teams": 32,
+        "games": 1352,
+        "train": 1014,
+        "test": 338,
+        "accs": {
+          "hodge": 0.6301775147928994,
+          "hodge+curl": 0.5976331360946746,
+          "elo": 0.5739644970414202,
+          "home": 0.6035502958579881
+        },
+        "vpct": {
+          "g": 16.138466109642856,
+          "c": 82.9736236733339,
+          "h": 0.8879102170231992
+        },
+        "hfa": 0.2603550295857988,
+        "top5": [
+          "Winnipeg Jets",
+          "Washington Capitals",
+          "Tampa Bay Lightning",
+          "Dallas Stars",
+          "Florida Panthers"
+        ]
+      }
+    ]
+  }
+}

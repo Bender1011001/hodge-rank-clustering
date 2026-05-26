@@ -1,0 +1,255 @@
+{
+  "splits": {
+    "Weeks 1-9 / 10-18": {
+      "hodge_potential": {
+        "accuracy": 0.7089552238805971,
+        "correct": 95,
+        "total": 134
+      },
+      "elo": {
+        "accuracy": 0.7238805970149254,
+        "correct": 97,
+        "total": 134
+      },
+      "win_pct": {
+        "accuracy": 0.7089552238805971,
+        "correct": 95,
+        "total": 134
+      },
+      "point_diff": {
+        "accuracy": 0.7014925373134329,
+        "correct": 94,
+        "total": 134
+      },
+      "home_always": {
+        "accuracy": 0.5298507462686567,
+        "correct": 71,
+        "total": 134
+      }
+    },
+    "Weeks 1-12 / 13-18": {
+      "hodge_potential": {
+        "accuracy": 0.7526881720430108,
+        "correct": 70,
+        "total": 93
+      },
+      "elo": {
+        "accuracy": 0.7634408602150538,
+        "correct": 71,
+        "total": 93
+      },
+      "win_pct": {
+        "accuracy": 0.7741935483870968,
+        "correct": 72,
+        "total": 93
+      },
+      "point_diff": {
+        "accuracy": 0.6881720430107527,
+        "correct": 64,
+        "total": 93
+      },
+      "home_always": {
+        "accuracy": 0.5698924731182796,
+        "correct": 53,
+        "total": 93
+      }
+    },
+    "Weeks 1-14 / 15-18": {
+      "hodge_potential": {
+        "accuracy": 0.703125,
+        "correct": 45,
+        "total": 64
+      },
+      "elo": {
+        "accuracy": 0.703125,
+        "correct": 45,
+        "total": 64
+      },
+      "win_pct": {
+        "accuracy": 0.6875,
+        "correct": 44,
+        "total": 64
+      },
+      "point_diff": {
+        "accuracy": 0.671875,
+        "correct": 43,
+        "total": 64
+      },
+      "home_always": {
+        "accuracy": 0.5625,
+        "correct": 36,
+        "total": 64
+      }
+    }
+  },
+  "full_season": {
+    "norms": {
+      "total": 215.32765730393297,
+      "gradient": 141.63198222503271,
+      "curl": 161.62888807015528,
+      "harmonic": 13.508669520468583
+    },
+    "rankings": [
+      {
+        "rank": 1,
+        "team": "Detroit Lions",
+        "potential": -14.145223554907478
+      },
+      {
+        "rank": 2,
+        "team": "Baltimore Ravens",
+        "potential": -10.918440857199476
+      },
+      {
+        "rank": 3,
+        "team": "Green Bay Packers",
+        "potential": -9.222633800501775
+      },
+      {
+        "rank": 4,
+        "team": "Buffalo Bills",
+        "potential": -9.10065636502276
+      },
+      {
+        "rank": 5,
+        "team": "Tampa Bay Buccaneers",
+        "potential": -7.265242714933806
+      },
+      {
+        "rank": 6,
+        "team": "Philadelphia Eagles",
+        "potential": -6.837007157296175
+      },
+      {
+        "rank": 7,
+        "team": "Minnesota Vikings",
+        "potential": -6.138562278192061
+      },
+      {
+        "rank": 8,
+        "team": "Denver Broncos",
+        "potential": -5.62718515111209
+      },
+      {
+        "rank": 9,
+        "team": "Kansas City Chiefs",
+        "potential": -5.241832929514789
+      },
+      {
+        "rank": 10,
+        "team": "Washington Commanders",
+        "potential": -5.055763015938845
+      },
+      {
+        "rank": 11,
+        "team": "Los Angeles Chargers",
+        "potential": -4.798650046125212
+      },
+      {
+        "rank": 12,
+        "team": "Pittsburgh Steelers",
+        "potential": -2.2036454410014965
+      },
+      {
+        "rank": 13,
+        "team": "Arizona Cardinals",
+        "potential": -1.8135326189817964
+      },
+      {
+        "rank": 14,
+        "team": "Seattle Seahawks",
+        "potential": -1.138798601358999
+      },
+      {
+        "rank": 15,
+        "team": "Cincinnati Bengals",
+        "potential": -0.7837506622238439
+      },
+      {
+        "rank": 16,
+        "team": "Los Angeles Rams",
+        "potential": -0.40580038238637006
+      },
+      {
+        "rank": 17,
+        "team": "Houston Texans",
+        "potential": 0.03771586602271948
+      },
+      {
+        "rank": 18,
+        "team": "San Francisco 49ers",
+        "potential": 0.4906129565712602
+      },
+      {
+        "rank": 19,
+        "team": "Atlanta Falcons",
+        "potential": 2.6075602940650726
+      },
+      {
+        "rank": 20,
+        "team": "Chicago Bears",
+        "potential": 3.0511932992357633
+      },
+      {
+        "rank": 21,
+        "team": "Miami Dolphins",
+        "potential": 3.3655568427012796
+      },
+      {
+        "rank": 22,
+        "team": "Indianapolis Colts",
+        "potential": 3.7311038019057357
+      },
+      {
+        "rank": 23,
+        "team": "New Orleans Saints",
+        "potential": 4.462465149708117
+      },
+      {
+        "rank": 24,
+        "team": "New York Jets",
+        "potential": 5.055083933064985
+      },
+      {
+        "rank": 25,
+        "team": "Dallas Cowboys",
+        "potential": 6.018067598984291
+      },
+      {
+        "rank": 26,
+        "team": "Las Vegas Raiders",
+        "potential": 6.939333877759307
+      },
+      {
+        "rank": 27,
+        "team": "New York Giants",
+        "potential": 8.089443442628836
+      },
+      {
+        "rank": 28,
+        "team": "Tennessee Titans",
+        "potential": 8.537985363585525
+      },
+      {
+        "rank": 29,
+        "team": "Jacksonville Jaguars",
+        "potential": 8.685418106367678
+      },
+      {
+        "rank": 30,
+        "team": "New England Patriots",
+        "potential": 8.850962963811142
+      },
+      {
+        "rank": 31,
+        "team": "Carolina Panthers",
+        "potential": 10.30322138330392
+      },
+      {
+        "rank": 32,
+        "team": "Cleveland Browns",
+        "potential": 10.471000696981259
+      }
+    ]
+  }
+}

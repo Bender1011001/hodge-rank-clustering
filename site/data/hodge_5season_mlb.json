@@ -1,0 +1,157 @@
+{
+  "MLB": {
+    "sport": "MLB",
+    "n_seasons": 5,
+    "means": {
+      "hodge": 0.5705679217668724,
+      "hodge+curl": 0.5655087443148499,
+      "elo": 0.5701180148825202,
+      "home": 0.5306239773104087
+    },
+    "stds": {
+      "hodge": 0.007669957857205955,
+      "hodge+curl": 0.016182045107571486,
+      "elo": 0.024297090602360145,
+      "home": 0.031109442421419293
+    },
+    "mean_vpct": {
+      "g": 34.18376036919451,
+      "c": 63.68435888478389,
+      "h": 2.131880746020973
+    },
+    "mean_hfa": 0.07752356531843009,
+    "edge_vs_elo": 0.0004499068843522025,
+    "seasons": [
+      {
+        "label": "MLB 2020",
+        "teams": 30,
+        "games": 937,
+        "train": 702,
+        "test": 235,
+        "accs": {
+          "hodge": 0.5659574468085107,
+          "hodge+curl": 0.5617021276595745,
+          "elo": 0.5361702127659574,
+          "home": 0.5872340425531914
+        },
+        "vpct": {
+          "g": 44.50765951353519,
+          "c": 51.9628140436008,
+          "h": 3.529526442863991
+        },
+        "hfa": 0.037037037037037035,
+        "top5": [
+          "Los Angeles Dodgers",
+          "San Diego Padres",
+          "San Francisco Giants",
+          "Oakland Athletics",
+          "Houston Astros"
+        ]
+      },
+      {
+        "label": "MLB 2021",
+        "teams": 30,
+        "games": 2473,
+        "train": 1854,
+        "test": 619,
+        "accs": {
+          "hodge": 0.5718901453957996,
+          "hodge+curl": 0.5638126009693053,
+          "elo": 0.5961227786752827,
+          "home": 0.5072697899838449
+        },
+        "vpct": {
+          "g": 35.78584728605473,
+          "c": 62.29405950644977,
+          "h": 1.9200932074947163
+        },
+        "hfa": 0.2017259978425027,
+        "top5": [
+          "Los Angeles Dodgers",
+          "Houston Astros",
+          "Tampa Bay Rays",
+          "San Francisco Giants",
+          "Toronto Blue Jays"
+        ]
+      },
+      {
+        "label": "MLB 2022",
+        "teams": 30,
+        "games": 2455,
+        "train": 1841,
+        "test": 614,
+        "accs": {
+          "hodge": 0.5846905537459284,
+          "hodge+curl": 0.5798045602605864,
+          "elo": 0.5912052117263844,
+          "home": 0.5407166123778502
+        },
+        "vpct": {
+          "g": 38.5711507076718,
+          "c": 58.65208943134868,
+          "h": 2.7767598609771884
+        },
+        "hfa": 0.08962520369364475,
+        "top5": [
+          "Los Angeles Dodgers",
+          "New York Yankees",
+          "New York Mets",
+          "Houston Astros",
+          "Atlanta Braves"
+        ]
+      },
+      {
+        "label": "MLB 2023",
+        "teams": 30,
+        "games": 2449,
+        "train": 1836,
+        "test": 613,
+        "accs": {
+          "hodge": 0.567699836867863,
+          "hodge+curl": 0.5840130505709625,
+          "elo": 0.5807504078303426,
+          "home": 0.5040783034257749
+        },
+        "vpct": {
+          "g": 29.100330981715917,
+          "c": 69.65735686907192,
+          "h": 1.2423121492121751
+        },
+        "hfa": 0.02287581699346405,
+        "top5": [
+          "Atlanta Braves",
+          "Texas Rangers",
+          "Tampa Bay Rays",
+          "Los Angeles Dodgers",
+          "Houston Astros"
+        ]
+      },
+      {
+        "label": "MLB 2024",
+        "teams": 30,
+        "games": 2458,
+        "train": 1843,
+        "test": 615,
+        "accs": {
+          "hodge": 0.5626016260162602,
+          "hodge+curl": 0.5382113821138211,
+          "elo": 0.5463414634146342,
+          "home": 0.5138211382113821
+        },
+        "vpct": {
+          "g": 22.95381335699492,
+          "c": 75.85547457344826,
+          "h": 1.190712069556796
+        },
+        "hfa": 0.0363537710255019,
+        "top5": [
+          "New York Yankees",
+          "Milwaukee Brewers",
+          "Philadelphia Phillies",
+          "Baltimore Orioles",
+          "Los Angeles Dodgers"
+        ]
+      }
+    ]
+  }
+}

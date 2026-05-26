@@ -1,0 +1,238 @@
+{
+  "human": {
+    "dataset": "TRRUST human regulatory network",
+    "counts": {
+      "genes": 2861,
+      "interactions": 8403,
+      "triangles": 5118
+    },
+    "hodge": {
+      "gradientNorm": 54.25699740224174,
+      "curlNorm": 33.71443197869068,
+      "harmonicNorm": 33.24370196627578,
+      "totalNorm": 72.01133205575664
+    },
+    "top_regulators": [
+      {
+        "rank": 1,
+        "gene": "SYTL4",
+        "potential": 0.0
+      },
+      {
+        "rank": 2,
+        "gene": "HAP1",
+        "potential": 0.06385380901054309
+      },
+      {
+        "rank": 3,
+        "gene": "PDE5A",
+        "potential": 0.14687374299139674
+      },
+      {
+        "rank": 4,
+        "gene": "UGT2B4",
+        "potential": 0.1594086986325628
+      },
+      {
+        "rank": 5,
+        "gene": "ABCC4",
+        "potential": 0.1594086986325628
+      },
+      {
+        "rank": 6,
+        "gene": "PHF8",
+        "potential": 0.16766346177628932
+      },
+      {
+        "rank": 7,
+        "gene": "NEDD4",
+        "potential": 0.1725233389155509
+      },
+      {
+        "rank": 8,
+        "gene": "SOST",
+        "potential": 0.179762061207816
+      },
+      {
+        "rank": 9,
+        "gene": "ASCL2",
+        "potential": 0.1866755391561899
+      },
+      {
+        "rank": 10,
+        "gene": "ERP29",
+        "potential": 0.19076521356730353
+      }
+    ],
+    "top_targets": [
+      {
+        "rank": 1,
+        "gene": "VMP1",
+        "potential": 1.0
+      },
+      {
+        "rank": 2,
+        "gene": "SMO",
+        "potential": 1.0
+      },
+      {
+        "rank": 3,
+        "gene": "PCYT1A",
+        "potential": 0.9695820979621824
+      },
+      {
+        "rank": 4,
+        "gene": "BUB1B",
+        "potential": 0.9695513685917497
+      },
+      {
+        "rank": 5,
+        "gene": "UPF3B",
+        "potential": 0.8984657631009656
+      },
+      {
+        "rank": 6,
+        "gene": "OCLN",
+        "potential": 0.8691671219419594
+      },
+      {
+        "rank": 7,
+        "gene": "TALDO1",
+        "potential": 0.8663572365269523
+      },
+      {
+        "rank": 8,
+        "gene": "ESCO2",
+        "potential": 0.8663229731070099
+      },
+      {
+        "rank": 9,
+        "gene": "TNFSF4",
+        "potential": 0.8463059338675201
+      },
+      {
+        "rank": 10,
+        "gene": "SLC7A1",
+        "potential": 0.8431272035523071
+      }
+    ]
+  },
+  "mouse": {
+    "dataset": "TRRUST mouse regulatory network",
+    "counts": {
+      "genes": 2455,
+      "interactions": 6462,
+      "triangles": 2413
+    },
+    "hodge": {
+      "gradientNorm": 50.74426405283451,
+      "curlNorm": 26.587418808443747,
+      "harmonicNorm": 32.59430253881093,
+      "totalNorm": 65.91100059929299
+    },
+    "top_regulators": [
+      {
+        "rank": 1,
+        "gene": "Axin1",
+        "potential": 0.0
+      },
+      {
+        "rank": 2,
+        "gene": "Lrp1",
+        "potential": 0.13154305519856793
+      },
+      {
+        "rank": 3,
+        "gene": "Npsr1",
+        "potential": 0.1462582165283394
+      },
+      {
+        "rank": 4,
+        "gene": "Mast1",
+        "potential": 0.15072272356940616
+      },
+      {
+        "rank": 5,
+        "gene": "Pknox1",
+        "potential": 0.1546183373903843
+      },
+      {
+        "rank": 6,
+        "gene": "Pbx4",
+        "potential": 0.15463977074712143
+      },
+      {
+        "rank": 7,
+        "gene": "Foxe1",
+        "potential": 0.17619645317181074
+      },
+      {
+        "rank": 8,
+        "gene": "Lmo3",
+        "potential": 0.1766117770899586
+      },
+      {
+        "rank": 9,
+        "gene": "Sall1",
+        "potential": 0.17847017455840838
+      },
+      {
+        "rank": 10,
+        "gene": "Crtc1",
+        "potential": 0.18490747169252394
+      }
+    ],
+    "top_targets": [
+      {
+        "rank": 1,
+        "gene": "Abhd14a",
+        "potential": 1.0
+      },
+      {
+        "rank": 2,
+        "gene": "Ids",
+        "potential": 0.8408429728880475
+      },
+      {
+        "rank": 3,
+        "gene": "Phf12",
+        "potential": 0.8296265922259869
+      },
+      {
+        "rank": 4,
+        "gene": "Upf3b",
+        "potential": 0.8073063940639293
+      },
+      {
+        "rank": 5,
+        "gene": "Zic1",
+        "potential": 0.8067416909206436
+      },
+      {
+        "rank": 6,
+        "gene": "Barhl1",
+        "potential": 0.8067314891327018
+      },
+      {
+        "rank": 7,
+        "gene": "Myo6",
+        "potential": 0.8066456477994918
+      },
+      {
+        "rank": 8,
+        "gene": "Khdrbs1",
+        "potential": 0.8057692722179641
+      },
+      {
+        "rank": 9,
+        "gene": "Xrcc1",
+        "potential": 0.7823848944249542
+      },
+      {
+        "rank": 10,
+        "gene": "Sox21",
+        "potential": 0.7772807264929695
+      }
+    ]
+  }
+}
