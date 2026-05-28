@@ -187,3 +187,12 @@
 - **Hodge decomposition**: Gradient norm **113,662,278.45**, curl norm **386,669,764.17**, harmonic norm **3,582.12**. The large curl component is the interesting result: the trade graph is not just a clean exporter-to-importer hierarchy; much of the net flow lives in regional/circular triangle structure.
 - **Potential extremes**: Low-potential upstream sources include `CHN`, `DEU`, `IRL`, and `KOR`; high-potential downstream sinks include `USA`, `GBR`, `BGD`, and `SAU`. Small countries such as `SLE`, `GMB`, `ATG`, `LSO`, and `SUR` can appear at potential extremes because Hodge potential is structural and pairwise-flow based, not simply GDP or raw net balance.
 - **Public-site status**: Added the `Global Trade` tab to the GitHub Pages app. The unfinished fraud prototype was not published because it still contains simulated flows.
+
+### 12. Global Migration Flow Map
+- **Script**: [build_global_migration_data.py](file:///e:/code.projects/hodge-rank-clustering/scripts/build_global_migration_data.py).
+- **Downloaded sources**: The builder downloads `migrantFlows2010-15-200countries-originfirst.csv` from the upstream `NationalSecurityAgency/rank-based-linkage` repository and downloads public ISO country coordinates at runtime.
+- **Generated artifacts**: [nodes.json](file:///e:/code.projects/hodge-rank-clustering/site/data/migration/nodes.json), [edges.json](file:///e:/code.projects/hodge-rank-clustering/site/data/migration/edges.json), [summary.json](file:///e:/code.projects/hodge-rank-clustering/site/data/migration/summary.json).
+- **Graph size**: 198 countries, 3,866 directed flow rows, 2,318 net bilateral flow edges, and 15,223 triangles. `Ch. Isl.` is omitted because the coordinate source has no matching coordinate row.
+- **Hodge decomposition**: Gradient norm **1,199,958.67**, curl norm **2,666,868.79**, harmonic norm **13,489.77**. The large curl component suggests migration structure contains substantial regional circulation rather than only a one-way origin-to-destination hierarchy.
+- **Potential extremes**: Low-potential origin basins include `SY`, `BD`, `IN`, `CN`, `MM`, `SV`, `GT`, and `NI`; high-potential destination basins include `OM`, `LB`, `SS`, `TR`, `US`, `AF`, `IQ`, and `SA`.
+- **Public-site status**: Added the `Migration Flows` tab to the GitHub Pages app.

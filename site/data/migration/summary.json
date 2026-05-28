@@ -1,0 +1,168 @@
+{
+  "dataset": "Global bilateral migrant flows, 2010-2015",
+  "sources": {
+    "migration": "https://raw.githubusercontent.com/NationalSecurityAgency/rank-based-linkage/master/src/main/resources/migrantFlows2010-15-200countries-originfirst.csv",
+    "coordinates": "https://gist.githubusercontent.com/tadast/8827699/raw/countries_codes_and_coordinates.csv",
+    "upstream_project": "NationalSecurityAgency/rank-based-linkage"
+  },
+  "counts": {
+    "countries": 198,
+    "directed_flows": 3866,
+    "net_flows": 2318,
+    "triangles": 15223,
+    "missing_coordinate_codes": 1
+  },
+  "hodge": {
+    "gradientNorm": 1199958.6720998148,
+    "curlNorm": 2666868.786069746,
+    "harmonicNorm": 13489.77449401257,
+    "totalNorm": 2924426.9571438404
+  },
+  "top_origins": [
+    {
+      "rank": 1,
+      "iso2": "SY",
+      "name": "Syrian Arab Republic",
+      "potential": 0.0,
+      "netMigrationBalance": -4032765.6201496543
+    },
+    {
+      "rank": 2,
+      "iso2": "BD",
+      "name": "Bangladesh",
+      "potential": 0.3729896992055762,
+      "netMigrationBalance": -2224567.9960662536
+    },
+    {
+      "rank": 3,
+      "iso2": "IN",
+      "name": "India",
+      "potential": 0.3731714109619956,
+      "netMigrationBalance": -2600672.827579711
+    },
+    {
+      "rank": 4,
+      "iso2": "CN",
+      "name": "China",
+      "potential": 0.4400050656600994,
+      "netMigrationBalance": -1799153.7855512346
+    },
+    {
+      "rank": 5,
+      "iso2": "MV",
+      "name": "Maldives",
+      "potential": 0.4575948139205157,
+      "netMigrationBalance": 5819.596389556153
+    },
+    {
+      "rank": 6,
+      "iso2": "MM",
+      "name": "Myanmar",
+      "potential": 0.4644821641541106,
+      "netMigrationBalance": -472902.3306174528
+    },
+    {
+      "rank": 7,
+      "iso2": "PR",
+      "name": "Puerto Rico",
+      "potential": 0.481276270614902,
+      "netMigrationBalance": -101725.50466885851
+    },
+    {
+      "rank": 8,
+      "iso2": "SV",
+      "name": "El Salvador",
+      "potential": 0.48135999979160604,
+      "netMigrationBalance": -239705.86561590713
+    },
+    {
+      "rank": 9,
+      "iso2": "GT",
+      "name": "Guatemala",
+      "potential": 0.5021987450158905,
+      "netMigrationBalance": -119324.22594331959
+    },
+    {
+      "rank": 10,
+      "iso2": "NI",
+      "name": "Nicaragua",
+      "potential": 0.5071878850825041,
+      "netMigrationBalance": -133387.7049038823
+    }
+  ],
+  "top_destinations": [
+    {
+      "rank": 1,
+      "iso2": "OM",
+      "name": "Oman",
+      "potential": 1.0,
+      "netMigrationBalance": 1210221.3521186588
+    },
+    {
+      "rank": 2,
+      "iso2": "LB",
+      "name": "Lebanon",
+      "potential": 0.9677607224111437,
+      "netMigrationBalance": 1253002.5237140742
+    },
+    {
+      "rank": 3,
+      "iso2": "SS",
+      "name": "South Sudan",
+      "potential": 0.9582595361753613,
+      "netMigrationBalance": 864715.6696439461
+    },
+    {
+      "rank": 4,
+      "iso2": "TR",
+      "name": "Turkey",
+      "potential": 0.9542826335568313,
+      "netMigrationBalance": 1990964.99695704
+    },
+    {
+      "rank": 5,
+      "iso2": "US",
+      "name": "United States",
+      "potential": 0.8519351413981366,
+      "netMigrationBalance": 5006577.139149909
+    },
+    {
+      "rank": 6,
+      "iso2": "VI",
+      "name": "Virgin Islands, U.S.",
+      "potential": 0.8433549545842468,
+      "netMigrationBalance": -1359.89920796164
+    },
+    {
+      "rank": 7,
+      "iso2": "AF",
+      "name": "Afghanistan",
+      "potential": 0.8266753188143535,
+      "netMigrationBalance": 472351.2774804607
+    },
+    {
+      "rank": 8,
+      "iso2": "IQ",
+      "name": "Iraq",
+      "potential": 0.8093594633330362,
+      "netMigrationBalance": 548693.3127012065
+    },
+    {
+      "rank": 9,
+      "iso2": "SA",
+      "name": "Saudi Arabia",
+      "potential": 0.7904325328423324,
+      "netMigrationBalance": 854033.9170917557
+    },
+    {
+      "rank": 10,
+      "iso2": "LC",
+      "name": "Saint Lucia",
+      "potential": 0.7726480962388416,
+      "netMigrationBalance": -661.2891822174402
+    }
+  ],
+  "missing_coordinate_codes": [
+    "Ch. Isl."
+  ]
+}

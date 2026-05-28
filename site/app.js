@@ -96,6 +96,15 @@ const state = {
     hoveredNode: null,
     selectedNode: null,
   },
+  migration: {
+    nodes: [],
+    edges: [],
+    summary: null,
+    nodeById: new Map(),
+    layout: null,
+    hoveredNode: null,
+    selectedNode: null,
+  },
   benchmark: {
     points: [],
     labelMode: "true", // "true", "hodge", or "rbl"
@@ -147,6 +156,7 @@ const els = {
   benchmarkViewButton: document.getElementById("benchmarkViewButton"),
   benchmarkControls: document.getElementById("benchmarkControls"),
   tradeViewButton: document.getElementById("tradeViewButton"),
+  migrationViewButton: document.getElementById("migrationViewButton"),
   showTrueLabelsButton: document.getElementById("showTrueLabelsButton"),
   showPredLabelsButton: document.getElementById("showPredLabelsButton"),
   showRblLabelsButton: document.getElementById("showRblLabelsButton"),
@@ -705,13 +715,15 @@ function buildGraphLayout(viewKey) {
   const box = chartBox();
   const subState = state[viewKey];
 
-  if (viewKey === "trade") {
+  if (viewKey === "trade" || viewKey === "migration") {
     const nodes = subState.nodes.map((node, index) => {
       // Longitude: map -180 to 180 to box width (with 45px padding)
       const x = box.x + 45 + ((node.longitude - (-180)) / 360) * (box.width - 90);
-      // Potential: map 0.0 (top/supplier) to 1.0 (bottom/consumer).
-      // Since exporters have low potential, putting them at the top means we map potential directly to Y (since 0 potential = top).
+      // Potential maps sources/origins near the top and sinks/destinations near the bottom.
       const y = box.y + 45 + node.potentialNorm * (box.height - 90);
+      const radius = viewKey === "trade"
+        ? Math.max(6, Math.min(22, Math.log10(Math.max(1e8, node.gdp)) * 1.5))
+        : Math.max(5, Math.min(21, Math.sqrt(Math.max(1, node.migrationVolume)) / 170));
       return {
         ...node,
         index,
@@ -719,7 +731,7 @@ function buildGraphLayout(viewKey) {
         y,
         vx: 0,
         vy: 0,
-        radius: Math.max(6, Math.min(22, Math.log10(Math.max(1e8, node.gdp)) * 1.5)),
+        radius,
       };
     });
     const nodeById = new Map(nodes.map((node) => [node.id, node]));
@@ -1024,6 +1036,10 @@ function draw() {
     drawTradeGraph();
     return;
   }
+  if (state.viewMode === "migration") {
+    drawMigrationGraph();
+    return;
+  }
   if (state.viewMode === "benchmark") {
     drawBenchmarkPlot();
     return;
@@ -1196,6 +1212,9 @@ function nearestNode(x, y) {
   if (state.viewMode === "trade") {
     return nearestGeneNode("trade", x, y);
   }
+  if (state.viewMode === "migration") {
+    return nearestGeneNode("migration", x, y);
+  }
   if (state.viewMode === "benchmark") {
     return nearestBenchmarkPoint(x, y);
   }
@@ -1334,6 +1353,10 @@ function updateDetails(node) {
     updateTradeDetails(node);
     return;
   }
+  if (state.viewMode === "migration") {
+    updateMigrationDetails(node);
+    return;
+  }
   if (state.viewMode === "benchmark") {
     updateBenchmarkDetails(node);
     return;
@@ -1432,6 +1455,10 @@ function updateMeters() {
   }
   if (state.viewMode === "trade") {
     updateGeneMeters("trade");
+    return;
+  }
+  if (state.viewMode === "migration") {
+    updateGeneMeters("migration");
     return;
   }
   if (state.viewMode === "benchmark") {
@@ -1611,6 +1638,10 @@ function renderClusters() {
     renderTradeClusters();
     return;
   }
+  if (state.viewMode === "migration") {
+    renderMigrationClusters();
+    return;
+  }
   if (state.viewMode === "benchmark") {
     renderBenchmarkClusters();
     return;
@@ -1748,6 +1779,12 @@ function updateLegend(viewMode) {
       <li><strong>Curl:</strong> <span class="analogy-label">"Regional Subcontracting"</span> - circular trade loops within regional trade networks (e.g. EU parts circulation).</li>
       <li><strong>Harmonic:</strong> <span class="analogy-label">"Global Balancing Loops"</span> - systemic circular trading loops traversing multiple continents.</li>
     `;
+  } else if (viewMode === "migration") {
+    els.legendList.innerHTML = `
+      <li><strong>Gradient:</strong> <span class="analogy-label">"Migration Pressure"</span> - directional net movement from lower-potential origin basins to higher-potential destination basins.</li>
+      <li><strong>Curl:</strong> <span class="analogy-label">"Regional Circulation"</span> - triangular migration loops where countries exchange flows through a third country.</li>
+      <li><strong>Harmonic:</strong> <span class="analogy-label">"Long-Loop Mobility"</span> - larger circulations not reducible to local triangles.</li>
+    `;
   } else if (viewMode === "benchmark") {
     els.legendList.innerHTML = `
       <li><strong>Gradient:</strong> <span class="analogy-label">"City Core"</span> - stable, dense coordinate clusters of true residents.</li>
@@ -1801,6 +1838,7 @@ function setViewMode(viewMode) {
   if (viewMode === "geneNet3" && !state.geneNet3.summary) return;
   if (viewMode === "geneNet4" && !state.geneNet4.summary) return;
   if (viewMode === "trade" && !state.trade.summary) return;
+  if (viewMode === "migration" && !state.migration.summary) return;
   state.viewMode = viewMode;
   state.hoveredNode = null;
   state.corpus.hoveredNode = null;
@@ -1811,6 +1849,7 @@ function setViewMode(viewMode) {
   state.geneNet3.hoveredNode = null;
   state.geneNet4.hoveredNode = null;
   state.trade.hoveredNode = null;
+  state.migration.hoveredNode = null;
   els.flightViewButton.classList.toggle("active", viewMode === "flights");
   els.corpusViewButton.classList.toggle("active", viewMode === "corpus");
   els.geneHumanViewButton.classList.toggle("active", viewMode === "geneHuman");
@@ -1820,7 +1859,8 @@ function setViewMode(viewMode) {
   els.geneNet4ViewButton.classList.toggle("active", viewMode === "geneNet4");
   els.benchmarkViewButton.classList.toggle("active", viewMode === "benchmark");
   els.tradeViewButton.classList.toggle("active", viewMode === "trade");
-  els.mainControls.style.display = (viewMode === "benchmark" || viewMode === "trade") ? "none" : "block";
+  els.migrationViewButton.classList.toggle("active", viewMode === "migration");
+  els.mainControls.style.display = (viewMode === "benchmark" || viewMode === "trade" || viewMode === "migration") ? "none" : "block";
   els.benchmarkControls.style.display = viewMode === "benchmark" ? "block" : "none";
   if (viewMode === "corpus") {
     renderCorpusSummary();
@@ -1838,6 +1878,8 @@ function setViewMode(viewMode) {
     renderGeneSummary("geneNet4");
   } else if (viewMode === "trade") {
     renderTradeSummary();
+  } else if (viewMode === "migration") {
+    renderMigrationSummary();
   } else {
     renderFlightSummary();
   }
@@ -1856,6 +1898,7 @@ async function loadData() {
     trrustHumanNodes, trrustHumanEdges, trrustMouseNodes, trrustMouseEdges, trrustSummary,
     net1Nodes, net1Edges, net3Nodes, net3Edges, net4Nodes, net4Edges, dream5Summary,
     tradeNodes, tradeEdges, tradeSummary,
+    migrationNodes, migrationEdges, migrationSummary,
   ] = await Promise.all([
     fetch("data/openflights/nodes.json").then((response) => response.json()),
     fetch("data/openflights/edges.json").then((response) => response.json()),
@@ -1881,6 +1924,9 @@ async function loadData() {
     fetch("data/trade/nodes.json").then((response) => response.json()),
     fetch("data/trade/edges.json").then((response) => response.json()),
     fetch("data/trade/summary.json").then((response) => response.json()),
+    fetch("data/migration/nodes.json").then((response) => response.json()),
+    fetch("data/migration/edges.json").then((response) => response.json()),
+    fetch("data/migration/summary.json").then((response) => response.json()),
   ]);
 
   state.nodes = nodes;
@@ -1925,6 +1971,11 @@ async function loadData() {
   state.trade.summary = tradeSummary;
   state.trade.nodeById = new Map(tradeNodes.map((node) => [node.id, node]));
 
+  state.migration.nodes = migrationNodes;
+  state.migration.edges = migrationEdges;
+  state.migration.summary = migrationSummary;
+  state.migration.nodeById = new Map(migrationNodes.map((node) => [node.id, node]));
+
   resizeCanvas();
   setViewMode("flights");
 }
@@ -1968,6 +2019,10 @@ els.benchmarkViewButton.addEventListener("click", () => {
 
 els.tradeViewButton.addEventListener("click", () => {
   setViewMode("trade");
+});
+
+els.migrationViewButton.addEventListener("click", () => {
+  setViewMode("migration");
 });
 
 els.showTrueLabelsButton.addEventListener("click", () => {
@@ -2026,6 +2081,8 @@ canvas.addEventListener("mousemove", (event) => {
     currentHovered = state.geneNet4.hoveredNode;
   } else if (state.viewMode === "trade") {
     currentHovered = state.trade.hoveredNode;
+  } else if (state.viewMode === "migration") {
+    currentHovered = state.migration.hoveredNode;
   } else if (state.viewMode === "benchmark") {
     currentHovered = state.benchmark.hoveredPoint;
   } else {
@@ -2047,6 +2104,8 @@ canvas.addEventListener("mousemove", (event) => {
       state.geneNet4.hoveredNode = hovered;
     } else if (state.viewMode === "trade") {
       state.trade.hoveredNode = hovered;
+    } else if (state.viewMode === "migration") {
+      state.migration.hoveredNode = hovered;
     } else if (state.viewMode === "benchmark") {
       state.benchmark.hoveredPoint = hovered;
     } else {
@@ -2066,6 +2125,7 @@ canvas.addEventListener("mouseleave", () => {
   state.geneNet3.hoveredNode = null;
   state.geneNet4.hoveredNode = null;
   state.trade.hoveredNode = null;
+  state.migration.hoveredNode = null;
   state.benchmark.hoveredPoint = null;
   updateDetails(null);
   draw();
@@ -2504,6 +2564,225 @@ function drawTradeGraph() {
       ctx.font = isHovered ? "bold 10px Inter, ui-sans-serif, system-ui, sans-serif" : "9px Inter, ui-sans-serif, system-ui, sans-serif";
       ctx.textAlign = "center";
       ctx.fillText(node.label, node.x, node.y - node.radius - 4);
+    }
+  }
+
+  ctx.restore();
+}
+
+function renderMigrationSummary() {
+  const subState = state.migration;
+  const summary = subState.summary;
+  if (!summary) return;
+  els.datasetLabel.textContent = "Global Bilateral Migrant Flows, 2010-2015";
+  els.metricOneLabel.textContent = "Countries";
+  els.metricOneValue.textContent = fmt(summary.counts.countries);
+  els.metricTwoLabel.textContent = "Net Flows";
+  els.metricTwoValue.textContent = fmt(summary.counts.net_flows);
+  els.metricThreeLabel.textContent = "Triangles";
+  els.metricThreeValue.textContent = fmt(summary.counts.triangles);
+  els.metricFourLabel.textContent = "Directed Rows";
+  els.metricFourValue.textContent = fmt(summary.counts.directed_flows);
+  els.edgeLimitLabel.textContent = "Migration density";
+  els.edgeLimit.min = "50";
+  els.edgeLimit.step = "50";
+  els.edgeLimit.max = String(Math.max(50, subState.edges.length));
+  els.edgeLimit.value = String(Math.min(Math.max(state.edgeLimit, 50), subState.edges.length));
+  state.edgeLimit = Number(els.edgeLimit.value);
+  els.interClusterControl.hidden = true;
+  els.sourceLine.textContent = "Source: downloaded from NationalSecurityAgency/rank-based-linkage migrant-flow sample and public country coordinates. Channel Islands omitted for missing coordinates.";
+}
+
+function updateMigrationDetails(node) {
+  els.detailTotalLabel.textContent = "Flow Volume";
+  els.detailInboundLabel.textContent = "Inflow";
+  els.detailOutboundLabel.textContent = "Net Balance";
+  els.detailPotentialLabel.textContent = "Hodge Rank";
+
+  if (!node) {
+    els.detailCode.textContent = "MIG";
+    els.detailName.textContent = "Hover a country";
+    els.detailLocation.textContent = "Net bilateral migration-flow network, 2010-2015.";
+    els.detailTotal.textContent = "--";
+    els.detailInbound.textContent = "--";
+    els.detailOutbound.textContent = "--";
+    els.detailPotential.textContent = "--";
+    return;
+  }
+
+  els.detailCode.textContent = node.id;
+  els.detailName.textContent = node.name || node.id;
+  els.detailLocation.textContent = `ISO-3: ${node.alpha3}`;
+  els.detailTotal.textContent = fmt(Math.round(node.migrationVolume));
+  els.detailInbound.textContent = fmt(Math.round(node.migrationInflow));
+  els.detailOutbound.textContent = fmt(Math.round(node.netMigrationBalance));
+  els.detailPotential.textContent = `${Math.round(node.potentialNorm * 100)}%`;
+}
+
+function renderMigrationClusters() {
+  els.clusterList.innerHTML = "";
+  const subState = state.migration;
+  const summary = subState.summary;
+  if (!summary) return;
+
+  const originHeader = document.createElement("div");
+  originHeader.className = "legend-header";
+  originHeader.style = "font-size:0.88rem; font-weight:700; margin:10px 0 6px 0; color:#df7d58; letter-spacing:0.5px; text-transform:uppercase;";
+  originHeader.textContent = "Origin Basins";
+  els.clusterList.appendChild(originHeader);
+
+  summary.top_origins.forEach((origin) => {
+    const button = document.createElement("button");
+    button.className = "cluster-button gene-button";
+    button.type = "button";
+    if (subState.selectedNode === origin.iso2) button.classList.add("active");
+    button.innerHTML = `
+      <span class="cluster-swatch" style="background:#df7d58"></span>
+      <span class="cluster-copy">
+        <strong>${origin.iso2}</strong>
+        <p>${origin.name}</p>
+      </span>
+      <span class="cluster-count">${Math.round(origin.potential * 100)}%</span>
+    `;
+    button.addEventListener("click", () => {
+      const layout = getGraphLayout("migration");
+      const node = layout.nodes.find((item) => item.id === origin.iso2);
+      if (!node) return;
+      subState.selectedNode = subState.selectedNode === node.id ? null : node.id;
+      document.querySelectorAll(".cluster-button").forEach((item) => item.classList.remove("active"));
+      if (subState.selectedNode !== null) button.classList.add("active");
+      updateDetails(subState.selectedNode ? node : null);
+      draw();
+    });
+    els.clusterList.appendChild(button);
+  });
+
+  const destinationHeader = document.createElement("div");
+  destinationHeader.className = "legend-header";
+  destinationHeader.style = "font-size:0.88rem; font-weight:700; margin:18px 0 6px 0; color:#7aa6ff; letter-spacing:0.5px; text-transform:uppercase;";
+  destinationHeader.textContent = "Destination Basins";
+  els.clusterList.appendChild(destinationHeader);
+
+  summary.top_destinations.forEach((destination) => {
+    const button = document.createElement("button");
+    button.className = "cluster-button gene-button";
+    button.type = "button";
+    if (subState.selectedNode === destination.iso2) button.classList.add("active");
+    button.innerHTML = `
+      <span class="cluster-swatch" style="background:#7aa6ff"></span>
+      <span class="cluster-copy">
+        <strong>${destination.iso2}</strong>
+        <p>${destination.name}</p>
+      </span>
+      <span class="cluster-count">${Math.round(destination.potential * 100)}%</span>
+    `;
+    button.addEventListener("click", () => {
+      const layout = getGraphLayout("migration");
+      const node = layout.nodes.find((item) => item.id === destination.iso2);
+      if (!node) return;
+      subState.selectedNode = subState.selectedNode === node.id ? null : node.id;
+      document.querySelectorAll(".cluster-button").forEach((item) => item.classList.remove("active"));
+      if (subState.selectedNode !== null) button.classList.add("active");
+      updateDetails(subState.selectedNode ? node : null);
+      draw();
+    });
+    els.clusterList.appendChild(button);
+  });
+}
+
+function migrationColor(node) {
+  if (node.netMigrationBalance < -1000000) return "#df7d58";
+  if (node.netMigrationBalance > 1000000) return "#7aa6ff";
+  if (node.potentialNorm < 0.45) return "#e7c66b";
+  if (node.potentialNorm > 0.75) return "#58c6a4";
+  return "#d77adf";
+}
+
+function drawMigrationGraph() {
+  const layout = getGraphLayout("migration");
+  const { box } = layout;
+  const subState = state.migration;
+  const selectedId = subState.selectedNode;
+  const hoveredId = subState.hoveredNode ? subState.hoveredNode.id : null;
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(box.x, box.y, box.width, box.height);
+  ctx.clip();
+
+  const background = ctx.createLinearGradient(box.x, box.y, box.x + box.width, box.y + box.height);
+  background.addColorStop(0, "rgba(22, 16, 10, 0.56)");
+  background.addColorStop(0.55, "rgba(9, 17, 22, 0.34)");
+  background.addColorStop(1, "rgba(8, 25, 28, 0.48)");
+  ctx.fillStyle = background;
+  ctx.fillRect(box.x, box.y, box.width, box.height);
+
+  const levels = [
+    { val: 0.08, label: "Origin basins" },
+    { val: 0.50, label: "Transit / mixed basins" },
+    { val: 0.92, label: "Destination basins" },
+  ];
+  ctx.strokeStyle = "rgba(231, 198, 107, 0.07)";
+  ctx.setLineDash([4, 4]);
+  ctx.font = "9px Inter, ui-sans-serif, system-ui, sans-serif";
+  ctx.textAlign = "left";
+  for (const level of levels) {
+    const y = box.y + 45 + level.val * (box.height - 90);
+    ctx.beginPath();
+    ctx.moveTo(box.x, y);
+    ctx.lineTo(box.x + box.width, y);
+    ctx.stroke();
+    ctx.fillStyle = "rgba(243,239,226,0.32)";
+    ctx.fillText(level.label, box.x + 8, y - 4);
+  }
+  ctx.setLineDash([]);
+
+  const visibleEdges = layout.edges
+    .filter((edge) => !selectedId || edge.source === selectedId || edge.target === selectedId)
+    .slice(0, state.edgeLimit);
+
+  for (const edge of visibleEdges) {
+    const source = edge.sourceNode;
+    const target = edge.targetNode;
+    if (!source || !target) continue;
+    const active = edge.source === selectedId || edge.target === selectedId || edge.source === hoveredId || edge.target === hoveredId;
+    const magnitude = Math.log10(Math.max(10, edge.absNetFlow || Math.abs(edge.netFlow || 0)));
+
+    ctx.beginPath();
+    ctx.moveTo(source.x, source.y);
+    const midX = (source.x + target.x) / 2;
+    const midY = (source.y + target.y) / 2;
+    const dx = target.x - source.x;
+    const dy = target.y - source.y;
+    const distance = Math.max(1, Math.hypot(dx, dy));
+    const bend = Math.min(34, Math.max(6, distance * 0.06));
+    ctx.quadraticCurveTo(midX - (dy / distance) * bend, midY + (dx / distance) * bend, target.x, target.y);
+    ctx.strokeStyle = active ? "rgba(243,239,226,0.78)" : "rgba(243,239,226,0.075)";
+    ctx.globalAlpha = active ? 1 : 0.35;
+    ctx.lineWidth = active ? 1.8 : Math.max(0.55, magnitude * 0.16);
+    ctx.stroke();
+  }
+  ctx.globalAlpha = 1;
+
+  const sortedNodes = [...layout.nodes].sort((a, b) => a.migrationVolume - b.migrationVolume);
+  for (const node of sortedNodes) {
+    const isHovered = node.id === hoveredId;
+    const isSelected = node.id === selectedId;
+    const active = !selectedId || isSelected;
+    const radius = node.radius + (isHovered ? 2 : 0);
+    ctx.beginPath();
+    ctx.arc(node.x, node.y, radius, 0, Math.PI * 2);
+    ctx.fillStyle = migrationColor(node);
+    ctx.globalAlpha = active ? 0.95 : 0.22;
+    ctx.fill();
+    ctx.strokeStyle = isSelected ? "#f3efe2" : "rgba(255,255,255,0.14)";
+    ctx.lineWidth = isSelected ? 2.0 : 1.0;
+    ctx.stroke();
+    if (isHovered || isSelected || node.migrationVolume > 2000000) {
+      ctx.fillStyle = "#f3efe2";
+      ctx.font = isHovered ? "bold 10px Inter, ui-sans-serif, system-ui, sans-serif" : "9px Inter, ui-sans-serif, system-ui, sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText(node.label, node.x, node.y - radius - 4);
     }
   }
 

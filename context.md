@@ -100,6 +100,8 @@ Continuing the public Hodge mapping atlas with real, publishable datasets and no
 - Interesting WITS trade notes: lowest-potential sources include CHN, DEU, IRL, and KOR; highest-potential sinks include USA, GBR, BGD, SAU, and ATG. Small economies such as SLE, GMB, ATG, LSO, and SUR can appear near extremes because Hodge potential is structural in the net-flow graph, not just a GDP or raw-balance ranking.
 - Removed the unpublished Fraud Detection tab from the public site wiring for now. The untracked `scripts/build_fraud_detection_data.py` and `site/data/fraud/fraud_hodge.json` are not ready for GitHub Pages because they include synthetic/simulated flows and public-facing suspicious-person wording.
 - Added `.github/workflows/pages.yml` so GitHub Pages publishes the existing `site/` directory through the official Pages artifact/deploy workflow instead of requiring the repo root or a duplicated `docs/` folder.
+- Added `scripts/build_global_migration_data.py`, which downloads the NSA `rank-based-linkage` 2010-2015 migrant-flow CSV and public country-coordinate CSV at runtime, computes net bilateral migration flows, runs Hodge decomposition, and writes `site/data/migration/`.
+- Added the `Migration Flows` tab to the public site. Current artifact covers 198 countries, 3,866 directed migration rows, 2,318 net flow edges, and 15,223 triangles. Hodge norms are gradient 1,199,958.67; curl 2,666,868.79; harmonic 13,489.77, so this graph is also curl-heavy. Interesting potential extremes: origin basins include Syria, Bangladesh, India, China, Myanmar, El Salvador, Guatemala, and Nicaragua; destination basins include Oman, Lebanon, South Sudan, Turkey, United States, Afghanistan, Iraq, and Saudi Arabia. Channel Islands are omitted only because the coordinate source lacks that code.
 
 
  ## Verification Commands
@@ -126,6 +128,7 @@ python scripts/hodge_market_residual_strategy.py
 python scripts/hodge_market_residual_strategy.py --sports NHL,NBA --output site/data/hodge_market_residual_strategy_nba_nhl.json
 python scripts/export_historical_sportsbook_data.py
 python scripts/build_global_trade_data.py
+python scripts/build_global_migration_data.py
 python -m compileall scripts scratch
 node --check site/app.js
 python -m http.server 8765 --bind 127.0.0.1 --directory site
