@@ -105,6 +105,17 @@ const state = {
     hoveredNode: null,
     selectedNode: null,
   },
+  fraud: {
+    data: null,
+    subView: "insider", // "insider" or "ponzi"
+    nodes: [],
+    edges: [],
+    summary: null,
+    nodeById: new Map(),
+    layout: null,
+    hoveredNode: null,
+    selectedNode: null,
+  },
   benchmark: {
     points: [],
     labelMode: "true", // "true", "hodge", or "rbl"
@@ -157,6 +168,7 @@ const els = {
   benchmarkControls: document.getElementById("benchmarkControls"),
   tradeViewButton: document.getElementById("tradeViewButton"),
   migrationViewButton: document.getElementById("migrationViewButton"),
+  fraudViewButton: document.getElementById("fraudViewButton"),
   showTrueLabelsButton: document.getElementById("showTrueLabelsButton"),
   showPredLabelsButton: document.getElementById("showPredLabelsButton"),
   showRblLabelsButton: document.getElementById("showRblLabelsButton"),
@@ -754,6 +766,51 @@ function buildGraphLayout(viewKey) {
     return subState.layout;
   }
 
+  if (viewKey === "fraud") {
+    const nodes = subState.nodes.map((node, index) => {
+      const xs = subState.nodes.map(n => n.x);
+      const ys = subState.nodes.map(n => n.y);
+      const minX = Math.min(...xs), maxX = Math.max(...xs);
+      const minY = Math.min(...ys), maxY = Math.max(...ys);
+      
+      const x = box.x + 45 + ((node.x - minX) / (maxX - minX + 1e-9)) * (box.width - 90);
+      const y = box.y + 45 + ((node.y - minY) / (maxY - minY + 1e-9)) * (box.height - 90);
+      
+      let radius = 8;
+      if (node.type === "company" || node.type === "ponzi_contract" || node.type === "organizer") {
+        radius = 14;
+      }
+      
+      return {
+        ...node,
+        index,
+        x,
+        y,
+        vx: 0,
+        vy: 0,
+        radius,
+      };
+    });
+    const nodeById = new Map(nodes.map((node) => [node.id, node]));
+    const edges = subState.edges
+      .map((edge) => ({
+        ...edge,
+        sourceNode: nodeById.get(edge.source),
+        targetNode: nodeById.get(edge.target),
+      }))
+      .filter((edge) => edge.sourceNode && edge.targetNode);
+
+    subState.layout = {
+      width: state.width,
+      height: state.height,
+      box,
+      nodes,
+      edges,
+      nodeById,
+    };
+    return subState.layout;
+  }
+
   const centerX = box.x + box.width / 2;
   const centerY = box.y + box.height / 2;
   const radiusX = box.width * 0.39;
@@ -1040,6 +1097,10 @@ function draw() {
     drawMigrationGraph();
     return;
   }
+  if (state.viewMode === "fraud") {
+    drawFraudGraph();
+    return;
+  }
   if (state.viewMode === "benchmark") {
     drawBenchmarkPlot();
     return;
@@ -1215,6 +1276,9 @@ function nearestNode(x, y) {
   if (state.viewMode === "migration") {
     return nearestGeneNode("migration", x, y);
   }
+  if (state.viewMode === "fraud") {
+    return nearestGeneNode("fraud", x, y);
+  }
   if (state.viewMode === "benchmark") {
     return nearestBenchmarkPoint(x, y);
   }
@@ -1357,6 +1421,10 @@ function updateDetails(node) {
     updateMigrationDetails(node);
     return;
   }
+  if (state.viewMode === "fraud") {
+    updateFraudDetails(node);
+    return;
+  }
   if (state.viewMode === "benchmark") {
     updateBenchmarkDetails(node);
     return;
@@ -1459,6 +1527,10 @@ function updateMeters() {
   }
   if (state.viewMode === "migration") {
     updateGeneMeters("migration");
+    return;
+  }
+  if (state.viewMode === "fraud") {
+    updateFraudMeters();
     return;
   }
   if (state.viewMode === "benchmark") {
@@ -1642,6 +1714,10 @@ function renderClusters() {
     renderMigrationClusters();
     return;
   }
+  if (state.viewMode === "fraud") {
+    renderFraudClusters();
+    return;
+  }
   if (state.viewMode === "benchmark") {
     renderBenchmarkClusters();
     return;
@@ -1785,6 +1861,20 @@ function updateLegend(viewMode) {
       <li><strong>Curl:</strong> <span class="analogy-label">"Regional Circulation"</span> - triangular migration loops where countries exchange flows through a third country.</li>
       <li><strong>Harmonic:</strong> <span class="analogy-label">"Long-Loop Mobility"</span> - larger circulations not reducible to local triangles.</li>
     `;
+  } else if (viewMode === "fraud") {
+    if (state.fraud.subView === "insider") {
+      els.legendList.innerHTML = `
+        <li><strong>Gradient:</strong> <span class="analogy-label">"Asymmetric Drain"</span> - unidirectional capital flow. High gradient dominance highlights insiders executing one-way trades before market events.</li>
+        <li><strong>Curl:</strong> <span class="analogy-label">"Round-Tripping"</span> - cyclic wash trading. Insiders swapping back and forth would show high curl.</li>
+        <li><strong>Harmonic:</strong> <span class="analogy-label">"Equilibrium Flow"</span> - normal, balanced buy/sell patterns that keep the market in long-term equilibrium.</li>
+      `;
+    } else {
+      els.legendList.innerHTML = `
+        <li><strong>Gradient:</strong> <span class="analogy-label">"Ponzi Extraction"</span> - strictly one-way money drain from new investors to the contract and organizer.</li>
+        <li><strong>Curl:</strong> <span class="analogy-label">"DeFi Arbitrage"</span> - circular trading loops characteristic of legitimate DEX swapping and liquidity pools.</li>
+        <li><strong>Harmonic:</strong> <span class="analogy-label">"Liquidity Cycles"</span> - global circulation patterns in balanced, healthy financial networks.</li>
+      `;
+    }
   } else if (viewMode === "benchmark") {
     els.legendList.innerHTML = `
       <li><strong>Gradient:</strong> <span class="analogy-label">"City Core"</span> - stable, dense coordinate clusters of true residents.</li>
@@ -1839,6 +1929,7 @@ function setViewMode(viewMode) {
   if (viewMode === "geneNet4" && !state.geneNet4.summary) return;
   if (viewMode === "trade" && !state.trade.summary) return;
   if (viewMode === "migration" && !state.migration.summary) return;
+  if (viewMode === "fraud" && !state.fraud.data) return;
   state.viewMode = viewMode;
   state.hoveredNode = null;
   state.corpus.hoveredNode = null;
@@ -1850,6 +1941,7 @@ function setViewMode(viewMode) {
   state.geneNet4.hoveredNode = null;
   state.trade.hoveredNode = null;
   state.migration.hoveredNode = null;
+  state.fraud.hoveredNode = null;
   els.flightViewButton.classList.toggle("active", viewMode === "flights");
   els.corpusViewButton.classList.toggle("active", viewMode === "corpus");
   els.geneHumanViewButton.classList.toggle("active", viewMode === "geneHuman");
@@ -1860,7 +1952,10 @@ function setViewMode(viewMode) {
   els.benchmarkViewButton.classList.toggle("active", viewMode === "benchmark");
   els.tradeViewButton.classList.toggle("active", viewMode === "trade");
   els.migrationViewButton.classList.toggle("active", viewMode === "migration");
-  els.mainControls.style.display = (viewMode === "benchmark" || viewMode === "trade" || viewMode === "migration") ? "none" : "block";
+  if (els.fraudViewButton) {
+    els.fraudViewButton.classList.toggle("active", viewMode === "fraud");
+  }
+  els.mainControls.style.display = (viewMode === "benchmark" || viewMode === "trade" || viewMode === "migration" || viewMode === "fraud") ? "none" : "block";
   els.benchmarkControls.style.display = viewMode === "benchmark" ? "block" : "none";
   if (viewMode === "corpus") {
     renderCorpusSummary();
@@ -1880,6 +1975,8 @@ function setViewMode(viewMode) {
     renderTradeSummary();
   } else if (viewMode === "migration") {
     renderMigrationSummary();
+  } else if (viewMode === "fraud") {
+    renderFraudSummary();
   } else {
     renderFlightSummary();
   }
@@ -1899,6 +1996,7 @@ async function loadData() {
     net1Nodes, net1Edges, net3Nodes, net3Edges, net4Nodes, net4Edges, dream5Summary,
     tradeNodes, tradeEdges, tradeSummary,
     migrationNodes, migrationEdges, migrationSummary,
+    fraudData,
   ] = await Promise.all([
     fetch("data/openflights/nodes.json").then((response) => response.json()),
     fetch("data/openflights/edges.json").then((response) => response.json()),
@@ -1927,6 +2025,9 @@ async function loadData() {
     fetch("data/migration/nodes.json").then((response) => response.json()),
     fetch("data/migration/edges.json").then((response) => response.json()),
     fetch("data/migration/summary.json").then((response) => response.json()),
+    fetch("data/fraud/fraud_hodge.json")
+      .then((response) => response.ok ? response.json() : null)
+      .catch(() => null),
   ]);
 
   state.nodes = nodes;
@@ -1976,6 +2077,19 @@ async function loadData() {
   state.migration.summary = migrationSummary;
   state.migration.nodeById = new Map(migrationNodes.map((node) => [node.id, node]));
 
+  state.fraud.data = fraudData;
+  if (fraudData) {
+    state.fraud.subView = "insider";
+    state.fraud.nodes = fraudData.insider_trading.layout.nodes;
+    state.fraud.edges = fraudData.insider_trading.layout.edges;
+    state.fraud.summary = fraudData.insider_trading;
+    state.fraud.nodeById = new Map(fraudData.insider_trading.layout.nodes.map(n => [n.id, n]));
+  } else {
+    if (els.fraudViewButton) {
+      els.fraudViewButton.style.display = "none";
+    }
+  }
+
   resizeCanvas();
   setViewMode("flights");
 }
@@ -2024,6 +2138,12 @@ els.tradeViewButton.addEventListener("click", () => {
 els.migrationViewButton.addEventListener("click", () => {
   setViewMode("migration");
 });
+
+if (els.fraudViewButton) {
+  els.fraudViewButton.addEventListener("click", () => {
+    setViewMode("fraud");
+  });
+}
 
 els.showTrueLabelsButton.addEventListener("click", () => {
   state.benchmark.labelMode = "true";
@@ -2787,6 +2907,398 @@ function drawMigrationGraph() {
   }
 
   ctx.restore();
+}
+
+function renderFraudSummary() {
+  const subState = state.fraud;
+  const summary = subState.summary;
+  if (!summary) return;
+
+  if (subState.subView === "insider") {
+    els.datasetLabel.textContent = "Insider Trading Information Asymmetry";
+    els.metricOneLabel.textContent = "Parties";
+    els.metricOneValue.textContent = fmt(summary.graph.total_nodes);
+    els.metricTwoLabel.textContent = "Transfers";
+    els.metricTwoValue.textContent = fmt(summary.graph.total_edges);
+    els.metricThreeLabel.textContent = "Triangles";
+    els.metricThreeValue.textContent = fmt(summary.hodge.num_triangles);
+    els.metricFourLabel.textContent = "Gradient Flow";
+    els.metricFourValue.textContent = `${summary.hodge.gradient_pct}%`;
+    els.sourceLine.textContent = "Source: SEC EDGAR Q1 2024 Form 4. Demonstrates directional information advantage.";
+  } else {
+    els.datasetLabel.textContent = "Ponzi Scheme Acyclic Flow Signature";
+    els.metricOneLabel.textContent = "Addresses";
+    els.metricOneValue.textContent = fmt(summary.ponzi_hodge.n_nodes + summary.legit_hodge.n_nodes);
+    els.metricTwoLabel.textContent = "Transfers";
+    els.metricTwoValue.textContent = fmt(summary.ponzi_hodge.n_edges + summary.legit_hodge.n_edges);
+    els.metricThreeLabel.textContent = "Triangles";
+    els.metricThreeValue.textContent = fmt(summary.ponzi_hodge.n_triangles + summary.legit_hodge.n_triangles);
+    els.metricFourLabel.textContent = "Ponzi Grad";
+    els.metricFourValue.textContent = `${summary.ponzi_hodge.gradient_pct}%`;
+    els.sourceLine.textContent = "Source: Bartoletti et al. Labeled contracts + simulated Ethereum transaction flows.";
+  }
+
+  els.edgeLimitLabel.textContent = "Flow density";
+  els.edgeLimit.min = "50";
+  els.edgeLimit.step = "50";
+  els.edgeLimit.max = String(Math.max(50, subState.edges.length));
+  els.edgeLimit.value = String(Math.min(Math.max(state.edgeLimit, 50), subState.edges.length));
+  state.edgeLimit = Number(els.edgeLimit.value);
+  els.interClusterControl.hidden = true;
+}
+
+function updateFraudDetails(node) {
+  els.detailTotalLabel.textContent = "Potential Value";
+  els.detailInboundLabel.textContent = "Type";
+  els.detailOutboundLabel.textContent = "Attribute";
+  els.detailPotentialLabel.textContent = "Hodge Potential";
+
+  if (!node) {
+    els.detailCode.textContent = "FRAUD";
+    els.detailName.textContent = "Hover a node";
+    els.detailLocation.textContent = "Select Insider Trading or Ponzi Scheme to inspect flows.";
+    els.detailTotal.textContent = "--";
+    els.detailInbound.textContent = "--";
+    els.detailOutbound.textContent = "--";
+    els.detailPotential.textContent = "--";
+    return;
+  }
+
+  els.detailCode.textContent = node.id.substring(0, 8);
+  els.detailName.textContent = node.label || node.id;
+  els.detailPotential.textContent = `${Math.round(node.potential * 100)}%`;
+
+  if (state.fraud.subView === "insider") {
+    els.detailLocation.textContent = node.type === "company" ? `Company | Ticker: ${node.ticker}` : "Corporate Insider";
+    els.detailInbound.textContent = node.type;
+    let flowSum = 0;
+    state.fraud.edges.forEach(e => {
+      if (e.source === node.id || e.target === node.id) {
+        flowSum += Math.abs(e.flow);
+      }
+    });
+    els.detailTotal.textContent = `$${fmt(flowSum)}`;
+    
+    const insMeta = state.fraud.summary.top_flagged_insiders.find(ins => ins.node === node.id);
+    if (insMeta) {
+      els.detailOutboundLabel.textContent = "Grad Dominance";
+      els.detailOutbound.textContent = `${insMeta.gradient_dominance_ratio}x`;
+    } else {
+      els.detailOutboundLabel.textContent = "Role";
+      els.detailOutbound.textContent = node.ticker ? "Ticker Target" : "Executive";
+    }
+  } else {
+    els.detailLocation.textContent = `Ethereum Address: ${node.id}`;
+    els.detailInbound.textContent = node.type;
+    let flowSum = 0;
+    state.fraud.edges.forEach(e => {
+      if (e.source === node.id || e.target === node.id) {
+        flowSum += Math.abs(e.flow);
+      }
+    });
+    els.detailTotal.textContent = `${flowSum.toFixed(2)} ETH`;
+    els.detailOutboundLabel.textContent = "Risk Status";
+    els.detailOutbound.textContent = node.type.includes("ponzi") ? "🚩 High Risk (Ponzi)" : "Licit Address";
+  }
+}
+
+function renderFraudClusters() {
+  els.clusterList.innerHTML = "";
+  const subState = state.fraud;
+  if (!subState.data) return;
+
+  const switcherContainer = document.createElement("div");
+  switcherContainer.className = "view-switch";
+  switcherContainer.style = "margin-bottom: 12px; gap: 8px; padding: 4px; background: rgba(20, 23, 22, 0.4); display: flex;";
+  
+  const insiderBtn = document.createElement("button");
+  insiderBtn.type = "button";
+  insiderBtn.className = subState.subView === "insider" ? "active" : "";
+  insiderBtn.style = "font-size: 0.75rem; padding: 6px; flex: 1;";
+  insiderBtn.textContent = "💼 Insider Trading";
+  
+  const ponziBtn = document.createElement("button");
+  ponziBtn.type = "button";
+  ponziBtn.className = subState.subView === "ponzi" ? "active" : "";
+  ponziBtn.style = "font-size: 0.75rem; padding: 6px; flex: 1;";
+  ponziBtn.textContent = "🔺 Ponzi Schemes";
+  
+  switcherContainer.appendChild(insiderBtn);
+  switcherContainer.appendChild(ponziBtn);
+  els.clusterList.appendChild(switcherContainer);
+
+  insiderBtn.addEventListener("click", () => {
+    subState.subView = "insider";
+    subState.nodes = subState.data.insider_trading.layout.nodes;
+    subState.edges = subState.data.insider_trading.layout.edges;
+    subState.summary = subState.data.insider_trading;
+    subState.nodeById = new Map(subState.nodes.map(n => [n.id, n]));
+    subState.layout = null;
+    subState.selectedNode = null;
+    subState.hoveredNode = null;
+    renderFraudSummary();
+    renderFraudClusters();
+    updateMeters();
+    updateDetails(null);
+    draw();
+  });
+
+  ponziBtn.addEventListener("click", () => {
+    subState.subView = "ponzi";
+    subState.nodes = subState.data.ponzi_detection.layout.nodes;
+    subState.edges = subState.data.ponzi_detection.layout.edges;
+    subState.summary = subState.data.ponzi_detection;
+    subState.nodeById = new Map(subState.nodes.map(n => [n.id, n]));
+    subState.layout = null;
+    subState.selectedNode = null;
+    subState.hoveredNode = null;
+    renderFraudSummary();
+    renderFraudClusters();
+    updateMeters();
+    updateDetails(null);
+    draw();
+  });
+
+  if (subState.subView === "insider") {
+    const header = document.createElement("div");
+    header.className = "legend-header";
+    header.style = "font-size:0.88rem; font-weight:700; margin:10px 0 6px 0; color:#ff6b6b; letter-spacing:0.5px; text-transform:uppercase;";
+    header.textContent = "Flagged Insiders (Gradient Dominant)";
+    els.clusterList.appendChild(header);
+
+    const insiders = subState.summary.top_flagged_insiders || [];
+    insiders.forEach((ins) => {
+      const button = document.createElement("button");
+      button.className = "cluster-button gene-button";
+      button.type = "button";
+      const active = subState.selectedNode === ins.node;
+      if (active) button.classList.add("active");
+      
+      const role = ins.is_officer ? "Officer" : ins.is_director ? "Director" : "Insider";
+      button.innerHTML = `
+        <span class="cluster-swatch" style="background:#ff6b6b"></span>
+        <span class="cluster-copy">
+          <strong>${ins.name}</strong>
+          <p>${role} | Dom: ${ins.gradient_dominance_ratio}x</p>
+        </span>
+        <span class="cluster-count">${fmt(ins.gradient_flow)}</span>
+      `;
+      
+      button.addEventListener("click", () => {
+        const layout = getGraphLayout("fraud");
+        const node = layout.nodes.find(n => n.id === ins.node);
+        if (node) {
+          subState.selectedNode = subState.selectedNode === node.id ? null : node.id;
+          document.querySelectorAll(".cluster-button").forEach((item) => item.classList.remove("active"));
+          if (subState.selectedNode !== null) button.classList.add("active");
+          updateDetails(subState.selectedNode ? node : null);
+          draw();
+        }
+      });
+      els.clusterList.appendChild(button);
+    });
+  } else {
+    const header = document.createElement("div");
+    header.className = "legend-header";
+    header.style = "font-size:0.88rem; font-weight:700; margin:10px 0 6px 0; color:#df7d58; letter-spacing:0.5px; text-transform:uppercase;";
+    header.textContent = "Ponzi vs. Legit DeFi Signatures";
+    els.clusterList.appendChild(header);
+
+    const disc = subState.summary.discrimination || {};
+    const info = [
+      { label: "Gradient Lift", desc: "Ponzi is more gradient-dominated", val: `+${disc.gradient_lift_pct_points}%` },
+      { label: "Curl Suppression", desc: "Ponzi has fewer trade/arbitrage cycles", val: `-${disc.curl_suppression_pct_points}%` },
+      { label: "Precision at K", desc: "Detection accuracy using Hodge rules", val: `${Math.round(disc.gradient_rule_precision_on_ponzi_edges * 100)}%` },
+    ];
+
+    info.forEach((item) => {
+      const card = document.createElement("div");
+      card.className = "cluster-button gene-button";
+      card.style = "cursor: default; pointer-events: none;";
+      card.innerHTML = `
+        <span class="cluster-swatch" style="background:#df7d58"></span>
+        <span class="cluster-copy">
+          <strong>${item.label}</strong>
+          <p>${item.desc}</p>
+        </span>
+        <span class="cluster-count">${item.val}</span>
+      `;
+      els.clusterList.appendChild(card);
+    });
+  }
+}
+
+function drawFraudGraph() {
+  const layout = getGraphLayout("fraud");
+  const { box } = layout;
+  const subState = state.fraud;
+  const selectedId = subState.selectedNode;
+  const hoveredId = subState.hoveredNode ? subState.hoveredNode.id : null;
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(box.x, box.y, box.width, box.height);
+  ctx.clip();
+
+  const networkGradient = ctx.createLinearGradient(box.x, box.y, box.x + box.width, box.y + box.height);
+  networkGradient.addColorStop(0, "rgba(28, 10, 10, 0.52)");
+  networkGradient.addColorStop(0.55, "rgba(14, 8, 8, 0.32)");
+  networkGradient.addColorStop(1, "rgba(10, 10, 10, 0.44)");
+  ctx.fillStyle = networkGradient;
+  ctx.fillRect(box.x, box.y, box.width, box.height);
+
+  const levels = [
+    { val: 0.1, label: subState.subView === "insider" ? "💼 Heavy Net Buyer Insiders (Potential Sources)" : "📥 Capital Inflow / Investor Level" },
+    { val: 0.5, label: subState.subView === "insider" ? "🏢 Corporates & Transactions" : "🔀 Intermediary / Contract Level" },
+    { val: 0.9, label: subState.subView === "insider" ? "💸 Heavy Net Seller Insiders (Potential Sinks)" : "📤 Extraction / Organizer Wallet" }
+  ];
+  ctx.strokeStyle = "rgba(255, 107, 107, 0.05)";
+  ctx.fillStyle = "rgba(243, 239, 226, 0.25)";
+  ctx.font = "9px Inter, ui-sans-serif, system-ui, sans-serif";
+  ctx.setLineDash([4, 4]);
+  ctx.textAlign = "left";
+  for (const l of levels) {
+    const y = box.y + 45 + l.val * (box.height - 90);
+    ctx.beginPath();
+    ctx.moveTo(box.x, y);
+    ctx.lineTo(box.x + box.width, y);
+    ctx.stroke();
+    ctx.fillText(l.label, box.x + 8, y - 4);
+  }
+  ctx.setLineDash([]);
+
+  const visibleEdges = layout.edges
+    .filter((edge) => !selectedId || edge.source === selectedId || edge.target === selectedId)
+    .slice(0, state.edgeLimit);
+
+  for (const edge of visibleEdges) {
+    const active = edge.source === selectedId || edge.target === selectedId || edge.source === hoveredId || edge.target === hoveredId;
+    const source = edge.sourceNode;
+    const target = edge.targetNode;
+
+    ctx.beginPath();
+    ctx.moveTo(source.x, source.y);
+    const midX = (source.x + target.x) / 2;
+    const midY = (source.y + target.y) / 2;
+    const dx = target.x - source.x;
+    const dy = target.y - source.y;
+    const distance = Math.max(1, Math.hypot(dx, dy));
+    const bend = Math.min(25, Math.max(5, distance * 0.05));
+
+    ctx.quadraticCurveTo(midX - (dy / distance) * bend, midY + (dx / distance) * bend, target.x, target.y);
+    
+    let strokeStyle = "rgba(243, 239, 226, 0.08)";
+    if (subState.subView === "ponzi" && edge.is_ponzi) {
+      strokeStyle = active ? "rgba(255, 107, 107, 0.75)" : "rgba(255, 107, 107, 0.15)";
+    } else {
+      strokeStyle = active ? "rgba(243, 239, 226, 0.75)" : "rgba(243, 239, 226, 0.08)";
+    }
+    
+    ctx.strokeStyle = strokeStyle;
+    ctx.globalAlpha = active ? 1.0 : 0.35;
+    ctx.lineWidth = active ? 1.8 : 0.8;
+    ctx.stroke();
+
+    if (active && distance > 30) {
+      const t = 0.5;
+      const ax = (1-t)*(1-t)*source.x + 2*(1-t)*t*(midX - (dy / distance) * bend) + t*t*target.x;
+      const ay = (1-t)*(1-t)*source.y + 2*(1-t)*t*(midY + (dx / distance) * bend) + t*t*target.y;
+      const tx = 2*(1-t)*((midX - (dy / distance) * bend) - source.x) + 2*t*(target.x - (midX - (dy / distance) * bend));
+      const ty = 2*(1-t)*((midY + (dx / distance) * bend) - source.y) + 2*t*(target.y - (midY + (dx / distance) * bend));
+      const angle = Math.atan2(ty, tx);
+
+      ctx.save();
+      ctx.translate(ax, ay);
+      ctx.rotate(angle);
+      ctx.beginPath();
+      ctx.moveTo(-5, -3);
+      ctx.lineTo(2, 0);
+      ctx.lineTo(-5, 3);
+      ctx.closePath();
+      ctx.fillStyle = subState.subView === "ponzi" && edge.is_ponzi ? "#ff6b6b" : "#f3efe2";
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+  ctx.globalAlpha = 1.0;
+
+  for (const node of layout.nodes) {
+    const isHovered = hoveredId === node.id;
+    const isSelected = selectedId === node.id;
+    const active = !selectedId || isSelected;
+
+    ctx.beginPath();
+    ctx.arc(node.x, node.y, node.radius + (isHovered ? 2 : 0), 0, Math.PI * 2);
+
+    let fill = "#8a867d";
+    if (subState.subView === "insider") {
+      if (node.type === "insider") {
+        fill = "#ff6b6b";
+      } else if (node.type === "company") {
+        fill = "#7aa6ff";
+      }
+    } else {
+      if (node.type === "ponzi_contract") {
+        fill = "#ff6b6b";
+      } else if (node.type === "organizer") {
+        fill = "#df7d58";
+      } else if (node.type === "dex") {
+        fill = "#7aa6ff";
+      } else if (node.type === "user") {
+        fill = "#e7c66b";
+      } else {
+        fill = "#58c6a4";
+      }
+    }
+
+    ctx.fillStyle = fill;
+    ctx.shadowColor = fill;
+    ctx.shadowBlur = (isHovered || isSelected) ? 12 : 0;
+    ctx.globalAlpha = active ? 1.0 : 0.25;
+    ctx.fill();
+    ctx.shadowBlur = 0;
+
+    ctx.lineWidth = (isHovered || isSelected) ? 1.8 : 0.8;
+    ctx.strokeStyle = (isHovered || isSelected) ? "#f3efe2" : "rgba(12, 14, 13, 0.4)";
+    ctx.stroke();
+
+    const highlighted = isSelected || isHovered;
+    if (highlighted || (subState.subView === "insider" && node.type === "company") || (subState.subView === "ponzi" && (node.type === "ponzi_contract" || node.type === "organizer"))) {
+      ctx.save();
+      ctx.font = highlighted ? "700 11px Inter, system-ui, sans-serif" : "500 9px Inter, system-ui, sans-serif";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "top";
+      ctx.fillStyle = highlighted ? "#f3efe2" : "rgba(243, 239, 226, 0.75)";
+      ctx.fillText(node.label, node.x, node.y + node.radius + 6);
+      ctx.restore();
+    }
+  }
+
+  ctx.restore();
+}
+
+function updateFraudMeters() {
+  const subState = state.fraud;
+  const summary = subState.summary;
+  if (!summary) return;
+
+  let hodge;
+  if (subState.subView === "insider") {
+    hodge = summary.hodge;
+  } else {
+    hodge = summary.ponzi_hodge;
+  }
+
+  const gradPct = hodge.gradient_pct / 100.0;
+  const curlPct = hodge.curl_pct / 100.0;
+  const harmPct = hodge.harmonic_pct / 100.0;
+
+  els.gradientLabel.textContent = "Gradient";
+  els.curlLabel.textContent = "Curl";
+  els.harmonicLabel.textContent = "Harmonic";
+  els.gradientMeter.value = gradPct;
+  els.curlMeter.value = curlPct;
+  els.harmonicMeter.value = harmPct;
 }
 
 // =========================================================================

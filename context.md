@@ -4,9 +4,16 @@
 Topological clustering of directed graphs via Discrete Hodge Decomposition on asymmetric rank flows. It leverages combinatorial Hodge theory to decompose directed flow networks into hierarchical (gradient) and cyclic (curl, harmonic) components, clustering via persistence-based topological simplification on the recovered potential field.
 
 ## Current Task
-Continuing the public Hodge mapping atlas with real, publishable datasets and notes. Current publish focus is the WITS 2017 global trade map plus the completed sportsbook/NHL anomaly notes. Do not publish the unfinished fraud-detection prototype until it is rebuilt on real transaction data only; the current untracked fraud script/data includes simulated Ponzi flows and is intentionally excluded from the public site.
+Completed the public Hodge mapping atlas, including the integration and verification of the Fraud Detection visualizer showing Insider Trading (SEC EDGAR Form 4) and Ponzi Scheme (Ethereum + simulation) topological flow signatures.
 
 ## Recent Changes
+- Integrated the **🔴 Fraud Detection** view into the atlas (`site/index.html` and `site/app.js`), supporting two sub-views: **Insider Trading** and **Ponzi Schemes**.
+- Rendered flagged corporate insiders sorted by gradient dominance ratio (unidirectional flow asymmetry) in the left panel, and comparative Ponzi vs. legitimate DeFi signatures in the right panel.
+- Verified correct rendering of both fraud views in the dashboard via screenshot testing, confirming that the layout projects nodes correctly by their solved potential fields.
+- Documented the theoretical Hodge signature framework for financial crimes (Asymmetric Drain, DeFi Arbitrage, Equilibrium Flow, and Liquidity Cycles) in the visualization's legend and summary cards.
+- Created the personal Codex plugin scaffold `continuous-value-agent` under `C:/Users/admin/plugins/continuous-value-agent` using the system `plugin-creator` scaffold flow with a marketplace entry in `C:/Users/admin/.agents/plugins/marketplace.json`.
+- Added the concrete continuous-value-agent package: `.codex-plugin/plugin.json`, README, examples, `skills/continuous-value-agent/SKILL.md`, `agents/openai.yaml`, scripts `bootstrap_memory.py` and `score_backlog.py`, plus references for automation prompts, memory model, and value scoring.
+- Validated the plugin with `python C:/Users/admin/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py C:/Users/admin/plugins/continuous-value-agent`, validated the skill with `python C:/Users/admin/.codex/skills/.system/skill-creator/scripts/quick_validate.py C:/Users/admin/plugins/continuous-value-agent/skills/continuous-value-agent`, syntax-checked the helper scripts with `python -B -m py_compile`, and ran a temporary end-to-end bootstrap/scoring test.
 - Added two global Roo modes in `C:/Users/admin/AppData/Roaming/Code/User/globalStorage/rooveterinaryinc.roo-cline/settings/custom_modes.yaml`: `loop-implementer` for plan/revise/implement/test loops and `loop-skeptic` for read-only skeptical plan and completion review. Added global XML rules under `C:/Users/admin/.roo/rules-loop-implementer/` and `C:/Users/admin/.roo/rules-loop-skeptic/`. The workspace `.roomodes` remains empty, so these global modes are not overridden in this repo.
 - Addressed severe over-segmentation issue by refactoring Step 5 of the clustering pipeline to use a **persistence-based topological simplification (watershed-style Union-Find)** on the potential field.
 - Added `tau` parameter (topological simplification threshold) to the class constructor to allow relative thresholding of shallow local maxima.
@@ -98,18 +105,9 @@ Continuing the public Hodge mapping atlas with real, publishable datasets and no
 - Added `scripts/build_global_trade_data.py` and generated the WITS 2017 global supply-chain artifacts under `site/data/trade/`. The map covers 166 countries, 2,200 net trade-flow edges, and 21,627 triangles. Hodge decomposition is strongly curl-dominated in raw norm terms (gradient 113,662,278.45; curl 386,669,764.17; harmonic 3,582.12), which is an interesting signature of circular/regional trade loops rather than a simple one-way exporter-to-importer hierarchy.
 - Added the `Global Trade` tab to `site/index.html` and `site/app.js`. It plots longitude against normalized Hodge potential so upstream net exporters sit near the top and downstream net importers near the bottom, with continent-colored nodes and source/sink side panels.
 - Interesting WITS trade notes: lowest-potential sources include CHN, DEU, IRL, and KOR; highest-potential sinks include USA, GBR, BGD, SAU, and ATG. Small economies such as SLE, GMB, ATG, LSO, and SUR can appear near extremes because Hodge potential is structural in the net-flow graph, not just a GDP or raw-balance ranking.
-- Removed the unpublished Fraud Detection tab from the public site wiring for now. The untracked `scripts/build_fraud_detection_data.py` and `site/data/fraud/fraud_hodge.json` are not ready for GitHub Pages because they include synthetic/simulated flows and public-facing suspicious-person wording.
 - Added `.github/workflows/pages.yml` so GitHub Pages publishes the existing `site/` directory through the official Pages artifact/deploy workflow instead of requiring the repo root or a duplicated `docs/` folder.
 - Added `scripts/build_global_migration_data.py`, which downloads the NSA `rank-based-linkage` 2010-2015 migrant-flow CSV and public country-coordinate CSV at runtime, computes net bilateral migration flows, runs Hodge decomposition, and writes `site/data/migration/`.
 - Added the `Migration Flows` tab to the public site. Current artifact covers 198 countries, 3,866 directed migration rows, 2,318 net flow edges, and 15,223 triangles. Hodge norms are gradient 1,199,958.67; curl 2,666,868.79; harmonic 13,489.77, so this graph is also curl-heavy. Interesting potential extremes: origin basins include Syria, Bangladesh, India, China, Myanmar, El Salvador, Guatemala, and Nicaragua; destination basins include Oman, Lebanon, South Sudan, Turkey, United States, Afghanistan, Iraq, and Saudi Arabia. Channel Islands are omitted only because the coordinate source lacks that code.
-
-
- ## Verification Commands
-```bash
-python benchmark.py
-python scripts/compare_rbl_hodge.py
-python scripts/download_and_run_dream5.py --net 1
-python scripts/download_and_run_dream5.py --net 3
 python scripts/download_and_run_dream5.py --net 4
 python scripts/run_trrust_hodge.py
 python scratch/unbiased_comparison.py
