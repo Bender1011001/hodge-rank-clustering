@@ -1,0 +1,2056 @@
+{
+  "inputs": {
+    "historical_csv": "site/data/historical_sportsbook_games.csv",
+    "strict_nhl_artifact": "site/data/hodge_real_sportsbook_agent_nhl_strict.json",
+    "residual_artifacts": {
+      "split50_25": "scratch/hodge_market_residual_strategy_nhl_split50_25.json",
+      "split70_15": "scratch/hodge_market_residual_strategy_nhl_split70_15.json",
+      "canonical_site_split": "site/data/hodge_market_residual_strategy_nhl.json"
+    }
+  },
+  "residual_splits": {
+    "split50_25": {
+      "config": {
+        "sports": [
+          "NHL"
+        ],
+        "seasons": 10,
+        "train_frac": 0.5,
+        "tune_frac": 0.25,
+        "initial_bankroll": 1000.0,
+        "flat_fraction": 0.01,
+        "max_day_exposure": 0.05,
+        "min_tune_bets": 100,
+        "note": "Thresholds are selected on tune only, then applied once to the untouched test period."
+      },
+      "coverage": {
+        "games_loaded": 11303,
+        "side_rows": 21996,
+        "train_rows": 11100,
+        "tune_rows": 5718,
+        "test_rows": 5178,
+        "first_date": "2013-03-02",
+        "last_date": "2022-11-27",
+        "skipped": {
+          "NHL:unknown_team": 5,
+          "NHL:warmup": 300
+        }
+      },
+      "split": {
+        "train": {
+          "first": "2013-03-02",
+          "last": "2017-03-21",
+          "dates": 930
+        },
+        "tune": {
+          "first": "2017-03-22",
+          "last": "2019-04-06",
+          "dates": 465
+        },
+        "test": {
+          "first": "2019-04-10",
+          "last": "2022-11-27",
+          "dates": 465
+        }
+      },
+      "tune_best": {
+        "edge_threshold": 0.0,
+        "min_ev": 0.0,
+        "bets": 657,
+        "wins": 367,
+        "win_pct": 55.86,
+        "yield_pct": -1.43,
+        "max_drawdown_pct": 26.46,
+        "final_bankroll": 912.3
+      },
+      "test_result": {
+        "edge_threshold": 0.0,
+        "min_ev": 0.0,
+        "bets": 1185,
+        "wins": 657,
+        "win_pct": 55.44,
+        "yield_pct": -4.03,
+        "max_drawdown_pct": 34.91,
+        "final_bankroll": 664.62,
+        "roi_pct": -33.54
+      },
+      "accuracy": {
+        "tune": {
+          "model_pick_accuracy_pct": 58.97,
+          "model_pick_correct": 1686,
+          "model_pick_total": 2859
+        },
+        "test": {
+          "model_pick_accuracy_pct": 58.13,
+          "model_pick_correct": 1505,
+          "model_pick_total": 2589
+        }
+      }
+    },
+    "split70_15": {
+      "config": {
+        "sports": [
+          "NHL"
+        ],
+        "seasons": 10,
+        "train_frac": 0.7,
+        "tune_frac": 0.15,
+        "initial_bankroll": 1000.0,
+        "flat_fraction": 0.01,
+        "max_day_exposure": 0.05,
+        "min_tune_bets": 100,
+        "note": "Thresholds are selected on tune only, then applied once to the untouched test period."
+      },
+      "coverage": {
+        "games_loaded": 11303,
+        "side_rows": 21996,
+        "train_rows": 15472,
+        "tune_rows": 3054,
+        "test_rows": 3470,
+        "first_date": "2013-03-02",
+        "last_date": "2022-11-27",
+        "skipped": {
+          "NHL:unknown_team": 5,
+          "NHL:warmup": 300
+        }
+      },
+      "split": {
+        "train": {
+          "first": "2013-03-02",
+          "last": "2018-12-30",
+          "dates": 1302
+        },
+        "tune": {
+          "first": "2018-12-31",
+          "last": "2020-01-02",
+          "dates": 279
+        },
+        "test": {
+          "first": "2020-01-03",
+          "last": "2022-11-27",
+          "dates": 279
+        }
+      },
+      "tune_best": {
+        "edge_threshold": 0.0,
+        "min_ev": 0.0,
+        "bets": 630,
+        "wins": 330,
+        "win_pct": 52.38,
+        "yield_pct": -6.43,
+        "max_drawdown_pct": 40.48,
+        "final_bankroll": 709.11
+      },
+      "test_result": {
+        "edge_threshold": 0.0,
+        "min_ev": 0.0,
+        "bets": 717,
+        "wins": 389,
+        "win_pct": 54.25,
+        "yield_pct": -1.76,
+        "max_drawdown_pct": 26.08,
+        "final_bankroll": 888.88,
+        "roi_pct": -11.11
+      },
+      "accuracy": {
+        "tune": {
+          "model_pick_accuracy_pct": 56.45,
+          "model_pick_correct": 862,
+          "model_pick_total": 1527
+        },
+        "test": {
+          "model_pick_accuracy_pct": 59.65,
+          "model_pick_correct": 1035,
+          "model_pick_total": 1735
+        }
+      }
+    },
+    "canonical_site_split": {
+      "config": {
+        "sports": [
+          "NHL"
+        ],
+        "seasons": 10,
+        "train_frac": 0.6,
+        "tune_frac": 0.2,
+        "initial_bankroll": 1000.0,
+        "flat_fraction": 0.01,
+        "max_day_exposure": 0.05,
+        "min_tune_bets": 100,
+        "note": "Thresholds are selected on tune only, then applied once to the untouched test period."
+      },
+      "coverage": {
+        "games_loaded": 11303,
+        "side_rows": 21996,
+        "train_rows": 13248,
+        "tune_rows": 3996,
+        "test_rows": 4752,
+        "first_date": "2013-03-02",
+        "last_date": "2022-11-27",
+        "skipped": {
+          "NHL:unknown_team": 5,
+          "NHL:warmup": 300
+        }
+      },
+      "split": {
+        "train": {
+          "first": "2013-03-02",
+          "last": "2018-02-09",
+          "dates": 1116
+        },
+        "tune": {
+          "first": "2018-02-10",
+          "last": "2019-09-23",
+          "dates": 372
+        },
+        "test": {
+          "first": "2019-09-25",
+          "last": "2022-11-27",
+          "dates": 372
+        }
+      },
+      "tune_best": {
+        "edge_threshold": 0.0,
+        "min_ev": 0.0,
+        "bets": 582,
+        "wins": 322,
+        "win_pct": 55.33,
+        "yield_pct": -3.56,
+        "max_drawdown_pct": 32.27,
+        "final_bankroll": 809.58
+      },
+      "test_result": {
+        "edge_threshold": 0.0,
+        "min_ev": 0.0,
+        "bets": 940,
+        "wins": 540,
+        "win_pct": 57.45,
+        "yield_pct": -1.77,
+        "max_drawdown_pct": 27.72,
+        "final_bankroll": 857.23,
+        "roi_pct": -14.28
+      },
+      "accuracy": {
+        "tune": {
+          "model_pick_accuracy_pct": 58.46,
+          "model_pick_correct": 1168,
+          "model_pick_total": 1998
+        },
+        "test": {
+          "model_pick_accuracy_pct": 58.92,
+          "model_pick_correct": 1400,
+          "model_pick_total": 2376
+        }
+      }
+    }
+  },
+  "odds_quarantine": {
+    "rows": 11303,
+    "seasons": {
+      "NHL 2012-13": 806,
+      "NHL 2013-14": 1322,
+      "NHL 2014-15": 1319,
+      "NHL 2015-16": 1321,
+      "NHL 2016-17": 1317,
+      "NHL 2017-18": 1355,
+      "NHL 2018-19": 1358,
+      "NHL 2019-20": 1212,
+      "NHL 2021": 951,
+      "NHL 2022-23": 342
+    },
+    "sources": {
+      "https://www.sportsbookreviewsonline.com/scoresoddsarchives/nhl-odds-2012-13": 806,
+      "https://www.sportsbookreviewsonline.com/scoresoddsarchives/nhl-odds-2013-14": 1322,
+      "https://www.sportsbookreviewsonline.com/scoresoddsarchives/nhl-odds-2014-15": 1319,
+      "https://www.sportsbookreviewsonline.com/scoresoddsarchives/nhl-odds-2015-16": 1321,
+      "https://www.sportsbookreviewsonline.com/scoresoddsarchives/nhl-odds-2016-17": 1317,
+      "https://www.sportsbookreviewsonline.com/scoresoddsarchives/nhl-odds-2017-18": 1355,
+      "https://www.sportsbookreviewsonline.com/scoresoddsarchives/nhl-odds-2018-19": 1358,
+      "https://www.sportsbookreviewsonline.com/scoresoddsarchives/nhl-odds-2019-20": 1212,
+      "https://www.sportsbookreviewsonline.com/scoresoddsarchives/nhl-odds-2021": 951,
+      "https://www.sportsbookreviewsonline.com/scoresoddsarchives/nhl-odds-2022-23": 342
+    },
+    "counts": {
+      "overround_over_1_05": 1
+    },
+    "duplicate_date_away_home_count": 0,
+    "duplicate_date_away_home_examples": {},
+    "overround": {
+      "n": 11303,
+      "mean": 1.032936,
+      "median": 1.033375,
+      "min": 1.002439,
+      "p05": 1.019763,
+      "p95": 1.047079,
+      "max": 1.050215
+    }
+  },
+  "strict_nhl_match_quality": {
+    "input_records": 474,
+    "matched": 474,
+    "misses": 0,
+    "miss_examples": []
+  },
+  "strict_nhl_summary_source": {
+    "bets": 474,
+    "wins": 264,
+    "win_pct": 55.7,
+    "initial_bankroll": 1000.0,
+    "final_bankroll": 1236.98,
+    "profit": 236.98,
+    "roi_pct": 23.7,
+    "total_staked": 4709.72,
+    "yield_on_stake_pct": 5.03,
+    "max_drawdown_pct": 20.52,
+    "by_sport": {
+      "NHL": {
+        "bets": 474,
+        "wins": 264,
+        "win_pct": 55.7,
+        "profit": 236.98,
+        "staked": 4709.72,
+        "yield_pct": 5.03
+      }
+    },
+    "by_year": {
+      "2013": {
+        "bets": 84,
+        "wins": 47,
+        "win_pct": 55.95,
+        "profit": -45.41,
+        "staked": 841.44,
+        "yield_pct": -5.4
+      },
+      "2014": {
+        "bets": 22,
+        "wins": 10,
+        "win_pct": 45.45,
+        "profit": -31.04,
+        "staked": 204.0,
+        "yield_pct": -15.22
+      },
+      "2015": {
+        "bets": 67,
+        "wins": 34,
+        "win_pct": 50.75,
+        "profit": -60.76,
+        "staked": 590.78,
+        "yield_pct": -10.28
+      },
+      "2016": {
+        "bets": 26,
+        "wins": 12,
+        "win_pct": 46.15,
+        "profit": -7.6,
+        "staked": 221.02,
+        "yield_pct": -3.44
+      },
+      "2017": {
+        "bets": 78,
+        "wins": 46,
+        "win_pct": 58.97,
+        "profit": 102.52,
+        "staked": 703.31,
+        "yield_pct": 14.58
+      },
+      "2018": {
+        "bets": 48,
+        "wins": 30,
+        "win_pct": 62.5,
+        "profit": 85.89,
+        "staked": 476.24,
+        "yield_pct": 18.04
+      },
+      "2019": {
+        "bets": 54,
+        "wins": 29,
+        "win_pct": 53.7,
+        "profit": 46.74,
+        "staked": 574.39,
+        "yield_pct": 8.14
+      },
+      "2020": {
+        "bets": 3,
+        "wins": 1,
+        "win_pct": 33.33,
+        "profit": -8.87,
+        "staked": 32.62,
+        "yield_pct": -27.2
+      },
+      "2022": {
+        "bets": 92,
+        "wins": 55,
+        "win_pct": 59.78,
+        "profit": 155.51,
+        "staked": 1065.93,
+        "yield_pct": 14.59
+      }
+    },
+    "by_side": {
+      "NHL:away": {
+        "bets": 232,
+        "wins": 116,
+        "win_pct": 50.0,
+        "profit": 11.13,
+        "staked": 2284.97,
+        "yield_pct": 0.49
+      },
+      "NHL:home": {
+        "bets": 242,
+        "wins": 148,
+        "win_pct": 61.16,
+        "profit": 225.85,
+        "staked": 2424.74,
+        "yield_pct": 9.31
+      }
+    }
+  },
+  "strict_nhl_slippage_dynamic_replay": {
+    "0pct": {
+      "bets": 474,
+      "wins": 264,
+      "win_pct": 55.7,
+      "initial_bankroll": 1000.0,
+      "final_bankroll": 1236.99,
+      "profit": 236.99,
+      "roi_pct": 23.7,
+      "total_staked": 4709.74,
+      "yield_pct": 5.03,
+      "max_drawdown_pct": 20.52,
+      "by_year": {
+        "2013": {
+          "bets": 84,
+          "wins": 47,
+          "win_pct": 55.95,
+          "profit": -45.4,
+          "staked": 841.44,
+          "yield_pct": -5.4
+        },
+        "2014": {
+          "bets": 22,
+          "wins": 10,
+          "win_pct": 45.45,
+          "profit": -31.04,
+          "staked": 204.0,
+          "yield_pct": -15.22
+        },
+        "2015": {
+          "bets": 67,
+          "wins": 34,
+          "win_pct": 50.75,
+          "profit": -60.76,
+          "staked": 590.78,
+          "yield_pct": -10.28
+        },
+        "2016": {
+          "bets": 26,
+          "wins": 12,
+          "win_pct": 46.15,
+          "profit": -7.6,
+          "staked": 221.02,
+          "yield_pct": -3.44
+        },
+        "2017": {
+          "bets": 78,
+          "wins": 46,
+          "win_pct": 58.97,
+          "profit": 102.51,
+          "staked": 703.31,
+          "yield_pct": 14.58
+        },
+        "2018": {
+          "bets": 48,
+          "wins": 30,
+          "win_pct": 62.5,
+          "profit": 85.89,
+          "staked": 476.25,
+          "yield_pct": 18.04
+        },
+        "2019": {
+          "bets": 54,
+          "wins": 29,
+          "win_pct": 53.7,
+          "profit": 46.74,
+          "staked": 574.39,
+          "yield_pct": 8.14
+        },
+        "2020": {
+          "bets": 3,
+          "wins": 1,
+          "win_pct": 33.33,
+          "profit": -8.87,
+          "staked": 32.62,
+          "yield_pct": -27.2
+        },
+        "2022": {
+          "bets": 92,
+          "wins": 55,
+          "win_pct": 59.78,
+          "profit": 155.51,
+          "staked": 1065.93,
+          "yield_pct": 14.59
+        }
+      },
+      "by_season": {
+        "NHL 2012-13": {
+          "bets": 35,
+          "wins": 21,
+          "win_pct": 60.0,
+          "profit": -0.91,
+          "staked": 352.99,
+          "yield_pct": -0.26
+        },
+        "NHL 2013-14": {
+          "bets": 53,
+          "wins": 27,
+          "win_pct": 50.94,
+          "profit": -58.48,
+          "staked": 526.79,
+          "yield_pct": -11.1
+        },
+        "NHL 2014-15": {
+          "bets": 32,
+          "wins": 13,
+          "win_pct": 40.62,
+          "profit": -72.98,
+          "staked": 290.46,
+          "yield_pct": -25.13
+        },
+        "NHL 2015-16": {
+          "bets": 65,
+          "wins": 35,
+          "win_pct": 53.85,
+          "profit": -2.21,
+          "staked": 569.06,
+          "yield_pct": -0.39
+        },
+        "NHL 2016-17": {
+          "bets": 41,
+          "wins": 24,
+          "win_pct": 58.54,
+          "profit": 36.09,
+          "staked": 358.87,
+          "yield_pct": 10.06
+        },
+        "NHL 2017-18": {
+          "bets": 68,
+          "wins": 40,
+          "win_pct": 58.82,
+          "profit": 85.66,
+          "staked": 626.45,
+          "yield_pct": 13.67
+        },
+        "NHL 2018-19": {
+          "bets": 43,
+          "wins": 24,
+          "win_pct": 55.81,
+          "profit": 39.36,
+          "staked": 437.42,
+          "yield_pct": 9.0
+        },
+        "NHL 2019-20": {
+          "bets": 45,
+          "wins": 25,
+          "win_pct": 55.56,
+          "profit": 54.96,
+          "staked": 481.77,
+          "yield_pct": 11.41
+        },
+        "NHL 2021": {
+          "bets": 31,
+          "wins": 21,
+          "win_pct": 67.74,
+          "profit": 91.25,
+          "staked": 351.09,
+          "yield_pct": 25.99
+        },
+        "NHL 2022-23": {
+          "bets": 61,
+          "wins": 34,
+          "win_pct": 55.74,
+          "profit": 64.26,
+          "staked": 714.85,
+          "yield_pct": 8.99
+        }
+      }
+    },
+    "1pct": {
+      "bets": 474,
+      "wins": 264,
+      "win_pct": 55.7,
+      "initial_bankroll": 1000.0,
+      "final_bankroll": 1177.59,
+      "profit": 177.59,
+      "roi_pct": 17.76,
+      "total_staked": 4596.35,
+      "yield_pct": 3.86,
+      "max_drawdown_pct": 21.7,
+      "by_year": {
+        "2013": {
+          "bets": 84,
+          "wins": 47,
+          "win_pct": 55.95,
+          "profit": -52.93,
+          "staked": 838.0,
+          "yield_pct": -6.32
+        },
+        "2014": {
+          "bets": 22,
+          "wins": 10,
+          "win_pct": 45.45,
+          "profit": -32.5,
+          "staked": 202.24,
+          "yield_pct": -16.07
+        },
+        "2015": {
+          "bets": 67,
+          "wins": 34,
+          "win_pct": 50.75,
+          "profit": -65.28,
+          "staked": 583.4,
+          "yield_pct": -11.19
+        },
+        "2016": {
+          "bets": 26,
+          "wins": 12,
+          "win_pct": 46.15,
+          "profit": -9.59,
+          "staked": 217.32,
+          "yield_pct": -4.41
+        },
+        "2017": {
+          "bets": 78,
+          "wins": 46,
+          "win_pct": 58.97,
+          "profit": 92.33,
+          "staked": 687.57,
+          "yield_pct": 13.43
+        },
+        "2018": {
+          "bets": 48,
+          "wins": 30,
+          "win_pct": 62.5,
+          "profit": 77.89,
+          "staked": 462.22,
+          "yield_pct": 16.85
+        },
+        "2019": {
+          "bets": 54,
+          "wins": 29,
+          "win_pct": 53.7,
+          "profit": 39.12,
+          "staked": 554.28,
+          "yield_pct": 7.06
+        },
+        "2020": {
+          "bets": 3,
+          "wins": 1,
+          "win_pct": 33.33,
+          "profit": -8.76,
+          "staked": 31.38,
+          "yield_pct": -27.93
+        },
+        "2022": {
+          "bets": 92,
+          "wins": 55,
+          "win_pct": 59.78,
+          "profit": 137.31,
+          "staked": 1019.94,
+          "yield_pct": 13.46
+        }
+      },
+      "by_season": {
+        "NHL 2012-13": {
+          "bets": 35,
+          "wins": 21,
+          "win_pct": 60.0,
+          "profit": -4.38,
+          "staked": 352.37,
+          "yield_pct": -1.24
+        },
+        "NHL 2013-14": {
+          "bets": 53,
+          "wins": 27,
+          "win_pct": 50.94,
+          "profit": -62.67,
+          "staked": 523.65,
+          "yield_pct": -11.97
+        },
+        "NHL 2014-15": {
+          "bets": 32,
+          "wins": 13,
+          "win_pct": 40.62,
+          "profit": -74.44,
+          "staked": 287.76,
+          "yield_pct": -25.87
+        },
+        "NHL 2015-16": {
+          "bets": 65,
+          "wins": 35,
+          "win_pct": 53.85,
+          "profit": -7.7,
+          "staked": 561.27,
+          "yield_pct": -1.37
+        },
+        "NHL 2016-17": {
+          "bets": 41,
+          "wins": 24,
+          "win_pct": 58.54,
+          "profit": 31.51,
+          "staked": 352.07,
+          "yield_pct": 8.95
+        },
+        "NHL 2017-18": {
+          "bets": 68,
+          "wins": 40,
+          "win_pct": 58.82,
+          "profit": 76.45,
+          "staked": 610.94,
+          "yield_pct": 12.51
+        },
+        "NHL 2018-19": {
+          "bets": 43,
+          "wins": 24,
+          "win_pct": 55.81,
+          "profit": 33.58,
+          "staked": 423.83,
+          "yield_pct": 7.92
+        },
+        "NHL 2019-20": {
+          "bets": 45,
+          "wins": 25,
+          "win_pct": 55.56,
+          "profit": 47.92,
+          "staked": 464.52,
+          "yield_pct": 10.32
+        },
+        "NHL 2021": {
+          "bets": 31,
+          "wins": 21,
+          "win_pct": 67.74,
+          "profit": 83.39,
+          "staked": 337.05,
+          "yield_pct": 24.74
+        },
+        "NHL 2022-23": {
+          "bets": 61,
+          "wins": 34,
+          "win_pct": 55.74,
+          "profit": 53.92,
+          "staked": 682.89,
+          "yield_pct": 7.9
+        }
+      }
+    },
+    "2pct": {
+      "bets": 474,
+      "wins": 264,
+      "win_pct": 55.7,
+      "initial_bankroll": 1000.0,
+      "final_bankroll": 1121.04,
+      "profit": 121.04,
+      "roi_pct": 12.1,
+      "total_staked": 4486.64,
+      "yield_pct": 2.7,
+      "max_drawdown_pct": 22.85,
+      "by_year": {
+        "2013": {
+          "bets": 84,
+          "wins": 47,
+          "win_pct": 55.95,
+          "profit": -60.4,
+          "staked": 834.57,
+          "yield_pct": -7.24
+        },
+        "2014": {
+          "bets": 22,
+          "wins": 10,
+          "win_pct": 45.45,
+          "profit": -33.94,
+          "staked": 200.49,
+          "yield_pct": -16.93
+        },
+        "2015": {
+          "bets": 67,
+          "wins": 34,
+          "win_pct": 50.75,
+          "profit": -69.68,
+          "staked": 576.12,
+          "yield_pct": -12.09
+        },
+        "2016": {
+          "bets": 26,
+          "wins": 12,
+          "win_pct": 46.15,
+          "profit": -11.5,
+          "staked": 213.69,
+          "yield_pct": -5.38
+        },
+        "2017": {
+          "bets": 78,
+          "wins": 46,
+          "win_pct": 58.97,
+          "profit": 82.55,
+          "staked": 672.17,
+          "yield_pct": 12.28
+        },
+        "2018": {
+          "bets": 48,
+          "wins": 30,
+          "win_pct": 62.5,
+          "profit": 70.28,
+          "staked": 448.61,
+          "yield_pct": 15.67
+        },
+        "2019": {
+          "bets": 54,
+          "wins": 29,
+          "win_pct": 53.7,
+          "profit": 31.98,
+          "staked": 534.87,
+          "yield_pct": 5.98
+        },
+        "2020": {
+          "bets": 3,
+          "wins": 1,
+          "win_pct": 33.33,
+          "profit": -8.65,
+          "staked": 30.19,
+          "yield_pct": -28.65
+        },
+        "2022": {
+          "bets": 92,
+          "wins": 55,
+          "win_pct": 59.78,
+          "profit": 120.39,
+          "staked": 975.93,
+          "yield_pct": 12.34
+        }
+      },
+      "by_season": {
+        "NHL 2012-13": {
+          "bets": 35,
+          "wins": 21,
+          "win_pct": 60.0,
+          "profit": -7.84,
+          "staked": 351.76,
+          "yield_pct": -2.23
+        },
+        "NHL 2013-14": {
+          "bets": 53,
+          "wins": 27,
+          "win_pct": 50.94,
+          "profit": -66.8,
+          "staked": 520.53,
+          "yield_pct": -12.83
+        },
+        "NHL 2014-15": {
+          "bets": 32,
+          "wins": 13,
+          "win_pct": 40.62,
+          "profit": -75.86,
+          "staked": 285.08,
+          "yield_pct": -26.61
+        },
+        "NHL 2015-16": {
+          "bets": 65,
+          "wins": 35,
+          "win_pct": 53.85,
+          "profit": -13.03,
+          "staked": 553.59,
+          "yield_pct": -2.35
+        },
+        "NHL 2016-17": {
+          "bets": 41,
+          "wins": 24,
+          "win_pct": 58.54,
+          "profit": 27.09,
+          "staked": 345.39,
+          "yield_pct": 7.84
+        },
+        "NHL 2017-18": {
+          "bets": 68,
+          "wins": 40,
+          "win_pct": 58.82,
+          "profit": 67.65,
+          "staked": 595.81,
+          "yield_pct": 11.35
+        },
+        "NHL 2018-19": {
+          "bets": 43,
+          "wins": 24,
+          "win_pct": 55.81,
+          "profit": 28.13,
+          "staked": 410.65,
+          "yield_pct": 6.85
+        },
+        "NHL 2019-20": {
+          "bets": 45,
+          "wins": 25,
+          "win_pct": 55.56,
+          "profit": 41.32,
+          "staked": 447.89,
+          "yield_pct": 9.22
+        },
+        "NHL 2021": {
+          "bets": 31,
+          "wins": 21,
+          "win_pct": 67.74,
+          "profit": 76.02,
+          "staked": 323.57,
+          "yield_pct": 23.49
+        },
+        "NHL 2022-23": {
+          "bets": 61,
+          "wins": 34,
+          "win_pct": 55.74,
+          "profit": 44.37,
+          "staked": 652.36,
+          "yield_pct": 6.8
+        }
+      }
+    },
+    "3pct": {
+      "bets": 474,
+      "wins": 264,
+      "win_pct": 55.7,
+      "initial_bankroll": 1000.0,
+      "final_bankroll": 1067.19,
+      "profit": 67.19,
+      "roi_pct": 6.72,
+      "total_staked": 4380.47,
+      "yield_pct": 1.53,
+      "max_drawdown_pct": 23.99,
+      "by_year": {
+        "2013": {
+          "bets": 84,
+          "wins": 47,
+          "win_pct": 55.95,
+          "profit": -67.81,
+          "staked": 831.16,
+          "yield_pct": -8.16
+        },
+        "2014": {
+          "bets": 22,
+          "wins": 10,
+          "win_pct": 45.45,
+          "profit": -35.34,
+          "staked": 198.76,
+          "yield_pct": -17.78
+        },
+        "2015": {
+          "bets": 67,
+          "wins": 34,
+          "win_pct": 50.75,
+          "profit": -73.95,
+          "staked": 568.93,
+          "yield_pct": -13.0
+        },
+        "2016": {
+          "bets": 26,
+          "wins": 12,
+          "win_pct": 46.15,
+          "profit": -13.35,
+          "staked": 210.12,
+          "yield_pct": -6.35
+        },
+        "2017": {
+          "bets": 78,
+          "wins": 46,
+          "win_pct": 58.97,
+          "profit": 73.16,
+          "staked": 657.12,
+          "yield_pct": 11.13
+        },
+        "2018": {
+          "bets": 48,
+          "wins": 30,
+          "win_pct": 62.5,
+          "profit": 63.05,
+          "staked": 435.39,
+          "yield_pct": 14.48
+        },
+        "2019": {
+          "bets": 54,
+          "wins": 29,
+          "win_pct": 53.7,
+          "profit": 25.29,
+          "staked": 516.13,
+          "yield_pct": 4.9
+        },
+        "2020": {
+          "bets": 3,
+          "wins": 1,
+          "win_pct": 33.33,
+          "profit": -8.53,
+          "staked": 29.05,
+          "yield_pct": -29.37
+        },
+        "2022": {
+          "bets": 92,
+          "wins": 55,
+          "win_pct": 59.78,
+          "profit": 104.67,
+          "staked": 933.82,
+          "yield_pct": 11.21
+        }
+      },
+      "by_season": {
+        "NHL 2012-13": {
+          "bets": 35,
+          "wins": 21,
+          "win_pct": 60.0,
+          "profit": -11.29,
+          "staked": 351.14,
+          "yield_pct": -3.21
+        },
+        "NHL 2013-14": {
+          "bets": 53,
+          "wins": 27,
+          "win_pct": 50.94,
+          "profit": -70.89,
+          "staked": 517.43,
+          "yield_pct": -13.7
+        },
+        "NHL 2014-15": {
+          "bets": 32,
+          "wins": 13,
+          "win_pct": 40.62,
+          "profit": -77.26,
+          "staked": 282.43,
+          "yield_pct": -27.35
+        },
+        "NHL 2015-16": {
+          "bets": 65,
+          "wins": 35,
+          "win_pct": 53.85,
+          "profit": -18.22,
+          "staked": 546.01,
+          "yield_pct": -3.34
+        },
+        "NHL 2016-17": {
+          "bets": 41,
+          "wins": 24,
+          "win_pct": 58.54,
+          "profit": 22.83,
+          "staked": 338.85,
+          "yield_pct": 6.74
+        },
+        "NHL 2017-18": {
+          "bets": 68,
+          "wins": 40,
+          "win_pct": 58.82,
+          "profit": 59.24,
+          "staked": 581.05,
+          "yield_pct": 10.2
+        },
+        "NHL 2018-19": {
+          "bets": 43,
+          "wins": 24,
+          "win_pct": 55.81,
+          "profit": 22.98,
+          "staked": 397.89,
+          "yield_pct": 5.78
+        },
+        "NHL 2019-20": {
+          "bets": 45,
+          "wins": 25,
+          "win_pct": 55.56,
+          "profit": 35.12,
+          "staked": 431.86,
+          "yield_pct": 8.13
+        },
+        "NHL 2021": {
+          "bets": 31,
+          "wins": 21,
+          "win_pct": 67.74,
+          "profit": 69.1,
+          "staked": 310.63,
+          "yield_pct": 22.25
+        },
+        "NHL 2022-23": {
+          "bets": 61,
+          "wins": 34,
+          "win_pct": 55.74,
+          "profit": 35.57,
+          "staked": 623.18,
+          "yield_pct": 5.71
+        }
+      }
+    }
+  },
+  "strict_nhl_era_summary": {
+    "early_2013_2016": {
+      "bets": 199,
+      "wins": 103,
+      "win_pct": 51.76,
+      "profit": -144.8,
+      "staked": 1857.24,
+      "yield_pct": -7.8
+    },
+    "middle_2017_2019": {
+      "bets": 180,
+      "wins": 105,
+      "win_pct": 58.33,
+      "profit": 235.14,
+      "staked": 1753.95,
+      "yield_pct": 13.41
+    },
+    "late_2020_2022": {
+      "bets": 95,
+      "wins": 56,
+      "win_pct": 58.95,
+      "profit": 146.64,
+      "staked": 1098.55,
+      "yield_pct": 13.35
+    }
+  },
+  "same_window_baselines": {
+    "stored_strict_hodge_selection": {
+      "bets": 474,
+      "wins": 264,
+      "win_pct": 55.7,
+      "initial_bankroll": 1000.0,
+      "final_bankroll": 1236.99,
+      "profit": 236.99,
+      "roi_pct": 23.7,
+      "total_staked": 4709.74,
+      "yield_pct": 5.03,
+      "max_drawdown_pct": 20.52,
+      "by_year": {
+        "2013": {
+          "bets": 84,
+          "wins": 47,
+          "win_pct": 55.95,
+          "profit": -45.4,
+          "staked": 841.44,
+          "yield_pct": -5.4
+        },
+        "2014": {
+          "bets": 22,
+          "wins": 10,
+          "win_pct": 45.45,
+          "profit": -31.04,
+          "staked": 204.0,
+          "yield_pct": -15.22
+        },
+        "2015": {
+          "bets": 67,
+          "wins": 34,
+          "win_pct": 50.75,
+          "profit": -60.76,
+          "staked": 590.78,
+          "yield_pct": -10.28
+        },
+        "2016": {
+          "bets": 26,
+          "wins": 12,
+          "win_pct": 46.15,
+          "profit": -7.6,
+          "staked": 221.02,
+          "yield_pct": -3.44
+        },
+        "2017": {
+          "bets": 78,
+          "wins": 46,
+          "win_pct": 58.97,
+          "profit": 102.51,
+          "staked": 703.31,
+          "yield_pct": 14.58
+        },
+        "2018": {
+          "bets": 48,
+          "wins": 30,
+          "win_pct": 62.5,
+          "profit": 85.89,
+          "staked": 476.25,
+          "yield_pct": 18.04
+        },
+        "2019": {
+          "bets": 54,
+          "wins": 29,
+          "win_pct": 53.7,
+          "profit": 46.74,
+          "staked": 574.39,
+          "yield_pct": 8.14
+        },
+        "2020": {
+          "bets": 3,
+          "wins": 1,
+          "win_pct": 33.33,
+          "profit": -8.87,
+          "staked": 32.62,
+          "yield_pct": -27.2
+        },
+        "2022": {
+          "bets": 92,
+          "wins": 55,
+          "win_pct": 59.78,
+          "profit": 155.51,
+          "staked": 1065.93,
+          "yield_pct": 14.59
+        }
+      },
+      "by_season": {
+        "NHL 2012-13": {
+          "bets": 35,
+          "wins": 21,
+          "win_pct": 60.0,
+          "profit": -0.91,
+          "staked": 352.99,
+          "yield_pct": -0.26
+        },
+        "NHL 2013-14": {
+          "bets": 53,
+          "wins": 27,
+          "win_pct": 50.94,
+          "profit": -58.48,
+          "staked": 526.79,
+          "yield_pct": -11.1
+        },
+        "NHL 2014-15": {
+          "bets": 32,
+          "wins": 13,
+          "win_pct": 40.62,
+          "profit": -72.98,
+          "staked": 290.46,
+          "yield_pct": -25.13
+        },
+        "NHL 2015-16": {
+          "bets": 65,
+          "wins": 35,
+          "win_pct": 53.85,
+          "profit": -2.21,
+          "staked": 569.06,
+          "yield_pct": -0.39
+        },
+        "NHL 2016-17": {
+          "bets": 41,
+          "wins": 24,
+          "win_pct": 58.54,
+          "profit": 36.09,
+          "staked": 358.87,
+          "yield_pct": 10.06
+        },
+        "NHL 2017-18": {
+          "bets": 68,
+          "wins": 40,
+          "win_pct": 58.82,
+          "profit": 85.66,
+          "staked": 626.45,
+          "yield_pct": 13.67
+        },
+        "NHL 2018-19": {
+          "bets": 43,
+          "wins": 24,
+          "win_pct": 55.81,
+          "profit": 39.36,
+          "staked": 437.42,
+          "yield_pct": 9.0
+        },
+        "NHL 2019-20": {
+          "bets": 45,
+          "wins": 25,
+          "win_pct": 55.56,
+          "profit": 54.96,
+          "staked": 481.77,
+          "yield_pct": 11.41
+        },
+        "NHL 2021": {
+          "bets": 31,
+          "wins": 21,
+          "win_pct": 67.74,
+          "profit": 91.25,
+          "staked": 351.09,
+          "yield_pct": 25.99
+        },
+        "NHL 2022-23": {
+          "bets": 61,
+          "wins": 34,
+          "win_pct": 55.74,
+          "profit": 64.26,
+          "staked": 714.85,
+          "yield_pct": 8.99
+        }
+      }
+    },
+    "same_games_home": {
+      "bets": 474,
+      "wins": 264,
+      "win_pct": 55.7,
+      "initial_bankroll": 1000.0,
+      "final_bankroll": 1017.34,
+      "profit": 17.34,
+      "roi_pct": 1.73,
+      "total_staked": 4992.26,
+      "yield_pct": 0.35,
+      "max_drawdown_pct": 15.61,
+      "by_year": {
+        "2013": {
+          "bets": 84,
+          "wins": 49,
+          "win_pct": 58.33,
+          "profit": 16.5,
+          "staked": 847.91,
+          "yield_pct": 1.95
+        },
+        "2014": {
+          "bets": 22,
+          "wins": 15,
+          "win_pct": 68.18,
+          "profit": 38.43,
+          "staked": 229.05,
+          "yield_pct": 16.78
+        },
+        "2015": {
+          "bets": 67,
+          "wins": 37,
+          "win_pct": 55.22,
+          "profit": -18.92,
+          "staked": 695.26,
+          "yield_pct": -2.72
+        },
+        "2016": {
+          "bets": 26,
+          "wins": 16,
+          "win_pct": 61.54,
+          "profit": 61.86,
+          "staked": 278.14,
+          "yield_pct": 22.24
+        },
+        "2017": {
+          "bets": 78,
+          "wins": 44,
+          "win_pct": 56.41,
+          "profit": 2.33,
+          "staked": 839.33,
+          "yield_pct": 0.28
+        },
+        "2018": {
+          "bets": 48,
+          "wins": 27,
+          "win_pct": 56.25,
+          "profit": 14.26,
+          "staked": 533.77,
+          "yield_pct": 2.67
+        },
+        "2019": {
+          "bets": 54,
+          "wins": 28,
+          "win_pct": 51.85,
+          "profit": -25.06,
+          "staked": 600.87,
+          "yield_pct": -4.17
+        },
+        "2020": {
+          "bets": 3,
+          "wins": 1,
+          "win_pct": 33.33,
+          "profit": -3.53,
+          "staked": 32.36,
+          "yield_pct": -10.9
+        },
+        "2022": {
+          "bets": 92,
+          "wins": 47,
+          "win_pct": 51.09,
+          "profit": -68.53,
+          "staked": 935.56,
+          "yield_pct": -7.33
+        }
+      },
+      "by_season": {
+        "NHL 2012-13": {
+          "bets": 35,
+          "wins": 21,
+          "win_pct": 60.0,
+          "profit": -2.98,
+          "staked": 356.4,
+          "yield_pct": -0.84
+        },
+        "NHL 2013-14": {
+          "bets": 53,
+          "wins": 31,
+          "win_pct": 58.49,
+          "profit": 32.93,
+          "staked": 532.14,
+          "yield_pct": 6.19
+        },
+        "NHL 2014-15": {
+          "bets": 32,
+          "wins": 22,
+          "win_pct": 68.75,
+          "profit": 54.37,
+          "staked": 337.85,
+          "yield_pct": 16.09
+        },
+        "NHL 2015-16": {
+          "bets": 65,
+          "wins": 34,
+          "win_pct": 52.31,
+          "profit": -10.21,
+          "staked": 671.13,
+          "yield_pct": -1.52
+        },
+        "NHL 2016-17": {
+          "bets": 41,
+          "wins": 22,
+          "win_pct": 53.66,
+          "profit": -28.35,
+          "staked": 440.52,
+          "yield_pct": -6.43
+        },
+        "NHL 2017-18": {
+          "bets": 68,
+          "wins": 41,
+          "win_pct": 60.29,
+          "profit": 67.03,
+          "staked": 742.75,
+          "yield_pct": 9.02
+        },
+        "NHL 2018-19": {
+          "bets": 43,
+          "wins": 23,
+          "win_pct": 53.49,
+          "profit": -6.28,
+          "staked": 476.5,
+          "yield_pct": -1.32
+        },
+        "NHL 2019-20": {
+          "bets": 45,
+          "wins": 23,
+          "win_pct": 51.11,
+          "profit": -20.64,
+          "staked": 499.42,
+          "yield_pct": -4.13
+        },
+        "NHL 2021": {
+          "bets": 31,
+          "wins": 14,
+          "win_pct": 45.16,
+          "profit": -53.72,
+          "staked": 326.49,
+          "yield_pct": -16.46
+        },
+        "NHL 2022-23": {
+          "bets": 61,
+          "wins": 33,
+          "win_pct": 54.1,
+          "profit": -14.81,
+          "staked": 609.08,
+          "yield_pct": -2.43
+        }
+      }
+    },
+    "same_games_away": {
+      "bets": 474,
+      "wins": 210,
+      "win_pct": 44.3,
+      "initial_bankroll": 1000.0,
+      "final_bankroll": 684.15,
+      "profit": -315.85,
+      "roi_pct": -31.58,
+      "total_staked": 3598.29,
+      "yield_pct": -8.78,
+      "max_drawdown_pct": 36.05,
+      "by_year": {
+        "2013": {
+          "bets": 84,
+          "wins": 35,
+          "win_pct": 41.67,
+          "profit": -93.49,
+          "staked": 789.67,
+          "yield_pct": -11.84
+        },
+        "2014": {
+          "bets": 22,
+          "wins": 7,
+          "win_pct": 31.82,
+          "profit": -63.46,
+          "staked": 191.99,
+          "yield_pct": -33.05
+        },
+        "2015": {
+          "bets": 67,
+          "wins": 30,
+          "win_pct": 44.78,
+          "profit": -74.84,
+          "staked": 535.28,
+          "yield_pct": -13.98
+        },
+        "2016": {
+          "bets": 26,
+          "wins": 10,
+          "win_pct": 38.46,
+          "profit": -55.25,
+          "staked": 193.29,
+          "yield_pct": -28.58
+        },
+        "2017": {
+          "bets": 78,
+          "wins": 34,
+          "win_pct": 43.59,
+          "profit": -34.4,
+          "staked": 555.17,
+          "yield_pct": -6.2
+        },
+        "2018": {
+          "bets": 48,
+          "wins": 21,
+          "win_pct": 43.75,
+          "profit": -12.69,
+          "staked": 322.27,
+          "yield_pct": -3.94
+        },
+        "2019": {
+          "bets": 54,
+          "wins": 26,
+          "win_pct": 48.15,
+          "profit": 9.02,
+          "staked": 359.62,
+          "yield_pct": 2.51
+        },
+        "2020": {
+          "bets": 3,
+          "wins": 2,
+          "win_pct": 66.67,
+          "profit": 6.47,
+          "staked": 20.43,
+          "yield_pct": 31.67
+        },
+        "2022": {
+          "bets": 92,
+          "wins": 45,
+          "win_pct": 48.91,
+          "profit": 2.79,
+          "staked": 630.56,
+          "yield_pct": 0.44
+        }
+      },
+      "by_season": {
+        "NHL 2012-13": {
+          "bets": 35,
+          "wins": 14,
+          "win_pct": 40.0,
+          "profit": -45.71,
+          "staked": 333.64,
+          "yield_pct": -13.7
+        },
+        "NHL 2013-14": {
+          "bets": 53,
+          "wins": 22,
+          "win_pct": 41.51,
+          "profit": -61.07,
+          "staked": 492.44,
+          "yield_pct": -12.4
+        },
+        "NHL 2014-15": {
+          "bets": 32,
+          "wins": 10,
+          "win_pct": 31.25,
+          "profit": -107.45,
+          "staked": 269.46,
+          "yield_pct": -39.88
+        },
+        "NHL 2015-16": {
+          "bets": 65,
+          "wins": 31,
+          "win_pct": 47.69,
+          "profit": -44.08,
+          "staked": 513.2,
+          "yield_pct": -8.59
+        },
+        "NHL 2016-17": {
+          "bets": 41,
+          "wins": 19,
+          "win_pct": 46.34,
+          "profit": -11.42,
+          "staked": 298.08,
+          "yield_pct": -3.83
+        },
+        "NHL 2017-18": {
+          "bets": 68,
+          "wins": 27,
+          "win_pct": 39.71,
+          "profit": -66.26,
+          "staked": 471.12,
+          "yield_pct": -14.06
+        },
+        "NHL 2018-19": {
+          "bets": 43,
+          "wins": 20,
+          "win_pct": 46.51,
+          "profit": 9.34,
+          "staked": 289.84,
+          "yield_pct": 3.22
+        },
+        "NHL 2019-20": {
+          "bets": 45,
+          "wins": 22,
+          "win_pct": 48.89,
+          "profit": 8.02,
+          "staked": 299.95,
+          "yield_pct": 2.67
+        },
+        "NHL 2021": {
+          "bets": 31,
+          "wins": 17,
+          "win_pct": 54.84,
+          "profit": 23.26,
+          "staked": 214.4,
+          "yield_pct": 10.85
+        },
+        "NHL 2022-23": {
+          "bets": 61,
+          "wins": 28,
+          "win_pct": 45.9,
+          "profit": -20.47,
+          "staked": 416.15,
+          "yield_pct": -4.92
+        }
+      }
+    },
+    "same_games_favorite": {
+      "bets": 474,
+      "wins": 273,
+      "win_pct": 57.59,
+      "initial_bankroll": 1000.0,
+      "final_bankroll": 843.7,
+      "profit": -156.3,
+      "roi_pct": -15.63,
+      "total_staked": 4525.9,
+      "yield_pct": -3.45,
+      "max_drawdown_pct": 26.64,
+      "by_year": {
+        "2013": {
+          "bets": 84,
+          "wins": 47,
+          "win_pct": 55.95,
+          "profit": -67.73,
+          "staked": 847.72,
+          "yield_pct": -7.99
+        },
+        "2014": {
+          "bets": 22,
+          "wins": 14,
+          "win_pct": 63.64,
+          "profit": 10.13,
+          "staked": 207.04,
+          "yield_pct": 4.89
+        },
+        "2015": {
+          "bets": 67,
+          "wins": 48,
+          "win_pct": 71.64,
+          "profit": 134.22,
+          "staked": 706.58,
+          "yield_pct": 19.0
+        },
+        "2016": {
+          "bets": 26,
+          "wins": 14,
+          "win_pct": 53.85,
+          "profit": -31.42,
+          "staked": 273.16,
+          "yield_pct": -11.5
+        },
+        "2017": {
+          "bets": 78,
+          "wins": 40,
+          "win_pct": 51.28,
+          "profit": -102.22,
+          "staked": 768.32,
+          "yield_pct": -13.3
+        },
+        "2018": {
+          "bets": 48,
+          "wins": 24,
+          "win_pct": 50.0,
+          "profit": -69.03,
+          "staked": 434.12,
+          "yield_pct": -15.9
+        },
+        "2019": {
+          "bets": 54,
+          "wins": 31,
+          "win_pct": 57.41,
+          "profit": 3.38,
+          "staked": 460.86,
+          "yield_pct": 0.73
+        },
+        "2020": {
+          "bets": 3,
+          "wins": 1,
+          "win_pct": 33.33,
+          "profit": -10.84,
+          "staked": 26.37,
+          "yield_pct": -41.13
+        },
+        "2022": {
+          "bets": 92,
+          "wins": 54,
+          "win_pct": 58.7,
+          "profit": -22.78,
+          "staked": 801.73,
+          "yield_pct": -2.84
+        }
+      },
+      "by_season": {
+        "NHL 2012-13": {
+          "bets": 35,
+          "wins": 22,
+          "win_pct": 62.86,
+          "profit": 5.64,
+          "staked": 362.02,
+          "yield_pct": 1.56
+        },
+        "NHL 2013-14": {
+          "bets": 53,
+          "wins": 27,
+          "win_pct": 50.94,
+          "profit": -79.74,
+          "staked": 522.6,
+          "yield_pct": -15.26
+        },
+        "NHL 2014-15": {
+          "bets": 32,
+          "wins": 25,
+          "win_pct": 78.12,
+          "profit": 85.07,
+          "staked": 307.26,
+          "yield_pct": 27.69
+        },
+        "NHL 2015-16": {
+          "bets": 65,
+          "wins": 41,
+          "win_pct": 63.08,
+          "profit": 39.3,
+          "staked": 695.75,
+          "yield_pct": 5.65
+        },
+        "NHL 2016-17": {
+          "bets": 41,
+          "wins": 22,
+          "win_pct": 53.66,
+          "profit": -41.87,
+          "staked": 422.04,
+          "yield_pct": -9.92
+        },
+        "NHL 2017-18": {
+          "bets": 68,
+          "wins": 36,
+          "win_pct": 52.94,
+          "profit": -70.82,
+          "staked": 651.4,
+          "yield_pct": -10.87
+        },
+        "NHL 2018-19": {
+          "bets": 43,
+          "wins": 19,
+          "win_pct": 44.19,
+          "profit": -93.72,
+          "staked": 379.11,
+          "yield_pct": -24.72
+        },
+        "NHL 2019-20": {
+          "bets": 45,
+          "wins": 27,
+          "win_pct": 60.0,
+          "profit": 22.62,
+          "staked": 383.99,
+          "yield_pct": 5.89
+        },
+        "NHL 2021": {
+          "bets": 31,
+          "wins": 19,
+          "win_pct": 61.29,
+          "profit": 18.77,
+          "staked": 273.81,
+          "yield_pct": 6.85
+        },
+        "NHL 2022-23": {
+          "bets": 61,
+          "wins": 35,
+          "win_pct": 57.38,
+          "profit": -41.55,
+          "staked": 527.92,
+          "yield_pct": -7.87
+        }
+      }
+    },
+    "same_games_underdog": {
+      "bets": 474,
+      "wins": 202,
+      "win_pct": 42.62,
+      "initial_bankroll": 1000.0,
+      "final_bankroll": 839.56,
+      "profit": -160.44,
+      "roi_pct": -16.04,
+      "total_staked": 4042.74,
+      "yield_pct": -3.97,
+      "max_drawdown_pct": 30.58,
+      "by_year": {
+        "2013": {
+          "bets": 84,
+          "wins": 38,
+          "win_pct": 45.24,
+          "profit": 6.97,
+          "staked": 793.13,
+          "yield_pct": 0.88
+        },
+        "2014": {
+          "bets": 22,
+          "wins": 8,
+          "win_pct": 36.36,
+          "profit": -45.53,
+          "staked": 216.32,
+          "yield_pct": -21.05
+        },
+        "2015": {
+          "bets": 67,
+          "wins": 19,
+          "win_pct": 28.36,
+          "profit": -208.95,
+          "staked": 538.06,
+          "yield_pct": -38.83
+        },
+        "2016": {
+          "bets": 26,
+          "wins": 12,
+          "win_pct": 46.15,
+          "profit": 9.83,
+          "staked": 200.22,
+          "yield_pct": 4.91
+        },
+        "2017": {
+          "bets": 78,
+          "wins": 38,
+          "win_pct": 48.72,
+          "profit": 44.08,
+          "staked": 617.37,
+          "yield_pct": 7.14
+        },
+        "2018": {
+          "bets": 48,
+          "wins": 24,
+          "win_pct": 50.0,
+          "profit": 59.14,
+          "staked": 403.9,
+          "yield_pct": 14.64
+        },
+        "2019": {
+          "bets": 54,
+          "wins": 24,
+          "win_pct": 44.44,
+          "profit": 5.95,
+          "staked": 486.65,
+          "yield_pct": 1.22
+        },
+        "2020": {
+          "bets": 3,
+          "wins": 2,
+          "win_pct": 66.67,
+          "profit": 16.48,
+          "staked": 26.07,
+          "yield_pct": 63.21
+        },
+        "2022": {
+          "bets": 92,
+          "wins": 37,
+          "win_pct": 40.22,
+          "profit": -48.41,
+          "staked": 761.02,
+          "yield_pct": -6.36
+        }
+      },
+      "by_season": {
+        "NHL 2012-13": {
+          "bets": 35,
+          "wins": 13,
+          "win_pct": 37.14,
+          "profit": -53.6,
+          "staked": 328.54,
+          "yield_pct": -16.31
+        },
+        "NHL 2013-14": {
+          "bets": 53,
+          "wins": 27,
+          "win_pct": 50.94,
+          "profit": 65.84,
+          "staked": 505.43,
+          "yield_pct": 13.03
+        },
+        "NHL 2014-15": {
+          "bets": 32,
+          "wins": 7,
+          "win_pct": 21.88,
+          "profit": -153.89,
+          "staked": 301.99,
+          "yield_pct": -50.96
+        },
+        "NHL 2015-16": {
+          "bets": 65,
+          "wins": 24,
+          "win_pct": 36.92,
+          "profit": -86.23,
+          "staked": 504.25,
+          "yield_pct": -17.1
+        },
+        "NHL 2016-17": {
+          "bets": 41,
+          "wins": 19,
+          "win_pct": 46.34,
+          "profit": -1.22,
+          "staked": 316.69,
+          "yield_pct": -0.39
+        },
+        "NHL 2017-18": {
+          "bets": 68,
+          "wins": 32,
+          "win_pct": 47.06,
+          "profit": 31.82,
+          "staked": 546.59,
+          "yield_pct": 5.82
+        },
+        "NHL 2018-19": {
+          "bets": 43,
+          "wins": 25,
+          "win_pct": 58.14,
+          "profit": 115.02,
+          "staked": 372.7,
+          "yield_pct": 30.86
+        },
+        "NHL 2019-20": {
+          "bets": 45,
+          "wins": 18,
+          "win_pct": 40.0,
+          "profit": -29.78,
+          "staked": 405.52,
+          "yield_pct": -7.34
+        },
+        "NHL 2021": {
+          "bets": 31,
+          "wins": 12,
+          "win_pct": 38.71,
+          "profit": -34.08,
+          "staked": 265.9,
+          "yield_pct": -12.82
+        },
+        "NHL 2022-23": {
+          "bets": 61,
+          "wins": 25,
+          "win_pct": 40.98,
+          "profit": -14.32,
+          "staked": 495.12,
+          "yield_pct": -2.89
+        }
+      }
+    }
+  },
+  "strict_nhl_exposure": {
+    "by_side": {
+      "away": {
+        "bets": 232,
+        "wins": 116,
+        "win_pct": 50.0,
+        "profit": 11.13,
+        "staked": 2284.97,
+        "yield_pct": 0.49
+      },
+      "home": {
+        "bets": 242,
+        "wins": 148,
+        "win_pct": 61.16,
+        "profit": 225.85,
+        "staked": 2424.74,
+        "yield_pct": 9.31
+      }
+    },
+    "by_favorite_underdog": {
+      "favorite": {
+        "bets": 270,
+        "wins": 167,
+        "win_pct": 61.85,
+        "profit": 104.02,
+        "staked": 2674.69,
+        "yield_pct": 3.89
+      },
+      "underdog": {
+        "bets": 204,
+        "wins": 97,
+        "win_pct": 47.55,
+        "profit": 132.96,
+        "staked": 2035.02,
+        "yield_pct": 6.53
+      }
+    },
+    "by_selected_odds_band": {
+      "1.50_to_1.75": {
+        "bets": 159,
+        "wins": 97,
+        "win_pct": 61.01,
+        "profit": -16.69,
+        "staked": 1577.16,
+        "yield_pct": -1.06
+      },
+      "1.75_to_2.00": {
+        "bets": 119,
+        "wins": 70,
+        "win_pct": 58.82,
+        "profit": 117.9,
+        "staked": 1163.59,
+        "yield_pct": 10.13
+      },
+      "ge_2.00": {
+        "bets": 174,
+        "wins": 82,
+        "win_pct": 47.13,
+        "profit": 145.35,
+        "staked": 1746.92,
+        "yield_pct": 8.32
+      },
+      "lt_1.50": {
+        "bets": 22,
+        "wins": 15,
+        "win_pct": 68.18,
+        "profit": -9.58,
+        "staked": 222.05,
+        "yield_pct": -4.31
+      }
+    },
+    "by_model_edge_band": {
+      "0.15_to_0.18": {
+        "bets": 251,
+        "wins": 145,
+        "win_pct": 57.77,
+        "profit": 176.81,
+        "staked": 2455.53,
+        "yield_pct": 7.2
+      },
+      "0.18_to_0.22": {
+        "bets": 153,
+        "wins": 79,
+        "win_pct": 51.63,
+        "profit": -11.8,
+        "staked": 1512.87,
+        "yield_pct": -0.78
+      },
+      "0.22_to_0.30": {
+        "bets": 57,
+        "wins": 33,
+        "win_pct": 57.89,
+        "profit": 61.02,
+        "staked": 605.89,
+        "yield_pct": 10.07
+      },
+      "ge_0.30": {
+        "bets": 13,
+        "wins": 7,
+        "win_pct": 53.85,
+        "profit": 10.95,
+        "staked": 135.43,
+        "yield_pct": 8.08
+      }
+    }
+  }
+}

@@ -1,0 +1,266 @@
+
+=== Historical sportsbook games CSV audit ===
+fields=['sport', 'season', 'date', 'sequence', 'away_team', 'home_team', 'away_score', 'home_score', 'outcome', 'neutral', 'away_odds_decimal', 'home_odds_decimal', 'draw_odds_decimal', 'source']
+rows=61898
+odds_cols=['away_odds_decimal', 'home_odds_decimal', 'draw_odds_decimal'] score_cols=['away_score', 'home_score']
+date_range=2012-03-28..2026-01-08
+by_sport={'CFB': 8971, 'EPL': 3630, 'MLB': 23124, 'NBA': 12180, 'NFL': 2690, 'NHL': 11303}
+by_sport_season=
+  ('CFB', 'CFB 2013-14'): 740
+  ('CFB', 'CFB 2014-15'): 776
+  ('CFB', 'CFB 2015-16'): 844
+  ('CFB', 'CFB 2016-17'): 846
+  ('CFB', 'CFB 2017-18'): 753
+  ('CFB', 'CFB 2018-19'): 845
+  ('CFB', 'CFB 2019-20'): 1541
+  ('CFB', 'CFB 2020-21'): 813
+  ('CFB', 'CFB 2021-22'): 1369
+  ('CFB', 'CFB 2022-23'): 444
+  ('EPL', 'EPL 2016-17'): 380
+  ('EPL', 'EPL 2017-18'): 380
+  ('EPL', 'EPL 2018-19'): 380
+  ('EPL', 'EPL 2019-20'): 380
+  ('EPL', 'EPL 2020-21'): 380
+  ('EPL', 'EPL 2021-22'): 380
+  ('EPL', 'EPL 2022-23'): 380
+  ('EPL', 'EPL 2023-24'): 380
+  ('EPL', 'EPL 2024-25'): 380
+  ('EPL', 'EPL 2025-26'): 210
+  ('MLB', 'MLB 2012'): 2467
+  ('MLB', 'MLB 2013'): 2469
+  ('MLB', 'MLB 2014'): 2462
+  ('MLB', 'MLB 2015'): 2465
+  ('MLB', 'MLB 2016'): 2461
+  ('MLB', 'MLB 2017'): 2467
+  ('MLB', 'MLB 2018'): 2464
+  ('MLB', 'MLB 2019'): 2464
+  ('MLB', 'MLB 2020'): 943
+  ('MLB', 'MLB 2021'): 2462
+  ('NBA', 'NBA 2013-14'): 1319
+  ('NBA', 'NBA 2014-15'): 1311
+  ('NBA', 'NBA 2015-16'): 1316
+  ('NBA', 'NBA 2016-17'): 1309
+  ('NBA', 'NBA 2017-18'): 1312
+  ('NBA', 'NBA 2018-19'): 1312
+  ('NBA', 'NBA 2019-20'): 1143
+  ('NBA', 'NBA 2020-21'): 1171
+  ('NBA', 'NBA 2021-22'): 1323
+  ('NBA', 'NBA 2022-23'): 664
+  ('NFL', 'NFL 2012-13'): 267
+  ('NFL', 'NFL 2013-14'): 267
+  ('NFL', 'NFL 2014-15'): 267
+  ('NFL', 'NFL 2015-16'): 267
+  ('NFL', 'NFL 2016-17'): 267
+  ('NFL', 'NFL 2017-18'): 267
+  ('NFL', 'NFL 2018-19'): 267
+  ('NFL', 'NFL 2019-20'): 267
+  ('NFL', 'NFL 2020-21'): 269
+  ('NFL', 'NFL 2021-22'): 285
+  ('NHL', 'NHL 2012-13'): 806
+  ('NHL', 'NHL 2013-14'): 1322
+  ('NHL', 'NHL 2014-15'): 1319
+  ('NHL', 'NHL 2015-16'): 1321
+  ('NHL', 'NHL 2016-17'): 1317
+  ('NHL', 'NHL 2017-18'): 1355
+  ('NHL', 'NHL 2018-19'): 1358
+  ('NHL', 'NHL 2019-20'): 1212
+  ('NHL', 'NHL 2021'): 951
+  ('NHL', 'NHL 2022-23'): 342
+draws_by_sport={'EPL': 834, 'MLB': 16, 'NFL': 10}
+missing_odds_by_sport_col=
+  ('CFB', 'draw_odds_decimal'): 8971
+  ('MLB', 'draw_odds_decimal'): 23124
+  ('NBA', 'draw_odds_decimal'): 12180
+  ('NFL', 'draw_odds_decimal'): 2690
+  ('NHL', 'draw_odds_decimal'): 11303
+invalid_odds_by_sport_col=
+overround_by_sport=
+  CFB: n=8971 mean=1.0361 min=0.8903 p05=1.0145 p95=1.0470 max=1.7283
+  EPL: n=3630 mean=1.0253 min=1.0005 p05=1.0192 p95=1.0336 max=1.0442
+  MLB: n=23124 mean=1.0272 min=0.8985 p05=1.0167 p95=1.0455 max=1.3326
+  NBA: n=12180 mean=1.0382 min=1.0106 p05=1.0285 p95=1.0476 max=1.6800
+  NFL: n=2690 mean=1.0384 min=1.0132 p05=1.0285 p95=1.0471 max=1.4118
+  NHL: n=11303 mean=1.0329 min=1.0024 p05=1.0198 p95=1.0471 max=1.0502
+overround_flags={'CFB': {'under_1': 4, 'over_1_10': 4, 'over_1_20': 3}, 'MLB': {'under_1': 3, 'over_1_10': 6, 'over_1_20': 3}, 'NBA': {'under_1': 0, 'over_1_10': 1, 'over_1_20': 1}, 'NFL': {'under_1': 0, 'over_1_10': 4, 'over_1_20': 4}}
+sources_summary=
+{
+  "generated_at_utc": "2026-05-26T03:10:41.509953+00:00",
+  "sports": [
+    "NFL",
+    "NBA",
+    "NHL",
+    "MLB",
+    "CFB",
+    "EPL"
+  ],
+  "seasons_per_sport": 10,
+  "games": 61898,
+  "first_date": "2012-03-28",
+  "last_date": "2026-01-08",
+  "sources": {
+    "NFL": {
+      "seasons": [
+        "NFL 2012-13",
+        "NFL 2013-14",
+        "NFL 2014-15",
+        "NFL 2015-16",
+        "NFL 2016-17",
+        "NFL 2017-18",
+        "NFL 2018-19",
+        "NFL 2019-20",
+        "NFL 2020-21",
+        "NFL 2021-22"
+      ],
+      "games": 2690,
+      "source": "SportsbookReviewsOnline historical closing moneyline archive"
+    },
+    "NBA": {
+      "seasons": [
+        "NBA 2013-14",
+        "NBA 2014-15",
+        "NBA 2015-16",
+        "NBA 2016-17",
+        "NBA 2017-18",
+        "NBA 2018-19",
+        "NBA 2019-20",
+        "NBA 2020-21",
+        "NBA 2021-22",
+        "NBA 2022-23"
+      ],
+      "games": 12180,
+      "source": "SportsbookReviewsOnline historical closing moneyline archive"
+    },
+    "NHL": {
+      "seasons": [
+        "NHL 2012-13",
+        "NHL 2013-14",
+        "NHL 2014-15",
+        "NHL 2015-16",
+        "NHL 2016-17",
+        "NHL 2017-18",
+        "NHL 2018-19",
+        "NHL 2019-20",
+        "NHL 2021",
+        "NHL 2022-23"
+      ],
+      "games": 11303,
+      "source": "SportsbookReviewsOnline historical closing moneyline archive"
+    },
+    "MLB": {
+      "seasons": [
+        "MLB 2012",
+        "MLB 2013",
+        "MLB 2014",
+        "MLB 2015",
+        "MLB 2016",
+        "MLB 2017",
+        "MLB 2018",
+        "MLB 2019",
+        "MLB 2020",
+        "MLB 2021"
+      ],
+      "games": 23124,
+      "source": "SportsbookReviewsOnline historical closing moneyline archive"
+    },
+    "CFB": {
+      "seasons": [
+        "CFB 2013-14",
+        "CFB 2014-15",
+        "CFB 2015-16",
+        "CFB 2016-17",
+        "CFB 2017-18",
+        "CFB 2018-19",
+        "CFB 2019-20",
+        "CFB 2020-21",
+        "CFB 2021-22",
+        "CFB 2022-23"
+      ],
+      "games": 8971,
+      "source": "SportsbookReviewsOnline historical closing moneyline archive"
+    },
+    "EPL": {
+      "seasons": [
+        "1617",
+        "1718",
+        "1819",
+        "1920",
+        "2021",
+        "2122",
+        "2223",
+        "2324",
+        "2425",
+        "2526"
+      ],
+      "games": 3630,
+      "source": "football-data.co.uk"
+    }
+  }
+}
+
+=== Real sportsbook agent artifacts ===
+broad_default: games=61898 dates=2012-03-28..2026-01-08 bets=30566 wins=14509 win_pct=47.47 bankroll=1000.0->0.01 roi=-100.0 yield=-3.97 max_dd=100.0
+  by_sport={'CFB': {'bets': 5227, 'wins': 2723, 'win_pct': 52.09, 'profit': -59.58, 'staked': 530.48, 'yield_pct': -11.23}, 'EPL': {'bets': 1603, 'wins': 606, 'win_pct': 37.8, 'profit': -0.1, 'staked': 2.09, 'yield_pct': -4.55}, 'MLB': {'bets': 11776, 'wins': 5590, 'win_pct': 47.47, 'profit': -799.34, 'staked': 18848.01, 'yield_pct': -4.24}, 'NBA': {'bets': 5811, 'wins': 2447, 'win_pct': 42.11, 'profit': -79.34, 'staked': 1405.47, 'yield_pct': -5.64}, 'NFL': {'bets': 1518, 'wins': 668, 'win_pct': 44.01, 'profit': -32.19, 'staked': 468.33, 'yield_pct': -6.87}, 'NHL': {'bets': 4631, 'wins': 2475, 'win_pct': 53.44, 'profit': -29.46, 'staked': 3904.85, 'yield_pct': -0.75}}
+  by_year={'2012': {'bets': 1069, 'wins': 529, 'win_pct': 49.49, 'profit': -459.69, 'staked': 9438.56, 'yield_pct': -4.87}, '2013': {'bets': 2175, 'wins': 1133, 'win_pct': 52.09, 'profit': -317.37, 'staked': 11537.4, 'yield_pct': -2.75}, '2014': {'bets': 2984, 'wins': 1418, 'win_pct': 47.52, 'profit': -208.17, 'staked': 3537.3, 'yield_pct': -5.88}, '2015': {'bets': 3124, 'wins': 1479, 'win_pct': 47.34, 'profit': -10.53, 'staked': 479.34, 'yield_pct': -2.2}, '2016': {'bets': 2937, 'wins': 1346, 'win_pct': 45.83, 'profit': -3.56, 'staked': 121.86, 'yield_pct': -2.92}, '2017': {'bets': 3288, 'wins': 1502, 'win_pct': 45.68, 'profit': -0.33, 'staked': 23.84, 'yield_pct': -1.37}, '2018': {'bets': 3218, 'wins': 1576, 'win_pct': 48.97, 'profit': -0.17, 'staked': 8.77, 'yield_pct': -1.99}, '2019': {'bets': 4022, 'wins': 1931, 'win_pct': 48.01, 'profit': -0.07, 'staked': 4.16, 'yield_pct': -1.65}, '2020': {'bets': 1623, 'wins': 756, 'win_pct': 46.58, 'profit': -0.04, 'staked': 3.79, 'yield_pct': -0.99}, '2021': {'bets': 3629, 'wins': 1751, 'win_pct': 48.25, 'profit': -0.04, 'staked': 3.24, 'yield_pct': -1.27}, '2022': {'bets': 1864, 'wins': 837, 'win_pct': 44.9, 'profit': -0.03, 'staked': 0.8, 'yield_pct': -3.95}, '2023': {'bets': 292, 'wins': 112, 'win_pct': 38.36, 'profit': -0.01, 'staked': 0.09, 'yield_pct': -6.19}, '2024': {'bets': 182, 'wins': 64, 'win_pct': 35.16, 'profit': -0.01, 'staked': 0.04, 'yield_pct': -20.38}, '2025': {'bets': 154, 'wins': 75, 'win_pct': 48.7, 'profit': 0.01, 'staked': 0.03, 'yield_pct': 20.26}, '2026': {'bets': 5, 'wins': 0, 'win_pct': 0.0, 'profit': -0.0, 'staked': 0.0, 'yield_pct': -100.0}}
+  skipped={'CFB:no_edge': 3419, 'CFB:warmup': 325, 'EPL:no_edge': 1724, 'EPL:warmup': 303, 'MLB:no_edge': 11036, 'MLB:warmup': 312, 'NBA:no_edge': 6067, 'NBA:warmup': 302, 'NFL:no_edge': 872, 'NFL:warmup': 300, 'NHL:no_edge': 6372, 'NHL:warmup': 300}
+strict_all_sports: games=61898 dates=2012-03-28..2026-01-08 bets=7646 wins=3325 win_pct=43.49 bankroll=1000.0->370.42 roi=-62.96 yield=-2.43 max_dd=79.47
+  by_sport={'CFB': {'bets': 2497, 'wins': 1114, 'win_pct': 44.61, 'profit': -434.88, 'staked': 4072.19, 'yield_pct': -10.68}, 'EPL': {'bets': 316, 'wins': 128, 'win_pct': 40.51, 'profit': -45.4, 'staked': 1039.69, 'yield_pct': -4.37}, 'MLB': {'bets': 2067, 'wins': 933, 'win_pct': 45.14, 'profit': -333.63, 'staked': 10418.89, 'yield_pct': -3.2}, 'NBA': {'bets': 1644, 'wins': 614, 'win_pct': 37.35, 'profit': 126.21, 'staked': 6045.5, 'yield_pct': 2.09}, 'NFL': {'bets': 648, 'wins': 272, 'win_pct': 41.98, 'profit': -3.87, 'staked': 2329.51, 'yield_pct': -0.17}, 'NHL': {'bets': 474, 'wins': 264, 'win_pct': 55.7, 'profit': 61.98, 'staked': 2013.36, 'yield_pct': 3.08}}
+  by_year={'2012': {'bets': 213, 'wins': 109, 'win_pct': 51.17, 'profit': 62.24, 'staked': 2121.67, 'yield_pct': 2.93}, '2013': {'bets': 433, 'wins': 198, 'win_pct': 45.73, 'profit': -315.14, 'staked': 3630.05, 'yield_pct': -8.68}, '2014': {'bets': 649, 'wins': 283, 'win_pct': 43.61, 'profit': -280.01, 'staked': 3047.38, 'yield_pct': -9.19}, '2015': {'bets': 716, 'wins': 308, 'win_pct': 43.02, 'profit': -120.67, 'staked': 2187.37, 'yield_pct': -5.52}, '2016': {'bets': 658, 'wins': 263, 'win_pct': 39.97, 'profit': -116.23, 'staked': 1815.16, 'yield_pct': -6.4}, '2017': {'bets': 783, 'wins': 328, 'win_pct': 41.89, 'profit': 53.06, 'staked': 1739.01, 'yield_pct': 3.05}, '2018': {'bets': 675, 'wins': 293, 'win_pct': 43.41, 'profit': 25.62, 'staked': 1718.64, 'yield_pct': 1.49}, '2019': {'bets': 1198, 'wins': 539, 'win_pct': 44.99, 'profit': 232.3, 'staked': 3264.22, 'yield_pct': 7.12}, '2020': {'bets': 491, 'wins': 187, 'win_pct': 38.09, 'profit': -221.4, 'staked': 1882.81, 'yield_pct': -11.76}, '2021': {'bets': 1118, 'wins': 523, 'win_pct': 46.78, 'profit': 73.02, 'staked': 2485.77, 'yield_pct': 2.94}, '2022': {'bets': 595, 'wins': 251, 'win_pct': 42.18, 'profit': -0.12, 'staked': 1560.93, 'yield_pct': -0.01}, '2023': {'bets': 51, 'wins': 21, 'win_pct': 41.18, 'profit': 11.79, 'staked': 206.24, 'yield_pct': 5.72}, '2024': {'bets': 35, 'wins': 14, 'win_pct': 40.0, 'profit': 4.86, 'staked': 141.32, 'yield_pct': 3.44}, '2025': {'bets': 31, 'wins': 8, 'win_pct': 25.81, 'profit': -38.9, 'staked': 118.57, 'yield_pct': -32.81}}
+  skipped={'CFB:no_edge': 6149, 'CFB:warmup': 325, 'EPL:no_edge': 3011, 'EPL:warmup': 303, 'MLB:no_edge': 20745, 'MLB:warmup': 312, 'NBA:no_edge': 10234, 'NBA:warmup': 302, 'NFL:no_edge': 1742, 'NFL:warmup': 300, 'NHL:no_edge': 10529, 'NHL:warmup': 300}
+strict_nba_nhl: games=23483 dates=2013-01-19..2023-01-16 bets=2118 wins=878 win_pct=41.45 bankroll=1000.0->1394.03 roi=39.4 yield=1.68 max_dd=36.26
+  by_sport={'NBA': {'bets': 1644, 'wins': 614, 'win_pct': 37.35, 'profit': 123.36, 'staked': 18464.13, 'yield_pct': 0.67}, 'NHL': {'bets': 474, 'wins': 264, 'win_pct': 55.7, 'profit': 270.67, 'staked': 5050.52, 'yield_pct': 5.36}}
+  by_year={'2013': {'bets': 97, 'wins': 54, 'win_pct': 55.67, 'profit': -35.75, 'staked': 963.56, 'yield_pct': -3.71}, '2014': {'bets': 176, 'wins': 72, 'win_pct': 40.91, 'profit': -104.91, 'staked': 1527.48, 'yield_pct': -6.87}, '2015': {'bets': 233, 'wins': 106, 'win_pct': 45.49, 'profit': -5.7, 'staked': 2022.71, 'yield_pct': -0.28}, '2016': {'bets': 190, 'wins': 81, 'win_pct': 42.63, 'profit': 59.01, 'staked': 1753.74, 'yield_pct': 3.36}, '2017': {'bets': 228, 'wins': 97, 'win_pct': 42.54, 'profit': 302.88, 'staked': 2485.21, 'yield_pct': 12.19}, '2018': {'bets': 201, 'wins': 71, 'win_pct': 35.32, 'profit': -361.43, 'staked': 2109.99, 'yield_pct': -17.13}, '2019': {'bets': 321, 'wins': 126, 'win_pct': 39.25, 'profit': 381.43, 'staked': 3411.13, 'yield_pct': 11.18}, '2020': {'bets': 69, 'wins': 28, 'win_pct': 40.58, 'profit': 151.5, 'staked': 959.34, 'yield_pct': 15.79}, '2021': {'bets': 254, 'wins': 92, 'win_pct': 36.22, 'profit': -103.35, 'staked': 3501.95, 'yield_pct': -2.95}, '2022': {'bets': 334, 'wins': 146, 'win_pct': 43.71, 'profit': 103.2, 'staked': 4564.5, 'yield_pct': 2.26}, '2023': {'bets': 15, 'wins': 5, 'win_pct': 33.33, 'profit': 7.15, 'staked': 215.05, 'yield_pct': 3.32}}
+  skipped={'NBA:no_edge': 10234, 'NBA:warmup': 302, 'NHL:no_edge': 10529, 'NHL:warmup': 300}
+strict_nhl: games=11303 dates=2013-01-19..2022-11-27 bets=474 wins=264 win_pct=55.7 bankroll=1000.0->1236.98 roi=23.7 yield=5.03 max_dd=20.52
+  by_sport={'NHL': {'bets': 474, 'wins': 264, 'win_pct': 55.7, 'profit': 236.98, 'staked': 4709.72, 'yield_pct': 5.03}}
+  by_year={'2013': {'bets': 84, 'wins': 47, 'win_pct': 55.95, 'profit': -45.41, 'staked': 841.44, 'yield_pct': -5.4}, '2014': {'bets': 22, 'wins': 10, 'win_pct': 45.45, 'profit': -31.04, 'staked': 204.0, 'yield_pct': -15.22}, '2015': {'bets': 67, 'wins': 34, 'win_pct': 50.75, 'profit': -60.76, 'staked': 590.78, 'yield_pct': -10.28}, '2016': {'bets': 26, 'wins': 12, 'win_pct': 46.15, 'profit': -7.6, 'staked': 221.02, 'yield_pct': -3.44}, '2017': {'bets': 78, 'wins': 46, 'win_pct': 58.97, 'profit': 102.52, 'staked': 703.31, 'yield_pct': 14.58}, '2018': {'bets': 48, 'wins': 30, 'win_pct': 62.5, 'profit': 85.89, 'staked': 476.24, 'yield_pct': 18.04}, '2019': {'bets': 54, 'wins': 29, 'win_pct': 53.7, 'profit': 46.74, 'staked': 574.39, 'yield_pct': 8.14}, '2020': {'bets': 3, 'wins': 1, 'win_pct': 33.33, 'profit': -8.87, 'staked': 32.62, 'yield_pct': -27.2}, '2022': {'bets': 92, 'wins': 55, 'win_pct': 59.78, 'profit': 155.51, 'staked': 1065.93, 'yield_pct': 14.59}}
+  skipped={'NHL:no_edge': 10529, 'NHL:warmup': 300}
+strict_nba: games=12180 dates=2013-10-29..2023-01-16 bets=1644 wins=614 win_pct=37.35 bankroll=1000.0->1115.41 roi=11.54 yield=0.64 max_dd=42.31
+  by_sport={'NBA': {'bets': 1644, 'wins': 614, 'win_pct': 37.35, 'profit': 115.41, 'staked': 18063.42, 'yield_pct': 0.64}}
+  by_year={'2013': {'bets': 13, 'wins': 7, 'win_pct': 53.85, 'profit': 10.16, 'staked': 128.6, 'yield_pct': 7.9}, '2014': {'bets': 154, 'wins': 62, 'win_pct': 40.26, 'profit': -80.44, 'staked': 1449.34, 'yield_pct': -5.55}, '2015': {'bets': 166, 'wins': 72, 'win_pct': 43.37, 'profit': 57.0, 'staked': 1641.49, 'yield_pct': 3.47}, '2016': {'bets': 164, 'wins': 69, 'win_pct': 42.07, 'profit': 77.77, 'staked': 1776.29, 'yield_pct': 4.38}, '2017': {'bets': 150, 'wins': 51, 'win_pct': 34.0, 'profit': 201.81, 'staked': 1798.36, 'yield_pct': 11.22}, '2018': {'bets': 153, 'wins': 41, 'win_pct': 26.8, 'profit': -459.62, 'staked': 1630.86, 'yield_pct': -28.18}, '2019': {'bets': 267, 'wins': 97, 'win_pct': 36.33, 'profit': 310.55, 'staked': 2634.92, 'yield_pct': 11.79}, '2020': {'bets': 66, 'wins': 27, 'win_pct': 40.91, 'profit': 147.28, 'staked': 830.52, 'yield_pct': 17.73}, '2021': {'bets': 254, 'wins': 92, 'win_pct': 36.22, 'profit': -94.23, 'staked': 3192.61, 'yield_pct': -2.95}, '2022': {'bets': 242, 'wins': 91, 'win_pct': 37.6, 'profit': -60.6, 'staked': 2808.36, 'yield_pct': -2.16}, '2023': {'bets': 15, 'wins': 5, 'win_pct': 33.33, 'profit': 5.72, 'staked': 172.07, 'yield_pct': 3.32}}
+  skipped={'NBA:no_edge': 10234, 'NBA:warmup': 302}
+cfb_audit: games=8971 dates=2013-08-29..2022-11-15 bets=5227 wins=2723 win_pct=52.09 bankroll=1000.0->44.0 roi=-95.6 yield=-12.5 max_dd=96.08
+  by_sport={'CFB': {'bets': 5227, 'wins': 2723, 'win_pct': 52.09, 'profit': -955.98, 'staked': 7648.31, 'yield_pct': -12.5}}
+  by_year={'2013': {'bets': 242, 'wins': 152, 'win_pct': 62.81, 'profit': -110.8, 'staked': 1821.95, 'yield_pct': -6.08}, '2014': {'bets': 452, 'wins': 248, 'win_pct': 54.87, 'profit': -429.81, 'staked': 1942.1, 'yield_pct': -22.13}, '2015': {'bets': 486, 'wins': 224, 'win_pct': 46.09, 'profit': -180.53, 'staked': 1136.89, 'yield_pct': -15.88}, '2016': {'bets': 456, 'wins': 218, 'win_pct': 47.81, 'profit': -97.45, 'staked': 813.56, 'yield_pct': -11.98}, '2017': {'bets': 426, 'wins': 197, 'win_pct': 46.24, 'profit': -39.09, 'staked': 471.86, 'yield_pct': -8.29}, '2018': {'bets': 447, 'wins': 234, 'win_pct': 52.35, 'profit': -21.7, 'staked': 461.58, 'yield_pct': -4.7}, '2019': {'bets': 926, 'wins': 492, 'win_pct': 53.13, 'profit': -27.82, 'staked': 421.6, 'yield_pct': -6.6}, '2020': {'bets': 377, 'wins': 182, 'win_pct': 48.28, 'profit': -45.75, 'staked': 231.54, 'yield_pct': -19.76}, '2021': {'bets': 1062, 'wins': 607, 'win_pct': 57.16, 'profit': -2.05, 'staked': 292.73, 'yield_pct': -0.7}, '2022': {'bets': 353, 'wins': 169, 'win_pct': 47.88, 'profit': -0.96, 'staked': 54.51, 'yield_pct': -1.77}}
+  skipped={'CFB:no_edge': 3419, 'CFB:warmup': 325}
+
+=== Robustness checks from stored bet records ===
+strict_nhl_full: stored_records=474 summary_bets=474 first_stored=2013-03-02 last_stored=2022-11-27
+  replay_same_selections flat_fraction=0.005: {'bets': 474, 'wins': 264, 'final': 1122.12, 'profit': 122.12, 'total_staked': 2368.71, 'yield_pct': 5.16, 'max_dd_pct': 10.68, 'by_year': {'2013': {'bets': 84, 'wins': 47, 'profit': -22.3, 'staked': 420.48, 'yield_pct': -5.3}, '2014': {'bets': 22, 'wins': 10, 'profit': -15.79, 'staked': 106.0, 'yield_pct': -14.9}, '2015': {'bets': 67, 'wins': 34, 'profit': -31.42, 'staked': 314.97, 'yield_pct': -9.97}, '2016': {'bets': 26, 'wins': 12, 'profit': -3.78, 'staked': 120.09, 'yield_pct': -3.15}, '2017': {'bets': 78, 'wins': 46, 'profit': 54.75, 'staked': 371.22, 'yield_pct': 14.75}, '2018': {'bets': 48, 'wins': 30, 'profit': 43.6, 'staked': 239.79, 'yield_pct': 18.18}, '2019': {'bets': 54, 'wins': 29, 'profit': 23.35, 'staked': 279.48, 'yield_pct': 8.36}, '2020': {'bets': 3, 'wins': 1, 'profit': -4.23, 'staked': 15.71, 'yield_pct': -26.94}, '2022': {'bets': 92, 'wins': 55, 'profit': 77.93, 'staked': 500.97, 'yield_pct': 15.56}}}
+  replay_same_selections flat_fraction=0.01: {'bets': 474, 'wins': 264, 'final': 1236.99, 'profit': 236.99, 'total_staked': 4709.74, 'yield_pct': 5.03, 'max_dd_pct': 20.52, 'by_year': {'2013': {'bets': 84, 'wins': 47, 'profit': -45.4, 'staked': 841.44, 'yield_pct': -5.4}, '2014': {'bets': 22, 'wins': 10, 'profit': -31.04, 'staked': 204.0, 'yield_pct': -15.22}, '2015': {'bets': 67, 'wins': 34, 'profit': -60.76, 'staked': 590.78, 'yield_pct': -10.28}, '2016': {'bets': 26, 'wins': 12, 'profit': -7.6, 'staked': 221.02, 'yield_pct': -3.44}, '2017': {'bets': 78, 'wins': 46, 'profit': 102.51, 'staked': 703.31, 'yield_pct': 14.58}, '2018': {'bets': 48, 'wins': 30, 'profit': 85.89, 'staked': 476.25, 'yield_pct': 18.04}, '2019': {'bets': 54, 'wins': 29, 'profit': 46.74, 'staked': 574.39, 'yield_pct': 8.14}, '2020': {'bets': 3, 'wins': 1, 'profit': -8.87, 'staked': 32.62, 'yield_pct': -27.2}, '2022': {'bets': 92, 'wins': 55, 'profit': 155.51, 'staked': 1065.93, 'yield_pct': 14.59}}}
+  replay_same_selections flat_fraction=0.02: {'bets': 474, 'wins': 264, 'final': 1479.17, 'profit': 479.17, 'total_staked': 8929.89, 'yield_pct': 5.37, 'max_dd_pct': 37.05, 'by_year': {'2013': {'bets': 84, 'wins': 47, 'profit': -95.1, 'staked': 1618.29, 'yield_pct': -5.88}, '2014': {'bets': 22, 'wins': 10, 'profit': -59.55, 'staked': 375.43, 'yield_pct': -15.86}, '2015': {'bets': 67, 'wins': 34, 'profit': -105.44, 'staked': 1016.66, 'yield_pct': -10.37}, '2016': {'bets': 26, 'wins': 12, 'profit': -15.04, 'staked': 365.92, 'yield_pct': -4.11}, '2017': {'bets': 78, 'wins': 46, 'profit': 190.29, 'staked': 1205.01, 'yield_pct': 15.79}, '2018': {'bets': 48, 'wins': 30, 'profit': 169.44, 'staked': 924.64, 'yield_pct': 18.33}, '2019': {'bets': 54, 'wins': 29, 'profit': 95.7, 'staked': 1205.25, 'yield_pct': 7.94}, '2020': {'bets': 3, 'wins': 1, 'profit': -19.53, 'staked': 70.43, 'yield_pct': -27.74}, '2022': {'bets': 92, 'wins': 55, 'profit': 318.41, 'staked': 2148.26, 'yield_pct': 14.82}}}
+  subfilter edge>=0.15 ev>=0.05: {'bets': 474, 'wins': 264, 'final': 1236.99, 'profit': 236.99, 'total_staked': 4709.74, 'yield_pct': 5.03, 'max_dd_pct': 20.52, 'by_year': {'2013': {'bets': 84, 'wins': 47, 'profit': -45.4, 'staked': 841.44, 'yield_pct': -5.4}, '2014': {'bets': 22, 'wins': 10, 'profit': -31.04, 'staked': 204.0, 'yield_pct': -15.22}, '2015': {'bets': 67, 'wins': 34, 'profit': -60.76, 'staked': 590.78, 'yield_pct': -10.28}, '2016': {'bets': 26, 'wins': 12, 'profit': -7.6, 'staked': 221.02, 'yield_pct': -3.44}, '2017': {'bets': 78, 'wins': 46, 'profit': 102.51, 'staked': 703.31, 'yield_pct': 14.58}, '2018': {'bets': 48, 'wins': 30, 'profit': 85.89, 'staked': 476.25, 'yield_pct': 18.04}, '2019': {'bets': 54, 'wins': 29, 'profit': 46.74, 'staked': 574.39, 'yield_pct': 8.14}, '2020': {'bets': 3, 'wins': 1, 'profit': -8.87, 'staked': 32.62, 'yield_pct': -27.2}, '2022': {'bets': 92, 'wins': 55, 'profit': 155.51, 'staked': 1065.93, 'yield_pct': 14.59}}}
+  subfilter edge>=0.18 ev>=0.05: {'bets': 223, 'wins': 119, 'final': 1030.14, 'profit': 30.14, 'total_staked': 2062.85, 'yield_pct': 1.46, 'max_dd_pct': 17.21, 'by_year': {'2013': {'bets': 40, 'wins': 22, 'profit': -36.72, 'staked': 397.04, 'yield_pct': -9.25}, '2014': {'bets': 6, 'wins': 2, 'profit': -19.34, 'staked': 56.56, 'yield_pct': -34.19}, '2015': {'bets': 34, 'wins': 15, 'profit': -72.07, 'staked': 307.44, 'yield_pct': -23.44}, '2016': {'bets': 11, 'wins': 4, 'profit': -6.53, 'staked': 96.23, 'yield_pct': -6.78}, '2017': {'bets': 29, 'wins': 15, 'profit': 4.39, 'staked': 250.28, 'yield_pct': 1.75}, '2018': {'bets': 21, 'wins': 12, 'profit': 23.62, 'staked': 184.75, 'yield_pct': 12.78}, '2019': {'bets': 22, 'wins': 11, 'profit': 8.71, 'staked': 198.91, 'yield_pct': 4.38}, '2020': {'bets': 2, 'wins': 1, 'profit': 1.7, 'staked': 17.95, 'yield_pct': 9.45}, '2022': {'bets': 58, 'wins': 37, 'profit': 126.37, 'staked': 553.68, 'yield_pct': 22.82}}}
+  subfilter edge>=0.2 ev>=0.05: {'bets': 134, 'wins': 76, 'final': 1112.96, 'profit': 112.96, 'total_staked': 1338.2, 'yield_pct': 8.44, 'max_dd_pct': 7.98, 'by_year': {'2013': {'bets': 25, 'wins': 14, 'profit': -13.51, 'staked': 247.94, 'yield_pct': -5.45}, '2014': {'bets': 4, 'wins': 2, 'profit': -0.17, 'staked': 39.07, 'yield_pct': -0.45}, '2015': {'bets': 16, 'wins': 7, 'profit': -39.67, 'staked': 154.76, 'yield_pct': -25.64}, '2016': {'bets': 6, 'wins': 2, 'profit': -9.65, 'staked': 56.61, 'yield_pct': -17.05}, '2017': {'bets': 13, 'wins': 8, 'profit': 25.64, 'staked': 125.05, 'yield_pct': 20.5}, '2018': {'bets': 11, 'wins': 6, 'profit': 10.07, 'staked': 104.97, 'yield_pct': 9.6}, '2019': {'bets': 14, 'wins': 8, 'profit': 27.28, 'staked': 139.32, 'yield_pct': 19.58}, '2020': {'bets': 1, 'wins': 1, 'profit': 12.0, 'staked': 10.0, 'yield_pct': 120.0}, '2022': {'bets': 44, 'wins': 28, 'profit': 100.99, 'staked': 460.47, 'yield_pct': 21.93}}}
+  subfilter edge>=0.2 ev>=0.08: {'bets': 134, 'wins': 76, 'final': 1112.96, 'profit': 112.96, 'total_staked': 1338.2, 'yield_pct': 8.44, 'max_dd_pct': 7.98, 'by_year': {'2013': {'bets': 25, 'wins': 14, 'profit': -13.51, 'staked': 247.94, 'yield_pct': -5.45}, '2014': {'bets': 4, 'wins': 2, 'profit': -0.17, 'staked': 39.07, 'yield_pct': -0.45}, '2015': {'bets': 16, 'wins': 7, 'profit': -39.67, 'staked': 154.76, 'yield_pct': -25.64}, '2016': {'bets': 6, 'wins': 2, 'profit': -9.65, 'staked': 56.61, 'yield_pct': -17.05}, '2017': {'bets': 13, 'wins': 8, 'profit': 25.64, 'staked': 125.05, 'yield_pct': 20.5}, '2018': {'bets': 11, 'wins': 6, 'profit': 10.07, 'staked': 104.97, 'yield_pct': 9.6}, '2019': {'bets': 14, 'wins': 8, 'profit': 27.28, 'staked': 139.32, 'yield_pct': 19.58}, '2020': {'bets': 1, 'wins': 1, 'profit': 12.0, 'staked': 10.0, 'yield_pct': 120.0}, '2022': {'bets': 44, 'wins': 28, 'profit': 100.99, 'staked': 460.47, 'yield_pct': 21.93}}}
+  subfilter edge>=0.25 ev>=0.1: {'bets': 39, 'wins': 22, 'final': 1016.0, 'profit': 16.0, 'total_staked': 382.79, 'yield_pct': 4.18, 'max_dd_pct': 4.06, 'by_year': {'2013': {'bets': 3, 'wins': 1, 'profit': -13.14, 'staked': 29.7, 'yield_pct': -44.24}, '2014': {'bets': 1, 'wins': 0, 'profit': -9.87, 'staked': 9.87, 'yield_pct': -100.0}, '2015': {'bets': 2, 'wins': 1, 'profit': -2.03, 'staked': 19.44, 'yield_pct': -10.45}, '2016': {'bets': 3, 'wins': 1, 'profit': -0.1, 'staked': 29.35, 'yield_pct': -0.33}, '2017': {'bets': 5, 'wins': 2, 'profit': -5.81, 'staked': 49.13, 'yield_pct': -11.83}, '2018': {'bets': 2, 'wins': 1, 'profit': -2.58, 'staked': 19.28, 'yield_pct': -13.4}, '2019': {'bets': 1, 'wins': 1, 'profit': 8.4, 'staked': 9.66, 'yield_pct': 86.96}, '2022': {'bets': 22, 'wins': 15, 'profit': 41.13, 'staked': 216.34, 'yield_pct': 19.01}}}
+strict_nba_nhl_truncated_last_2000: stored_records=2000 summary_bets=2118 first_stored=2014-02-06 last_stored=2023-01-16
+  replay_same_selections flat_fraction=0.005: {'bets': 2000, 'wins': 816, 'final': 1277.97, 'profit': 277.97, 'total_staked': 11142.97, 'yield_pct': 2.49, 'max_dd_pct': 20.0, 'by_year': {'2014': {'bets': 155, 'wins': 64, 'profit': -44.3, 'staked': 753.21, 'yield_pct': -5.88}, '2015': {'bets': 233, 'wins': 106, 'profit': 0.63, 'staked': 1123.85, 'yield_pct': 0.06}, '2016': {'bets': 190, 'wins': 81, 'profit': 37.36, 'staked': 952.34, 'yield_pct': 3.92}, '2017': {'bets': 228, 'wins': 97, 'profit': 163.87, 'staked': 1243.44, 'yield_pct': 13.18}, '2018': {'bets': 201, 'wins': 71, 'profit': -188.67, 'staked': 1085.67, 'yield_pct': -17.38}, '2019': {'bets': 321, 'wins': 126, 'profit': 211.7, 'staked': 1751.27, 'yield_pct': 12.09}, '2020': {'bets': 69, 'wins': 28, 'profit': 73.68, 'staked': 432.64, 'yield_pct': 17.03}, '2021': {'bets': 254, 'wins': 92, 'profit': -44.15, 'staked': 1592.51, 'yield_pct': -2.77}, '2022': {'bets': 334, 'wins': 146, 'profit': 63.66, 'staked': 2110.88, 'yield_pct': 3.02}, '2023': {'bets': 15, 'wins': 5, 'profit': 4.18, 'staked': 97.16, 'yield_pct': 4.3}}}
+  replay_same_selections flat_fraction=0.01: {'bets': 2000, 'wins': 816, 'final': 1467.15, 'profit': 467.15, 'total_staked': 23528.17, 'yield_pct': 1.99, 'max_dd_pct': 36.26, 'by_year': {'2014': {'bets': 155, 'wins': 64, 'profit': -95.59, 'staked': 1401.8, 'yield_pct': -6.82}, '2015': {'bets': 233, 'wins': 106, 'profit': -5.99, 'staked': 2128.8, 'yield_pct': -0.28}, '2016': {'bets': 190, 'wins': 81, 'profit': 62.1, 'staked': 1845.72, 'yield_pct': 3.36}, '2017': {'bets': 228, 'wins': 97, 'profit': 318.77, 'staked': 2615.57, 'yield_pct': 12.19}, '2018': {'bets': 201, 'wins': 71, 'profit': -380.39, 'staked': 2220.67, 'yield_pct': -17.13}, '2019': {'bets': 321, 'wins': 126, 'profit': 401.44, 'staked': 3590.05, 'yield_pct': 11.18}, '2020': {'bets': 69, 'wins': 28, 'profit': 159.44, 'staked': 1009.66, 'yield_pct': 15.79}, '2021': {'bets': 254, 'wins': 92, 'profit': -108.78, 'staked': 3685.65, 'yield_pct': -2.95}, '2022': {'bets': 334, 'wins': 146, 'profit': 108.62, 'staked': 4803.93, 'yield_pct': 2.26}, '2023': {'bets': 15, 'wins': 5, 'profit': 7.52, 'staked': 226.33, 'yield_pct': 3.32}}}
+  replay_same_selections flat_fraction=0.02: {'bets': 2000, 'wins': 816, 'final': 1522.67, 'profit': 522.67, 'total_staked': 43917.18, 'yield_pct': 1.19, 'max_dd_pct': 57.41, 'by_year': {'2014': {'bets': 155, 'wins': 64, 'profit': -129.48, 'staked': 2312.39, 'yield_pct': -5.6}, '2015': {'bets': 233, 'wins': 106, 'profit': -29.67, 'staked': 3728.57, 'yield_pct': -0.8}, '2016': {'bets': 190, 'wins': 81, 'profit': 76.15, 'staked': 3312.95, 'yield_pct': 2.3}, '2017': {'bets': 228, 'wins': 97, 'profit': 653.55, 'staked': 5181.61, 'yield_pct': 12.61}, '2018': {'bets': 201, 'wins': 71, 'profit': -759.19, 'staked': 4548.64, 'yield_pct': -16.69}, '2019': {'bets': 321, 'wins': 126, 'profit': 522.73, 'staked': 6042.19, 'yield_pct': 8.65}, '2020': {'bets': 69, 'wins': 28, 'profit': 227.96, 'staked': 2080.85, 'yield_pct': 10.96}, '2021': {'bets': 254, 'wins': 92, 'profit': -182.8, 'staked': 7358.46, 'yield_pct': -2.48}, '2022': {'bets': 334, 'wins': 146, 'profit': 136.09, 'staked': 8866.92, 'yield_pct': 1.53}, '2023': {'bets': 15, 'wins': 5, 'profit': 7.32, 'staked': 484.62, 'yield_pct': 1.51}}}
+  subfilter edge>=0.15 ev>=0.05: {'bets': 2000, 'wins': 816, 'final': 1467.15, 'profit': 467.15, 'total_staked': 23528.17, 'yield_pct': 1.99, 'max_dd_pct': 36.26, 'by_year': {'2014': {'bets': 155, 'wins': 64, 'profit': -95.59, 'staked': 1401.8, 'yield_pct': -6.82}, '2015': {'bets': 233, 'wins': 106, 'profit': -5.99, 'staked': 2128.8, 'yield_pct': -0.28}, '2016': {'bets': 190, 'wins': 81, 'profit': 62.1, 'staked': 1845.72, 'yield_pct': 3.36}, '2017': {'bets': 228, 'wins': 97, 'profit': 318.77, 'staked': 2615.57, 'yield_pct': 12.19}, '2018': {'bets': 201, 'wins': 71, 'profit': -380.39, 'staked': 2220.67, 'yield_pct': -17.13}, '2019': {'bets': 321, 'wins': 126, 'profit': 401.44, 'staked': 3590.05, 'yield_pct': 11.18}, '2020': {'bets': 69, 'wins': 28, 'profit': 159.44, 'staked': 1009.66, 'yield_pct': 15.79}, '2021': {'bets': 254, 'wins': 92, 'profit': -108.78, 'staked': 3685.65, 'yield_pct': -2.95}, '2022': {'bets': 334, 'wins': 146, 'profit': 108.62, 'staked': 4803.93, 'yield_pct': 2.26}, '2023': {'bets': 15, 'wins': 5, 'profit': 7.52, 'staked': 226.33, 'yield_pct': 3.32}}}
+  subfilter edge>=0.18 ev>=0.05: {'bets': 1271, 'wins': 495, 'final': 1382.33, 'profit': 382.33, 'total_staked': 13495.16, 'yield_pct': 2.83, 'max_dd_pct': 34.31, 'by_year': {'2014': {'bets': 103, 'wins': 45, 'profit': 70.15, 'staked': 1039.31, 'yield_pct': 6.75}, '2015': {'bets': 144, 'wins': 58, 'profit': -156.33, 'staked': 1419.46, 'yield_pct': -11.01}, '2016': {'bets': 115, 'wins': 46, 'profit': 96.17, 'staked': 1165.17, 'yield_pct': 8.25}, '2017': {'bets': 129, 'wins': 46, 'profit': 119.59, 'staked': 1419.76, 'yield_pct': 8.42}, '2018': {'bets': 131, 'wins': 43, 'profit': -218.54, 'staked': 1373.34, 'yield_pct': -15.91}, '2019': {'bets': 204, 'wins': 70, 'profit': 31.69, 'staked': 1886.5, 'yield_pct': 1.68}, '2020': {'bets': 49, 'wins': 20, 'profit': 35.21, 'staked': 489.22, 'yield_pct': 7.2}, '2021': {'bets': 169, 'wins': 65, 'profit': 105.32, 'staked': 1750.03, 'yield_pct': 6.02}, '2022': {'bets': 219, 'wins': 100, 'profit': 332.44, 'staked': 2838.09, 'yield_pct': 11.71}, '2023': {'bets': 8, 'wins': 2, 'profit': -33.36, 'staked': 114.27, 'yield_pct': -29.2}}}
+  subfilter edge>=0.2 ev>=0.05: {'bets': 929, 'wins': 352, 'final': 1349.04, 'profit': 349.04, 'total_staked': 10090.85, 'yield_pct': 3.46, 'max_dd_pct': 27.8, 'by_year': {'2014': {'bets': 79, 'wins': 33, 'profit': 43.35, 'staked': 810.82, 'yield_pct': 5.35}, '2015': {'bets': 97, 'wins': 38, 'profit': -116.6, 'staked': 941.93, 'yield_pct': -12.38}, '2016': {'bets': 85, 'wins': 29, 'profit': 33.08, 'staked': 858.71, 'yield_pct': 3.85}, '2017': {'bets': 86, 'wins': 31, 'profit': 130.31, 'staked': 899.29, 'yield_pct': 14.49}, '2018': {'bets': 93, 'wins': 28, 'profit': -188.6, 'staked': 931.53, 'yield_pct': -20.25}, '2019': {'bets': 165, 'wins': 59, 'profit': 165.42, 'staked': 1627.8, 'yield_pct': 10.16}, '2020': {'bets': 37, 'wins': 17, 'profit': 90.51, 'staked': 431.63, 'yield_pct': 20.97}, '2021': {'bets': 118, 'wins': 42, 'profit': -39.42, 'staked': 1397.18, 'yield_pct': -2.82}, '2022': {'bets': 163, 'wins': 74, 'profit': 260.54, 'staked': 2108.64, 'yield_pct': 12.36}, '2023': {'bets': 6, 'wins': 1, 'profit': -29.54, 'staked': 83.31, 'yield_pct': -35.46}}}
+  subfilter edge>=0.2 ev>=0.08: {'bets': 929, 'wins': 352, 'final': 1349.04, 'profit': 349.04, 'total_staked': 10090.85, 'yield_pct': 3.46, 'max_dd_pct': 27.8, 'by_year': {'2014': {'bets': 79, 'wins': 33, 'profit': 43.35, 'staked': 810.82, 'yield_pct': 5.35}, '2015': {'bets': 97, 'wins': 38, 'profit': -116.6, 'staked': 941.93, 'yield_pct': -12.38}, '2016': {'bets': 85, 'wins': 29, 'profit': 33.08, 'staked': 858.71, 'yield_pct': 3.85}, '2017': {'bets': 86, 'wins': 31, 'profit': 130.31, 'staked': 899.29, 'yield_pct': 14.49}, '2018': {'bets': 93, 'wins': 28, 'profit': -188.6, 'staked': 931.53, 'yield_pct': -20.25}, '2019': {'bets': 165, 'wins': 59, 'profit': 165.42, 'staked': 1627.8, 'yield_pct': 10.16}, '2020': {'bets': 37, 'wins': 17, 'profit': 90.51, 'staked': 431.63, 'yield_pct': 20.97}, '2021': {'bets': 118, 'wins': 42, 'profit': -39.42, 'staked': 1397.18, 'yield_pct': -2.82}, '2022': {'bets': 163, 'wins': 74, 'profit': 260.54, 'staked': 2108.64, 'yield_pct': 12.36}, '2023': {'bets': 6, 'wins': 1, 'profit': -29.54, 'staked': 83.31, 'yield_pct': -35.46}}}
+  subfilter edge>=0.25 ev>=0.1: {'bets': 428, 'wins': 149, 'final': 1265.17, 'profit': 265.17, 'total_staked': 4456.74, 'yield_pct': 5.95, 'max_dd_pct': 20.26, 'by_year': {'2014': {'bets': 34, 'wins': 11, 'profit': 14.09, 'staked': 352.78, 'yield_pct': 3.99}, '2015': {'bets': 31, 'wins': 11, 'profit': -52.58, 'staked': 307.84, 'yield_pct': -17.08}, '2016': {'bets': 39, 'wins': 12, 'profit': -8.33, 'staked': 389.04, 'yield_pct': -2.14}, '2017': {'bets': 33, 'wins': 12, 'profit': 114.25, 'staked': 337.82, 'yield_pct': 33.82}, '2018': {'bets': 39, 'wins': 8, 'profit': -157.8, 'staked': 381.41, 'yield_pct': -41.37}, '2019': {'bets': 91, 'wins': 30, 'profit': 133.75, 'staked': 897.88, 'yield_pct': 14.9}, '2020': {'bets': 17, 'wins': 5, 'profit': 29.84, 'staked': 187.2, 'yield_pct': 15.94}, '2021': {'bets': 50, 'wins': 16, 'profit': -30.85, 'staked': 524.27, 'yield_pct': -5.89}, '2022': {'bets': 92, 'wins': 44, 'profit': 248.5, 'staked': 1052.83, 'yield_pct': 23.6}, '2023': {'bets': 2, 'wins': 0, 'profit': -25.69, 'staked': 25.69, 'yield_pct': -100.0}}}
+
+=== Market residual artifacts ===
+all_sports: games=61898 side_rows=122476 train/tune/test rows=78518/26863/17095 dates=2012-04-29..2026-01-08
+  split={'train': {'first': '2012-04-29', 'last': '2019-03-06', 'dates': 2344}, 'tune': {'first': '2019-03-07', 'last': '2021-08-19', 'dates': 781}, 'test': {'first': '2021-08-20', 'last': '2026-01-08', 'dates': 782}}
+  tune_best=edge 0.02 min_ev 0.0 bets 164 yield -3.36 max_dd 13.95 by_sport={'CFB': {'bets': 156, 'wins': 92, 'win_pct': 58.97, 'profit': -43.96, 'staked': 1176.97, 'yield_pct': -3.73}, 'EPL': {'bets': 4, 'wins': 2, 'win_pct': 50.0, 'profit': -7.35, 'staked': 36.98, 'yield_pct': -19.88}, 'MLB': {'bets': 2, 'wins': 1, 'win_pct': 50.0, 'profit': -1.17, 'staked': 17.9, 'yield_pct': -6.52}, 'NBA': {'bets': 1, 'wins': 1, 'win_pct': 100.0, 'profit': 5.04, 'staked': 9.32, 'yield_pct': 54.05}, 'NFL': {'bets': 1, 'wins': 1, 'win_pct': 100.0, 'profit': 5.44, 'staked': 9.24, 'yield_pct': 58.82}}
+  test=bets 158 wins 86 win_pct 54.43 final 848.87 yield -14.22 max_dd 16.4 by_sport={'CFB': {'bets': 132, 'wins': 72, 'win_pct': 54.55, 'profit': -116.44, 'staked': 834.43, 'yield_pct': -13.95}, 'EPL': {'bets': 10, 'wins': 7, 'win_pct': 70.0, 'profit': 12.38, 'staked': 88.41, 'yield_pct': 14.0}, 'NBA': {'bets': 12, 'wins': 5, 'win_pct': 41.67, 'profit': -38.61, 'staked': 104.2, 'yield_pct': -37.05}, 'NFL': {'bets': 4, 'wins': 2, 'win_pct': 50.0, 'profit': -8.46, 'staked': 35.5, 'yield_pct': -23.83}}
+  accuracy={'tune': {'model_pick_accuracy_pct': 62.77, 'model_pick_correct': 8162, 'model_pick_total': 13004}, 'test': {'model_pick_accuracy_pct': 63.76, 'model_pick_correct': 4904, 'model_pick_total': 7691}}
+nba_nhl: games=23483 side_rows=45752 train/tune/test rows=28684/9260/7808 dates=2013-03-02..2023-01-16
+  split={'train': {'first': '2013-03-02', 'last': '2018-12-15', 'dates': 1390}, 'tune': {'first': '2018-12-16', 'last': '2021-03-11', 'dates': 464}, 'test': {'first': '2021-03-12', 'last': '2023-01-16', 'dates': 464}}
+  tune_best=edge 0.0 min_ev 0.0 bets 791 yield -8.34 max_dd 53.76 by_sport={'NBA': {'bets': 473, 'wins': 203, 'win_pct': 42.92, 'profit': -336.79, 'staked': 3235.59, 'yield_pct': -10.41}, 'NHL': {'bets': 318, 'wins': 174, 'win_pct': 54.72, 'profit': -131.3, 'staked': 2379.74, 'yield_pct': -5.52}}
+  test=bets 870 wins 419 win_pct 48.16 final 860.24 yield -1.8 max_dd 36.61 by_sport={'NBA': {'bets': 616, 'wins': 278, 'win_pct': 45.13, 'profit': 12.56, 'staked': 5577.39, 'yield_pct': 0.23}, 'NHL': {'bets': 254, 'wins': 141, 'win_pct': 55.51, 'profit': -152.32, 'staked': 2186.71, 'yield_pct': -6.97}}
+  accuracy={'tune': {'model_pick_accuracy_pct': 61.36, 'model_pick_correct': 2841, 'model_pick_total': 4630}, 'test': {'model_pick_accuracy_pct': 65.27, 'model_pick_correct': 2548, 'model_pick_total': 3904}}
+nhl: games=11303 side_rows=21996 train/tune/test rows=13248/3996/4752 dates=2013-03-02..2022-11-27
+  split={'train': {'first': '2013-03-02', 'last': '2018-02-09', 'dates': 1116}, 'tune': {'first': '2018-02-10', 'last': '2019-09-23', 'dates': 372}, 'test': {'first': '2019-09-25', 'last': '2022-11-27', 'dates': 372}}
+  tune_best=edge 0.0 min_ev 0.0 bets 582 yield -3.56 max_dd 32.27 by_sport={'NHL': {'bets': 582, 'wins': 322, 'win_pct': 55.33, 'profit': -190.42, 'staked': 5345.41, 'yield_pct': -3.56}}
+  test=bets 940 wins 540 win_pct 57.45 final 857.23 yield -1.77 max_dd 27.72 by_sport={'NHL': {'bets': 940, 'wins': 540, 'win_pct': 57.45, 'profit': -142.77, 'staked': 8082.4, 'yield_pct': -1.77}}
+  accuracy={'tune': {'model_pick_accuracy_pct': 58.46, 'model_pick_correct': 1168, 'model_pick_total': 1998}, 'test': {'model_pick_accuracy_pct': 58.92, 'model_pick_correct': 1400, 'model_pick_total': 2376}}
+nba: games=12180 side_rows=23756 train/tune/test rows=14542/4598/4616 dates=2013-12-09..2023-01-16
+  split={'train': {'first': '2013-12-09', 'last': '2019-03-11', 'dates': 1137}, 'tune': {'first': '2019-03-12', 'last': '2021-04-18', 'dates': 379}, 'test': {'first': '2021-04-19', 'last': '2023-01-16', 'dates': 380}}
+  tune_best=edge 0.0 min_ev 0.025 bets 119 yield 15.96 max_dd 5.37 by_sport={'NBA': {'bets': 119, 'wins': 65, 'win_pct': 54.62, 'profit': 210.31, 'staked': 1317.68, 'yield_pct': 15.96}}
+  test=bets 134 wins 57 win_pct 42.54 final 813.61 yield -15.12 max_dd 19.79 by_sport={'NBA': {'bets': 134, 'wins': 57, 'win_pct': 42.54, 'profit': -186.39, 'staked': 1232.34, 'yield_pct': -15.12}}
+  accuracy={'tune': {'model_pick_accuracy_pct': 65.55, 'model_pick_correct': 1507, 'model_pick_total': 2299}, 'test': {'model_pick_accuracy_pct': 66.81, 'model_pick_correct': 1542, 'model_pick_total': 2308}}

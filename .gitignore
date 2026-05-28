@@ -15,3 +15,7 @@ scratch/rank-based-linkage/
 .env.*
 !.env.example
 .synapseConfig
+
+# Unpublished local prototype: current version includes simulated fraud flows.
+scripts/build_fraud_detection_data.py
+site/data/fraud/

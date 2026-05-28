@@ -1,6 +1,6 @@
 {
   "dataset": "OpenFlights airport route snapshot",
-  "generatedAt": "2026-05-25T09:13:40.612682+00:00",
+  "generatedAt": "2026-05-28T00:10:06.048600+00:00",
   "sources": {
     "airports": "https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat",
     "routes": "https://raw.githubusercontent.com/jpatokal/openflights/master/data/routes.dat",
@@ -30,7 +30,7 @@
     "curlNorm": 15.535601095962257,
     "harmonicNorm": 17.283465003760853
   },
-  "processingSeconds": 2.293,
+  "processingSeconds": 2.005,
   "rawDataRetained": false,
   "land": {
     "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson",
@@ -38,6 +38,6 @@
     "artifact": "E:\\code.projects\\hodge-rank-clustering\\site\\data\\world\\land.geojson",
     "bytes": 86945
   },
-  "rawDirectory": "E:\\code.projects\\hodge-rank-clustering\\.tmp\\openflights_raw_55228",
+  "rawDirectory": "E:\\code.projects\\hodge-rank-clustering\\.tmp\\openflights_raw_5180",
   "rawDirectoryExistsAfterRun": false
 }

@@ -1,0 +1,113 @@
+{
+  "generated_at_utc": "2026-05-26T03:10:41.509953+00:00",
+  "sports": [
+    "NFL",
+    "NBA",
+    "NHL",
+    "MLB",
+    "CFB",
+    "EPL"
+  ],
+  "seasons_per_sport": 10,
+  "games": 61898,
+  "first_date": "2012-03-28",
+  "last_date": "2026-01-08",
+  "sources": {
+    "NFL": {
+      "seasons": [
+        "NFL 2012-13",
+        "NFL 2013-14",
+        "NFL 2014-15",
+        "NFL 2015-16",
+        "NFL 2016-17",
+        "NFL 2017-18",
+        "NFL 2018-19",
+        "NFL 2019-20",
+        "NFL 2020-21",
+        "NFL 2021-22"
+      ],
+      "games": 2690,
+      "source": "SportsbookReviewsOnline historical closing moneyline archive"
+    },
+    "NBA": {
+      "seasons": [
+        "NBA 2013-14",
+        "NBA 2014-15",
+        "NBA 2015-16",
+        "NBA 2016-17",
+        "NBA 2017-18",
+        "NBA 2018-19",
+        "NBA 2019-20",
+        "NBA 2020-21",
+        "NBA 2021-22",
+        "NBA 2022-23"
+      ],
+      "games": 12180,
+      "source": "SportsbookReviewsOnline historical closing moneyline archive"
+    },
+    "NHL": {
+      "seasons": [
+        "NHL 2012-13",
+        "NHL 2013-14",
+        "NHL 2014-15",
+        "NHL 2015-16",
+        "NHL 2016-17",
+        "NHL 2017-18",
+        "NHL 2018-19",
+        "NHL 2019-20",
+        "NHL 2021",
+        "NHL 2022-23"
+      ],
+      "games": 11303,
+      "source": "SportsbookReviewsOnline historical closing moneyline archive"
+    },
+    "MLB": {
+      "seasons": [
+        "MLB 2012",
+        "MLB 2013",
+        "MLB 2014",
+        "MLB 2015",
+        "MLB 2016",
+        "MLB 2017",
+        "MLB 2018",
+        "MLB 2019",
+        "MLB 2020",
+        "MLB 2021"
+      ],
+      "games": 23124,
+      "source": "SportsbookReviewsOnline historical closing moneyline archive"
+    },
+    "CFB": {
+      "seasons": [
+        "CFB 2013-14",
+        "CFB 2014-15",
+        "CFB 2015-16",
+        "CFB 2016-17",
+        "CFB 2017-18",
+        "CFB 2018-19",
+        "CFB 2019-20",
+        "CFB 2020-21",
+        "CFB 2021-22",
+        "CFB 2022-23"
+      ],
+      "games": 8971,
+      "source": "SportsbookReviewsOnline historical closing moneyline archive"
+    },
+    "EPL": {
+      "seasons": [
+        "1617",
+        "1718",
+        "1819",
+        "1920",
+        "2021",
+        "2122",
+        "2223",
+        "2324",
+        "2425",
+        "2526"
+      ],
+      "games": 3630,
+      "source": "football-data.co.uk"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "side_rows": 21996,
+  "eligible_games": 10998,
+  "skipped_games": {
+    "unknown_team": 5,
+    "warmup": 300
+  },
+  "first_feature_date": "2013-03-02",
+  "last_feature_date": "2022-11-27",
+  "side_rows_by_season": {
+    "NHL 2012-13": 1012,
+    "NHL 2013-14": 2644,
+    "NHL 2014-15": 2636,
+    "NHL 2015-16": 2642,
+    "NHL 2016-17": 2634,
+    "NHL 2017-18": 2708,
+    "NHL 2018-19": 2716,
+    "NHL 2019-20": 2420,
+    "NHL 2021": 1902,
+    "NHL 2022-23": 682
+  },
+  "feature_names": [
+    "odds",
+    "implied_raw",
+    "implied_norm",
+    "market_overround",
+    "market_favorite",
+    "market_underdog",
+    "hodge_prob",
+    "hodge_edge_raw",
+    "hodge_edge_norm",
+    "hodge_ev",
+    "hodge_pick",
+    "hodge_market_disagree",
+    "signal",
+    "side_signal",
+    "home_side",
+    "away_side",
+    "odds_band"
+  ],
+  "no_future_rule": "features for a date are generated before that date's games are appended to history",
+  "model_reference": "scripts/hodge_real_sportsbook_agent.py",
+  "side_feature_reference": "scripts/hodge_market_residual_strategy.py",
+  "warmup_games": 300,
+  "training_window_games": 760
+}

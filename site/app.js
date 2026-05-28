@@ -87,6 +87,15 @@ const state = {
     hoveredNode: null,
     selectedNode: null,
   },
+  trade: {
+    nodes: [],
+    edges: [],
+    summary: null,
+    nodeById: new Map(),
+    layout: null,
+    hoveredNode: null,
+    selectedNode: null,
+  },
   benchmark: {
     points: [],
     labelMode: "true", // "true", "hodge", or "rbl"
@@ -137,6 +146,7 @@ const els = {
   sourceLine: document.getElementById("sourceLine"),
   benchmarkViewButton: document.getElementById("benchmarkViewButton"),
   benchmarkControls: document.getElementById("benchmarkControls"),
+  tradeViewButton: document.getElementById("tradeViewButton"),
   showTrueLabelsButton: document.getElementById("showTrueLabelsButton"),
   showPredLabelsButton: document.getElementById("showPredLabelsButton"),
   showRblLabelsButton: document.getElementById("showRblLabelsButton"),
@@ -693,11 +703,49 @@ function nearestCorpusNode(x, y) {
 
 function buildGraphLayout(viewKey) {
   const box = chartBox();
+  const subState = state[viewKey];
+
+  if (viewKey === "trade") {
+    const nodes = subState.nodes.map((node, index) => {
+      // Longitude: map -180 to 180 to box width (with 45px padding)
+      const x = box.x + 45 + ((node.longitude - (-180)) / 360) * (box.width - 90);
+      // Potential: map 0.0 (top/supplier) to 1.0 (bottom/consumer).
+      // Since exporters have low potential, putting them at the top means we map potential directly to Y (since 0 potential = top).
+      const y = box.y + 45 + node.potentialNorm * (box.height - 90);
+      return {
+        ...node,
+        index,
+        x,
+        y,
+        vx: 0,
+        vy: 0,
+        radius: Math.max(6, Math.min(22, Math.log10(Math.max(1e8, node.gdp)) * 1.5)),
+      };
+    });
+    const nodeById = new Map(nodes.map((node) => [node.id, node]));
+    const edges = subState.edges
+      .map((edge) => ({
+        ...edge,
+        sourceNode: nodeById.get(edge.source),
+        targetNode: nodeById.get(edge.target),
+      }))
+      .filter((edge) => edge.sourceNode && edge.targetNode);
+
+    subState.layout = {
+      width: state.width,
+      height: state.height,
+      box,
+      nodes,
+      edges,
+      nodeById,
+    };
+    return subState.layout;
+  }
+
   const centerX = box.x + box.width / 2;
   const centerY = box.y + box.height / 2;
   const radiusX = box.width * 0.39;
   const radiusY = box.height * 0.38;
-  const subState = state[viewKey];
   const nodes = subState.nodes.map((node, index) => {
     const angle = (index / Math.max(1, subState.nodes.length)) * Math.PI * 2 - Math.PI / 2;
     return {
@@ -832,12 +880,12 @@ function drawGeneGraph(viewKey) {
   const visibleEdges = layout.edges
     .filter((edge) => !selectedId || edge.source === selectedId || edge.target === selectedId)
     .slice(0, state.edgeLimit);
-    
+
   for (const edge of visibleEdges) {
     const active = edge.source === selectedId || edge.target === selectedId || edge.source === hoveredId || edge.target === hoveredId;
     const source = edge.sourceNode;
     const target = edge.targetNode;
-    
+
     ctx.beginPath();
     ctx.moveTo(source.x, source.y);
     const midX = (source.x + target.x) / 2;
@@ -846,13 +894,13 @@ function drawGeneGraph(viewKey) {
     const dy = target.y - source.y;
     const distance = Math.max(1, Math.hypot(dx, dy));
     const bend = Math.min(30, Math.max(6, distance * 0.06));
-    
+
     ctx.quadraticCurveTo(midX - (dy / distance) * bend, midY + (dx / distance) * bend, target.x, target.y);
     ctx.strokeStyle = active ? "rgba(243, 239, 226, 0.8)" : "rgba(243, 239, 226, 0.11)";
     ctx.globalAlpha = active ? 1.0 : 0.4;
     ctx.lineWidth = active ? 2.0 : 1.0;
     ctx.stroke();
-    
+
     if (active && distance > 30) {
       const t = 0.5;
       const ax = (1-t)*(1-t)*source.x + 2*(1-t)*t*(midX - (dy / distance) * bend) + t*t*target.x;
@@ -860,7 +908,7 @@ function drawGeneGraph(viewKey) {
       const tx = 2*(1-t)*((midX - (dy / distance) * bend) - source.x) + 2*t*(target.x - (midX - (dy / distance) * bend));
       const ty = 2*(1-t)*((midY + (dx / distance) * bend) - source.y) + 2*t*(target.y - (midY + (dx / distance) * bend));
       const angle = Math.atan2(ty, tx);
-      
+
       ctx.save();
       ctx.translate(ax, ay);
       ctx.rotate(angle);
@@ -881,23 +929,23 @@ function drawGeneGraph(viewKey) {
     const active = !selectedId || node.id === selectedId || visibleEdges.some((edge) => edge.source === node.id || edge.target === node.id);
     const highlighted = node.id === selectedId || node.id === hoveredId;
     const color = geneColor(node.potentialNorm, node.kind);
-    
+
     ctx.save();
     ctx.globalAlpha = active ? 1 : 0.22;
     ctx.beginPath();
     ctx.fillStyle = color;
     ctx.shadowColor = color;
     ctx.shadowBlur = highlighted ? 24 : 9;
-    
+
     const r = highlighted ? node.radius + 3 : node.radius;
     ctx.arc(node.x, node.y, r, 0, Math.PI * 2);
     ctx.fill();
     ctx.shadowBlur = 0;
-    
+
     ctx.lineWidth = highlighted ? 2 : 1;
     ctx.strokeStyle = highlighted ? "#f3efe2" : "rgba(12, 14, 13, 0.85)";
     ctx.stroke();
-    
+
     if (node.kind === "tf") {
       ctx.beginPath();
       ctx.arc(node.x, node.y, r * 0.45, 0, Math.PI * 2);
@@ -905,7 +953,7 @@ function drawGeneGraph(viewKey) {
       ctx.globalAlpha = active ? 0.8 : 0.3;
       ctx.fill();
     }
-    
+
     ctx.restore();
   }
 
@@ -970,6 +1018,10 @@ function draw() {
   }
   if (state.viewMode === "geneNet4") {
     drawGeneGraph("geneNet4");
+    return;
+  }
+  if (state.viewMode === "trade") {
+    drawTradeGraph();
     return;
   }
   if (state.viewMode === "benchmark") {
@@ -1092,7 +1144,7 @@ function drawBenchmarkPlot() {
     const isHovered = hovered && hovered.id === point.id;
     const mode = state.benchmark.labelMode;
     const label = mode === "true" ? point.trueLabel : (mode === "rbl" ? (point.rblLabel !== undefined ? point.rblLabel : -1) : point.predLabel);
-    
+
     let color;
     if (label === -1) {
       color = "#ff4d4d";
@@ -1140,6 +1192,9 @@ function nearestNode(x, y) {
   }
   if (state.viewMode === "geneNet4") {
     return nearestGeneNode("geneNet4", x, y);
+  }
+  if (state.viewMode === "trade") {
+    return nearestGeneNode("trade", x, y);
   }
   if (state.viewMode === "benchmark") {
     return nearestBenchmarkPoint(x, y);
@@ -1275,6 +1330,10 @@ function updateDetails(node) {
     updateGeneDetails("geneNet4", node);
     return;
   }
+  if (state.viewMode === "trade") {
+    updateTradeDetails(node);
+    return;
+  }
   if (state.viewMode === "benchmark") {
     updateBenchmarkDetails(node);
     return;
@@ -1371,6 +1430,10 @@ function updateMeters() {
     updateGeneMeters("geneNet4");
     return;
   }
+  if (state.viewMode === "trade") {
+    updateGeneMeters("trade");
+    return;
+  }
   if (state.viewMode === "benchmark") {
     updateBenchmarkMeters();
     return;
@@ -1407,13 +1470,13 @@ function renderBenchmarkClusters() {
     const label = mode === "true" ? point.trueLabel : (mode === "rbl" ? (point.rblLabel !== undefined ? point.rblLabel : -1) : point.predLabel);
     counts[label] = (counts[label] || 0) + 1;
   }
-  
+
   const sortedLabels = Object.keys(counts).map(Number).sort((a, b) => a - b);
   const labelsToRender = sortedLabels.filter(l => l !== -1);
   if (sortedLabels.includes(-1)) {
     labelsToRender.push(-1);
   }
-  
+
   const items = [];
   for (const label of labelsToRender) {
     let name, desc;
@@ -1542,6 +1605,10 @@ function renderClusters() {
   }
   if (state.viewMode === "geneNet4") {
     renderGeneClusters("geneNet4");
+    return;
+  }
+  if (state.viewMode === "trade") {
+    renderTradeClusters();
     return;
   }
   if (state.viewMode === "benchmark") {
@@ -1675,6 +1742,12 @@ function updateLegend(viewMode) {
       <li><strong>Curl:</strong> <span class="analogy-label">"Regulatory Whirlpools"</span> - circular feedback loops of regulatory interactions.</li>
       <li><strong>Harmonic:</strong> <span class="analogy-label">"Indirect Orbits"</span> - larger cycles routing through non-triangular pathways.</li>
     `;
+  } else if (viewMode === "trade") {
+    els.legendList.innerHTML = `
+      <li><strong>Gradient:</strong> <span class="analogy-label">"Supply Chain Waterfall"</span> - flow going from low-potential upstream net exporters to high-potential downstream net importers.</li>
+      <li><strong>Curl:</strong> <span class="analogy-label">"Regional Subcontracting"</span> - circular trade loops within regional trade networks (e.g. EU parts circulation).</li>
+      <li><strong>Harmonic:</strong> <span class="analogy-label">"Global Balancing Loops"</span> - systemic circular trading loops traversing multiple continents.</li>
+    `;
   } else if (viewMode === "benchmark") {
     els.legendList.innerHTML = `
       <li><strong>Gradient:</strong> <span class="analogy-label">"City Core"</span> - stable, dense coordinate clusters of true residents.</li>
@@ -1727,6 +1800,7 @@ function setViewMode(viewMode) {
   if (viewMode === "geneNet1" && !state.geneNet1.summary) return;
   if (viewMode === "geneNet3" && !state.geneNet3.summary) return;
   if (viewMode === "geneNet4" && !state.geneNet4.summary) return;
+  if (viewMode === "trade" && !state.trade.summary) return;
   state.viewMode = viewMode;
   state.hoveredNode = null;
   state.corpus.hoveredNode = null;
@@ -1736,6 +1810,7 @@ function setViewMode(viewMode) {
   state.geneNet1.hoveredNode = null;
   state.geneNet3.hoveredNode = null;
   state.geneNet4.hoveredNode = null;
+  state.trade.hoveredNode = null;
   els.flightViewButton.classList.toggle("active", viewMode === "flights");
   els.corpusViewButton.classList.toggle("active", viewMode === "corpus");
   els.geneHumanViewButton.classList.toggle("active", viewMode === "geneHuman");
@@ -1744,7 +1819,8 @@ function setViewMode(viewMode) {
   els.geneNet3ViewButton.classList.toggle("active", viewMode === "geneNet3");
   els.geneNet4ViewButton.classList.toggle("active", viewMode === "geneNet4");
   els.benchmarkViewButton.classList.toggle("active", viewMode === "benchmark");
-  els.mainControls.style.display = viewMode === "benchmark" ? "none" : "block";
+  els.tradeViewButton.classList.toggle("active", viewMode === "trade");
+  els.mainControls.style.display = (viewMode === "benchmark" || viewMode === "trade") ? "none" : "block";
   els.benchmarkControls.style.display = viewMode === "benchmark" ? "block" : "none";
   if (viewMode === "corpus") {
     renderCorpusSummary();
@@ -1760,6 +1836,8 @@ function setViewMode(viewMode) {
     renderGeneSummary("geneNet3");
   } else if (viewMode === "geneNet4") {
     renderGeneSummary("geneNet4");
+  } else if (viewMode === "trade") {
+    renderTradeSummary();
   } else {
     renderFlightSummary();
   }
@@ -1776,7 +1854,8 @@ async function loadData() {
     corpusNodes, corpusEdges, corpusSummary,
     benchmarkPoints,
     trrustHumanNodes, trrustHumanEdges, trrustMouseNodes, trrustMouseEdges, trrustSummary,
-    net1Nodes, net1Edges, net3Nodes, net3Edges, net4Nodes, net4Edges, dream5Summary
+    net1Nodes, net1Edges, net3Nodes, net3Edges, net4Nodes, net4Edges, dream5Summary,
+    tradeNodes, tradeEdges, tradeSummary,
   ] = await Promise.all([
     fetch("data/openflights/nodes.json").then((response) => response.json()),
     fetch("data/openflights/edges.json").then((response) => response.json()),
@@ -1799,6 +1878,9 @@ async function loadData() {
     fetch("data/dream5/net4_nodes.json").then((response) => response.json()),
     fetch("data/dream5/net4_edges.json").then((response) => response.json()),
     fetch("data/dream5/summary.json").then((response) => response.json()),
+    fetch("data/trade/nodes.json").then((response) => response.json()),
+    fetch("data/trade/edges.json").then((response) => response.json()),
+    fetch("data/trade/summary.json").then((response) => response.json()),
   ]);
 
   state.nodes = nodes;
@@ -1812,12 +1894,12 @@ async function loadData() {
   state.corpus.summary = corpusSummary;
   state.corpus.nodeById = new Map(corpusNodes.map((node) => [node.id, node]));
   state.benchmark.points = benchmarkPoints;
-  
+
   state.geneHuman.nodes = trrustHumanNodes;
   state.geneHuman.edges = trrustHumanEdges;
   state.geneHuman.summary = trrustSummary.human;
   state.geneHuman.nodeById = new Map(trrustHumanNodes.map((node) => [node.id, node]));
-  
+
   state.geneMouse.nodes = trrustMouseNodes;
   state.geneMouse.edges = trrustMouseEdges;
   state.geneMouse.summary = trrustSummary.mouse;
@@ -1837,6 +1919,11 @@ async function loadData() {
   state.geneNet4.edges = net4Edges;
   state.geneNet4.summary = dream5Summary.net4;
   state.geneNet4.nodeById = new Map(net4Nodes.map((node) => [node.id, node]));
+
+  state.trade.nodes = tradeNodes;
+  state.trade.edges = tradeEdges;
+  state.trade.summary = tradeSummary;
+  state.trade.nodeById = new Map(tradeNodes.map((node) => [node.id, node]));
 
   resizeCanvas();
   setViewMode("flights");
@@ -1879,6 +1966,10 @@ els.benchmarkViewButton.addEventListener("click", () => {
   setViewMode("benchmark");
 });
 
+els.tradeViewButton.addEventListener("click", () => {
+  setViewMode("trade");
+});
+
 els.showTrueLabelsButton.addEventListener("click", () => {
   state.benchmark.labelMode = "true";
   els.showTrueLabelsButton.classList.add("active");
@@ -1919,7 +2010,7 @@ canvas.addEventListener("mousemove", (event) => {
   state.mouse.x = event.clientX - rect.left;
   state.mouse.y = event.clientY - rect.top;
   const hovered = nearestNode(state.mouse.x, state.mouse.y);
-  
+
   let currentHovered;
   if (state.viewMode === "corpus") {
     currentHovered = state.corpus.hoveredNode;
@@ -1933,6 +2024,8 @@ canvas.addEventListener("mousemove", (event) => {
     currentHovered = state.geneNet3.hoveredNode;
   } else if (state.viewMode === "geneNet4") {
     currentHovered = state.geneNet4.hoveredNode;
+  } else if (state.viewMode === "trade") {
+    currentHovered = state.trade.hoveredNode;
   } else if (state.viewMode === "benchmark") {
     currentHovered = state.benchmark.hoveredPoint;
   } else {
@@ -1952,6 +2045,8 @@ canvas.addEventListener("mousemove", (event) => {
       state.geneNet3.hoveredNode = hovered;
     } else if (state.viewMode === "geneNet4") {
       state.geneNet4.hoveredNode = hovered;
+    } else if (state.viewMode === "trade") {
+      state.trade.hoveredNode = hovered;
     } else if (state.viewMode === "benchmark") {
       state.benchmark.hoveredPoint = hovered;
     } else {
@@ -1970,6 +2065,7 @@ canvas.addEventListener("mouseleave", () => {
   state.geneNet1.hoveredNode = null;
   state.geneNet3.hoveredNode = null;
   state.geneNet4.hoveredNode = null;
+  state.trade.hoveredNode = null;
   state.benchmark.hoveredPoint = null;
   updateDetails(null);
   draw();
@@ -2134,17 +2230,287 @@ if (els.storyStep5) {
       <strong>🎮 The Cities & Tourists Game</strong><br>
       There are 4 cities and 60 tourists wandering the wilderness (noise). Try toggling <span class="interactive-action-link" id="actionShowTrue">True Labels</span>, <span class="interactive-action-link" id="actionShowHodge">Hodge</span>, or <span class="interactive-action-link" id="actionShowRbl">RBL</span> to watch the potential field sweep away the noise!
     `;
-    
+
     const showTrue = document.getElementById("actionShowTrue");
     const showHodge = document.getElementById("actionShowHodge");
     const showRbl = document.getElementById("actionShowRbl");
-    
+
     if (showTrue) showTrue.addEventListener("click", () => els.showTrueLabelsButton.click());
     if (showHodge) showHodge.addEventListener("click", () => els.showPredLabelsButton.click());
     if (showRbl) showRbl.addEventListener("click", () => els.showRblLabelsButton.click());
   });
 }
 
+function renderTradeSummary() {
+  const subState = state.trade;
+  const summary = subState.summary;
+  if (!summary) return;
+  els.datasetLabel.textContent = "WITS 2017 Global Supply Chain Network";
+  els.metricOneLabel.textContent = "Countries";
+  els.metricOneValue.textContent = fmt(summary.counts.countries);
+  els.metricTwoLabel.textContent = "Net Flows";
+  els.metricTwoValue.textContent = fmt(summary.counts.trade_flows);
+  els.metricThreeLabel.textContent = "Triangles";
+  els.metricThreeValue.textContent = fmt(summary.counts.triangles);
+  els.metricFourLabel.textContent = "Sub-edges";
+  els.metricFourValue.textContent = fmt(subState.edges.length);
+  els.edgeLimitLabel.textContent = "Trade density";
+  els.edgeLimit.min = "50";
+  els.edgeLimit.step = "50";
+  els.edgeLimit.max = String(Math.max(50, subState.edges.length));
+  els.edgeLimit.value = String(Math.min(Math.max(state.edgeLimit, 50), subState.edges.length));
+  state.edgeLimit = Number(els.edgeLimit.value);
+  els.interClusterControl.hidden = true;
+  els.sourceLine.textContent = "Source: World Integrated Trade Solution (WITS) 2017. All 166 countries shown.";
+}
+
+function updateTradeDetails(node) {
+  els.detailTotalLabel.textContent = "Trade Volume";
+  els.detailInboundLabel.textContent = "GDP";
+  els.detailOutboundLabel.textContent = "Net Balance";
+  els.detailPotentialLabel.textContent = "Hodge Rank";
+
+  if (!node) {
+    els.detailCode.textContent = "WITS";
+    els.detailName.textContent = "Hover a country";
+    els.detailLocation.textContent = "Global supply chain network of net trade flows.";
+    els.detailTotal.textContent = "--";
+    els.detailInbound.textContent = "--";
+    els.detailOutbound.textContent = "--";
+    els.detailPotential.textContent = "--";
+    return;
+  }
+
+  els.detailCode.textContent = node.id;
+  els.detailName.textContent = node.name || node.id;
+  els.detailLocation.textContent = `${node.continent} | Population: ${fmt(node.population)}`;
+  els.detailTotal.textContent = `$${fmt(node.tradeVolume * 1000)}`;
+  els.detailInbound.textContent = `$${fmt(node.gdp)}`;
+  els.detailOutbound.textContent = `$${fmt(node.netTradeBalance * 1000)}`;
+  els.detailPotential.textContent = `${Math.round(node.potentialNorm * 100)}%`;
+}
+
+function renderTradeClusters() {
+  els.clusterList.innerHTML = "";
+  const subState = state.trade;
+  const summary = subState.summary;
+  if (!summary) return;
+
+  const headerReg = document.createElement("div");
+  headerReg.className = "legend-header";
+  headerReg.style = "font-size:0.88rem; font-weight:700; margin:10px 0 6px 0; color:#58c6a4; letter-spacing:0.5px; text-transform:uppercase;";
+  headerReg.textContent = "Top Exporters (Sources)";
+  els.clusterList.appendChild(headerReg);
+
+  summary.top_regulators.forEach((reg) => {
+    const button = document.createElement("button");
+    button.className = "cluster-button gene-button";
+    button.type = "button";
+    const active = subState.selectedNode === reg.iso3;
+    if (active) button.classList.add("active");
+    button.innerHTML = `
+      <span class="cluster-swatch" style="background:#58c6a4"></span>
+      <span class="cluster-copy">
+        <strong>${reg.iso3}</strong>
+        <p>Rank #${reg.rank} Exporter</p>
+      </span>
+      <span class="cluster-count">${Math.round(reg.potential * 100)}%</span>
+    `;
+    button.addEventListener("click", () => {
+      const layout = getGraphLayout("trade");
+      const node = layout.nodes.find(n => n.id === reg.iso3);
+      if (node) {
+        subState.selectedNode = subState.selectedNode === node.id ? null : node.id;
+        document.querySelectorAll(".cluster-button").forEach((item) => item.classList.remove("active"));
+        if (subState.selectedNode !== null) button.classList.add("active");
+        updateDetails(subState.selectedNode ? node : null);
+        draw();
+      }
+    });
+    els.clusterList.appendChild(button);
+  });
+
+  const headerTgt = document.createElement("div");
+  headerTgt.className = "legend-header";
+  headerTgt.style = "font-size:0.88rem; font-weight:700; margin:18px 0 6px 0; color:#7aa6ff; letter-spacing:0.5px; text-transform:uppercase;";
+  headerTgt.textContent = "Top Importers (Sinks)";
+  els.clusterList.appendChild(headerTgt);
+
+  summary.top_targets.forEach((tgt) => {
+    const button = document.createElement("button");
+    button.className = "cluster-button gene-button";
+    button.type = "button";
+    const active = subState.selectedNode === tgt.iso3;
+    if (active) button.classList.add("active");
+    button.innerHTML = `
+      <span class="cluster-swatch" style="background:#7aa6ff"></span>
+      <span class="cluster-copy">
+        <strong>${tgt.iso3}</strong>
+        <p>Rank #${tgt.rank} Importer</p>
+      </span>
+      <span class="cluster-count">${Math.round(tgt.potential * 100)}%</span>
+    `;
+    button.addEventListener("click", () => {
+      const layout = getGraphLayout("trade");
+      const node = layout.nodes.find(n => n.id === tgt.iso3);
+      if (node) {
+        subState.selectedNode = subState.selectedNode === node.id ? null : node.id;
+        document.querySelectorAll(".cluster-button").forEach((item) => item.classList.remove("active"));
+        if (subState.selectedNode !== null) button.classList.add("active");
+        updateDetails(subState.selectedNode ? node : null);
+        draw();
+      }
+    });
+    els.clusterList.appendChild(button);
+  });
+}
+
+function drawTradeGraph() {
+  const layout = getGraphLayout("trade");
+  const { box } = layout;
+  const subState = state.trade;
+  const selectedId = subState.selectedNode;
+  const hoveredId = subState.hoveredNode ? subState.hoveredNode.id : null;
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(box.x, box.y, box.width, box.height);
+  ctx.clip();
+
+  // Background
+  const networkGradient = ctx.createLinearGradient(box.x, box.y, box.x + box.width, box.y + box.height);
+  networkGradient.addColorStop(0, "rgba(10, 22, 28, 0.52)");
+  networkGradient.addColorStop(0.55, "rgba(8, 14, 18, 0.32)");
+  networkGradient.addColorStop(1, "rgba(22, 10, 28, 0.44)");
+  ctx.fillStyle = networkGradient;
+  ctx.fillRect(box.x, box.y, box.width, box.height);
+
+  // Draw meridians
+  const meridians = [
+    { deg: -120, label: "120°W" },
+    { deg: -60, label: "60°W" },
+    { deg: 0, label: "0° (GMT)" },
+    { deg: 60, label: "60°E" },
+    { deg: 120, label: "120°E" }
+  ];
+  ctx.strokeStyle = "rgba(243, 239, 226, 0.04)";
+  ctx.lineWidth = 0.8;
+  ctx.fillStyle = "rgba(243, 239, 226, 0.25)";
+  ctx.font = "9px Inter, ui-sans-serif, system-ui, sans-serif";
+  ctx.textAlign = "center";
+  for (const m of meridians) {
+    const x = box.x + 45 + ((m.deg - (-180)) / 360) * (box.width - 90);
+    ctx.beginPath();
+    ctx.moveTo(x, box.y);
+    ctx.lineTo(x, box.y + box.height - 20);
+    ctx.stroke();
+    ctx.fillText(m.label, x, box.y + box.height - 8);
+  }
+
+  // Draw economic potential levels
+  const levels = [
+    { val: 0.1, label: "Upstream Exporters (Sources)" },
+    { val: 0.5, label: "Mid-stream Trade Hubs" },
+    { val: 0.9, label: "Downstream Importers (Sinks)" }
+  ];
+  ctx.strokeStyle = "rgba(231, 198, 107, 0.05)";
+  ctx.setLineDash([4, 4]);
+  ctx.textAlign = "left";
+  for (const l of levels) {
+    const y = box.y + 45 + l.val * (box.height - 90);
+    ctx.beginPath();
+    ctx.moveTo(box.x, y);
+    ctx.lineTo(box.x + box.width, y);
+    ctx.stroke();
+    ctx.fillText(l.label, box.x + 8, y - 4);
+  }
+  ctx.setLineDash([]); // Reset dash
+
+  // Filter edges
+  const visibleEdges = layout.edges
+    .filter((edge) => !selectedId || edge.source === selectedId || edge.target === selectedId)
+    .slice(0, state.edgeLimit);
+
+  for (const edge of visibleEdges) {
+    const active = edge.source === selectedId || edge.target === selectedId || edge.source === hoveredId || edge.target === hoveredId;
+    const source = edge.sourceNode;
+    const target = edge.targetNode;
+
+    ctx.beginPath();
+    ctx.moveTo(source.x, source.y);
+    const midX = (source.x + target.x) / 2;
+    const midY = (source.y + target.y) / 2;
+    const dx = target.x - source.x;
+    const dy = target.y - source.y;
+    const distance = Math.max(1, Math.hypot(dx, dy));
+    const bend = Math.min(25, Math.max(5, distance * 0.05));
+
+    ctx.quadraticCurveTo(midX - (dy / distance) * bend, midY + (dx / distance) * bend, target.x, target.y);
+    ctx.strokeStyle = active ? "rgba(243, 239, 226, 0.75)" : "rgba(243, 239, 226, 0.08)";
+    ctx.globalAlpha = active ? 1.0 : 0.35;
+    ctx.lineWidth = active ? 1.8 : 0.8;
+    ctx.stroke();
+
+    if (active && distance > 30) {
+      const t = 0.5;
+      const ax = (1-t)*(1-t)*source.x + 2*(1-t)*t*(midX - (dy / distance) * bend) + t*t*target.x;
+      const ay = (1-t)*(1-t)*source.y + 2*(1-t)*t*(midY + (dx / distance) * bend) + t*t*target.y;
+      const tx = 2*(1-t)*((midX - (dy / distance) * bend) - source.x) + 2*t*(target.x - (midX - (dy / distance) * bend));
+      const ty = 2*(1-t)*((midY + (dx / distance) * bend) - source.y) + 2*t*(target.y - (midY + (dx / distance) * bend));
+      const angle = Math.atan2(ty, tx);
+
+      ctx.save();
+      ctx.translate(ax, ay);
+      ctx.rotate(angle);
+      ctx.beginPath();
+      ctx.moveTo(-5, -3);
+      ctx.lineTo(2, 0);
+      ctx.lineTo(-5, 3);
+      ctx.closePath();
+      ctx.fillStyle = "#f3efe2";
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+  ctx.globalAlpha = 1.0;
+
+  // Draw nodes
+  const sortedNodes = [...layout.nodes].sort((a, b) => a.gdp - b.gdp);
+  for (const node of sortedNodes) {
+    const isHovered = hoveredId === node.id;
+    const isSelected = selectedId === node.id;
+    const active = !selectedId || isSelected;
+
+    ctx.beginPath();
+    ctx.arc(node.x, node.y, node.radius + (isHovered ? 2 : 0), 0, Math.PI * 2);
+
+    let fill = "#8a867d";
+    if (node.continent === "Asia") fill = "#7aa6ff";
+    else if (node.continent === "Europe") fill = "#df7d58";
+    else if (node.continent === "Africa") fill = "#e7c66b";
+    else if (node.continent === "America") fill = "#d77adf";
+    else if (node.continent === "Pacific") fill = "#8fd36a";
+
+    ctx.fillStyle = fill;
+    ctx.globalAlpha = active ? 1.0 : 0.22;
+    ctx.fill();
+
+    ctx.strokeStyle = isSelected ? "#f3efe2" : "rgba(255, 255, 255, 0.12)";
+    ctx.lineWidth = isSelected ? 2.0 : 1.0;
+    ctx.stroke();
+
+    if (isHovered || isSelected || node.gdp > 5e11) {
+      ctx.fillStyle = "#f3efe2";
+      ctx.font = isHovered ? "bold 10px Inter, ui-sans-serif, system-ui, sans-serif" : "9px Inter, ui-sans-serif, system-ui, sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText(node.label, node.x, node.y - node.radius - 4);
+    }
+  }
+
+  ctx.restore();
+}
+
+// =========================================================================
 window.addEventListener("resize", resizeCanvas);
 
 loadData().catch((error) => {

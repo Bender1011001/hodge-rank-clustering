@@ -1,0 +1,84 @@
+{
+    "created_before_cycle3_results": true,
+    "objective": "Isolate whether the Cycle 2 positive aggregate NHL selected-bet anomaly is explained by home-side exposure, mid-odds exposure, top-team contributors, joint side-plus-odds structure, or matched market controls.",
+    "responsible_use": "Historical quantitative research only; not betting advice, not financial advice, not a deployable sportsbook-edge claim, and not evidence that archived prices were available or executable live.",
+    "authoritative_selected_universe": "scratch/nhl_cycle2_walkforward_results.json",
+    "reconstruction_reference": "scratch/nhl_cycle2_walkforward.py",
+    "frozen_thresholds": {
+        "edge_threshold": 0.15,
+        "min_ev": 0.05,
+        "retuning_allowed_for_frozen_verdict": false
+    },
+    "identity_check": {
+        "bets": 325,
+        "wins": 182,
+        "win_rate_pct": 56.0,
+        "unit_yield_pct_1pct_haircut": 6.72,
+        "unit_yield_pct_2pct_haircut": 6.21,
+        "tolerance": {
+            "bets": 0,
+            "wins": 0,
+            "win_rate_pct": 0.005,
+            "unit_yield_pct": 0.01
+        }
+    },
+    "priority_diagnostics": [
+        "leave_home_ablation_home_only_and_favorite_controls",
+        "side_by_odds_band_crosstab_and_stratified_controls",
+        "remove_1_75_to_2_00_odds_band_then_secondary_2_00_to_2_50",
+        "matched_market_favorite_underdog_home_away_and_date_window_random_controls",
+        "remove_winnipeg_and_cumulative_top_team_contributors",
+        "residual_distributed_anomaly_only_if_all_above_survive"
+    ],
+    "metrics": [
+        "bets",
+        "wins",
+        "win_rate_pct",
+        "unit_profit_1pct_haircut",
+        "unit_yield_pct_1pct_haircut",
+        "unit_profit_2pct_haircut",
+        "unit_yield_pct_2pct_haircut",
+        "bankroll_yield_pct",
+        "max_drawdown_pct",
+        "profit_share_by_side",
+        "profit_share_by_odds_band",
+        "profit_share_by_team",
+        "profit_share_by_season",
+        "selected_vs_control_deltas",
+        "matching_relaxation_rates"
+    ],
+    "control_construction": {
+        "matched_market_favorite": "same selected game, market favorite side",
+        "matched_market_underdog": "same selected game, market underdog side",
+        "home_only": "same selected game, home side",
+        "away_only": "same selected game, away side",
+        "date_window_aware_odds_band_random": {
+            "relaxation_order": [
+                "same_date_and_odds_band",
+                "same_week_and_odds_band",
+                "same_season_and_odds_band",
+                "same_test_window_and_odds_band",
+                "global_same_odds_band"
+            ]
+        }
+    },
+    "stop_downgrade_rules": [
+        "downgrade_if_1pct_yield_zero_or_negative_after_removing_home",
+        "downgrade_if_1pct_yield_zero_or_negative_after_removing_1_75_to_2_00_odds_band",
+        "downgrade_if_1pct_yield_collapses_after_removing_winnipeg_or_cumulative_top_team_sets",
+        "downgrade_if_any_matched_control_equals_or_beats_selected_within_1pp_1pct_unit_yield_tolerance",
+        "downgrade_if_controls_have_drawdown_more_than_2pp_better_while_yield_equal_or_better",
+        "downgrade_if_survival_depends_on_fewer_than_50_residual_bets_or_cherry_picked_subset"
+    ],
+    "planned_outputs": [
+        "scratch/nhl_cycle3_diagnostics.py",
+        "scratch/test_nhl_cycle3_diagnostics.py",
+        "scratch/nhl_cycle3_diagnostic_results.json",
+        "scratch/nhl_cycle3_experiment_report.md"
+    ],
+    "planned_verification_commands": [
+        "python scratch/test_nhl_cycle3_diagnostics.py",
+        "python scratch/nhl_cycle3_diagnostics.py",
+        "python -m compileall scratch/nhl_cycle3_diagnostics.py scratch/test_nhl_cycle3_diagnostics.py"
+    ]
+}

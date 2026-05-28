@@ -1,0 +1,138 @@
+{
+  "dataset": "WITS 2017 Global Supply Chain Network",
+  "counts": {
+    "countries": 166,
+    "trade_flows": 2200,
+    "triangles": 21627
+  },
+  "hodge": {
+    "gradientNorm": 113662278.45119299,
+    "curlNorm": 386669764.1736575,
+    "harmonicNorm": 3582.115176819368,
+    "totalNorm": 403029304.1614311
+  },
+  "top_regulators": [
+    {
+      "rank": 1,
+      "iso3": "CHN",
+      "potential": 0.0,
+      "netBalance": 772076408.7701908
+    },
+    {
+      "rank": 2,
+      "iso3": "SLE",
+      "potential": 0.01822444009741411,
+      "netBalance": -242292.943
+    },
+    {
+      "rank": 3,
+      "iso3": "GMB",
+      "potential": 0.02998617008443214,
+      "netBalance": -398599.9160000001
+    },
+    {
+      "rank": 4,
+      "iso3": "DEU",
+      "potential": 0.18901375600548334,
+      "netBalance": 328266855.35220695
+    },
+    {
+      "rank": 5,
+      "iso3": "MNG",
+      "potential": 0.28153540465100557,
+      "netBalance": 2469126.0859503304
+    },
+    {
+      "rank": 6,
+      "iso3": "BRN",
+      "potential": 0.2989645596519576,
+      "netBalance": 2999247.222049597
+    },
+    {
+      "rank": 7,
+      "iso3": "MDV",
+      "potential": 0.30109166276662636,
+      "netBalance": -742975.3447226086
+    },
+    {
+      "rank": 8,
+      "iso3": "IRL",
+      "potential": 0.31195067079068534,
+      "netBalance": 59791370.306945354
+    },
+    {
+      "rank": 9,
+      "iso3": "LAO",
+      "potential": 0.31223016610815835,
+      "netBalance": -1487033.2214100012
+    },
+    {
+      "rank": 10,
+      "iso3": "KOR",
+      "potential": 0.32772929581942023,
+      "netBalance": 121413283.13191701
+    }
+  ],
+  "top_targets": [
+    {
+      "rank": 1,
+      "iso3": "ATG",
+      "potential": 1.0,
+      "netBalance": -360247.132
+    },
+    {
+      "rank": 2,
+      "iso3": "USA",
+      "potential": 0.9728826928729337,
+      "netBalance": -755220084.3690426
+    },
+    {
+      "rank": 3,
+      "iso3": "LSO",
+      "potential": 0.7294251088506105,
+      "netBalance": -707555.9540007357
+    },
+    {
+      "rank": 4,
+      "iso3": "SUR",
+      "potential": 0.6823369717605504,
+      "netBalance": 128693.0368582803
+    },
+    {
+      "rank": 5,
+      "iso3": "LCA",
+      "potential": 0.6376097796163057,
+      "netBalance": -1502037.4431500002
+    },
+    {
+      "rank": 6,
+      "iso3": "GBR",
+      "potential": 0.5797562745141166,
+      "netBalance": -179486710.56307715
+    },
+    {
+      "rank": 7,
+      "iso3": "IRQ",
+      "potential": 0.5742079462967051,
+      "netBalance": -45925496.54025679
+    },
+    {
+      "rank": 8,
+      "iso3": "BGD",
+      "potential": 0.5533105968183222,
+      "netBalance": -44428307.52283992
+    },
+    {
+      "rank": 9,
+      "iso3": "SAU",
+      "potential": 0.5379340993536822,
+      "netBalance": -70812254.09402487
+    },
+    {
+      "rank": 10,
+      "iso3": "HTI",
+      "potential": 0.5296479007788683,
+      "netBalance": -2315964.4441299993
+    }
+  ]
+}

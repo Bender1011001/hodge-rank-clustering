@@ -1,0 +1,421 @@
+{
+  "season_contribution": [
+    {
+      "season": "NHL 2021",
+      "bets": 31,
+      "wins": 21,
+      "profit": 93.379474,
+      "staked": 367.482387,
+      "yield_pct": 25.410599,
+      "profit_share_of_total": 0.412491
+    },
+    {
+      "season": "NHL 2017-18",
+      "bets": 68,
+      "wins": 40,
+      "profit": 86.653626,
+      "staked": 660.742605,
+      "yield_pct": 13.114581,
+      "profit_share_of_total": 0.382781
+    },
+    {
+      "season": "NHL 2019-20",
+      "bets": 45,
+      "wins": 25,
+      "profit": 54.864927,
+      "staked": 505.317204,
+      "yield_pct": 10.857522,
+      "profit_share_of_total": 0.242358
+    },
+    {
+      "season": "NHL 2018-19",
+      "bets": 43,
+      "wins": 24,
+      "profit": 38.961027,
+      "staked": 459.923995,
+      "yield_pct": 8.471188,
+      "profit_share_of_total": 0.172105
+    },
+    {
+      "season": "NHL 2016-17",
+      "bets": 41,
+      "wins": 24,
+      "profit": 36.206579,
+      "staked": 379.594602,
+      "yield_pct": 9.538223,
+      "profit_share_of_total": 0.159938
+    },
+    {
+      "season": "NHL 2015-16",
+      "bets": 65,
+      "wins": 35,
+      "profit": -5.084134,
+      "staked": 603.499099,
+      "yield_pct": -0.842443,
+      "profit_share_of_total": -0.022458
+    },
+    {
+      "season": "NHL 2014-15",
+      "bets": 32,
+      "wins": 13,
+      "profit": -78.602169,
+      "staked": 308.639625,
+      "yield_pct": -25.467297,
+      "profit_share_of_total": -0.347214
+    }
+  ],
+  "odds_band_contribution": [
+    {
+      "odds_band": "1.75-2.00",
+      "bets": 91,
+      "wins": 56,
+      "profit": 139.093061,
+      "staked": 917.171,
+      "yield_pct": 15.165445,
+      "profit_share_of_total": 0.614425
+    },
+    {
+      "odds_band": "2.00-2.50",
+      "bets": 89,
+      "wins": 47,
+      "profit": 134.248764,
+      "staked": 918.033012,
+      "yield_pct": 14.623522,
+      "profit_share_of_total": 0.593026
+    },
+    {
+      "odds_band": "<1.50",
+      "bets": 11,
+      "wins": 9,
+      "profit": 18.974945,
+      "staked": 111.588151,
+      "yield_pct": 17.004444,
+      "profit_share_of_total": 0.083819
+    },
+    {
+      "odds_band": "1.50-1.75",
+      "bets": 95,
+      "wins": 57,
+      "profit": -25.356462,
+      "staked": 959.823376,
+      "yield_pct": -2.641784,
+      "profit_share_of_total": -0.112009
+    },
+    {
+      "odds_band": ">=2.50",
+      "bets": 39,
+      "wins": 13,
+      "profit": -40.580978,
+      "staked": 378.583977,
+      "yield_pct": -10.719148,
+      "profit_share_of_total": -0.179261
+    }
+  ],
+  "side_contribution": [
+    {
+      "side": "home",
+      "bets": 154,
+      "wins": 95,
+      "profit": 182.640495,
+      "staked": 1564.487399,
+      "yield_pct": 11.674143,
+      "profit_share_of_total": 0.80679
+    },
+    {
+      "side": "away",
+      "bets": 171,
+      "wins": 87,
+      "profit": 43.738835,
+      "staked": 1720.712118,
+      "yield_pct": 2.541903,
+      "profit_share_of_total": 0.19321
+    }
+  ],
+  "team_cluster_contribution": [
+    {
+      "selected_team": "Winnipeg",
+      "bets": 17,
+      "wins": 14,
+      "profit": 93.716628,
+      "staked": 184.898467,
+      "yield_pct": 50.685454,
+      "profit_share_of_total": 0.41398
+    },
+    {
+      "selected_team": "St.Louis",
+      "bets": 10,
+      "wins": 9,
+      "profit": 64.123739,
+      "staked": 97.877168,
+      "yield_pct": 65.514502,
+      "profit_share_of_total": 0.283258
+    },
+    {
+      "selected_team": "Arizona",
+      "bets": 4,
+      "wins": 4,
+      "profit": 51.11859,
+      "staked": 42.733343,
+      "yield_pct": 119.622258,
+      "profit_share_of_total": 0.225809
+    },
+    {
+      "selected_team": "NYIslanders",
+      "bets": 7,
+      "wins": 6,
+      "profit": 48.558238,
+      "staked": 78.951449,
+      "yield_pct": 61.503923,
+      "profit_share_of_total": 0.214499
+    },
+    {
+      "selected_team": "Anaheim",
+      "bets": 18,
+      "wins": 11,
+      "profit": 46.297729,
+      "staked": 174.043871,
+      "yield_pct": 26.601183,
+      "profit_share_of_total": 0.204514
+    },
+    {
+      "selected_team": "Vegas",
+      "bets": 17,
+      "wins": 10,
+      "profit": 38.698091,
+      "staked": 166.017985,
+      "yield_pct": 23.309578,
+      "profit_share_of_total": 0.170944
+    },
+    {
+      "selected_team": "NYRangers",
+      "bets": 17,
+      "wins": 12,
+      "profit": 29.173045,
+      "staked": 159.461432,
+      "yield_pct": 18.294734,
+      "profit_share_of_total": 0.128868
+    },
+    {
+      "selected_team": "Carolina",
+      "bets": 6,
+      "wins": 5,
+      "profit": 28.019327,
+      "staked": 65.151222,
+      "yield_pct": 43.006603,
+      "profit_share_of_total": 0.123772
+    },
+    {
+      "selected_team": "Washington",
+      "bets": 30,
+      "wins": 16,
+      "profit": 16.590977,
+      "staked": 297.551619,
+      "yield_pct": 5.575832,
+      "profit_share_of_total": 0.073288
+    },
+    {
+      "selected_team": "Minnesota",
+      "bets": 18,
+      "wins": 11,
+      "profit": 15.772522,
+      "staked": 173.913792,
+      "yield_pct": 9.069161,
+      "profit_share_of_total": 0.069673
+    },
+    {
+      "selected_team": "Philadelphia",
+      "bets": 8,
+      "wins": 5,
+      "profit": 13.782354,
+      "staked": 89.180978,
+      "yield_pct": 15.454365,
+      "profit_share_of_total": 0.060882
+    },
+    {
+      "selected_team": "Chicago",
+      "bets": 13,
+      "wins": 7,
+      "profit": 11.705664,
+      "staked": 144.305512,
+      "yield_pct": 8.111723,
+      "profit_share_of_total": 0.051708
+    },
+    {
+      "selected_team": "Nashville",
+      "bets": 16,
+      "wins": 9,
+      "profit": 8.173227,
+      "staked": 158.850946,
+      "yield_pct": 5.145218,
+      "profit_share_of_total": 0.036104
+    },
+    {
+      "selected_team": "Columbus",
+      "bets": 20,
+      "wins": 10,
+      "profit": 8.045704,
+      "staked": 208.636762,
+      "yield_pct": 3.856321,
+      "profit_share_of_total": 0.035541
+    },
+    {
+      "selected_team": "NewJersey",
+      "bets": 1,
+      "wins": 1,
+      "profit": 7.894443,
+      "staked": 9.250054,
+      "yield_pct": 85.344828,
+      "profit_share_of_total": 0.034873
+    },
+    {
+      "selected_team": "Dallas",
+      "bets": 5,
+      "wins": 3,
+      "profit": 5.845481,
+      "staked": 48.952858,
+      "yield_pct": 11.941041,
+      "profit_share_of_total": 0.025822
+    },
+    {
+      "selected_team": "Detroit",
+      "bets": 3,
+      "wins": 2,
+      "profit": 3.605957,
+      "staked": 28.398066,
+      "yield_pct": 12.697895,
+      "profit_share_of_total": 0.015929
+    },
+    {
+      "selected_team": "Pittsburgh",
+      "bets": 11,
+      "wins": 6,
+      "profit": 1.758874,
+      "staked": 105.646651,
+      "yield_pct": 1.664865,
+      "profit_share_of_total": 0.00777
+    },
+    {
+      "selected_team": "Edmonton",
+      "bets": 4,
+      "wins": 2,
+      "profit": 1.154503,
+      "staked": 41.180743,
+      "yield_pct": 2.803503,
+      "profit_share_of_total": 0.0051
+    },
+    {
+      "selected_team": "Montreal",
+      "bets": 16,
+      "wins": 8,
+      "profit": -7.271056,
+      "staked": 156.382513,
+      "yield_pct": -4.649532,
+      "profit_share_of_total": -0.032119
+    },
+    {
+      "selected_team": "Buffalo",
+      "bets": 1,
+      "wins": 0,
+      "profit": -8.860171,
+      "staked": 8.860171,
+      "yield_pct": -100.0,
+      "profit_share_of_total": -0.039139
+    },
+    {
+      "selected_team": "Calgary",
+      "bets": 10,
+      "wins": 5,
+      "profit": -9.025198,
+      "staked": 102.113718,
+      "yield_pct": -8.838379,
+      "profit_share_of_total": -0.039868
+    },
+    {
+      "selected_team": "Toronto",
+      "bets": 3,
+      "wins": 1,
+      "profit": -11.382384,
+      "staked": 29.60384,
+      "yield_pct": -38.449013,
+      "profit_share_of_total": -0.05028
+    },
+    {
+      "selected_team": "Vancouver",
+      "bets": 6,
+      "wins": 2,
+      "profit": -21.418633,
+      "staked": 61.127638,
+      "yield_pct": -35.039196,
+      "profit_share_of_total": -0.094614
+    },
+    {
+      "selected_team": "SanJose",
+      "bets": 2,
+      "wins": 0,
+      "profit": -21.507817,
+      "staked": 21.507817,
+      "yield_pct": -100.0,
+      "profit_share_of_total": -0.095008
+    },
+    {
+      "selected_team": "LosAngeles",
+      "bets": 2,
+      "wins": 0,
+      "profit": -22.25968,
+      "staked": 22.25968,
+      "yield_pct": -100.0,
+      "profit_share_of_total": -0.098329
+    },
+    {
+      "selected_team": "Boston",
+      "bets": 11,
+      "wins": 5,
+      "profit": -24.903354,
+      "staked": 112.395369,
+      "yield_pct": -22.156921,
+      "profit_share_of_total": -0.110007
+    },
+    {
+      "selected_team": "Florida",
+      "bets": 11,
+      "wins": 4,
+      "profit": -28.390928,
+      "staked": 106.666301,
+      "yield_pct": -26.616587,
+      "profit_share_of_total": -0.125413
+    },
+    {
+      "selected_team": "Ottawa",
+      "bets": 10,
+      "wins": 4,
+      "profit": -32.112251,
+      "staked": 95.83898,
+      "yield_pct": -33.506462,
+      "profit_share_of_total": -0.141852
+    },
+    {
+      "selected_team": "TampaBay",
+      "bets": 13,
+      "wins": 5,
+      "profit": -36.388668,
+      "staked": 140.569382,
+      "yield_pct": -25.886624,
+      "profit_share_of_total": -0.160742
+    },
+    {
+      "selected_team": "Colorado",
+      "bets": 15,
+      "wins": 5,
+      "profit": -44.135624,
+      "staked": 152.87119,
+      "yield_pct": -28.87112,
+      "profit_share_of_total": -0.194963
+    }
+  ],
+  "flags": {
+    "single_season_gt_60pct_total_profit": false,
+    "single_odds_band_gt_80pct_total_profit": false,
+    "single_side_gt_80pct_total_profit": true,
+    "single_team_cluster_gt_80pct_total_profit": false
+  }
+}

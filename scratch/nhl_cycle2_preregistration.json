@@ -1,0 +1,121 @@
+{
+    "artifact": "nhl_cycle2_preregistration",
+    "generated_before_results": true,
+    "objective": "Historical NHL-only rolling walk-forward validation of strict Hodge-vs-market moneyline pocket under frozen thresholds, odds quarantine, slippage haircuts, and same-game baselines. Not live betting or betting advice.",
+    "population": {
+        "source": "site/data/historical_sportsbook_games.csv",
+        "sport": "NHL",
+        "market": "two-way moneyline",
+        "unit": "completed game"
+    },
+    "quarantine": {
+        "exclude_missing_teams": true,
+        "exclude_missing_scores": true,
+        "exclude_missing_away_or_home_moneyline_odds": true,
+        "exclude_non_finite_prices": true,
+        "exclude_decimal_odds_lte_1": true,
+        "exclude_impossible_two_positive_moneyline_pairs_when_american_columns_available": true,
+        "exclude_duplicate_date_away_home_keys": true,
+        "overround_min_inclusive": 0.98,
+        "overround_max_inclusive": 1.06,
+        "flag_overround_above": 1.05,
+        "flag_overround_above_is_exclusion": false
+    },
+    "hodge_replay": {
+        "warmup_games": 300,
+        "training_window_games": 760,
+        "chronological_no_future_features": true,
+        "same_date_history_rule": "same-date games are predicted before that slate is added to history",
+        "nhl_margin_cap": 5.0,
+        "model_pattern_reference": "scripts/hodge_real_sportsbook_agent.py",
+        "side_feature_reference": "scripts/hodge_market_residual_strategy.py"
+    },
+    "threshold_grid": {
+        "hodge_edge_thresholds": [
+            0.15,
+            0.18,
+            0.2,
+            0.25
+        ],
+        "ev_thresholds": [
+            0.05,
+            0.08,
+            0.1
+        ],
+        "min_tune_bets": 50,
+        "selection_metric": "highest tune flat one-unit yield",
+        "tie_breakers": [
+            "higher tune profit",
+            "more tune bets",
+            "lower hodge edge threshold",
+            "lower ev threshold"
+        ],
+        "no_eligible_pair_rule": "mark fold inconclusive; do not lower thresholds"
+    },
+    "window_schedule": {
+        "tune": "previous two completed NHL seasons when both are available and have enough clean rows after warmup; otherwise previous one completed NHL season",
+        "test": "immediately following completed NHL season",
+        "minimum_eligible_test_seasons": 3
+    },
+    "staking_slippage": {
+        "flat_bankroll_fraction_per_bet": 0.01,
+        "max_same_day_exposure": 0.05,
+        "also_compute_flat_one_unit_yield": true,
+        "decimal_odds_return_haircuts": [
+            0.0,
+            0.01,
+            0.02,
+            0.03
+        ],
+        "primary_haircuts": [
+            0.01,
+            0.02
+        ]
+    },
+    "baselines": [
+        "market_favorite",
+        "market_underdog",
+        "home_side",
+        "away_side",
+        "hodge_only_side",
+        "contrarian_side",
+        "market_only_expected_value_calibration_if_feasible",
+        "odds_band_matched_random_controls_fixed_seeds"
+    ],
+    "metrics": [
+        "bets",
+        "win_rate",
+        "yield",
+        "final_bankroll_return",
+        "max_drawdown",
+        "profit_factor",
+        "average_closing_implied_probability",
+        "odds_band_contribution",
+        "season_contribution",
+        "team_cluster_contribution",
+        "baseline_deltas"
+    ],
+    "success_rule": {
+        "aggregate_yield_positive_after_1pct_haircut": true,
+        "aggregate_yield_non_negative_after_2pct_haircut": true,
+        "beats_market_only_and_odds_band_controls_in_majority_windows": true,
+        "min_eligible_test_windows": 3,
+        "min_positive_windows_after_1pct_haircut": 2,
+        "max_single_season_profit_share": 0.6,
+        "no_single_odds_band_side_or_team_cluster_explains_whole_result": true,
+        "max_drawdown_not_worse_than_best_market_baseline_by_more_than_pp": 10.0
+    },
+    "failure_rule": [
+        "1pct_haircut_aggregate_yield_lte_zero",
+        "loses_to_market_only_or_odds_band_controls_in_most_windows",
+        "only_0pct_haircut_is_positive",
+        "positive_aggregate_dominated_by_one_season_side_odds_band_or_team_cluster",
+        "tune_selected_thresholds_collapse_to_too_few_test_bets"
+    ],
+    "inconclusive_rule": [
+        "fewer_than_three_eligible_test_windows",
+        "data_quarantine_prevents_faithful_replay",
+        "feature_generation_cannot_be_completed_from_scratch_only_runner",
+        "no_fold_has_threshold_pair_with_min_tune_bets"
+    ]
+}

@@ -178,3 +178,12 @@
 - **NBA residual test**: [hodge_market_residual_strategy_nba.json](file:///e:/code.projects/hodge-rank-clustering/site/data/hodge_market_residual_strategy_nba.json). Tune selected edge **0.00**, min EV **0.025** from 119 tune bets with **+15.96%** yield, but untouched test failed: **$1,000 -> $813.61**, 134 bets, **-15.12%** yield.
 - **Money-path report**: [hodge_money_paths.md](file:///e:/code.projects/hodge-rank-clustering/site/data/hodge_money_paths.md).
 - **Conclusion**: The current residual betting model does not validate out of time. The practical monetization path is to sell Hodge as a differentiated analytics/ranking/disagreement feature or paid validation report, while adding richer sportsbook features such as line movement, rest/travel, injuries, starting pitchers, goalies, and sport-specific calibration before any live betting claim.
+
+### 11. WITS Global Trade Map
+- **Script**: [build_global_trade_data.py](file:///e:/code.projects/hodge-rank-clustering/scripts/build_global_trade_data.py).
+- **Dataset**: WITS 2017 global supply-chain network with country coordinates merged from public ISO country-code data.
+- **Generated artifacts**: [nodes.json](file:///e:/code.projects/hodge-rank-clustering/site/data/trade/nodes.json), [edges.json](file:///e:/code.projects/hodge-rank-clustering/site/data/trade/edges.json), [summary.json](file:///e:/code.projects/hodge-rank-clustering/site/data/trade/summary.json).
+- **Graph size**: 166 countries, 2,200 net trade-flow edges, and 21,627 triangles.
+- **Hodge decomposition**: Gradient norm **113,662,278.45**, curl norm **386,669,764.17**, harmonic norm **3,582.12**. The large curl component is the interesting result: the trade graph is not just a clean exporter-to-importer hierarchy; much of the net flow lives in regional/circular triangle structure.
+- **Potential extremes**: Low-potential upstream sources include `CHN`, `DEU`, `IRL`, and `KOR`; high-potential downstream sinks include `USA`, `GBR`, `BGD`, and `SAU`. Small countries such as `SLE`, `GMB`, `ATG`, `LSO`, and `SUR` can appear at potential extremes because Hodge potential is structural and pairwise-flow based, not simply GDP or raw net balance.
+- **Public-site status**: Added the `Global Trade` tab to the GitHub Pages app. The unfinished fraud prototype was not published because it still contains simulated flows.

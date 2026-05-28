@@ -1,0 +1,35 @@
+{
+  "source_rows_total": 61898,
+  "nhl_rows": 11303,
+  "included_rows": 11303,
+  "excluded_rows": 0,
+  "excluded_reasons": {},
+  "flagged_overround_gt_1.05_lte_1.06": 1,
+  "overround_summary": {
+    "count": 11303,
+    "mean": 1.032936,
+    "median": 1.033375,
+    "min": 1.002439,
+    "max": 1.050215,
+    "p95": 1.047079
+  },
+  "american_moneyline_pair_check": {
+    "columns_present": false,
+    "pairs_checked": 0,
+    "note": "historical_sportsbook_games.csv does not include raw American prices, so this check is reported unavailable when columns are absent"
+  },
+  "first_date": "2013-01-19",
+  "last_date": "2022-11-27",
+  "included_by_season": {
+    "NHL 2012-13": 806,
+    "NHL 2013-14": 1322,
+    "NHL 2014-15": 1319,
+    "NHL 2015-16": 1321,
+    "NHL 2016-17": 1317,
+    "NHL 2017-18": 1355,
+    "NHL 2018-19": 1358,
+    "NHL 2019-20": 1212,
+    "NHL 2021": 951,
+    "NHL 2022-23": 342
+  }
+}

@@ -1,0 +1,9 @@
+fold_id,tune_seasons,test_season,test_first_date,test_last_date,tune_rows,test_rows,status,reason,edge_threshold,min_ev,tune_selected_bets,tune_unit_yield_pct,test_selected_bets,test_unit_yield_pct_1pct,test_bankroll_yield_pct_1pct,test_max_drawdown_pct_1pct,beats_best_market_baseline_1pct,beats_random_control_mean_1pct
+1,['NHL 2012-13'],NHL 2013-14,2013-10-01,2014-06-13,1012,2644,inconclusive,no threshold pair reached 50 tune bets,,,,,,,,,,
+2,NHL 2012-13;NHL 2013-14,NHL 2014-15,,,3656,2636,completed,,0.15,0.05,88,-6.618153,32,-25.103576,-25.467297,8.514498,False,False
+3,NHL 2013-14;NHL 2014-15,NHL 2015-16,,,5280,2642,completed,,0.15,0.05,85,-16.205611,65,-0.357882,-0.842443,7.050454,False,True
+4,NHL 2014-15;NHL 2015-16,NHL 2016-17,,,5278,2634,completed,,0.15,0.05,97,-8.097227,41,9.820751,9.538223,4.273294,True,True
+5,NHL 2015-16;NHL 2016-17,NHL 2017-18,,,5276,2708,completed,,0.15,0.05,106,4.063165,68,13.223488,13.114581,5.084674,True,True
+6,NHL 2016-17;NHL 2017-18,NHL 2018-19,,,5342,2716,completed,,0.15,0.05,109,12.481216,43,9.044298,8.471188,5.000475,False,True
+7,NHL 2017-18;NHL 2018-19,NHL 2019-20,,,5424,2420,completed,,0.15,0.05,111,12.149441,45,11.470134,10.857522,3.571617,True,True
+8,NHL 2018-19;NHL 2019-20,NHL 2021,,,5136,1902,completed,,0.15,0.05,88,10.836328,31,25.948595,25.410599,1.99,True,True
