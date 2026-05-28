@@ -99,6 +99,7 @@ Continuing the public Hodge mapping atlas with real, publishable datasets and no
 - Added the `Global Trade` tab to `site/index.html` and `site/app.js`. It plots longitude against normalized Hodge potential so upstream net exporters sit near the top and downstream net importers near the bottom, with continent-colored nodes and source/sink side panels.
 - Interesting WITS trade notes: lowest-potential sources include CHN, DEU, IRL, and KOR; highest-potential sinks include USA, GBR, BGD, SAU, and ATG. Small economies such as SLE, GMB, ATG, LSO, and SUR can appear near extremes because Hodge potential is structural in the net-flow graph, not just a GDP or raw-balance ranking.
 - Removed the unpublished Fraud Detection tab from the public site wiring for now. The untracked `scripts/build_fraud_detection_data.py` and `site/data/fraud/fraud_hodge.json` are not ready for GitHub Pages because they include synthetic/simulated flows and public-facing suspicious-person wording.
+- Added `.github/workflows/pages.yml` so GitHub Pages publishes the existing `site/` directory through the official Pages artifact/deploy workflow instead of requiring the repo root or a duplicated `docs/` folder.
 
 
  ## Verification Commands
