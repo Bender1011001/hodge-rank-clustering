@@ -24,7 +24,7 @@ The decomposition is exact: $F = F_{\text{grad}} + $F_{\text{curl}} + $F_{\text{
 
 ## How Rank-Based Linkage (RBL) Works
 
-Rank-Based Linkage is a comparison-based clustering algorithm developed by the National Security Agency (NSA). RBL constructs a $K$-nearest neighbor digraph from ordinal Comparators (triplet comparisons), builds a 2D abstract oriented simplicial complex on the line graph of mutual neighbors, and calculates **in-sway** ($\sigma(\{x, y\})$) for "mutual friends" to form a linkage graph. It clusters by thresholding in-sway. It is a stable functor, unlike optimization-based clustering.
+Rank-Based Linkage is a comparison-based clustering algorithm introduced by Darling, Grilliette, and Logan (2025) — see references below. RBL constructs a $K$-nearest neighbor digraph from ordinal Comparators (triplet comparisons), builds a 2D abstract oriented simplicial complex on the line graph of mutual neighbors, and calculates **in-sway** ($\sigma(\{x, y\})$) for "mutual friends" to form a linkage graph. It clusters by thresholding in-sway. It is a stable functor, unlike optimization-based clustering.
 
 We provide a mathematically exact Python port in `rbl_clustering.py`.
 
@@ -100,7 +100,7 @@ python scripts/compare_rbl_hodge.py
 
 | Algorithm | Parameters | Adjusted Rand Index (ARI) | Cluster Count | Noise Count |
 | :--- | :--- | :--- | :--- | :--- |
-| **Hodge Optimized** | $k=44$, $\tau=0.22$, $\text{pct}=93.2\%$, $\text{pct\_density}=80\%$ | **0.8750** (Bayes Limit) | 4 | 19 |
+| **Hodge Optimized** | $k=44$, $\tau=0.22$, $\text{pct}=93.2\%$, $\text{pct\_density}=80\%$ | **0.8750** | 4 | 19 |
 | **Rank-Based Linkage** | $K=50$, $m=150$ | **0.8536** | 7 | 13 |
 | **HDBSCAN** | $\text{min\_size}=15$, precomputed symmetric | **0.8457** | 4 | 31 |
 | **Hodge Default** | $k=15$, $\tau=0.1$ | **0.1268** | 52 (over-segmented) | 0 |
