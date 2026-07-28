@@ -19,3 +19,8 @@ scratch/rank-based-linkage/
 # Unpublished local prototype: current version includes simulated fraud flows.
 scripts/build_fraud_detection_data.py
 site/data/fraud/
+
+# agent scaffold
+.agent/
+.roomodes
+context.md

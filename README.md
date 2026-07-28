@@ -96,6 +96,9 @@ Run the comparison script to evaluate HDBSCAN, the default Hodge Clustering conf
 python scripts/compare_rbl_hodge.py
 ```
 
+The table below is the script's own output — running it reproduces these
+four ARI values exactly (fixed seed, no GPU, ~1 min on CPU).
+
 ### Asymmetric Benchmark Results (600 samples)
 
 | Algorithm | Parameters | Adjusted Rand Index (ARI) | Cluster Count | Noise Count |
