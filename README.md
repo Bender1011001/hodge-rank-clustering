@@ -4,7 +4,7 @@ Topological clustering of directed graphs and asymmetric pairwise distance matri
 1. **Discrete Hodge Decomposition** on asymmetric flows (hierarchy/potential fields).
 2. **Rank-Based Linkage (RBL)** via comparator-based *in-sway* simplicial complexes.
 
-Standard spectral methods (Louvain, spectral clustering, HDBSCAN) force you to symmetrize your adjacency or distance matrix before clustering. This throws away directional information. This codebase provides topological tools working directly on asymmetric, non-metric pairwise data.
+Many clustering workflows assume symmetric similarities or distances. Symmetrizing directed data can discard directional information, although methods designed for directed graphs also exist. This codebase explores topological tools for asymmetric, non-metric pairwise data.
 
 ## How Hodge Rank Clustering Works
 
@@ -20,13 +20,13 @@ Given a directed graph (or an asymmetric distance/preference matrix), the algori
 5. **Clusters via persistence-based topological simplification** on potential $\Phi$ (watershed Union-Find).
 6. **Reintegrates noise nodes** using local cluster percentile distance thresholds (`pct`).
 
-The decomposition is exact: $F = F_{\text{grad}} + $F_{\text{curl}} + $F_{\text{harm}}$, and the three components are mutually orthogonal.
+In the mathematical Hodge decomposition, $F = F_{\text{grad}} + F_{\text{curl}} + F_{\text{harm}}$ and the components are mutually orthogonal. Numerical results depend on solver tolerances.
 
 ## How Rank-Based Linkage (RBL) Works
 
 Rank-Based Linkage is a comparison-based clustering algorithm introduced by Darling, Grilliette, and Logan (2025) — see references below. RBL constructs a $K$-nearest neighbor digraph from ordinal Comparators (triplet comparisons), builds a 2D abstract oriented simplicial complex on the line graph of mutual neighbors, and calculates **in-sway** ($\sigma(\{x, y\})$) for "mutual friends" to form a linkage graph. It clusters by thresholding in-sway. It is a stable functor, unlike optimization-based clustering.
 
-We provide a mathematically exact Python port in `rbl_clustering.py`.
+We provide a Python implementation in `rbl_clustering.py`.
 
 ## Installation
 
@@ -98,6 +98,8 @@ python scripts/compare_rbl_hodge.py
 
 The table below is the script's own output — running it reproduces these
 four ARI values exactly (fixed seed, no GPU, ~1 min on CPU).
+
+These results describe one synthetic dataset with selected parameters. They do not establish general superiority across directed datasets.
 
 ### Asymmetric Benchmark Results (600 samples)
 
